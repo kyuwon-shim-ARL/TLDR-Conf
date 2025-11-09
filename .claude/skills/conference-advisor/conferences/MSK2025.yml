@@ -1,0 +1,58 @@
+# MSK2025 Conference Configuration
+
+conference:
+  id: MSK2025
+  full_name: "Korean Society for Microbiology Annual Meeting 2025"
+  organization: "Korean Society for Microbiology (한국미생물학회)"
+  dates:
+    start: "2025-10-26"
+    end: "2025-10-28"
+  location: "대전 컨벤션센터 (DCC)"
+
+source_files:
+  ebook: "conferences/MSK2025/raw/MSK2025-ebook.pdf"
+  timetable: "conferences/MSK2025/raw/time_table.md"
+  symposia: "conferences/MSK2025/raw/symposia.md"
+
+output:
+  prefix: "background_"
+  suffix: ".md"
+  directory: "conferences/MSK2025/backgrounds"
+
+research_areas:
+  - "Bacterial pathogenesis"
+  - "Microbiome"
+  - "Antimicrobial resistance (AMR)"
+  - "Synthetic biology"
+  - "Biosafety and biosecurity"
+  - "Zoonotic diseases"
+  - "Vaccine development"
+  - "Diagnostic technologies"
+
+session_types:
+  - id: "S"
+    name: "Symposium"
+    format: "multiple_talks"
+  - id: "PL"
+    name: "Plenary Lecture"
+    format: "single_talk"
+  - id: "AL"
+    name: "Award Lecture"
+    format: "single_talk"
+
+template:
+  type: "comprehensive"
+  sections:
+    - "개요 (Overview)"
+    - "쉬운말 풀이 (Easy Explanation)"
+    - "발표별 상세 분석 (Talk-by-Talk Analysis)"
+    - "핵심 요약 (Summary)"
+    - "사전 읽기 (Pre-reading)"
+    - "질문 리스트 (Questions)"
+    - "네트워킹 (Networking)"
+    - "체크리스트 (Checklist)"
+    - "학습 성과 (Learning Outcomes)"
+
+language:
+  primary: "ko"  # Korean
+  secondary: "en"  # English for technical terms

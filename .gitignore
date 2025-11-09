@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.pdf
+*.docx
+*.pptx
+
+# Temporary files
+*.tmp
+*.bak
+*_backup.md
+extracted_*.txt
+
+# Generated data
+*.json
+*.csv
+parsed_*.json
+
+# Deployment packages (optional - keep source, not packages)
+deployment/packages/*.tar.gz
+
+# Test directories
+/tmp/
+test-install/

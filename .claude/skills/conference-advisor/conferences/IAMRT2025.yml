@@ -1,0 +1,57 @@
+# IAMRT2025 Conference Configuration
+
+conference:
+  id: IAMRT2025
+  full_name: "International Advanced Microbiology Research Technologies 2025"
+  organization: "International Microbiology Research Association"
+  dates:
+    start: "2025-XX-XX"  # Update with actual dates
+    end: "2025-XX-XX"
+  location: "TBD"  # Update with actual location
+
+source_files:
+  abstract: "conferences/IAMRT2025/raw/2025_IAMRT_abstract.pdf"
+  program: "conferences/IAMRT2025/raw/2025_IAMRT_program.docx"
+
+output:
+  prefix: "IAMRT_background_"
+  suffix: ".md"
+  directory: "conferences/IAMRT2025/backgrounds"
+
+research_areas:
+  - "Advanced microscopy"
+  - "Genomics and metagenomics"
+  - "Microbial ecology"
+  - "Biotechnology"
+  - "Single-cell analysis"
+  - "High-throughput screening"
+  - "Computational microbiology"
+  - "Microbial systems biology"
+
+session_types:
+  - id: "S"
+    name: "Symposium"
+    format: "multiple_talks"
+  - id: "K"
+    name: "Keynote"
+    format: "single_talk"
+  - id: "W"
+    name: "Workshop"
+    format: "hands_on"
+
+template:
+  type: "comprehensive"
+  sections:
+    - "개요 (Overview)"
+    - "쉬운말 풀이 (Easy Explanation)"
+    - "발표별 상세 분석 (Talk-by-Talk Analysis)"
+    - "핵심 요약 (Summary)"
+    - "사전 읽기 (Pre-reading)"
+    - "질문 리스트 (Questions)"
+    - "네트워킹 (Networking)"
+    - "체크리스트 (Checklist)"
+    - "학습 성과 (Learning Outcomes)"
+
+language:
+  primary: "ko"  # Korean
+  secondary: "en"  # English for technical terms
