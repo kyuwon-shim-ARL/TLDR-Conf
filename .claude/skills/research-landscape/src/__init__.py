@@ -6,12 +6,16 @@ Automated research topic analysis using OpenAlex citation data.
 from .review_finder import ReviewFinder, find_reviews
 from .anchor_finder import AnchorFinder, find_anchors
 from .report_generator import ReportGenerator, generate_report
+from .citation_network import CitationNetworkBuilder
+from .trend_tracker import TrendTracker
 
-__version__ = "1.0.0-mvp"
+__version__ = "1.0.0"
 __all__ = [
     'ReviewFinder',
     'AnchorFinder',
     'ReportGenerator',
+    'CitationNetworkBuilder',
+    'TrendTracker',
     'find_reviews',
     'find_anchors',
     'generate_report',
@@ -40,6 +44,8 @@ class TopicAnalyzer:
         self.review_finder = ReviewFinder(email=email)
         self.anchor_finder = AnchorFinder(email=email)
         self.report_generator = ReportGenerator()
+        self.network_builder = CitationNetworkBuilder(email=email)
+        self.trend_tracker = TrendTracker(email=email)
 
     def analyze(
         self,
@@ -48,7 +54,11 @@ class TopicAnalyzer:
         max_anchors=10,
         years=10,
         min_review_citations=50,
-        min_anchor_citations=100
+        min_anchor_citations=100,
+        include_network=False,
+        include_trends=False,
+        network_hops=1,
+        trend_years=2
     ):
         """
         Analyze research landscape for a topic.
@@ -60,6 +70,10 @@ class TopicAnalyzer:
             years: Look back N years
             min_review_citations: Min citations for reviews
             min_anchor_citations: Min citations for anchors
+            include_network: Build citation network (adds ~30-60s)
+            include_trends: Track recent trends (adds ~10-20s)
+            network_hops: Network depth (1 or 2)
+            trend_years: Look back N years for trends (default: 2)
 
         Returns:
             AnalysisResult object
@@ -69,7 +83,9 @@ class TopicAnalyzer:
                 "spatial transcriptomics",
                 max_reviews=15,
                 max_anchors=8,
-                years=5
+                years=5,
+                include_network=True,
+                include_trends=True
             )
         """
         print(f"\n{'='*60}")
@@ -95,6 +111,49 @@ class TopicAnalyzer:
             min_citations=min_anchor_citations
         )
 
+        # Optional: Build citation network
+        network_metrics = None
+        bridge_papers = None
+        if include_network and anchors:
+            print(f"🕸️  Building citation network (this may take 30-60s)...")
+            try:
+                self.network_builder.build_network(
+                    seed_papers=anchors,
+                    hops=network_hops,
+                    max_refs_per_paper=20,
+                    max_cites_per_paper=50
+                )
+                network_metrics = self.network_builder.calculate_metrics()
+                bridge_papers = self.network_builder.find_bridge_papers(top_k=5)
+            except Exception as e:
+                print(f"⚠️  Network analysis failed: {e}")
+
+        # Optional: Track recent trends
+        recent_trends = None
+        trend_clusters = None
+        emerging_concepts = None
+        if include_trends and anchors:
+            print(f"📈 Tracking recent trends...")
+            try:
+                recent_trends = self.trend_tracker.find_recent_derivatives(
+                    anchor_papers=anchors,
+                    years=trend_years,
+                    min_citations=5,
+                    max_papers=50
+                )
+                if recent_trends:
+                    trend_clusters = self.trend_tracker.cluster_by_concepts(
+                        papers=recent_trends,
+                        max_clusters=5
+                    )
+                    emerging_concepts = self.trend_tracker.detect_emerging_concepts(
+                        recent_papers=recent_trends,
+                        anchor_papers=anchors,
+                        top_k=10
+                    )
+            except Exception as e:
+                print(f"⚠️  Trend analysis failed: {e}")
+
         processing_time = time.time() - start_time
 
         # Create result
@@ -107,6 +166,11 @@ class TopicAnalyzer:
                 'processing_time': processing_time,
                 'api_calls': self.review_finder.client.request_count + self.anchor_finder.client.request_count
             },
+            network_metrics=network_metrics,
+            bridge_papers=bridge_papers,
+            recent_trends=recent_trends,
+            trend_clusters=trend_clusters,
+            emerging_concepts=emerging_concepts,
             generator=self.report_generator
         )
 
@@ -114,6 +178,11 @@ class TopicAnalyzer:
         print(f"✅ Analysis complete!")
         print(f"   Reviews: {len(reviews)}")
         print(f"   Anchors: {len(anchors)}")
+        if include_network and network_metrics:
+            print(f"   Network nodes: {network_metrics.get('num_nodes', 0)}")
+            print(f"   Network edges: {network_metrics.get('num_edges', 0)}")
+        if include_trends and recent_trends:
+            print(f"   Recent trends: {len(recent_trends)}")
         print(f"   Time: {processing_time:.1f}s")
         print(f"{'='*60}\n")
 
@@ -129,13 +198,25 @@ class AnalysisResult:
         reviews: List of review papers
         anchors: List of anchor papers
         metadata: Analysis metadata
+        network_metrics: Optional citation network metrics
+        bridge_papers: Optional bridge papers
+        recent_trends: Optional recent derivative papers
+        trend_clusters: Optional trend clusters
+        emerging_concepts: Optional emerging concepts
     """
 
-    def __init__(self, topic, reviews, anchors, metadata, generator):
+    def __init__(self, topic, reviews, anchors, metadata, generator,
+                 network_metrics=None, bridge_papers=None,
+                 recent_trends=None, trend_clusters=None, emerging_concepts=None):
         self.topic = topic
         self.reviews = reviews
         self.anchors = anchors
         self.metadata = metadata
+        self.network_metrics = network_metrics
+        self.bridge_papers = bridge_papers
+        self.recent_trends = recent_trends
+        self.trend_clusters = trend_clusters
+        self.emerging_concepts = emerging_concepts
         self._generator = generator
 
     def to_markdown(self, output_file=None):
@@ -152,7 +233,12 @@ class AnalysisResult:
             topic=self.topic,
             reviews=self.reviews,
             anchors=self.anchors,
-            analysis_metadata=self.metadata
+            analysis_metadata=self.metadata,
+            network_metrics=self.network_metrics,
+            bridge_papers=self.bridge_papers,
+            recent_trends=self.recent_trends,
+            trend_clusters=self.trend_clusters,
+            emerging_concepts=self.emerging_concepts
         )
 
         if output_file:
