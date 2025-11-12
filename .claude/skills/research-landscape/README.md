@@ -33,13 +33,37 @@
 
 ## Quick Start
 
+### Option 1: Command Line (Recommended)
+
+```bash
+# Basic analysis
+python cli.py analyze "spatial transcriptomics"
+
+# With citation network and trends
+python cli.py analyze "CRISPR base editing" --network --trends --output report.md
+
+# Custom parameters
+python cli.py analyze "mycobacterial pathogenesis" \
+  --reviews 15 --anchors 10 --years 5 \
+  --email your@email.com --output myreport.md
+
+# See all options
+python cli.py analyze --help
+```
+
+### Option 2: Python API
+
 ```python
 from research_landscape import TopicAnalyzer
 
 analyzer = TopicAnalyzer(email="your@email.com")
-result = analyzer.analyze("CRISPR base editing")
+result = analyzer.analyze(
+    "CRISPR base editing",
+    include_network=True,
+    include_trends=True
+)
 
-# 5000-line comprehensive report
+# Generate comprehensive report
 result.to_markdown("crispr_analysis.md")
 ```
 
@@ -47,20 +71,21 @@ result.to_markdown("crispr_analysis.md")
 
 주제 입력 → 자동으로:
 
-1. **리뷰 논문** 추출 (큰 그림)
-2. **거점 논문** 식별 (foundation)
-3. **Citation network** 분석 (계보)
-4. **최신 파생 연구** (트렌드)
-5. **SOTA** 추적 (benchmark 있으면)
+1. **리뷰 논문** 추출 (큰 그림 파악)
+2. **거점 논문** 식별 (foundational papers)
+3. **Citation network** 분석 (학문 계보, 연결 구조)
+4. **최신 파생 연구** 추적 (2023-2025 트렌드)
+5. **Emerging concepts** 탐지 (새롭게 등장하는 연구 방향)
 
 ## Key Features
 
-- OpenAlex 기반 (250M+ papers, 90M+ authors)
-- Time-weighted citation scoring (최신 논문 가중치)
-- Citation network with PageRank/betweenness
-- Automatic clustering of recent trends
-- SOTA leaderboard (PapersWithCode 통합)
-- Modular design (다른 skill에서 import 가능)
+- ✅ **OpenAlex API** 기반 (250M+ papers, 90M+ authors)
+- ✅ **Time-weighted scoring** (오래된 논문 패널티, 최근 논문 가중치)
+- ✅ **Citation network analysis** (PageRank, betweenness centrality, bridge papers)
+- ✅ **Trend clustering** (concept 기반 자동 그룹화)
+- ✅ **Emerging concept detection** (anchor vs recent 비교)
+- ✅ **CLI + Python API** (편리한 사용)
+- ✅ **Modular design** (다른 skill에서 import 가능)
 
 ## Output Example
 
@@ -68,46 +93,68 @@ result.to_markdown("crispr_analysis.md")
 # Research Landscape: CRISPR Base Editing
 
 ## Executive Summary
-Field maturity: Established (10+ years)
-Key breakthrough: ABE/CBE (2016-2017)
-Current focus: In vivo delivery, AI optimization
+**Topic**: CRISPR base editing
+**Review papers found**: 15
+**Anchor papers found**: 8
+**Top review**: "CRISPR base editing: advances..." (2024, 345 citations)
+**Reading recommendation**: Start with top review paper for comprehensive overview.
 
 ## Review Papers (15)
 1. "CRISPR base editing: advances..." (Nat Rev, 2024, 345 cites)
-   Reading time: 2-3 hours
-   Why read: Most comprehensive overview
+   - Year: 2024
+   - Citations: 345
+   - Journal: Nature Reviews Genetics
+   - Link: [DOI]
 
 ## Anchor Papers (8)
-1. "Programmable base editing..." (2017, 2034 cites)
-   Impact: Foundation - First ABE
-   Network centrality: Top 1%
+1. "Programmable base editing of A•T to G•C" (2017, 2034 cites)
+   - Year: 2017
+   - Citations: 2,034
+   - Anchor Score: 254.25 (time-weighted)
+   - Link: [DOI]
 
-## Citation Network
-Papers: 856 | Citations: 3,421
-Key bridges: Prime editing (2019)
+## Citation Network Analysis (optional)
+**Network Statistics**:
+- Nodes (papers): 856
+- Edges (citations): 3,421
+- Density: 0.0046
+- Average clustering: 0.123
 
-## Recent Trends (2023-2025)
-- AI-optimized guide design (15 papers)
-- Nanoparticle delivery (12 papers)
-- In vivo models (18 papers)
+**Key Bridge Papers**:
+1. "Prime editing" (2019) - Betweenness: 0.0234
+   - Connects base editing and gene correction communities
 
-## SOTA
-Benchmark: Editing efficiency (HEK293T)
-Current best: 78.3% (HypaBE, 2024)
-Trend: +66% improvement over 7 years
+## Recent Trends (2023-2025) (optional)
+**50 papers in recent trends**
+
+### Trend 1: In vivo delivery (18 papers)
+1. "Lipid nanoparticle delivery..." (2024, 42 citations)
+2. "AAV-mediated base editing..." (2023, 35 citations)
+
+### Trend 2: AI-optimized guide design (15 papers)
+...
+
+**Emerging Concepts**:
+- Deep learning optimization: 12.3x growth (NEW)
+- Organoid models: 8.7x growth
 ```
 
 ## Status
 
-**Current**: Design phase ✅
-**Next**: MVP implementation (Week 1)
+**Version**: 1.0 ✅
+**Completed**:
+- ✅ Week 1: MVP (review finder, anchor finder, report generator)
+- ✅ Week 2: Citation network + trend tracking
+- ✅ Week 3: CLI interface
+
+**Next**: Conference-advisor integration + documentation
 
 ## Development Roadmap
 
-- **Week 1**: MVP (리뷰 + 거점 논문)
-- **Week 2**: Citation network
-- **Week 3**: SOTA tracking + polish
-- **Week 4**: Integration + docs
+- ✅ **Week 1**: MVP (리뷰 + 거점 논문) - DONE
+- ✅ **Week 2**: Citation network + trends - DONE
+- ✅ **Week 3**: CLI interface - DONE
+- ⏳ **Week 4**: Conference-advisor integration + final docs
 
 ## Documentation
 
@@ -128,5 +175,6 @@ background += landscape.format_review_section()
 
 ---
 
-**Version**: 1.0 (Design)
-**Estimated Development**: 3-4 weeks
+**Version**: 1.0
+**Status**: Core features complete ✅
+**License**: MIT
