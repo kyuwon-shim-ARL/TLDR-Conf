@@ -8,17 +8,20 @@ from .anchor_finder import AnchorFinder, find_anchors
 from .report_generator import ReportGenerator, generate_report
 from .citation_network import CitationNetworkBuilder
 from .trend_tracker import TrendTracker
+from .concept_framework_builder import ConceptualFrameworkBuilder, build_conceptual_framework
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __all__ = [
     'ReviewFinder',
     'AnchorFinder',
     'ReportGenerator',
     'CitationNetworkBuilder',
     'TrendTracker',
+    'ConceptualFrameworkBuilder',
     'find_reviews',
     'find_anchors',
     'generate_report',
+    'build_conceptual_framework',
     'TopicAnalyzer',
 ]
 
