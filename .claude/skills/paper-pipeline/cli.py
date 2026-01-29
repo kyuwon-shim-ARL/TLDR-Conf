@@ -7,6 +7,7 @@ Usage:
     python cli.py status
     python cli.py collection create metasub --dois "10.1038/xxx" "10.1016/yyy"
     python cli.py grobid-status
+    python cli.py ask "What are the main AMR patterns?" --collection metasub
 """
 
 import argparse
@@ -175,6 +176,77 @@ def cmd_grobid_status(args):
         print("Start with: docker run --rm --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.8.2-crf")
 
 
+def cmd_ask(args):
+    """Answer questions using paper-qa2 over collected papers."""
+    try:
+        from paperqa import Docs
+    except ImportError:
+        print("paper-qa2 not installed. Run: uv pip install 'paper-pipeline[qa]'")
+        return
+
+    store = PaperStore(args.data_dir)
+
+    # Get DOIs to query
+    if args.collection:
+        dois = store.get_collection(args.collection)
+        if not dois:
+            print(f"Collection '{args.collection}' not found")
+            return
+        print(f"Using {len(dois)} papers from collection '{args.collection}'")
+    else:
+        # Use all papers with content
+        papers = store.list_papers({"has_layer": "L0"})
+        dois = [
+            doi for doi, entry in store.index.get("papers", {}).items()
+            if entry.get("content_available")
+        ]
+        print(f"Using {len(dois)} papers with content from store")
+
+    if not dois:
+        print("No papers with content found. Run 'fetch' first.")
+        return
+
+    # Collect PDF paths
+    pdf_paths = []
+    for doi in dois:
+        content_dir = store.get_paper_dir(doi) / "content"
+        pdf_path = content_dir / "source.pdf"
+        if pdf_path.exists():
+            pdf_paths.append(str(pdf_path))
+
+    print(f"Found {len(pdf_paths)} PDFs to index")
+
+    if not pdf_paths:
+        print("No PDFs found in store. paper-qa2 requires PDF files.")
+        return
+
+    # Initialize paper-qa2
+    print("\nIndexing papers (this may take a while)...")
+    docs = Docs()
+
+    for i, pdf_path in enumerate(pdf_paths, 1):
+        print(f"[{i}/{len(pdf_paths)}] Indexing {Path(pdf_path).parent.parent.name}...")
+        docs.add(pdf_path)
+
+    # Query
+    print(f"\nQuerying: {args.question}")
+    answer = docs.query(args.question)
+
+    # Display results
+    print("\n" + "=" * 60)
+    print("ANSWER")
+    print("=" * 60)
+    print(answer.answer)
+    print("\n" + "=" * 60)
+    print("REFERENCES")
+    print("=" * 60)
+    for i, ref in enumerate(answer.references, 1):
+        print(f"\n[{i}] {ref}")
+    print("\n" + "=" * 60)
+    print(f"Confidence: {answer.confidence if hasattr(answer, 'confidence') else 'N/A'}")
+    print("=" * 60)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Paper Pipeline - Search, fetch, and manage academic papers"
@@ -209,6 +281,12 @@ def main():
     # grobid-status
     subparsers.add_parser("grobid-status", help="Check GROBID service")
 
+    # ask
+    p_ask = subparsers.add_parser("ask", help="Answer questions using paper-qa2")
+    p_ask.add_argument("question", help="Question to answer")
+    p_ask.add_argument("--collection", help="Use papers from specific collection")
+    p_ask.add_argument("--email", help="Email (unused, for consistency)")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -221,6 +299,7 @@ def main():
         "status": cmd_status,
         "collection": cmd_collection,
         "grobid-status": cmd_grobid_status,
+        "ask": cmd_ask,
     }
 
     commands[args.command](args)
