@@ -41,3 +41,10 @@ deployment/packages/*.tar.gz
 # Test directories
 /tmp/
 test-install/
+
+# Paper pipeline exceptions
+!data/papers/**/*.json
+!data/papers/index.json
+
+# Paper pipeline raw content (always ignored)
+data/papers/**/content/
