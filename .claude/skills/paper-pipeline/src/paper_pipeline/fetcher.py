@@ -220,7 +220,7 @@ class PaperFetcher:
         )
         try:
             resp = self.session.get(fulltext_url, timeout=15)
-            if resp.status_code == 200 and resp.text.strip().startswith("<?xml"):
+            if resp.status_code == 200 and resp.text.strip().startswith(("<?xml", "<!DOCTYPE", "<article")):
                 return resp.text
         except requests.RequestException:
             pass
