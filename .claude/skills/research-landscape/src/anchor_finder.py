@@ -3,6 +3,7 @@ Anchor Paper Finder for Research Landscape Analyzer
 Identifies foundational/highly-cited papers using time-weighted scoring.
 """
 
+from datetime import datetime
 from typing import List, Dict, Any, Optional
 from openalex_client import OpenAlexClient
 
@@ -26,7 +27,7 @@ class AnchorFinder:
             email: Email for OpenAlex polite pool (recommended)
         """
         self.client = OpenAlexClient(email=email)
-        self.current_year = 2025
+        self.current_year = datetime.now().year
 
     def find_anchors(
         self,

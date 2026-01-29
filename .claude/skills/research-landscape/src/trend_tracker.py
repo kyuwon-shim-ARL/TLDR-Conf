@@ -3,6 +3,7 @@ Trend Tracker for Research Landscape Analyzer
 Identifies recent derivative research and emerging trends.
 """
 
+from datetime import datetime
 from typing import List, Dict, Any, Optional
 from collections import Counter
 from openalex_client import OpenAlexClient
@@ -26,7 +27,7 @@ class TrendTracker:
             email: Email for OpenAlex polite pool (recommended)
         """
         self.client = OpenAlexClient(email=email)
-        self.current_year = 2025
+        self.current_year = datetime.now().year
 
     def find_recent_derivatives(
         self,

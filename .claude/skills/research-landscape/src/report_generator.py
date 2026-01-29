@@ -282,7 +282,7 @@ class ReportGenerator:
         emerging_concepts: List[Dict[str, Any]] = None
     ) -> str:
         """Generate recent trends section."""
-        section = f"## Recent Trends (2023-2025)\n\n"
+        section = f"## Recent Trends ({datetime.now().year - 2}-{datetime.now().year})\n\n"
         section += f"*Latest developments and derivative research ({len(recent_papers)} papers)*\n\n"
 
         # Clustered trends (if available)

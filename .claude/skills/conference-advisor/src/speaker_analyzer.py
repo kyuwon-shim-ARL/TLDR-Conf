@@ -80,7 +80,7 @@ class SpeakerAnalyzer:
         impact_tier = self._calculate_impact_tier(h_index, citation_count)
 
         # Extract top concepts
-        concepts = [c['display_name'] for c in author.get('x_concepts', [])[:5]]
+        concepts = [c['display_name'] for c in author.get('topics', [])[:5]]
 
         # Format top papers
         top_papers = self._format_top_papers(works[:5])

@@ -4,6 +4,7 @@ Identifies review papers using OpenAlex type filter + heuristics.
 """
 
 import re
+from datetime import datetime
 from typing import List, Dict, Any, Optional
 from openalex_client import OpenAlexClient
 
@@ -111,8 +112,8 @@ class ReviewFinder:
         filters = [f"type:review"]
 
         if years:
-            year_start = 2025 - years
-            filters.append(f"publication_year:{year_start}-2025")
+            year_start = datetime.now().year - years
+            filters.append(f"publication_year:{year_start}-{datetime.now().year}")
 
         # Search
         url = f"{self.client.base_url}/works?search={topic}&filter={','.join(filters)}&per-page=50"
@@ -132,8 +133,8 @@ class ReviewFinder:
         # Build year filter
         filters = []
         if years:
-            year_start = 2025 - years
-            filters.append(f"publication_year:{year_start}-2025")
+            year_start = datetime.now().year - years
+            filters.append(f"publication_year:{year_start}-{datetime.now().year}")
 
         # Search broadly
         filter_str = ','.join(filters) if filters else None
