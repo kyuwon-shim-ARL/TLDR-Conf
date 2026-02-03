@@ -1,0 +1,604 @@
+{
+  "papers": [
+    {
+      "doi": "10.1101/2023.12.07.569910",
+      "title": "scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis",
+      "entities": [
+        {
+          "name": "scELMo",
+          "type": "METHOD",
+          "description": "Language model embedding method for single-cell analysis"
+        },
+        {
+          "name": "single-cell transcriptomics",
+          "type": "METHOD",
+          "description": "High-throughput sequencing method for individual cells"
+        },
+        {
+          "name": "spatial transcriptomics",
+          "type": "METHOD",
+          "description": "Method combining gene expression with spatial tissue information"
+        },
+        {
+          "name": "language model embeddings",
+          "type": "CONCEPT",
+          "description": "Vector representations from transformer models"
+        },
+        {
+          "name": "single cells",
+          "type": "ORGANISM",
+          "description": "Individual biological cells as units of analysis"
+        }
+      ],
+      "relationships": [
+        {"source": "scELMo", "target": "single-cell transcriptomics", "type": "USES"},
+        {"source": "scELMo", "target": "language model embeddings", "type": "USES"},
+        {"source": "single-cell transcriptomics", "target": "single cells", "type": "STUDIES"}
+      ]
+    },
+    {
+      "doi": "10.1093/bioinformatics/btl485",
+      "title": "COPASI—a COmplex PAthway SImulator",
+      "entities": [
+        {
+          "name": "COPASI",
+          "type": "METHOD",
+          "description": "Complex pathway simulation software for systems biology"
+        },
+        {
+          "name": "pathway simulation",
+          "type": "CONCEPT",
+          "description": "Computational modeling of biochemical reaction networks"
+        },
+        {
+          "name": "metabolic networks",
+          "type": "CONCEPT",
+          "description": "Interconnected biochemical pathways in cells"
+        },
+        {
+          "name": "biochemical kinetics",
+          "type": "CONCEPT",
+          "description": "Rate laws governing biochemical reactions"
+        },
+        {
+          "name": "parameter estimation",
+          "type": "METHOD",
+          "description": "Computational method to fit model parameters to data"
+        },
+        {
+          "name": "SBML",
+          "type": "METHOD",
+          "description": "Systems Biology Markup Language for model exchange"
+        }
+      ],
+      "relationships": [
+        {"source": "COPASI", "target": "pathway simulation", "type": "USES"},
+        {"source": "COPASI", "target": "SBML", "type": "USES"},
+        {"source": "pathway simulation", "target": "metabolic networks", "type": "STUDIES"},
+        {"source": "COPASI", "target": "parameter estimation", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1002061",
+      "title": "Simulation of the Undiseased Human Cardiac Ventricular Action Potential",
+      "entities": [
+        {
+          "name": "O'Hara-Rudy model",
+          "type": "METHOD",
+          "description": "Computational model of human ventricular action potential"
+        },
+        {
+          "name": "action potential",
+          "type": "CONCEPT",
+          "description": "Electrical signal in excitable cells"
+        },
+        {
+          "name": "cardiac ventricular myocytes",
+          "type": "ORGANISM",
+          "description": "Heart muscle cells from ventricles"
+        },
+        {
+          "name": "ion channels",
+          "type": "CONCEPT",
+          "description": "Membrane proteins regulating ion flux"
+        },
+        {
+          "name": "electrophysiology",
+          "type": "CONCEPT",
+          "description": "Study of electrical properties of cells"
+        },
+        {
+          "name": "cardiac electrophysiology modeling",
+          "type": "METHOD",
+          "description": "Computational approach to simulate heart electrical activity"
+        }
+      ],
+      "relationships": [
+        {"source": "O'Hara-Rudy model", "target": "cardiac ventricular myocytes", "type": "STUDIES"},
+        {"source": "O'Hara-Rudy model", "target": "action potential", "type": "STUDIES"},
+        {"source": "action potential", "target": "ion channels", "type": "RELATED_TO"},
+        {"source": "cardiac electrophysiology modeling", "target": "electrophysiology", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1093/nar/gkj092",
+      "title": "BioModels Database: a free, centralized database of curated models",
+      "entities": [
+        {
+          "name": "BioModels Database",
+          "type": "DATASET",
+          "description": "Repository of curated computational models in systems biology"
+        },
+        {
+          "name": "model curation",
+          "type": "METHOD",
+          "description": "Process of validating and annotating computational models"
+        },
+        {
+          "name": "SBML",
+          "type": "METHOD",
+          "description": "Systems Biology Markup Language"
+        },
+        {
+          "name": "kinetic models",
+          "type": "CONCEPT",
+          "description": "Mathematical models describing reaction rates"
+        },
+        {
+          "name": "biochemical pathways",
+          "type": "CONCEPT",
+          "description": "Series of chemical reactions in biological systems"
+        },
+        {
+          "name": "model annotation",
+          "type": "METHOD",
+          "description": "Adding metadata and semantic information to models"
+        }
+      ],
+      "relationships": [
+        {"source": "BioModels Database", "target": "SBML", "type": "USES"},
+        {"source": "BioModels Database", "target": "model curation", "type": "USES"},
+        {"source": "kinetic models", "target": "biochemical pathways", "type": "STUDIES"},
+        {"source": "model curation", "target": "model annotation", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1186/1755-8794-2-2",
+      "title": "Iron behaving badly: inappropriate iron chelation",
+      "entities": [
+        {
+          "name": "iron metabolism",
+          "type": "CONCEPT",
+          "description": "Biological processes involving iron homeostasis"
+        },
+        {
+          "name": "iron chelation",
+          "type": "METHOD",
+          "description": "Chemical binding of iron ions"
+        },
+        {
+          "name": "oxidative stress",
+          "type": "CONCEPT",
+          "description": "Cellular damage from reactive oxygen species"
+        },
+        {
+          "name": "vascular disease",
+          "type": "DISEASE",
+          "description": "Diseases affecting blood vessels"
+        },
+        {
+          "name": "reactive oxygen species",
+          "type": "CONCEPT",
+          "description": "Chemically reactive molecules containing oxygen"
+        },
+        {
+          "name": "Fenton reaction",
+          "type": "CONCEPT",
+          "description": "Chemical reaction generating hydroxyl radicals from iron"
+        }
+      ],
+      "relationships": [
+        {"source": "iron chelation", "target": "iron metabolism", "type": "RELATED_TO"},
+        {"source": "iron metabolism", "target": "oxidative stress", "type": "RELATED_TO"},
+        {"source": "oxidative stress", "target": "vascular disease", "type": "RELATED_TO"},
+        {"source": "Fenton reaction", "target": "reactive oxygen species", "type": "RELATED_TO"}
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1002970",
+      "title": "Chaste: An Open Source C++ Library for Computational Physiology",
+      "entities": [
+        {
+          "name": "Chaste",
+          "type": "METHOD",
+          "description": "C++ library for computational physiology and biology"
+        },
+        {
+          "name": "cardiac modeling",
+          "type": "METHOD",
+          "description": "Computational simulation of heart function"
+        },
+        {
+          "name": "tissue modeling",
+          "type": "METHOD",
+          "description": "Multiscale simulation of biological tissues"
+        },
+        {
+          "name": "finite element method",
+          "type": "METHOD",
+          "description": "Numerical technique for solving differential equations"
+        },
+        {
+          "name": "cell-based models",
+          "type": "METHOD",
+          "description": "Agent-based simulations of cell populations"
+        },
+        {
+          "name": "partial differential equations",
+          "type": "CONCEPT",
+          "description": "Mathematical equations describing spatial-temporal processes"
+        },
+        {
+          "name": "CellML",
+          "type": "METHOD",
+          "description": "XML-based markup language for biological models"
+        }
+      ],
+      "relationships": [
+        {"source": "Chaste", "target": "cardiac modeling", "type": "USES"},
+        {"source": "Chaste", "target": "finite element method", "type": "USES"},
+        {"source": "Chaste", "target": "CellML", "type": "USES"},
+        {"source": "tissue modeling", "target": "cell-based models", "type": "USES"},
+        {"source": "cardiac modeling", "target": "partial differential equations", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1038/ncomms11437",
+      "title": "Arrhythmia risk stratification using personalized heart models",
+      "entities": [
+        {
+          "name": "personalized heart models",
+          "type": "METHOD",
+          "description": "Patient-specific computational cardiac models"
+        },
+        {
+          "name": "myocardial infarction",
+          "type": "DISEASE",
+          "description": "Heart attack causing tissue death"
+        },
+        {
+          "name": "arrhythmia",
+          "type": "DISEASE",
+          "description": "Irregular heart rhythm"
+        },
+        {
+          "name": "cardiac MRI",
+          "type": "METHOD",
+          "description": "Magnetic resonance imaging of the heart"
+        },
+        {
+          "name": "ventricular tachycardia",
+          "type": "DISEASE",
+          "description": "Rapid heartbeat from ventricles"
+        },
+        {
+          "name": "cardiac scar tissue",
+          "type": "CONCEPT",
+          "description": "Fibrotic tissue after heart injury"
+        },
+        {
+          "name": "risk stratification",
+          "type": "METHOD",
+          "description": "Clinical method to assess patient risk levels"
+        }
+      ],
+      "relationships": [
+        {"source": "personalized heart models", "target": "cardiac MRI", "type": "USES"},
+        {"source": "personalized heart models", "target": "arrhythmia", "type": "STUDIES"},
+        {"source": "myocardial infarction", "target": "cardiac scar tissue", "type": "RELATED_TO"},
+        {"source": "arrhythmia", "target": "ventricular tachycardia", "type": "RELATED_TO"},
+        {"source": "personalized heart models", "target": "risk stratification", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1186/1475-925x-10-33",
+      "title": "Review of Zero-D and 1-D Models of Blood Flow",
+      "entities": [
+        {
+          "name": "zero-dimensional models",
+          "type": "METHOD",
+          "description": "Lumped parameter models without spatial resolution"
+        },
+        {
+          "name": "one-dimensional models",
+          "type": "METHOD",
+          "description": "Models with single spatial dimension for wave propagation"
+        },
+        {
+          "name": "cardiovascular modeling",
+          "type": "METHOD",
+          "description": "Computational simulation of circulatory system"
+        },
+        {
+          "name": "blood flow",
+          "type": "CONCEPT",
+          "description": "Movement of blood through circulatory system"
+        },
+        {
+          "name": "hemodynamics",
+          "type": "CONCEPT",
+          "description": "Study of blood flow dynamics"
+        },
+        {
+          "name": "arterial system",
+          "type": "ORGANISM",
+          "description": "Network of arteries in body"
+        },
+        {
+          "name": "Windkessel model",
+          "type": "METHOD",
+          "description": "Simple hydraulic model of arterial circulation"
+        }
+      ],
+      "relationships": [
+        {"source": "zero-dimensional models", "target": "cardiovascular modeling", "type": "USES"},
+        {"source": "one-dimensional models", "target": "cardiovascular modeling", "type": "USES"},
+        {"source": "cardiovascular modeling", "target": "blood flow", "type": "STUDIES"},
+        {"source": "blood flow", "target": "hemodynamics", "type": "RELATED_TO"},
+        {"source": "Windkessel model", "target": "arterial system", "type": "STUDIES"}
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1000815",
+      "title": "NeuroML: A Language for Describing Data Driven Models of Neurons",
+      "entities": [
+        {
+          "name": "NeuroML",
+          "type": "METHOD",
+          "description": "XML-based language for neuronal models"
+        },
+        {
+          "name": "neuronal modeling",
+          "type": "METHOD",
+          "description": "Computational simulation of nerve cells"
+        },
+        {
+          "name": "ion channel models",
+          "type": "METHOD",
+          "description": "Mathematical descriptions of channel conductances"
+        },
+        {
+          "name": "neurons",
+          "type": "ORGANISM",
+          "description": "Nerve cells"
+        },
+        {
+          "name": "neural networks",
+          "type": "CONCEPT",
+          "description": "Interconnected populations of neurons"
+        },
+        {
+          "name": "Hodgkin-Huxley model",
+          "type": "METHOD",
+          "description": "Classic model of neuronal action potential"
+        },
+        {
+          "name": "model interchange",
+          "type": "CONCEPT",
+          "description": "Sharing models between software platforms"
+        }
+      ],
+      "relationships": [
+        {"source": "NeuroML", "target": "neuronal modeling", "type": "USES"},
+        {"source": "NeuroML", "target": "model interchange", "type": "USES"},
+        {"source": "neuronal modeling", "target": "neurons", "type": "STUDIES"},
+        {"source": "neuronal modeling", "target": "ion channel models", "type": "USES"},
+        {"source": "Hodgkin-Huxley model", "target": "neurons", "type": "STUDIES"}
+      ]
+    },
+    {
+      "doi": "10.1093/cvr/cvr044",
+      "title": "Simulation of multiple ion channel block for torsadogenic risk prediction",
+      "entities": [
+        {
+          "name": "ion channel block",
+          "type": "CONCEPT",
+          "description": "Pharmacological inhibition of ion channels"
+        },
+        {
+          "name": "torsades de pointes",
+          "type": "DISEASE",
+          "description": "Dangerous cardiac arrhythmia"
+        },
+        {
+          "name": "drug safety",
+          "type": "CONCEPT",
+          "description": "Assessment of pharmaceutical adverse effects"
+        },
+        {
+          "name": "cardiac action potential",
+          "type": "CONCEPT",
+          "description": "Electrical signal in heart cells"
+        },
+        {
+          "name": "hERG channel",
+          "type": "CONCEPT",
+          "description": "Potassium channel critical for cardiac repolarization"
+        },
+        {
+          "name": "in silico prediction",
+          "type": "METHOD",
+          "description": "Computer-based forecasting"
+        },
+        {
+          "name": "QT prolongation",
+          "type": "DISEASE",
+          "description": "Extended cardiac repolarization"
+        }
+      ],
+      "relationships": [
+        {"source": "ion channel block", "target": "torsades de pointes", "type": "RELATED_TO"},
+        {"source": "in silico prediction", "target": "drug safety", "type": "USES"},
+        {"source": "hERG channel", "target": "cardiac action potential", "type": "RELATED_TO"},
+        {"source": "QT prolongation", "target": "torsades de pointes", "type": "RELATED_TO"},
+        {"source": "in silico prediction", "target": "ion channel block", "type": "STUDIES"}
+      ]
+    },
+    {
+      "doi": "10.1186/1752-0509-5-198",
+      "title": "SED-ML - The Simulation Experiment Description Markup Language",
+      "entities": [
+        {
+          "name": "SED-ML",
+          "type": "METHOD",
+          "description": "XML format for describing simulation experiments"
+        },
+        {
+          "name": "SBML",
+          "type": "METHOD",
+          "description": "Systems Biology Markup Language"
+        },
+        {
+          "name": "simulation experiments",
+          "type": "CONCEPT",
+          "description": "Computational experiments with models"
+        },
+        {
+          "name": "reproducibility",
+          "type": "CONCEPT",
+          "description": "Ability to replicate computational results"
+        },
+        {
+          "name": "model simulation",
+          "type": "METHOD",
+          "description": "Running computational models"
+        },
+        {
+          "name": "computational workflows",
+          "type": "CONCEPT",
+          "description": "Multi-step computational procedures"
+        }
+      ],
+      "relationships": [
+        {"source": "SED-ML", "target": "SBML", "type": "USES"},
+        {"source": "SED-ML", "target": "simulation experiments", "type": "USES"},
+        {"source": "SED-ML", "target": "reproducibility", "type": "USES"},
+        {"source": "simulation experiments", "target": "model simulation", "type": "USES"},
+        {"source": "SED-ML", "target": "computational workflows", "type": "USES"}
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcbi.0010036",
+      "title": "A Biophysical Model of the Mitochondrial Respiratory System",
+      "entities": [
+        {
+          "name": "mitochondrial modeling",
+          "type": "METHOD",
+          "description": "Computational simulation of mitochondrial function"
+        },
+        {
+          "name": "oxidative phosphorylation",
+          "type": "CONCEPT",
+          "description": "ATP production via electron transport chain"
+        },
+        {
+          "name": "respiratory chain",
+          "type": "CONCEPT",
+          "description": "Series of protein complexes for electron transfer"
+        },
+        {
+          "name": "ATP synthesis",
+          "type": "CONCEPT",
+          "description": "Production of adenosine triphosphate"
+        },
+        {
+          "name": "mitochondria",
+          "type": "ORGANISM",
+          "description": "Cellular organelles for energy production"
+        },
+        {
+          "name": "bioenergetics",
+          "type": "CONCEPT",
+          "description": "Study of energy transformations in living systems"
+        },
+        {
+          "name": "membrane potential",
+          "type": "CONCEPT",
+          "description": "Electrical potential across mitochondrial membrane"
+        }
+      ],
+      "relationships": [
+        {"source": "mitochondrial modeling", "target": "oxidative phosphorylation", "type": "STUDIES"},
+        {"source": "oxidative phosphorylation", "target": "respiratory chain", "type": "USES"},
+        {"source": "oxidative phosphorylation", "target": "ATP synthesis", "type": "RELATED_TO"},
+        {"source": "mitochondrial modeling", "target": "mitochondria", "type": "STUDIES"},
+        {"source": "respiratory chain", "target": "membrane potential", "type": "RELATED_TO"}
+      ]
+    },
+    {
+      "doi": "10.1038/nbt1156",
+      "title": "MIRIAM: Minimum information for annotation of biochemical models",
+      "entities": [
+        {
+          "name": "MIRIAM",
+          "type": "METHOD",
+          "description": "Standard for annotating computational models"
+        },
+        {
+          "name": "model annotation",
+          "type": "METHOD",
+          "description": "Adding metadata to computational models"
+        },
+        {
+          "name": "SBML",
+          "type": "METHOD",
+          "description": "Systems Biology Markup Language"
+        },
+        {
+          "name": "ontologies",
+          "type": "CONCEPT",
+          "description": "Controlled vocabularies for biological concepts"
+        },
+        {
+          "name": "model metadata",
+          "type": "CONCEPT",
+          "description": "Descriptive information about models"
+        },
+        {
+          "name": "cross-referencing",
+          "type": "METHOD",
+          "description": "Linking model components to databases"
+        },
+        {
+          "name": "model reusability",
+          "type": "CONCEPT",
+          "description": "Ability to repurpose existing models"
+        }
+      ],
+      "relationships": [
+        {"source": "MIRIAM", "target": "model annotation", "type": "USES"},
+        {"source": "MIRIAM", "target": "SBML", "type": "RELATED_TO"},
+        {"source": "model annotation", "target": "ontologies", "type": "USES"},
+        {"source": "model annotation", "target": "cross-referencing", "type": "USES"},
+        {"source": "MIRIAM", "target": "model reusability", "type": "USES"}
+      ]
+    }
+  ],
+  "metadata": {
+    "batch": 2,
+    "paper_range": "19-36 (partial: 13 papers found with metadata)",
+    "total_papers": 13,
+    "entity_types": ["METHOD", "ORGANISM", "DISEASE", "CONCEPT", "DATASET"],
+    "relationship_types": ["USES", "STUDIES", "RELATED_TO"],
+    "missing_papers": [
+      "10.1186/1756-0381-4-10 (graph theory)",
+      "10.1038/nbt.1666 (BioPAX)",
+      "10.1186/1752-0509-4-92 (BioModels enhanced)",
+      "10.1093/nar/gkj126 (Pathguide)",
+      "10.1093/nar/gkz1055 (BioModels 15 years)",
+      "10.1371/journal.pcbi.0010036 (constraint-based modeling)"
+    ],
+    "extraction_date": "2026-02-01",
+    "notes": "Extracted from papers focusing on systems biology software, cardiac modeling, databases, and standards"
+  }
+}

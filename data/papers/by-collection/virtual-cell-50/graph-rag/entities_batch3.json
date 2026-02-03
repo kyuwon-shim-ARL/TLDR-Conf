@@ -1,0 +1,306 @@
+{
+  "papers": {
+    "10.1186/1752-0509-7-74": {
+      "title": "COBRApy: COnstraints-Based Reconstruction and Analysis for Python",
+      "entities": [
+        {
+          "name": "COBRApy",
+          "type": "METHOD",
+          "description": "Python package for constraint-based reconstruction and analysis of metabolic networks"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based modeling approach to predict metabolic fluxes"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Comprehensive computational representation of cellular metabolism"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language for model representation"
+        },
+        {
+          "name": "metabolic network",
+          "type": "CONCEPT",
+          "description": "Network of biochemical reactions in cellular metabolism"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model bacterial organism for metabolic studies"
+        },
+        {
+          "name": "constraint-based modeling",
+          "type": "CONCEPT",
+          "description": "Computational approach using physicochemical constraints"
+        }
+      ]
+    },
+    "10.3389/fpls.2017.01617": {
+      "title": "The Role of Soil Microorganisms in Plant Mineral Nutrition",
+      "entities": [
+        {
+          "name": "plant-microbe interaction",
+          "type": "CONCEPT",
+          "description": "Biological interactions between plants and microorganisms"
+        },
+        {
+          "name": "rhizosphere",
+          "type": "CONCEPT",
+          "description": "Soil region influenced by plant roots and microbial communities"
+        },
+        {
+          "name": "nutrient cycling",
+          "type": "CONCEPT",
+          "description": "Movement and transformation of nutrients in ecosystems"
+        },
+        {
+          "name": "soil microbiome",
+          "type": "CONCEPT",
+          "description": "Community of microorganisms in soil"
+        },
+        {
+          "name": "plant cells",
+          "type": "ORGANISM",
+          "description": "Plant cellular systems"
+        },
+        {
+          "name": "metabolic modeling",
+          "type": "CONCEPT",
+          "description": "Computational representation of metabolic processes"
+        }
+      ]
+    },
+    "10.1371/journal.pcbi.0030189": {
+      "title": "Universally Sloppy Parameter Sensitivities in Systems Biology Models",
+      "entities": [
+        {
+          "name": "parameter sensitivity",
+          "type": "CONCEPT",
+          "description": "Analysis of how model parameters affect predictions"
+        },
+        {
+          "name": "systems biology model",
+          "type": "CONCEPT",
+          "description": "Mathematical models of biological systems"
+        },
+        {
+          "name": "model identifiability",
+          "type": "CONCEPT",
+          "description": "Ability to uniquely determine model parameters from data"
+        },
+        {
+          "name": "parameter estimation",
+          "type": "CONCEPT",
+          "description": "Computational methods to infer parameter values from data"
+        },
+        {
+          "name": "signal transduction",
+          "type": "CONCEPT",
+          "description": "Cellular communication through biochemical pathways"
+        },
+        {
+          "name": "mammalian cells",
+          "type": "ORGANISM",
+          "description": "Mammalian cellular systems"
+        },
+        {
+          "name": "computational modeling",
+          "type": "CONCEPT",
+          "description": "Mathematical representation of biological processes"
+        }
+      ]
+    },
+    "10.1038/nbt.2488": {
+      "title": "A community-driven global reconstruction of human metabolism",
+      "entities": [
+        {
+          "name": "Recon 2",
+          "type": "DATASET",
+          "description": "Community-driven reconstruction of human metabolism"
+        },
+        {
+          "name": "human metabolic network",
+          "type": "CONCEPT",
+          "description": "Comprehensive map of human metabolic reactions"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based method for metabolic flux prediction"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Whole-cell metabolic reconstruction"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language standard"
+        },
+        {
+          "name": "human cells",
+          "type": "ORGANISM",
+          "description": "Human cellular metabolism"
+        },
+        {
+          "name": "BiGG",
+          "type": "DATASET",
+          "description": "Database of genome-scale metabolic models"
+        },
+        {
+          "name": "metabolic reconstruction",
+          "type": "CONCEPT",
+          "description": "Process of creating comprehensive metabolic models"
+        }
+      ]
+    },
+    "10.1186/s13059-019-1730-3": {
+      "title": "Current status and applications of genome-scale metabolic models",
+      "entities": [
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Computational representation of organism metabolism"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Mathematical optimization for metabolic flux prediction"
+        },
+        {
+          "name": "COBRApy",
+          "type": "METHOD",
+          "description": "Python toolbox for constraint-based modeling"
+        },
+        {
+          "name": "metabolic engineering",
+          "type": "CONCEPT",
+          "description": "Modification of metabolism for biotechnology applications"
+        },
+        {
+          "name": "constraint-based modeling",
+          "type": "CONCEPT",
+          "description": "Modeling approach using stoichiometric constraints"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model organism for metabolic studies"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Standard format for systems biology models"
+        },
+        {
+          "name": "metabolic pathway",
+          "type": "CONCEPT",
+          "description": "Series of connected biochemical reactions"
+        }
+      ]
+    },
+    "10.1186/gb-2007-8-3-r39": {
+      "title": "Reactome: a knowledge base of biologic pathways and processes",
+      "entities": [
+        {
+          "name": "Reactome",
+          "type": "DATASET",
+          "description": "Curated database of biological pathways and reactions"
+        },
+        {
+          "name": "pathway database",
+          "type": "DATASET",
+          "description": "Repository of biological pathway information"
+        },
+        {
+          "name": "biological pathway",
+          "type": "CONCEPT",
+          "description": "Series of molecular interactions in biological processes"
+        },
+        {
+          "name": "pathway curation",
+          "type": "CONCEPT",
+          "description": "Expert annotation of biological pathways"
+        },
+        {
+          "name": "pathway analysis",
+          "type": "CONCEPT",
+          "description": "Computational analysis of biological pathways"
+        },
+        {
+          "name": "gene set enrichment",
+          "type": "CONCEPT",
+          "description": "Statistical method to identify enriched pathways in gene sets"
+        },
+        {
+          "name": "human pathways",
+          "type": "CONCEPT",
+          "description": "Biological pathways in human cells"
+        },
+        {
+          "name": "KEGG",
+          "type": "DATASET",
+          "description": "Kyoto Encyclopedia of Genes and Genomes database"
+        }
+      ]
+    },
+    "10.1186/1471-2105-11-213": {
+      "title": "BiGG: a Biochemical Genetic and Genomic knowledgebase of large scale metabolic reconstructions",
+      "entities": [
+        {
+          "name": "BiGG",
+          "type": "DATASET",
+          "description": "Database of biochemically, genetically and genomically structured genome-scale metabolic network reconstructions"
+        },
+        {
+          "name": "metabolic reconstruction",
+          "type": "CONCEPT",
+          "description": "Process of creating genome-scale metabolic models"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Comprehensive metabolic network reconstruction"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language for model exchange"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model organism for metabolic network studies"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based modeling method"
+        },
+        {
+          "name": "metabolic network",
+          "type": "CONCEPT",
+          "description": "Network of biochemical reactions"
+        },
+        {
+          "name": "model database",
+          "type": "DATASET",
+          "description": "Repository of metabolic models"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "batch": 3,
+    "paper_range": "37-44 (from original 37-53, reduced to available papers)",
+    "extraction_date": "2026-02-01",
+    "total_papers": 7,
+    "note": "Papers 45-53 not found in by-doi directory. Paper 42 (10.3390/biom10101429) found but is about glutathione/cancer, not systems biology methods - excluded from entity extraction."
+  }
+}

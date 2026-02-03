@@ -1,0 +1,5222 @@
+{
+  "metadata": {
+    "resolution": 0.5,
+    "merge_threshold": 0.7,
+    "total_communities": 279,
+    "algorithm": "Leiden + conservative_merge"
+  },
+  "communities": [
+    {
+      "community_id": 0,
+      "members": [
+        "https://doi.org/10.1016/j.ymben.2017.12.002",
+        "https://doi.org/10.1371/journal.pcbi.1000210",
+        "METHOD:Inhibited",
+        "https://doi.org/10.1074/jbc.m311657200",
+        "CONCEPT:regulation",
+        "METHOD:Conserved",
+        "https://doi.org/10.1101/gr.10.5.703",
+        "METHOD:Transcriptional",
+        "METHOD:Membrane-bound",
+        "METHOD:MEMOTE",
+        "METHOD:K-12",
+        "https://doi.org/10.1093/bioinformatics/19.2.261",
+        "METHOD:Oleaginous",
+        "METHOD:Canadian",
+        "METHOD:Machine",
+        "METHOD:FluxAnalyzer",
+        "METHOD:Proliferator-activated",
+        "CONCEPT:metabolic",
+        "https://doi.org/10.1093/nar/gkh140",
+        "https://doi.org/10.1074/jbc.m201691200",
+        "https://doi.org/10.1186/2049-2618-2-23",
+        "METHOD:Divergent",
+        "https://doi.org/10.1186/1475-2859-9-88",
+        "METHOD:Transhydrogenases",
+        "https://doi.org/10.1093/molbev/mst064",
+        "METHOD:Compact",
+        "https://doi.org/10.1038/s41587-020-0446-y",
+        "https://doi.org/10.1093/bfgp/2.3.175",
+        "METHOD:High-throughput",
+        "METHOD:Active",
+        "METHOD:Aspergillus",
+        "https://doi.org/10.1016/j.ymben.2020.10.005",
+        "METHOD:Package",
+        "METHOD:Elucidating",
+        "METHOD:Soluble",
+        "METHOD:Experiments",
+        "METHOD:Biosynthesis",
+        "https://doi.org/10.1371/journal.pcbi.1005396",
+        "METHOD:Bacillus",
+        "METHOD:Context-Specific",
+        "https://doi.org/10.1371/journal.pone.0051535",
+        "METHOD:Complete",
+        "METHOD:UdhA",
+        "METHOD:Ethanol",
+        "METHOD:RetroPath2",
+        "https://doi.org/10.1371/journal.pcbi.1000312",
+        "https://doi.org/10.1073/pnas.1311827110",
+        "https://doi.org/10.1093/nar/gku126",
+        "METHOD:Peroxisome",
+        "https://doi.org/10.1371/journal.pcbi.1002518",
+        "METHOD:Pseudomonas",
+        "METHOD:Escherichia",
+        "https://doi.org/10.1371/journal.pcbi.1006858",
+        "METHOD:RegulonDB",
+        "https://doi.org/10.1186/1471-2105-1-1",
+        "METHOD:proteomics",
+        "METHOD:Base",
+        "https://doi.org/10.1186/gb-2012-13-5-r37",
+        "METHOD:Caenorhabditis",
+        "METHOD:Facilitates",
+        "METHOD:KT2440",
+        "METHOD:Transcript",
+        "CONCEPT:evolution",
+        "https://doi.org/10.1074/jbc.m008791200",
+        "https://doi.org/10.1093/nar/gkz030",
+        "METHOD:Connection",
+        "https://doi.org/10.1093/bioinformatics/btn352",
+        "https://doi.org/10.1038/msb4100109",
+        "https://doi.org/10.1016/j.ces.2014.11.035",
+        "METHOD:COBRApy",
+        "https://doi.org/10.1186/1471-2164-9-245",
+        "ORGANISM:Escherichia coli",
+        "METHOD:Yarrowia",
+        "https://doi.org/10.1074/jbc.m703759200",
+        "https://doi.org/10.1371/journal.pone.0121216",
+        "METHOD:DAMBE5",
+        "https://doi.org/10.1038/ncomms13090",
+        "https://doi.org/10.1038/ng1906",
+        "https://doi.org/10.1186/s13059-019-1730-3",
+        "https://doi.org/10.1093/sysbio/syu081",
+        "https://doi.org/10.1093/nar/gkv1156",
+        "METHOD:COnstraints-Based",
+        "https://doi.org/10.1371/journal.pcbi.1003424",
+        "https://doi.org/10.1038/scientificamerican0687-108",
+        "CONCEPT:multi-omics",
+        "METHOD:PntAB",
+        "METHOD:Evolutionarily",
+        "METHOD:Translational",
+        "METHOD:Phenotyping",
+        "METHOD:Silico",
+        "https://doi.org/10.1002/cfg.302",
+        "https://doi.org/10.1093/nar/gkg210",
+        "https://doi.org/10.1038/ng1432",
+        "https://doi.org/10.1093/bib/bbaf304",
+        "METHOD:Python",
+        "https://doi.org/10.1371/journal.pcbi.1007084",
+        "ORGANISM:Caenorhabditis elegans",
+        "https://doi.org/10.1186/s12918-014-0110-6",
+        "METHOD:Comparative",
+        "https://doi.org/10.3389/fphys.2012.00299",
+        "METHOD:Mathematical",
+        "METHOD:Machinery",
+        "METHOD:Reconstruction",
+        "METHOD:Characterization",
+        "https://doi.org/10.1371/journal.pcbi.1000082",
+        "METHOD:NADPH",
+        "https://doi.org/10.1073/pnas.1816391116",
+        "METHOD:Functional",
+        "METHOD:Consistent",
+        "METHOD:Lipid",
+        "https://doi.org/10.1186/1752-0509-7-74",
+        "METHOD:INIT",
+        "METHOD:Investigating",
+        "METHOD:Essentiality",
+        "METHOD:Binding",
+        "https://doi.org/10.1186/s13059-017-1215-1"
+      ],
+      "paper_count": 48,
+      "merged_from": [
+        0
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 1,
+      "members": [
+        "https://doi.org/10.3389/fpls.2025.1611992",
+        "METHOD:Analytics",
+        "https://doi.org/10.1101/2023.10.16.562533",
+        "https://doi.org/10.5213/inj.2014.18.2.50",
+        "https://doi.org/10.1038/nbt.3703",
+        "METHOD:Cross-Species",
+        "https://doi.org/10.1038/s41586-024-08391-z",
+        "METHOD:Fostering",
+        "METHOD:Built",
+        "METHOD:Statistical",
+        "METHOD:STEAM",
+        "METHOD:Healthcare",
+        "METHOD:Promises",
+        "METHOD:foundation model",
+        "METHOD:Unified",
+        "https://doi.org/10.1002/path.1906",
+        "https://doi.org/10.3390/su151813595",
+        "METHOD:CellFM",
+        "https://doi.org/10.1155/2019/8304260",
+        "METHOD:Concerns",
+        "METHOD:Mathematics",
+        "METHOD:Medicine",
+        "METHOD:Edinburgh",
+        "https://doi.org/10.1155/2015/370194",
+        "https://doi.org/10.1038/msb4100177",
+        "https://doi.org/10.3390/healthcare11060887",
+        "METHOD:ChatGPT",
+        "METHOD:Knowledge-Informed",
+        "METHOD:Generative",
+        "https://doi.org/10.15252/msb.20155865",
+        "https://doi.org/10.1101/2024.04.15.589472",
+        "https://doi.org/10.1101/2024.06.04.597369",
+        "METHOD:Universal",
+        "METHOD:Elementary",
+        "METHOD:Education",
+        "METHOD:Age",
+        "METHOD:Valid",
+        "METHOD:Advancing",
+        "METHOD:Fundamental",
+        "https://doi.org/10.1101/2024.09.27.615337",
+        "METHOD:Utility",
+        "METHOD:Promising",
+        "METHOD:Unlocking",
+        "METHOD:Continual",
+        "METHOD:Simple",
+        "https://doi.org/10.1016/j.physrep.2018.01.001",
+        "https://doi.org/10.1101/2025.06.26.661767",
+        "METHOD:Literacy",
+        "https://doi.org/10.1101/2025.02.05.636714",
+        "https://doi.org/10.1101/2023.05.29.542705",
+        "https://doi.org/10.1093/nar/gkn698",
+        "METHOD:GenePT",
+        "METHOD:scGPT",
+        "https://doi.org/10.1038/nbt.2488",
+        "CONCEPT:transcription",
+        "https://doi.org/10.1038/s41467-025-59926-5",
+        "METHOD:Nicheformer",
+        "METHOD:Foundation",
+        "METHOD:GeneCompass",
+        "https://doi.org/10.1101/2025.09.05.674596",
+        "METHOD:ConsensusPathDB",
+        "https://doi.org/10.3390/fi15090286",
+        "https://doi.org/10.1101/2023.11.28.568918",
+        "https://doi.org/10.1101/2025.03.31.646238",
+        "METHOD:Practice",
+        "ORGANISM:human",
+        "CONCEPT:precision medicine",
+        "METHOD:Precision",
+        "DATASET:Transcriptomics",
+        "METHOD:Big",
+        "https://doi.org/10.48550/arxiv.2404.03264",
+        "METHOD:spatial transcriptomics",
+        "METHOD:pretraining",
+        "https://doi.org/10.1101/2023.09.26.559542",
+        "METHOD:Opportunities",
+        "https://doi.org/10.1101/2023.04.30.538439"
+      ],
+      "paper_count": 29,
+      "merged_from": [
+        1
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 9,
+      "members": [
+        "https://doi.org/10.1093/femsre/fuy030",
+        "https://doi.org/10.1038/msb.2010.66",
+        "METHOD:GLIMMER",
+        "https://doi.org/10.1093/nar/27.23.4636",
+        "https://doi.org/10.1038/msb.2011.42",
+        "https://doi.org/10.1038/s41467-018-07946-9",
+        "METHOD:Emergent",
+        "METHOD:OptStrain",
+        "https://doi.org/10.1007/s00018-015-2004-1",
+        "https://doi.org/10.1073/pnas.1421834112",
+        "METHOD:Costless",
+        "https://doi.org/10.1186/1471-2164-14-913",
+        "METHOD:Engineering",
+        "https://doi.org/10.1186/s12934-019-1083-3",
+        "https://doi.org/10.1093/femsre/fuw043",
+        "ORGANISM:microbial",
+        "https://doi.org/10.1371/journal.pcbi.1006010",
+        "https://doi.org/10.1038/ismej.2016.26",
+        "https://doi.org/10.1101/gr.2872004"
+      ],
+      "paper_count": 13,
+      "merged_from": [
+        9
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 2,
+      "members": [
+        "https://doi.org/10.1101/2024.11.03.621674",
+        "METHOD:Prospects",
+        "METHOD:fine-tuning",
+        "METHOD:Limitations",
+        "METHOD:Survival",
+        "METHOD:Foundational",
+        "METHOD:transformer",
+        "https://doi.org/10.1101/2023.10.03.560734",
+        "METHOD:Enhances",
+        "METHOD:Transformer-Based",
+        "https://doi.org/10.1101/2024.01.27.577455",
+        "METHOD:Language",
+        "METHOD:Genomes",
+        "https://doi.org/10.48550/arxiv.2407.13205",
+        "https://doi.org/10.1101/2023.09.11.557287",
+        "https://doi.org/10.1101/2025.04.02.646825",
+        "METHOD:Democratizing",
+        "https://doi.org/10.1101/2024.03.23.586383",
+        "METHOD:Teaching",
+        "METHOD:CellPLM",
+        "METHOD:Cell2Sentence",
+        "https://doi.org/10.1101/2023.11.09.566187",
+        "METHOD:Outcome",
+        "https://doi.org/10.26599/bdma.2024.9020034",
+        "METHOD:language model",
+        "https://doi.org/10.1101/2023.10.24.563624",
+        "https://doi.org/10.36227/techrxiv.23589741.v4",
+        "METHOD:Parameter-Efficient",
+        "METHOD:Edible"
+      ],
+      "paper_count": 11,
+      "merged_from": [
+        2
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 3,
+      "members": [
+        "METHOD:Single-Cell",
+        "METHOD:Cytoscape",
+        "https://doi.org/10.1101/2024.12.10.627865",
+        "METHOD:contrastive learning",
+        "METHOD:Encoding",
+        "https://doi.org/10.1101/2024.12.13.628448",
+        "METHOD:Annotations",
+        "https://doi.org/10.21203/rs.3.rs-3376641/v1",
+        "METHOD:Imbalanced",
+        "https://doi.org/10.1101/2024.02.25.581982",
+        "METHOD:pre-training",
+        "METHOD:Boosts",
+        "https://doi.org/10.1101/2023.10.24.563625",
+        "https://doi.org/10.1038/s12276-025-01547-5",
+        "https://doi.org/10.1101/2023.09.08.555192",
+        "METHOD:Utilities",
+        "METHOD:Domain-Adapted",
+        "METHOD:Meet",
+        "METHOD:PathOmCLIP",
+        "https://doi.org/10.1101/2023.07.26.550634",
+        "CONCEPT:gene expression",
+        "https://doi.org/10.1016/j.jenvman.2023.119230",
+        "https://doi.org/10.1038/nprot.2007.324",
+        "METHOD:Gene-Family",
+        "https://doi.org/10.1101/2025.09.16.676672",
+        "METHOD:Evaluating"
+      ],
+      "paper_count": 11,
+      "merged_from": [
+        3
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 4,
+      "members": [
+        "https://doi.org/10.15252/msb.20145307",
+        "METHOD:Profile",
+        "https://doi.org/10.1088/0951-7715/23/1/r01",
+        "METHOD:Predicts",
+        "METHOD:Signature",
+        "CONCEPT:response",
+        "CONCEPT:cancer",
+        "https://doi.org/10.1016/j.jpha.2025.101315",
+        "https://doi.org/10.1186/1476-4598-10-107",
+        "METHOD:Plumbagin",
+        "METHOD:Effectiveness",
+        "https://doi.org/10.1371/journal.pcbi.1005758",
+        "https://doi.org/10.1186/gb-2010-11-5-r53",
+        "https://doi.org/10.1186/s12935-025-03635-y",
+        "METHOD:DTLCDR",
+        "METHOD:Characterizing",
+        "METHOD:CDRscan",
+        "METHOD:WarburQ",
+        "METHOD:Nonlinear",
+        "METHOD:CXCR4",
+        "https://doi.org/10.1038/s41598-018-27214-6",
+        "https://doi.org/10.1038/s41467-018-05261-x",
+        "ORGANISM:cancer cell",
+        "CONCEPT:cell atlas"
+      ],
+      "paper_count": 9,
+      "merged_from": [
+        4
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 20,
+      "members": [
+        "https://doi.org/10.1371/journal.pgen.1011420",
+        "ORGANISM:mouse",
+        "METHOD:Mouse-Geneformer",
+        "https://doi.org/10.1101/2025.02.19.639127",
+        "https://doi.org/10.1038/s41929-022-00798-z",
+        "https://doi.org/10.1093/bib/bbx044",
+        "https://doi.org/10.1016/j.cels.2021.05.003",
+        "METHOD:Interpretable",
+        "https://doi.org/10.1038/s41540-024-00341-9",
+        "https://doi.org/10.1038/s42003-025-07469-2",
+        "https://doi.org/10.1016/j.watres.2022.118973",
+        "METHOD:deep learning",
+        "https://doi.org/10.1007/s10462-023-10466-8",
+        "METHOD:AutoTransOP",
+        "DATASET:Consequences"
+      ],
+      "paper_count": 9,
+      "merged_from": [
+        20
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 21,
+      "members": [
+        "https://doi.org/10.1038/s41467-019-12961-5",
+        "ORGANISM:yeast",
+        "https://doi.org/10.1038/ncomms9400",
+        "https://doi.org/10.1038/msb.2011.48",
+        "METHOD:Rewiring",
+        "https://doi.org/10.1186/1475-2859-9-84",
+        "https://doi.org/10.1186/1752-0509-3-37",
+        "METHOD:Turing",
+        "https://doi.org/10.1038/nbt1492",
+        "https://doi.org/10.1371/journal.pcbi.1005951",
+        "https://doi.org/10.1016/j.febslet.2008.03.029",
+        "METHOD:Connecting",
+        "METHOD:Cdc42",
+        "https://doi.org/10.15252/msb.20167411",
+        "METHOD:Wall"
+      ],
+      "paper_count": 9,
+      "merged_from": [
+        21
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 26,
+      "members": [
+        "METHOD:Crowded",
+        "https://doi.org/10.1371/journal.pcbi.1006830",
+        "https://doi.org/10.1371/journal.pone.0074261",
+        "METHOD:Probing",
+        "METHOD:Reaction-Diffusion",
+        "https://doi.org/10.1038/ismej.2016.45",
+        "https://doi.org/10.1098/rsta.2013.0389",
+        "CONCEPT:dynamics",
+        "https://doi.org/10.1002/fld.1590",
+        "METHOD:Particle-Based",
+        "METHOD:ReaDDy",
+        "METHOD:Fast",
+        "https://doi.org/10.1073/pnas.0904505106",
+        "https://doi.org/10.1038/s41467-020-20763-3",
+        "https://doi.org/10.1083/jcb.201009068"
+      ],
+      "paper_count": 8,
+      "merged_from": [
+        26
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 34,
+      "members": [
+        "METHOD:Chasing",
+        "METHOD:Nitric",
+        "https://doi.org/10.7554/elife.19274",
+        "https://doi.org/10.1186/s12918-015-0155-1",
+        "https://doi.org/10.1038/s43588-021-00060-9",
+        "METHOD:Biomolecular",
+        "ORGANISM:bacterial",
+        "https://doi.org/10.1073/pnas.1704504114",
+        "METHOD:Hydrodynamics",
+        "METHOD:Spatially-resolved",
+        "https://doi.org/10.1007/s10142-015-0433-4",
+        "https://doi.org/10.1146/annurev-fluid-122414-034606",
+        "https://doi.org/10.1111/j.1574-6976.2008.00146.x",
+        "https://doi.org/10.1111/1751-7915.13292"
+      ],
+      "paper_count": 8,
+      "merged_from": [
+        34
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 41,
+      "members": [
+        "https://doi.org/10.1186/2191-0855-1-45",
+        "METHOD:Pathogen",
+        "https://doi.org/10.1007/s11693-013-9125-3",
+        "https://doi.org/10.1007/s00425-014-2059-5",
+        "https://doi.org/10.1371/journal.pcbi.1004591",
+        "METHOD:Morpheus",
+        "https://doi.org/10.1111/acel.12386",
+        "METHOD:Formal",
+        "CONCEPT:systems biology",
+        "https://doi.org/10.1094/mpmi-08-18-0221-fi",
+        "https://doi.org/10.1093/bioinformatics/btt772",
+        "METHOD:Plant",
+        "https://doi.org/10.1093/carcin/bgp261"
+      ],
+      "paper_count": 8,
+      "merged_from": [
+        41
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 13,
+      "members": [
+        "METHOD:Regulates",
+        "https://doi.org/10.1007/s12079-016-0352-8",
+        "https://doi.org/10.1111/j.1768-322x.2004.tb01426.x",
+        "https://doi.org/10.1172/jci88241",
+        "METHOD:PI3K",
+        "https://doi.org/10.1038/msb4100014",
+        "CONCEPT:signaling",
+        "METHOD:VEGFR2",
+        "METHOD:Downstream",
+        "METHOD:Axial",
+        "METHOD:PTEN",
+        "METHOD:VEGF-A",
+        "ORGANISM:endothelial",
+        "https://doi.org/10.1186/1471-2105-7-56",
+        "METHOD:Class",
+        "https://doi.org/10.1186/jbiol185",
+        "https://doi.org/10.1016/j.molcel.2017.09.024"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        13
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 33,
+      "members": [
+        "https://doi.org/10.3389/fpls.2011.00038",
+        "CONCEPT:metabolism",
+        "https://doi.org/10.1038/s41467-019-11581-3",
+        "METHOD:Acidithiobacillus",
+        "METHOD:Recon",
+        "https://doi.org/10.1186/1471-2164-9-597",
+        "METHOD:Flux-Balance",
+        "https://doi.org/10.1007/s11306-016-1051-4",
+        "https://doi.org/10.1186/1752-0509-4-6",
+        "METHOD:Gut",
+        "ORGANISM:S. cerevisiae",
+        "https://doi.org/10.1007/s00394-017-1445-8",
+        "https://doi.org/10.1038/msb.2009.29",
+        "METHOD:Yeast8"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        33
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 37,
+      "members": [
+        "METHOD:Combining",
+        "https://doi.org/10.1038/s42256-024-00974-9",
+        "METHOD:Vision",
+        "METHOD:Integrating",
+        "https://doi.org/10.1007/s10462-020-09876-9",
+        "METHOD:Computer",
+        "https://doi.org/10.1038/s41467-017-01968-5",
+        "https://doi.org/10.1038/s41746-019-0193-y",
+        "https://doi.org/10.1038/s41524-017-0056-5",
+        "https://doi.org/10.1038/s41467-020-17910-1",
+        "METHOD:Styles",
+        "METHOD:machine learning",
+        "https://doi.org/10.1109/access.2022.3209825"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        37
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 44,
+      "members": [
+        "METHOD:Environments",
+        "https://doi.org/10.1371/journal.pcbi.1001002",
+        "https://doi.org/10.1038/nrg2775",
+        "METHOD:Induce",
+        "https://doi.org/10.3389/fbioe.2014.00060",
+        "https://doi.org/10.3389/fmicb.2013.00246",
+        "https://doi.org/10.1093/bioinformatics/btl469",
+        "METHOD:Ecosystems",
+        "METHOD:Developments",
+        "https://doi.org/10.1101/gr.5776007",
+        "https://doi.org/10.1039/c4cs00351a",
+        "METHOD:Synthetic",
+        "METHOD:Methodologies"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        44
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 51,
+      "members": [
+        "METHOD:MAPK",
+        "https://doi.org/10.1038/msb.2009.47",
+        "https://doi.org/10.1186/1471-2105-8-217",
+        "METHOD:Path2Models",
+        "https://doi.org/10.1042/bj20050908",
+        "https://doi.org/10.1093/bib/bbv079",
+        "https://doi.org/10.1186/1752-0509-7-116",
+        "https://doi.org/10.1186/1752-0509-6-29",
+        "METHOD:Creating",
+        "https://doi.org/10.1016/j.febslet.2005.02.005",
+        "CONCEPT:pathway",
+        "METHOD:GenMAPP"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        51
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 54,
+      "members": [
+        "https://doi.org/10.1002/wcms.1240",
+        "METHOD:Constraining",
+        "METHOD:OptFlux",
+        "METHOD:Natural",
+        "METHOD:Wound",
+        "https://doi.org/10.1083/jcb.201212020",
+        "https://doi.org/10.1186/1471-2105-9-499",
+        "https://doi.org/10.1038/s41524-020-00366-8",
+        "CONCEPT:in silico",
+        "https://doi.org/10.1038/ncomms1928",
+        "https://doi.org/10.1038/nrmicro2737",
+        "https://doi.org/10.1186/1752-0509-4-45"
+      ],
+      "paper_count": 7,
+      "merged_from": [
+        54
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 10,
+      "members": [
+        "METHOD:Sensitivities",
+        "METHOD:Reaction",
+        "https://doi.org/10.1186/s12918-017-0428-y",
+        "METHOD:Challenge",
+        "METHOD:Estimation",
+        "https://doi.org/10.1371/journal.pcbi.1004706",
+        "METHOD:Summary",
+        "METHOD:Sloppy",
+        "https://doi.org/10.1371/journal.pcbi.1004096",
+        "METHOD:Parameter",
+        "METHOD:Population",
+        "CONCEPT:cell identity",
+        "METHOD:DREAM8",
+        "METHOD:Identity",
+        "https://doi.org/10.1371/journal.pcbi.0030189",
+        "https://doi.org/10.1186/s12859-016-1452-4",
+        "METHOD:Universally",
+        "https://doi.org/10.1371/journal.pcbi.1005331"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        10
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 15,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1002363",
+        "https://doi.org/10.1186/1752-0509-2-47",
+        "METHOD:OptCom",
+        "METHOD:Multi-Level",
+        "METHOD:Communities",
+        "METHOD:Evolution-guided",
+        "https://doi.org/10.1109/access.2022.3147821",
+        "https://doi.org/10.1186/1471-2105-8-212",
+        "METHOD:Ebola",
+        "METHOD:Search",
+        "METHOD:Solanum",
+        "METHOD:Metaheuristic",
+        "METHOD:optimization",
+        "https://doi.org/10.1073/pnas.1409523111",
+        "METHOD:Nature-Inspired",
+        "https://doi.org/10.1111/tpj.12685",
+        "METHOD:algorithm"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        15
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 30,
+      "members": [
+        "CONCEPT:Alzheimer",
+        "METHOD:Map",
+        "METHOD:Parkinson",
+        "https://doi.org/10.1111/jnc.14895",
+        "CONCEPT:disease",
+        "https://doi.org/10.1186/s12964-024-01590-1",
+        "https://doi.org/10.1007/s12035-013-8489-4",
+        "METHOD:Pick",
+        "https://doi.org/10.1002/alz.13790",
+        "METHOD:Pathways",
+        "https://doi.org/10.1038/s41540-020-00150-w",
+        "METHOD:Niemann",
+        "https://doi.org/10.1101/2024.11.18.624166",
+        "METHOD:ROS"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        30
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 43,
+      "members": [
+        "https://doi.org/10.1016/j.tcb.2015.09.004",
+        "https://doi.org/10.1063/1.4811182",
+        "CONCEPT:whole-cell",
+        "METHOD:Build",
+        "METHOD:Switch",
+        "METHOD:Noise",
+        "https://doi.org/10.1098/rsif.2017.0237",
+        "METHOD:Contributions",
+        "METHOD:Inducible",
+        "https://doi.org/10.1371/journal.pcbi.1002010",
+        "https://doi.org/10.1038/s41467-022-28467-6",
+        "METHOD:E-CELL",
+        "https://doi.org/10.1093/bioinformatics/15.1.72"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        43
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 56,
+      "members": [
+        "https://doi.org/10.1093/nar/gkt990",
+        "METHOD:Thermodynamics",
+        "METHOD:Emerging",
+        "METHOD:Central",
+        "https://doi.org/10.1371/journal.pcbi.1003483",
+        "https://doi.org/10.1038/nrg3094",
+        "https://doi.org/10.1101/gr.3770505",
+        "https://doi.org/10.1073/pnas.0702430104",
+        "METHOD:DNA",
+        "METHOD:Obstacles",
+        "METHOD:Highlights",
+        "https://doi.org/10.1098/rsif.2010.0729"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        56
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 65,
+      "members": [
+        "https://doi.org/10.1186/1752-0509-3-58",
+        "METHOD:Aligning",
+        "https://doi.org/10.1093/bioinformatics/btu498",
+        "METHOD:ChemChains",
+        "https://doi.org/10.1093/cvr/cvr044",
+        "https://doi.org/10.1093/bioinformatics/btw700",
+        "METHOD:Smoldyn",
+        "METHOD:simulation",
+        "METHOD:Biocellion",
+        "https://doi.org/10.1007/bf01299065",
+        "https://doi.org/10.3389/fchem.2023.1106495"
+      ],
+      "paper_count": 6,
+      "merged_from": [
+        65
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 6,
+      "members": [
+        "METHOD:Cytokine",
+        "METHOD:Mycobacterium",
+        "METHOD:Events",
+        "DATASET:Reactome",
+        "https://doi.org/10.1186/1752-0509-2-109",
+        "METHOD:Mycolic",
+        "METHOD:Host",
+        "METHOD:Deciphering",
+        "METHOD:Helminth",
+        "METHOD:Predicting",
+        "METHOD:Exploits",
+        "METHOD:Acid",
+        "METHOD:Production",
+        "https://doi.org/10.1038/24206",
+        "METHOD:Immunomodulator",
+        "https://doi.org/10.1371/journal.pcbi.1000489",
+        "https://doi.org/10.1186/gb-2007-8-3-r39",
+        "https://doi.org/10.1371/journal.ppat.1001248",
+        "METHOD:Regulate",
+        "METHOD:Macrophages",
+        "METHOD:Interpreting"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        6
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 7,
+      "members": [
+        "METHOD:Fundamentals",
+        "METHOD:Trypanosomiasis",
+        "https://doi.org/10.3389/fmicb.2012.00417",
+        "METHOD:Repositioning",
+        "METHOD:Community",
+        "METHOD:African",
+        "https://doi.org/10.3390/ijms21031102",
+        "METHOD:Specific",
+        "METHOD:Prostate",
+        "METHOD:Bypasses",
+        "METHOD:Drug",
+        "https://doi.org/10.3389/fphys.2018.00500",
+        "METHOD:Resistance",
+        "METHOD:Lagrangian",
+        "METHOD:Resilience",
+        "METHOD:Targeting",
+        "https://doi.org/10.1371/journal.ppat.1004942",
+        "https://doi.org/10.1016/j.ocemod.2017.11.008",
+        "METHOD:Mechanisms",
+        "METHOD:Treatment"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        7
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 17,
+      "members": [
+        "METHOD:Service",
+        "https://doi.org/10.1371/journal.pcbi.1008411",
+        "METHOD:Bridging",
+        "https://doi.org/10.1186/s13059-019-1854-5",
+        "METHOD:Biologist",
+        "METHOD:Toxicity",
+        "https://doi.org/10.1371/journal.pcbi.1005220",
+        "https://doi.org/10.1039/c3mb25489e",
+        "METHOD:Gap",
+        "https://doi.org/10.3389/fpubh.2018.00261",
+        "METHOD:stochastic simulation",
+        "METHOD:Assessment",
+        "METHOD:Safety",
+        "METHOD:Chemical",
+        "METHOD:ATAC-seq",
+        "METHOD:Expert"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        17
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 18,
+      "members": [
+        "METHOD:Economic",
+        "METHOD:SImulator",
+        "METHOD:Terrestrial",
+        "METHOD:Representing",
+        "METHOD:COPASI",
+        "https://doi.org/10.1029/2018ms001453",
+        "METHOD:Adaptive",
+        "https://doi.org/10.1007/s11424-006-0001-z",
+        "https://doi.org/10.1093/bioinformatics/btl485",
+        "https://doi.org/10.1016/j.jbiotec.2017.06.1200",
+        "METHOD:COmplex",
+        "METHOD:Land",
+        "METHOD:Surface",
+        "https://doi.org/10.1257/jep.13.4.169",
+        "METHOD:Complexities",
+        "METHOD:Studying"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        18
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 23,
+      "members": [
+        "METHOD:Design",
+        "https://doi.org/10.3390/challe6010117",
+        "METHOD:Electricity",
+        "https://doi.org/10.3389/fbioe.2019.00175",
+        "METHOD:Additive",
+        "METHOD:Manufacturing",
+        "METHOD:Communication",
+        "https://doi.org/10.1109/access.2020.3041765",
+        "METHOD:Technology",
+        "METHOD:Report",
+        "METHOD:Meets",
+        "METHOD:Trends",
+        "https://doi.org/10.3390/s24092668",
+        "METHOD:Usage",
+        "https://doi.org/10.1016/j.cirp.2016.05.004"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        23
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 50,
+      "members": [
+        "METHOD:SAR11",
+        "https://doi.org/10.1146/annurev-marine-010814-015934",
+        "METHOD:Oceans",
+        "https://doi.org/10.1186/1471-2180-5-35",
+        "https://doi.org/10.1186/1752-0509-5-150",
+        "https://doi.org/10.1101/cshperspect.a012922",
+        "ORGANISM:bacteria",
+        "METHOD:Abundant",
+        "METHOD:Replication",
+        "METHOD:Plankton",
+        "https://doi.org/10.1093/nar/gkn668",
+        "METHOD:Regulating"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        50
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 59,
+      "members": [
+        "METHOD:BERMUDA",
+        "DATASET:Sequencing",
+        "https://doi.org/10.1101/2023.10.19.563100",
+        "https://doi.org/10.1371/journal.pcbi.1010492",
+        "METHOD:RNA",
+        "METHOD:Dive",
+        "METHOD:CancerFoundation",
+        "https://doi.org/10.1101/2024.11.01.621087",
+        "METHOD:batch correction",
+        "https://doi.org/10.1038/s41598-017-04426-w",
+        "https://doi.org/10.1186/s13059-019-1764-6"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        59
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 60,
+      "members": [
+        "https://doi.org/10.1101/2025.06.26.661186",
+        "https://doi.org/10.1101/2024.09.30.615843",
+        "METHOD:Benchmarking",
+        "METHOD:Effect",
+        "https://doi.org/10.1186/s12864-025-11600-2",
+        "METHOD:PertEval-scFM",
+        "METHOD:perturbation",
+        "https://doi.org/10.1101/2024.10.02.616248",
+        "DATASET:RNAseq",
+        "https://doi.org/10.3389/fphys.2012.00487",
+        "CONCEPT:perturbation response"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        60
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 75,
+      "members": [
+        "https://doi.org/10.1038/s41392-022-00994-0",
+        "https://doi.org/10.1002/alz.13479",
+        "https://doi.org/10.1016/j.autcon.2022.104440",
+        "METHOD:Intelligence",
+        "https://doi.org/10.1007/s10462-022-10306-1",
+        "https://doi.org/10.5858/arpa.2024-0215-ra",
+        "CONCEPT:drug discovery",
+        "METHOD:Anatomic",
+        "METHOD:Artificial",
+        "METHOD:Pathology"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        75
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 77,
+      "members": [
+        "https://doi.org/10.3389/fpls.2015.00619",
+        "METHOD:ReaxFF",
+        "METHOD:Advanced",
+        "https://doi.org/10.1088/1361-648x/aa8f79",
+        "METHOD:ESPRESSO",
+        "CONCEPT:development",
+        "METHOD:Quantum",
+        "https://doi.org/10.1093/bib/bbaf263",
+        "https://doi.org/10.1038/npjcompumats.2015.11",
+        "https://doi.org/10.1186/s13073-018-0584-8"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        77
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 101,
+      "members": [
+        "METHOD:Next-Generation",
+        "https://doi.org/10.1186/s12938-018-0455-y",
+        "ORGANISM:tissue",
+        "METHOD:Scaling",
+        "https://doi.org/10.1101/2025.04.14.648850",
+        "https://doi.org/10.1101/2023.10.07.561331",
+        "https://doi.org/10.1242/dev.101451",
+        "https://doi.org/10.1038/labinvest.3700596"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        101
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 105,
+      "members": [
+        "METHOD:BioModels",
+        "https://doi.org/10.1186/1752-0509-4-92",
+        "https://doi.org/10.3389/fmicb.2021.711077",
+        "https://doi.org/10.1093/nar/gkj092",
+        "METHOD:EcoCyc",
+        "https://doi.org/10.1093/nar/gku1181",
+        "DATASET:Database",
+        "https://doi.org/10.1093/nar/gks1027"
+      ],
+      "paper_count": 5,
+      "merged_from": [
+        105
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 12,
+      "members": [
+        "METHOD:AI",
+        "METHOD:Imaging",
+        "METHOD:Informatics",
+        "METHOD:Things",
+        "https://doi.org/10.1109/ojcoms.2022.3215676",
+        "METHOD:IoT",
+        "https://doi.org/10.1016/j.eswa.2024.125126",
+        "METHOD:State-of-the-Art",
+        "METHOD:Federated",
+        "METHOD:Over",
+        "https://doi.org/10.1007/s10586-022-03658-4",
+        "https://doi.org/10.1109/jbhi.2020.2991043",
+        "METHOD:Directions",
+        "METHOD:AI-driven",
+        "METHOD:Overview",
+        "METHOD:Internet",
+        "METHOD:Explainable"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        12
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 22,
+      "members": [
+        "METHOD:Effects",
+        "METHOD:Actions",
+        "https://doi.org/10.1152/physrev.00036.2019",
+        "METHOD:Rhythm",
+        "METHOD:Drugs",
+        "METHOD:Diversity",
+        "METHOD:Cardiac",
+        "METHOD:Heart",
+        "https://doi.org/10.1038/ncomms11437",
+        "METHOD:Acute",
+        "METHOD:Stimulation",
+        "METHOD:Arrhythmia",
+        "https://doi.org/10.3389/fphys.2018.00958",
+        "https://doi.org/10.1254/jphs.cr0070042",
+        "METHOD:Mechano-Electric"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        22
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 24,
+      "members": [
+        "METHOD:Phosphoinositides",
+        "METHOD:Comparison",
+        "https://doi.org/10.1038/s41592-021-01135-1",
+        "https://doi.org/10.1093/database/bau126",
+        "METHOD:Shape",
+        "METHOD:Polarization",
+        "METHOD:Stimuli",
+        "https://doi.org/10.1371/journal.pcbi.1002402",
+        "METHOD:Integrate",
+        "METHOD:Hi-C",
+        "METHOD:SPRITE",
+        "METHOD:GAM",
+        "METHOD:Motility",
+        "METHOD:Feedback",
+        "https://doi.org/10.1371/journal.pcbi.1002793"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        24
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 25,
+      "members": [
+        "METHOD:Pharmacology",
+        "https://doi.org/10.1002/psp4.12071",
+        "https://doi.org/10.3389/fpls.2017.00049",
+        "METHOD:Stage",
+        "https://doi.org/10.1371/journal.pcbi.1004321",
+        "METHOD:Crop",
+        "METHOD:Escher",
+        "DATASET:Data-Rich",
+        "METHOD:Visualizations",
+        "METHOD:Workflow",
+        "METHOD:embedding",
+        "METHOD:Six",
+        "METHOD:Sharing",
+        "https://doi.org/10.1111/j.1476-5381.2012.02020.x",
+        "METHOD:Application"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        25
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 32,
+      "members": [
+        "METHOD:Complexity",
+        "METHOD:Thymic",
+        "METHOD:Toward",
+        "https://doi.org/10.1101/gr.1215303",
+        "https://doi.org/10.1186/1752-0509-6-96",
+        "METHOD:Collective",
+        "https://doi.org/10.1101/2024.01.25.577152",
+        "METHOD:T-Cell",
+        "METHOD:Visualization",
+        "METHOD:Execution",
+        "METHOD:Maturation",
+        "https://doi.org/10.1101/2025.01.06.631427",
+        "METHOD:Comprehension",
+        "METHOD:Rigorous"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        32
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 52,
+      "members": [
+        "https://doi.org/10.3389/fphys.2017.00917",
+        "METHOD:Risk",
+        "METHOD:Considerations",
+        "https://doi.org/10.1016/j.yjmcc.2015.11.018",
+        "https://doi.org/10.1113/jp277724",
+        "METHOD:Importance",
+        "CONCEPT:variability",
+        "https://doi.org/10.3389/fninf.2018.00049",
+        "METHOD:Uncertainty",
+        "METHOD:Uncertainpy",
+        "METHOD:Quantification",
+        "METHOD:Proarrhythmia"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        52
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 64,
+      "members": [
+        "METHOD:Agricultural",
+        "METHOD:Present",
+        "METHOD:Global",
+        "METHOD:Past",
+        "https://doi.org/10.1186/s13059-021-02289-z",
+        "https://doi.org/10.1073/pnas.1514240113",
+        "https://doi.org/10.3389/fmicb.2018.02161",
+        "METHOD:Addressing",
+        "METHOD:Rumen",
+        "https://doi.org/10.1111/j.1574-6976.2008.00149.x",
+        "METHOD:Ruminant"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        64
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 83,
+      "members": [
+        "METHOD:H16",
+        "https://doi.org/10.1038/ismej.2010.117",
+        "https://doi.org/10.1186/1752-0509-5-101",
+        "METHOD:Ralstonia",
+        "METHOD:Rhodoferax",
+        "METHOD:Geobacter",
+        "https://doi.org/10.1007/s10295-014-1576-3",
+        "METHOD:Genome-Scale",
+        "https://doi.org/10.1128/jb.184.16.4582-4593.2002",
+        "METHOD:Helicobacter"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        83
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 93,
+      "members": [
+        "METHOD:Chlamydomonas",
+        "https://doi.org/10.1111/tpj.12787",
+        "https://doi.org/10.1186/1752-0509-3-4",
+        "METHOD:Flux",
+        "METHOD:Reconstructions",
+        "https://doi.org/10.1093/bib/bbp011",
+        "https://doi.org/10.1101/gr.1926504",
+        "METHOD:flux balance analysis",
+        "METHOD:Coupling"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        93
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 96,
+      "members": [
+        "METHOD:Hybrid",
+        "https://doi.org/10.1007/s11538-017-0277-2",
+        "https://doi.org/10.1371/journal.pcbi.1002628",
+        "METHOD:PyDSTool",
+        "METHOD:Reduction",
+        "https://doi.org/10.3389/fgene.2012.00131",
+        "METHOD:OpenCOR",
+        "CONCEPT:computational biology",
+        "https://doi.org/10.3389/fphys.2015.00026"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        96
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 98,
+      "members": [
+        "ORGANISM:epithelial",
+        "METHOD:Simulating",
+        "https://doi.org/10.1007/s40571-015-0082-3",
+        "https://doi.org/10.1371/journal.pcbi.0020129",
+        "https://doi.org/10.1038/ncomms10074",
+        "https://doi.org/10.1038/ncomms13172",
+        "METHOD:Vitro",
+        "METHOD:Microtubule",
+        "METHOD:Left"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        98
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 99,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1000716",
+        "METHOD:Emergence",
+        "METHOD:Spatial",
+        "https://doi.org/10.5311/josis.2012.4.73",
+        "https://doi.org/10.1016/b978-0-12-388403-9.00008-4",
+        "METHOD:Cooperation",
+        "METHOD:Groups",
+        "https://doi.org/10.1186/s13073-024-01282-y"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        99
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 100,
+      "members": [
+        "METHOD:Roots",
+        "CONCEPT:bioinformatics",
+        "https://doi.org/10.1136/bmj.324.7344.1018",
+        "https://doi.org/10.1093/nsr/nwaf028",
+        "METHOD:Agents",
+        "METHOD:Theoretical",
+        "https://doi.org/10.1371/journal.pcbi.1002021",
+        "https://doi.org/10.1093/bib/bbl014"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        100
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 114,
+      "members": [
+        "https://doi.org/10.1093/bioinformatics/btv363",
+        "METHOD:BioPAX",
+        "https://doi.org/10.1093/bioinformatics/bti718",
+        "https://doi.org/10.1093/bioinformatics/btg015",
+        "https://doi.org/10.1038/nbt.1666",
+        "METHOD:Representations",
+        "METHOD:PSI",
+        "METHOD:SBML"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        114
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 123,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1005153",
+        "https://doi.org/10.1073/pnas.1412271111",
+        "METHOD:CellNetAnalyzer",
+        "METHOD:Identifiability",
+        "METHOD:Structural",
+        "https://doi.org/10.1186/1752-0509-1-2",
+        "https://doi.org/10.1038/s41598-019-47577-8"
+      ],
+      "paper_count": 4,
+      "merged_from": [
+        123
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 5,
+      "members": [
+        "METHOD:Chain",
+        "METHOD:Agonist-dependent",
+        "https://doi.org/10.1093/toxsci/kfp223",
+        "METHOD:Oxidative",
+        "METHOD:Respiratory",
+        "https://doi.org/10.1085/jgp.113.6.851",
+        "METHOD:Parkinsonism",
+        "METHOD:Complexes",
+        "METHOD:Redox",
+        "METHOD:Biophysical",
+        "METHOD:Inositol",
+        "METHOD:Oxygen",
+        "METHOD:Reactive",
+        "METHOD:Contribution",
+        "METHOD:Implicated",
+        "METHOD:Receptor",
+        "https://doi.org/10.1371/journal.pcbi.0010036",
+        "METHOD:Phosphorylation",
+        "METHOD:Mitochondrial",
+        "METHOD:Trisphosphate",
+        "METHOD:Cycling"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        5
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 8,
+      "members": [
+        "METHOD:Chachi",
+        "METHOD:Peels",
+        "METHOD:Flavonoid",
+        "METHOD:Affecting",
+        "METHOD:Analyses",
+        "https://doi.org/10.1111/mmi.12764",
+        "METHOD:Buckwheat",
+        "https://doi.org/10.3390/molecules27196476",
+        "METHOD:Content",
+        "METHOD:Citrus",
+        "METHOD:Transcriptome",
+        "METHOD:Accumulation",
+        "METHOD:Provide",
+        "METHOD:Factor",
+        "METHOD:Tartary",
+        "https://doi.org/10.3390/plants11162165",
+        "METHOD:Enzyme",
+        "METHOD:Intensity",
+        "METHOD:Light"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        8
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 11,
+      "members": [
+        "METHOD:Antioxidant",
+        "METHOD:HOO",
+        "METHOD:Polydopamine",
+        "https://doi.org/10.1101/2023.09.25.559244",
+        "METHOD:Decoding",
+        "METHOD:Fate",
+        "https://doi.org/10.1038/s41586-023-06139-9",
+        "https://doi.org/10.1002/anie.202101033",
+        "METHOD:Generalization",
+        "METHOD:Hydrogen",
+        "METHOD:Quinones",
+        "METHOD:Explains",
+        "METHOD:CellPolaris",
+        "METHOD:Transfer",
+        "METHOD:transfer learning",
+        "METHOD:Atom",
+        "CONCEPT:cell fate"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        11
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 16,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.0020082",
+        "METHOD:Role",
+        "https://doi.org/10.3389/fpls.2017.01617",
+        "https://doi.org/10.3390/ijms20092115",
+        "METHOD:Possible",
+        "METHOD:Autism",
+        "METHOD:Soil",
+        "METHOD:Disorder",
+        "METHOD:Local",
+        "METHOD:Chemosensing",
+        "METHOD:Mineral",
+        "METHOD:Microbiota-Gut-Brain-Axis",
+        "METHOD:Interaction-Based",
+        "METHOD:Knowledge",
+        "METHOD:Nutrition",
+        "METHOD:Spectrum",
+        "METHOD:Microorganisms"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        16
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 19,
+      "members": [
+        "https://doi.org/10.3390/cancers12040799",
+        "METHOD:Monte",
+        "METHOD:Quantifying",
+        "METHOD:Monte Carlo",
+        "METHOD:Radiation",
+        "METHOD:Atmospheric",
+        "METHOD:Grids",
+        "METHOD:Damage",
+        "METHOD:Boundary-Layer",
+        "METHOD:Detail",
+        "METHOD:Carlo",
+        "https://doi.org/10.1007/s10546-018-0335-9",
+        "METHOD:Simulations",
+        "METHOD:Radiobiological",
+        "METHOD:Ionizing",
+        "https://doi.org/10.1146/annurev-cellbio-100617-062542"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        19
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 27,
+      "members": [
+        "METHOD:Coarse",
+        "METHOD:Systematic",
+        "METHOD:Views",
+        "METHOD:Stable",
+        "METHOD:Construction",
+        "METHOD:Animal",
+        "https://doi.org/10.1371/journal.pone.0079195",
+        "METHOD:Labeled",
+        "METHOD:NMR",
+        "METHOD:Metabolite",
+        "METHOD:Grained",
+        "METHOD:Isotope",
+        "METHOD:Kinetic",
+        "https://doi.org/10.1186/s40168-019-0689-3",
+        "https://doi.org/10.1371/journal.pone.0003805"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        27
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 28,
+      "members": [
+        "https://doi.org/10.1007/s10278-019-00227-x",
+        "https://doi.org/10.1561/0100000068",
+        "https://doi.org/10.1109/access.2021.3086020",
+        "METHOD:U-Net",
+        "METHOD:Storage",
+        "METHOD:Achievements",
+        "METHOD:Theory",
+        "METHOD:Networked",
+        "METHOD:Distributed",
+        "METHOD:Variants",
+        "METHOD:Repairability",
+        "METHOD:Image",
+        "METHOD:Techniques",
+        "METHOD:Medical",
+        "METHOD:Coding"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        28
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 29,
+      "members": [
+        "METHOD:Terahertz",
+        "METHOD:Channels",
+        "METHOD:Cases",
+        "METHOD:Cooperative",
+        "METHOD:Physical",
+        "METHOD:Cyber",
+        "METHOD:Technologies",
+        "METHOD:Safe",
+        "METHOD:Wireless",
+        "METHOD:Holistic",
+        "METHOD:Measurement",
+        "https://doi.org/10.1109/access.2021.3100472",
+        "https://doi.org/10.1109/comst.2022.3182539",
+        "https://doi.org/10.3390/s18114075",
+        "METHOD:V2X"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        29
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 35,
+      "members": [
+        "METHOD:N-WASP",
+        "METHOD:Linking",
+        "https://doi.org/10.1371/journal.pcbi.1004593",
+        "https://doi.org/10.7554/elife.00884",
+        "METHOD:Mechanosensing",
+        "METHOD:Arrhythmias",
+        "METHOD:Focal",
+        "METHOD:Failure",
+        "METHOD:Mechanism",
+        "https://doi.org/10.1161/circresaha.111.243956",
+        "METHOD:Calmodulin-Dependent",
+        "METHOD:Adhesion",
+        "METHOD:Arp2",
+        "METHOD:Kinase"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        35
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 38,
+      "members": [
+        "METHOD:Impacts",
+        "https://doi.org/10.1038/ng1340",
+        "METHOD:Imperfect",
+        "CONCEPT:gene regulatory network",
+        "https://doi.org/10.1109/access.2020.3008788",
+        "METHOD:CSI",
+        "METHOD:Joint",
+        "https://doi.org/10.48550/arxiv.2407.18181",
+        "METHOD:SIC",
+        "METHOD:NOMA-V2X",
+        "METHOD:Pre-trained",
+        "METHOD:Cognitive",
+        "METHOD:Radio-Assisted"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        38
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 39,
+      "members": [
+        "METHOD:Basic",
+        "METHOD:Electroporation",
+        "METHOD:Pulses",
+        "METHOD:Illustrative",
+        "METHOD:Features",
+        "METHOD:Better",
+        "METHOD:Martini",
+        "METHOD:Two",
+        "METHOD:Different",
+        "https://doi.org/10.1007/s00232-014-9699-z",
+        "https://doi.org/10.1039/c3cs60093a",
+        "https://doi.org/10.1002/wcms.1620",
+        "METHOD:Behavior"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        39
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 42,
+      "members": [
+        "METHOD:Worldwide",
+        "METHOD:Researchers",
+        "METHOD:Educators",
+        "METHOD:Utilization",
+        "METHOD:MODELLER",
+        "DATASET:Bank",
+        "DATASET:Protein Data Bank",
+        "https://doi.org/10.1002/cpbi.3",
+        "https://doi.org/10.1016/j.physrep.2020.05.004",
+        "https://doi.org/10.3390/biom12101425",
+        "METHOD:Structure",
+        "METHOD:Holdings",
+        "METHOD:Students"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        42
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 47,
+      "members": [
+        "METHOD:Segmentation",
+        "https://doi.org/10.48550/arxiv.1411.4038",
+        "METHOD:Localized",
+        "METHOD:Hyperspectral",
+        "METHOD:Filtering",
+        "METHOD:Graphs",
+        "https://doi.org/10.48550/arxiv.1606.09375",
+        "METHOD:Fully",
+        "https://doi.org/10.1155/2015/258619",
+        "METHOD:Spectral",
+        "METHOD:Neural",
+        "METHOD:Convolutional",
+        "METHOD:Semantic"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        47
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 48,
+      "members": [
+        "METHOD:Solutions",
+        "https://doi.org/10.1109/access.2020.3030762",
+        "METHOD:Management",
+        "METHOD:Architectures",
+        "METHOD:Mobile",
+        "METHOD:Heterogeneous",
+        "METHOD:Intelligence-Based",
+        "METHOD:Scenarios",
+        "https://doi.org/10.3390/su10103626",
+        "METHOD:Arts",
+        "https://doi.org/10.1109/access.2015.2467174",
+        "METHOD:Mobility",
+        "METHOD:Services"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        48
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 55,
+      "members": [
+        "METHOD:Framing",
+        "METHOD:Display",
+        "METHOD:Sustainability",
+        "METHOD:Telecoupled",
+        "METHOD:Initiative",
+        "https://doi.org/10.1038/msb.2010.115",
+        "METHOD:World",
+        "https://doi.org/10.5751/es-05873-180226",
+        "METHOD:Vibrio",
+        "METHOD:Integrative",
+        "https://doi.org/10.1371/journal.pone.0015237",
+        "METHOD:Web"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        55
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 58,
+      "members": [
+        "https://doi.org/10.1109/access.2020.2981745",
+        "METHOD:Computing",
+        "https://doi.org/10.1109/tsipn.2015.2448520",
+        "METHOD:Mobile-Edge",
+        "METHOD:Radio",
+        "METHOD:Convergence",
+        "METHOD:Multicell",
+        "METHOD:Communications",
+        "METHOD:Networking",
+        "METHOD:Resources",
+        "METHOD:Era",
+        "https://doi.org/10.1109/jiot.2022.3172270"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        58
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 61,
+      "members": [
+        "METHOD:Self-Supervised",
+        "METHOD:genomics",
+        "https://doi.org/10.1101/2024.02.16.580624",
+        "METHOD:Systemic",
+        "METHOD:Use",
+        "METHOD:Meta",
+        "METHOD:Delineating",
+        "METHOD:Ecological",
+        "https://doi.org/10.1371/journal.pgen.1000808",
+        "https://doi.org/10.1038/s42256-024-00934-3",
+        "METHOD:Imprint"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        61
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 63,
+      "members": [
+        "METHOD:Bioeconomy",
+        "METHOD:Algal",
+        "https://doi.org/10.1016/j.tibtech.2019.04.002",
+        "METHOD:Biotechnology",
+        "https://doi.org/10.1002/bit.22592",
+        "METHOD:Algae-Based",
+        "METHOD:Grand",
+        "METHOD:Sustainable",
+        "https://doi.org/10.3389/fpls.2020.00279",
+        "METHOD:Industrial",
+        "METHOD:Establishment"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        63
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 67,
+      "members": [
+        "https://doi.org/10.1002/cfg.285",
+        "https://doi.org/10.1371/journal.pbio.1000367",
+        "METHOD:Division",
+        "https://doi.org/10.1093/nar/gkw1041",
+        "METHOD:SUBA4",
+        "METHOD:Epidermal",
+        "ORGANISM:Arabidopsis",
+        "METHOD:Underlies",
+        "METHOD:Sepal",
+        "METHOD:Patterning",
+        "METHOD:MetNet"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        67
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 70,
+      "members": [
+        "METHOD:Modular",
+        "https://doi.org/10.1109/tmi.2014.2377694",
+        "https://doi.org/10.1038/s41591-022-01981-2",
+        "METHOD:BRATS",
+        "METHOD:Multimodal",
+        "METHOD:Organization",
+        "METHOD:Benchmark",
+        "METHOD:Hierarchically",
+        "https://doi.org/10.3389/fnins.2010.00200",
+        "METHOD:Tumor",
+        "METHOD:Brain"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        70
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 72,
+      "members": [
+        "METHOD:Remote",
+        "https://doi.org/10.3390/s21041470",
+        "METHOD:Monitoring",
+        "METHOD:Sensors",
+        "METHOD:Intelligent",
+        "METHOD:Wearable",
+        "METHOD:Maintenance",
+        "https://doi.org/10.1140/epjst/e2012-01703-3",
+        "METHOD:Factory",
+        "https://doi.org/10.3390/s17010130",
+        "METHOD:Smart"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        72
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 73,
+      "members": [
+        "https://doi.org/10.1126/sciadv.abd5393",
+        "CONCEPT:COVID",
+        "METHOD:State-of-the-Arts",
+        "https://doi.org/10.1038/s41576-021-00360-w",
+        "METHOD:screening",
+        "METHOD:Test",
+        "CONCEPT:COVID-19",
+        "METHOD:Pandemic",
+        "METHOD:Testing",
+        "METHOD:Coronavirus",
+        "https://doi.org/10.1109/access.2020.3009328"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        73
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 78,
+      "members": [
+        "https://doi.org/10.1136/jitc-2023-007841",
+        "METHOD:ML",
+        "METHOD:Experimental",
+        "METHOD:Markup",
+        "https://doi.org/10.1186/1752-0509-5-198",
+        "METHOD:Description",
+        "METHOD:SED-ML",
+        "METHOD:Classical",
+        "METHOD:Experiment",
+        "https://doi.org/10.1371/journal.pcbi.1003800"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        78
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 79,
+      "members": [
+        "https://doi.org/10.1016/j.cell.2014.10.043",
+        "METHOD:Integrated",
+        "https://doi.org/10.1002/advs.202500870",
+        "CONCEPT:translation",
+        "https://doi.org/10.1093/nar/gkw764",
+        "METHOD:Controls",
+        "METHOD:Elongation",
+        "METHOD:Species",
+        "METHOD:Ready",
+        "METHOD:Regulatory"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        79
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 80,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1003580",
+        "METHOD:Evaluation",
+        "METHOD:Guide",
+        "METHOD:NMR-based",
+        "METHOD:Sobol",
+        "METHOD:Sensitivity",
+        "METHOD:Transcriptomic",
+        "https://doi.org/10.1101/gr.5662207",
+        "https://doi.org/10.1002/psp4.6",
+        "METHOD:constraint-based"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        80
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 82,
+      "members": [
+        "https://doi.org/10.1038/s41570-018-0148",
+        "METHOD:Mocroscopic",
+        "METHOD:Perform",
+        "METHOD:Equation-Free",
+        "https://doi.org/10.3762/bjnano.6.102",
+        "CONCEPT:drug design",
+        "METHOD:Multiscale",
+        "https://doi.org/10.4310/cms.2003.v1.n4.a5",
+        "METHOD:System-Level",
+        "METHOD:Simulators"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        82
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 84,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1002375",
+        "METHOD:Kinetics",
+        "https://doi.org/10.1085/jgp.200910344",
+        "METHOD:Ten",
+        "METHOD:Stochastic",
+        "METHOD:Intracellular",
+        "METHOD:Outstanding",
+        "METHOD:Approaches",
+        "METHOD:Years",
+        "https://doi.org/10.1007/s11538-018-0443-1"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        84
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 85,
+      "members": [
+        "METHOD:Manipulate",
+        "METHOD:Allocation",
+        "METHOD:Dynamical",
+        "https://doi.org/10.1110/ps.9.2.232",
+        "https://doi.org/10.1371/journal.pcbi.1004802",
+        "METHOD:Strategies",
+        "METHOD:Designing",
+        "METHOD:Problem",
+        "METHOD:Control",
+        "https://doi.org/10.1155/2008/597913"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        85
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 89,
+      "members": [
+        "https://doi.org/10.1016/j.febslet.2005.02.009",
+        "https://doi.org/10.1016/j.febslet.2005.01.072",
+        "METHOD:Neural-Activity-Induced",
+        "METHOD:Shrinkage",
+        "https://doi.org/10.1371/journal.pcbi.1000272",
+        "METHOD:Extraneuronal",
+        "METHOD:Explaining",
+        "METHOD:Space",
+        "METHOD:Astrocytic"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        89
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 91,
+      "members": [
+        "METHOD:mass spectrometry",
+        "METHOD:Consolidated",
+        "METHOD:Bioprocessing",
+        "METHOD:Advances",
+        "https://doi.org/10.1016/j.neucom.2020.05.078",
+        "METHOD:Uses",
+        "https://doi.org/10.1007/s12566-010-0015-9",
+        "METHOD:Non-model",
+        "https://doi.org/10.3389/fmicb.2017.02060"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        91
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 103,
+      "members": [
+        "METHOD:Contrastive",
+        "METHOD:representation learning",
+        "https://doi.org/10.48550/arxiv.2306.04371",
+        "METHOD:Divide-and-Conquer",
+        "METHOD:Representation",
+        "https://doi.org/10.1186/gb-2005-6-6-r49",
+        "https://doi.org/10.1038/nmeth.2918",
+        "METHOD:Large-Scale"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        103
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 104,
+      "members": [
+        "METHOD:BiGG",
+        "METHOD:Genetic",
+        "https://doi.org/10.1093/nar/gkv1049",
+        "https://doi.org/10.1101/gr.652803",
+        "METHOD:Biochemical",
+        "METHOD:Core",
+        "METHOD:Ancestor",
+        "https://doi.org/10.1186/1471-2105-11-213"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        104
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 108,
+      "members": [
+        "ORGANISM:mammalian",
+        "https://doi.org/10.1371/journal.pone.0022962",
+        "METHOD:Processes",
+        "https://doi.org/10.1016/j.jcp.2007.05.025",
+        "METHOD:Cytoplasm",
+        "https://doi.org/10.1023/b:cyto.0000043397.94527.84",
+        "METHOD:Diffusion",
+        "METHOD:Culture"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        108
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 109,
+      "members": [
+        "https://doi.org/10.1101/gr.gr-1619r",
+        "METHOD:Context",
+        "https://doi.org/10.1002/biot.201000078",
+        "METHOD:Alignment",
+        "METHOD:Pichia",
+        "METHOD:Prokaryotic",
+        "https://doi.org/10.1038/msb.2012.66",
+        "METHOD:Genome"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        109
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 117,
+      "members": [
+        "CONCEPT:digital twin",
+        "https://doi.org/10.1109/access.2020.2970143",
+        "METHOD:Twin",
+        "METHOD:Enablers",
+        "METHOD:Values",
+        "METHOD:Digital",
+        "https://doi.org/10.1093/eurheartj/ehaa159",
+        "https://doi.org/10.1038/s41746-022-00640-7"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        117
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 118,
+      "members": [
+        "METHOD:UShER",
+        "METHOD:Sample",
+        "https://doi.org/10.1038/s41579-023-00878-2",
+        "METHOD:Existing",
+        "METHOD:SARS-CoV-2",
+        "https://doi.org/10.1038/s41588-021-00862-7",
+        "https://doi.org/10.1038/s41586-021-04188-6",
+        "METHOD:Ultrafast"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        118
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 120,
+      "members": [
+        "METHOD:Chinese",
+        "https://doi.org/10.1093/bib/bbad518",
+        "https://doi.org/10.3390/ijms242115858",
+        "https://doi.org/10.1093/bib/bbt063",
+        "METHOD:Early",
+        "METHOD:Modern",
+        "METHOD:Nets"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        120
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 128,
+      "members": [
+        "https://doi.org/10.1101/gr.2250904",
+        "ORGANISM:Saccharomyces cerevisiae",
+        "METHOD:Validation",
+        "METHOD:Saccharomyces",
+        "METHOD:Compartmentalized",
+        "https://doi.org/10.1101/gr.234503",
+        "https://doi.org/10.1038/s41467-021-25158-6"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        128
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 131,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1006541",
+        "METHOD:Streptomyces",
+        "METHOD:Penicillium",
+        "METHOD:Generating",
+        "METHOD:RAVEN",
+        "https://doi.org/10.1101/gr.3364705",
+        "https://doi.org/10.1371/journal.pcbi.1002980"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        131
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 135,
+      "members": [
+        "https://doi.org/10.3390/s21051709",
+        "https://doi.org/10.1088/0963-0252/25/5/053002",
+        "METHOD:Infrastructure",
+        "METHOD:Society",
+        "METHOD:Roadmap",
+        "https://doi.org/10.1088/1361-6463/ac5e1c",
+        "METHOD:Plasma"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        135
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 138,
+      "members": [
+        "https://doi.org/10.1186/1752-0509-5-122",
+        "https://doi.org/10.1016/j.ebiom.2019.03.009",
+        "https://doi.org/10.3390/biom14030339",
+        "METHOD:Implications",
+        "CONCEPT:therapeutic",
+        "METHOD:Discovery"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        138
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 139,
+      "members": [
+        "https://doi.org/10.1038/s42003-023-05634-z",
+        "METHOD:RNA-seq",
+        "METHOD:Scope",
+        "METHOD:data integration",
+        "https://doi.org/10.1093/nar/gkae1316",
+        "https://doi.org/10.1093/bioinformatics/btae727"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        139
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 148,
+      "members": [
+        "https://doi.org/10.1200/cci.18.00069",
+        "https://doi.org/10.1186/1471-2105-7-186",
+        "METHOD:Quantitative",
+        "METHOD:Morphogenesis",
+        "https://doi.org/10.1051/mmnp/20094406",
+        "METHOD:Cell-Based"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        148
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 151,
+      "members": [
+        "https://doi.org/10.1016/j.febslet.2012.02.008",
+        "METHOD:metabolomics",
+        "METHOD:Progress",
+        "https://doi.org/10.1093/bib/bbm030",
+        "https://doi.org/10.1007/s40484-019-0172-y"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        151
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 161,
+      "members": [
+        "https://doi.org/10.1098/rsta.2008.0094",
+        "https://doi.org/10.1098/rsta.2008.0310",
+        "METHOD:API",
+        "METHOD:CellML",
+        "https://doi.org/10.1186/1471-2105-11-178"
+      ],
+      "paper_count": 3,
+      "merged_from": [
+        161
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 14,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1004076",
+        "METHOD:Microscopy",
+        "METHOD:Partitioning",
+        "METHOD:Model-based",
+        "CONCEPT:differentiation",
+        "METHOD:Responses",
+        "METHOD:Immune",
+        "METHOD:Traction",
+        "METHOD:Uneven",
+        "CONCEPT:heterogeneity",
+        "METHOD:Tension",
+        "METHOD:CD8",
+        "METHOD:Force",
+        "METHOD:Actin",
+        "METHOD:Differential",
+        "https://doi.org/10.3389/fimmu.2019.00230",
+        "METHOD:Bundles"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        14
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 31,
+      "members": [
+        "METHOD:Screens",
+        "METHOD:Priors",
+        "METHOD:Solving",
+        "METHOD:Mixtures",
+        "https://doi.org/10.48550/arxiv.2405.03726",
+        "METHOD:Manifold",
+        "METHOD:Transport",
+        "DATASET:Sequential",
+        "METHOD:Gaussian",
+        "METHOD:Multi-modal",
+        "METHOD:OTGM",
+        "https://doi.org/10.1101/2023.12.12.571389",
+        "METHOD:Optimal",
+        "METHOD:Mass"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        31
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 36,
+      "members": [
+        "METHOD:Investigation",
+        "METHOD:HMI",
+        "METHOD:Observatory",
+        "METHOD:Derived",
+        "https://doi.org/10.1007/s11207-011-9834-2",
+        "METHOD:Immaturity",
+        "METHOD:Imager",
+        "METHOD:Magnetic",
+        "METHOD:Cardiomyocytes",
+        "ORGANISM:iPSC",
+        "METHOD:Solar",
+        "METHOD:SDO",
+        "https://doi.org/10.3389/fphys.2018.00080",
+        "METHOD:Helioseismic"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        36
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 40,
+      "members": [
+        "METHOD:Determinants",
+        "METHOD:Duration",
+        "METHOD:Participation",
+        "METHOD:Ventricular",
+        "METHOD:Beat-to-Beat",
+        "https://doi.org/10.1161/circulationaha.105.543306",
+        "https://doi.org/10.1371/journal.pcbi.1003202",
+        "METHOD:Determines",
+        "METHOD:Subunit",
+        "METHOD:Myocyte",
+        "METHOD:Repolarization",
+        "METHOD:Reserve",
+        "METHOD:Canine"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        40
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 45,
+      "members": [
+        "https://doi.org/10.1155/2014/863298",
+        "METHOD:Zero-D",
+        "METHOD:GPU",
+        "METHOD:Blood",
+        "METHOD:Massive",
+        "METHOD:Coagulation",
+        "METHOD:Parallelization",
+        "METHOD:Perturbed",
+        "https://doi.org/10.1186/1475-925x-10-33",
+        "METHOD:Cardiovascular",
+        "METHOD:Flow",
+        "METHOD:Conditions",
+        "METHOD:Cascade"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        45
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 46,
+      "members": [
+        "METHOD:Integrator",
+        "https://doi.org/10.1371/journal.pbio.1000172",
+        "https://doi.org/10.1371/journal.pcbi.0020176",
+        "METHOD:Signals",
+        "METHOD:Internalized",
+        "METHOD:G-Protein",
+        "METHOD:Coupled",
+        "METHOD:Persistent",
+        "METHOD:Glutamate",
+        "METHOD:Triggered",
+        "METHOD:Receptors",
+        "METHOD:DARPP-32",
+        "METHOD:Dopamine"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        46
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 49,
+      "members": [
+        "METHOD:Anti-Biofilm",
+        "METHOD:Activities",
+        "METHOD:Nanoparticles",
+        "https://doi.org/10.3390/ijms23031685",
+        "METHOD:Clinical",
+        "METHOD:Antibacterial",
+        "METHOD:Therapy",
+        "https://doi.org/10.2147/ijn.s315839",
+        "METHOD:Silver",
+        "METHOD:Peptides",
+        "METHOD:Antimicrobial",
+        "METHOD:Modified"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        49
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 53,
+      "members": [
+        "METHOD:Growth",
+        "METHOD:Mesenchymal",
+        "METHOD:Lactobacillus",
+        "METHOD:Factor-2",
+        "ORGANISM:fibroblast",
+        "METHOD:Medium",
+        "METHOD:Stem",
+        "METHOD:Chondrogenesis",
+        "METHOD:Primes",
+        "https://doi.org/10.1371/journal.pone.0022887",
+        "https://doi.org/10.1074/jbc.m606263200",
+        "METHOD:WCFS1"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        53
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 57,
+      "members": [
+        "METHOD:Elucidation",
+        "https://doi.org/10.1038/nbt.1558",
+        "METHOD:Notation",
+        "METHOD:Time",
+        "METHOD:Normalization",
+        "METHOD:Profiles",
+        "METHOD:General",
+        "METHOD:Graphical",
+        "METHOD:Orders",
+        "METHOD:Variable",
+        "https://doi.org/10.1002/anie.201609757",
+        "METHOD:Concentration"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        57
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 62,
+      "members": [
+        "METHOD:Potential",
+        "METHOD:Stiffness",
+        "METHOD:Inducing",
+        "METHOD:Reprogramming",
+        "METHOD:Regeneration",
+        "METHOD:Action",
+        "METHOD:Biomaterials",
+        "METHOD:Undiseased",
+        "https://doi.org/10.3390/cells8091036",
+        "https://doi.org/10.1371/journal.pcbi.1002061",
+        "METHOD:Formulation"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        62
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 66,
+      "members": [
+        "https://doi.org/10.1371/journal.pone.0018685",
+        "METHOD:Underlying",
+        "https://doi.org/10.1085/jgp.201110611",
+        "METHOD:Ca2",
+        "METHOD:Ionic",
+        "METHOD:Potentials",
+        "METHOD:Currents",
+        "METHOD:Isolated",
+        "METHOD:Smooth",
+        "METHOD:Uterine",
+        "METHOD:Contraction"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        66
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 68,
+      "members": [
+        "METHOD:Distinguishing",
+        "https://doi.org/10.1609/aaai.v35i12.17325",
+        "METHOD:Foe",
+        "https://doi.org/10.1371/journal.pone.0077302",
+        "METHOD:Whole",
+        "DATASET:Sequence",
+        "METHOD:Friend",
+        "METHOD:PathogenFinder",
+        "METHOD:Forecasting",
+        "METHOD:Informer",
+        "METHOD:Time-Series"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        68
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 69,
+      "members": [
+        "METHOD:Art",
+        "METHOD:Immunology",
+        "METHOD:Batteries",
+        "https://doi.org/10.1002/aenm.202201939",
+        "METHOD:Oxide",
+        "METHOD:Cathode",
+        "METHOD:State",
+        "METHOD:Solid",
+        "METHOD:Composite",
+        "METHOD:Architecture",
+        "https://doi.org/10.1007/s11538-016-0214-9"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        69
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 71,
+      "members": [
+        "https://doi.org/10.3390/drones3010004",
+        "METHOD:Coverage",
+        "METHOD:Key",
+        "METHOD:Civil",
+        "METHOD:Path",
+        "METHOD:Planning",
+        "METHOD:Aerial",
+        "METHOD:Vehicles",
+        "METHOD:UAVs",
+        "METHOD:Unmanned",
+        "https://doi.org/10.1109/access.2019.2909530"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        71
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 74,
+      "members": [
+        "METHOD:Influence",
+        "METHOD:P-Selectin",
+        "METHOD:Ischemia",
+        "METHOD:Adipose-Derived",
+        "METHOD:Agent-Based",
+        "https://doi.org/10.1186/1752-0509-5-71",
+        "METHOD:Ability",
+        "METHOD:Trafficking",
+        "https://doi.org/10.1371/journal.pcbi.1000294",
+        "METHOD:Stromal",
+        "METHOD:Roll"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        74
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 76,
+      "members": [
+        "METHOD:Reference",
+        "METHOD:Quality",
+        "METHOD:Suboptimal",
+        "METHOD:Imperative",
+        "DATASET:Atlases",
+        "METHOD:Mapping",
+        "https://doi.org/10.1002/advs.202305449",
+        "METHOD:Organs",
+        "https://doi.org/10.1101/2024.04.18.590104",
+        "METHOD:Prevalence"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        76
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 81,
+      "members": [
+        "METHOD:Second",
+        "METHOD:ODD",
+        "METHOD:Update",
+        "METHOD:Messengers",
+        "https://doi.org/10.18564/jasss.4259",
+        "METHOD:Realism",
+        "METHOD:Improve",
+        "https://doi.org/10.1101/cshperspect.a005926",
+        "METHOD:Clarity",
+        "METHOD:Protocol"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        81
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 86,
+      "members": [
+        "METHOD:Crawling",
+        "METHOD:Moving",
+        "METHOD:Aim",
+        "https://doi.org/10.1016/j.tcb.2015.09.003",
+        "METHOD:Shape-Driven",
+        "METHOD:Taking",
+        "METHOD:Targets",
+        "METHOD:Migration",
+        "https://doi.org/10.1371/journal.pcbi.1004280",
+        "METHOD:Gliding"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        86
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 87,
+      "members": [
+        "METHOD:Industry",
+        "METHOD:QSP",
+        "METHOD:Consortium",
+        "METHOD:Examining",
+        "METHOD:Landscape",
+        "METHOD:Introduction",
+        "METHOD:Pharmaceutical",
+        "https://doi.org/10.1007/s12008-023-01217-8",
+        "METHOD:Preclinical",
+        "https://doi.org/10.1002/psp4.12282"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        87
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 88,
+      "members": [
+        "METHOD:Electrophysiological",
+        "METHOD:Remodeling",
+        "https://doi.org/10.1371/journal.pone.0056359",
+        "METHOD:Predict",
+        "METHOD:Hearts",
+        "METHOD:Expression",
+        "METHOD:Failing",
+        "https://doi.org/10.1523/jneurosci.10-04-01099.1990",
+        "METHOD:Population-Based"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        88
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 90,
+      "members": [
+        "METHOD:Crops",
+        "METHOD:Virtual",
+        "https://doi.org/10.1155/2012/428060",
+        "METHOD:Assembly",
+        "METHOD:Multi-scale",
+        "METHOD:Robots",
+        "METHOD:Commissioning",
+        "https://doi.org/10.3389/fpls.2017.00786",
+        "METHOD:Cooperating"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        90
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 92,
+      "members": [
+        "METHOD:Analyzing",
+        "METHOD:Energy",
+        "https://doi.org/10.1210/er.2017-00211",
+        "METHOD:Flexibility",
+        "METHOD:Health",
+        "https://doi.org/10.17615/c6bw8w",
+        "METHOD:Guidelines",
+        "METHOD:Requirements",
+        "METHOD:Add"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        92
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 94,
+      "members": [
+        "https://doi.org/10.1016/j.trac.2019.05.037",
+        "METHOD:Algae",
+        "METHOD:Subcellular",
+        "METHOD:Dedicated",
+        "https://doi.org/10.1093/molbev/mss178",
+        "METHOD:Origins",
+        "METHOD:Localization",
+        "METHOD:Green",
+        "METHOD:PredAlgo"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        94
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 95,
+      "members": [
+        "METHOD:Community-Based",
+        "METHOD:Standards",
+        "METHOD:Information",
+        "https://doi.org/10.1186/s12859-014-0369-z",
+        "https://doi.org/10.3389/fbioe.2015.00019",
+        "METHOD:Promoting",
+        "METHOD:COMBINE",
+        "METHOD:OMEX",
+        "METHOD:Coordinated"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        95
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 97,
+      "members": [
+        "METHOD:Endogenous",
+        "METHOD:Numerical",
+        "METHOD:Conduction",
+        "https://doi.org/10.1523/jneurosci.1045-15.2015",
+        "METHOD:Electrical",
+        "METHOD:Activity",
+        "METHOD:Propagate",
+        "https://doi.org/10.3389/fphy.2017.00048",
+        "METHOD:Field"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        97
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 102,
+      "members": [
+        "METHOD:JOINTLY",
+        "METHOD:LHC",
+        "DATASET:ATLAS",
+        "https://doi.org/10.1140/epjc/s10052-017-5004-5",
+        "https://doi.org/10.1038/s41467-023-44279-8",
+        "METHOD:clustering",
+        "METHOD:Run",
+        "METHOD:Topological"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        102
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 106,
+      "members": [
+        "METHOD:Neurovascular",
+        "https://doi.org/10.1016/j.celrep.2014.03.070",
+        "METHOD:Microbes",
+        "METHOD:Individual",
+        "METHOD:Interactions",
+        "https://doi.org/10.1146/annurev-cellbio-100818-125142",
+        "METHOD:Ecosystem",
+        "METHOD:Nervous"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        106
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 107,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1000744",
+        "METHOD:OptForce",
+        "METHOD:Manipulations",
+        "METHOD:Overproductions",
+        "METHOD:Leading",
+        "METHOD:Procedure",
+        "METHOD:Identifying",
+        "https://doi.org/10.1371/journal.pcbi.1005751"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        107
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 110,
+      "members": [
+        "METHOD:PATRIC",
+        "METHOD:List",
+        "METHOD:Center",
+        "METHOD:Pathguide",
+        "METHOD:Improvements",
+        "https://doi.org/10.1093/nar/gkw1017",
+        "https://doi.org/10.1093/nar/gkj126",
+        "METHOD:Resource"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        110
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 111,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1000242",
+        "METHOD:Dependence",
+        "METHOD:Chemotaxis",
+        "CONCEPT:adaptation",
+        "METHOD:Rate",
+        "https://doi.org/10.1038/oncsis.2015.50",
+        "METHOD:Hypoxia",
+        "METHOD:Gradient"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        111
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 112,
+      "members": [
+        "METHOD:Photosystems",
+        "METHOD:Productivity",
+        "https://doi.org/10.1007/s00253-011-3394-0",
+        "METHOD:Renewable",
+        "METHOD:Cyanobacteria",
+        "METHOD:Autotrophic",
+        "https://doi.org/10.3389/fbioe.2015.00001",
+        "METHOD:Limits"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        112
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 113,
+      "members": [
+        "METHOD:Makes",
+        "DATASET:Phylogenomics",
+        "METHOD:Genus",
+        "METHOD:Streptococcus",
+        "https://doi.org/10.1371/journal.pntd.0004403",
+        "METHOD:Pathogenic",
+        "METHOD:Leptospira",
+        "https://doi.org/10.1093/gbe/evu048"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        113
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 115,
+      "members": [
+        "METHOD:Physiology",
+        "METHOD:Open",
+        "METHOD:Chaste",
+        "METHOD:Library",
+        "METHOD:Babel",
+        "https://doi.org/10.1371/journal.pcbi.1002970",
+        "https://doi.org/10.1186/1758-2946-3-33",
+        "METHOD:Source"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        115
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 116,
+      "members": [
+        "METHOD:HighResMIP",
+        "https://doi.org/10.5194/gmd-9-4185-2016",
+        "METHOD:Physiome",
+        "METHOD:IUPS",
+        "METHOD:Intercomparison",
+        "https://doi.org/10.1093/bib/bbn024",
+        "METHOD:CMIP6",
+        "METHOD:Project"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        116
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 119,
+      "members": [
+        "METHOD:Interaction",
+        "METHOD:Mechanical",
+        "METHOD:Dimensional",
+        "METHOD:Arrays",
+        "METHOD:Cell-Biomaterial",
+        "https://doi.org/10.3390/ijms12118217",
+        "https://doi.org/10.1371/journal.pcbi.1002512",
+        "METHOD:Stress"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        119
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 121,
+      "members": [
+        "https://doi.org/10.1101/2024.04.02.587824",
+        "METHOD:Embeddings",
+        "METHOD:Mirages",
+        "METHOD:Learners",
+        "https://doi.org/10.1101/2023.12.07.569910",
+        "METHOD:Metric",
+        "METHOD:Good"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        121
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 122,
+      "members": [
+        "https://doi.org/10.1038/s41419-020-2565-2",
+        "METHOD:NLRP3-inflammasome",
+        "METHOD:Caspases",
+        "METHOD:Peptide-based",
+        "https://doi.org/10.1074/jbc.273.49.32608",
+        "METHOD:Inhibitors",
+        "METHOD:Inhibition"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        122
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 124,
+      "members": [
+        "METHOD:Acids",
+        "https://doi.org/10.1093/nar/gks1297",
+        "METHOD:Research",
+        "METHOD:Issue",
+        "METHOD:Collection",
+        "METHOD:Nucleic",
+        "https://doi.org/10.1007/s11625-008-0053-1"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        124
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 125,
+      "members": [
+        "METHOD:Codon",
+        "METHOD:Crowding",
+        "METHOD:Macromolecular",
+        "https://doi.org/10.1146/annurev-biophys-091321-071829",
+        "METHOD:Hard-Core",
+        "https://doi.org/10.1371/journal.pone.0045635",
+        "METHOD:Repulsions"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        125
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 127,
+      "members": [
+        "METHOD:Matter",
+        "METHOD:Moltemplate",
+        "METHOD:Coarse-Grained",
+        "https://doi.org/10.1016/j.jmb.2021.166841",
+        "METHOD:Condensed",
+        "https://doi.org/10.3390/ijms20153774",
+        "METHOD:Biomolecules"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        127
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 129,
+      "members": [
+        "METHOD:PCT",
+        "https://doi.org/10.1186/s13062-016-0159-9",
+        "https://doi.org/10.1007/s41095-021-0229-5",
+        "METHOD:IPC",
+        "METHOD:Isoelectric",
+        "METHOD:Point",
+        "METHOD:Calculator"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        129
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 130,
+      "members": [
+        "https://doi.org/10.1101/gr.190201",
+        "https://doi.org/10.21105/joss.01848",
+        "METHOD:Soft",
+        "METHOD:Environment",
+        "METHOD:Halobacterium",
+        "METHOD:NRC-1",
+        "METHOD:Extreme"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        130
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 132,
+      "members": [
+        "https://doi.org/10.1371/journal.pgen.1003617",
+        "METHOD:Loss",
+        "METHOD:Function",
+        "METHOD:Physiologically",
+        "https://doi.org/10.3389/fphys.2012.00358",
+        "METHOD:Skeletal",
+        "METHOD:Muscle"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        132
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 133,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1000815",
+        "METHOD:Degree",
+        "METHOD:Neurons",
+        "METHOD:Describing",
+        "METHOD:LEMS",
+        "METHOD:NeuroML",
+        "https://doi.org/10.3389/fninf.2014.00079"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        133
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 136,
+      "members": [
+        "METHOD:Earth",
+        "METHOD:Functions",
+        "https://doi.org/10.1002/2015gb005188",
+        "https://doi.org/10.1002/2017rg000581",
+        "METHOD:Science",
+        "METHOD:Pedotransfer",
+        "METHOD:Explicitly"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        136
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 140,
+      "members": [
+        "METHOD:Essential",
+        "https://doi.org/10.1371/journal.pcbi.1005544",
+        "METHOD:BacArena",
+        "https://doi.org/10.1007/s10867-008-9082-3",
+        "METHOD:Individual-based",
+        "METHOD:Microbiology"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        140
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 141,
+      "members": [
+        "ORGANISM:E. coli",
+        "METHOD:Omic",
+        "METHOD:E-ring",
+        "https://doi.org/10.1038/msb.2010.47",
+        "https://doi.org/10.1007/s11693-009-9047-2",
+        "METHOD:MinE"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        141
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 142,
+      "members": [
+        "https://doi.org/10.1186/jbiol61",
+        "METHOD:Interventions",
+        "METHOD:Dynamic",
+        "METHOD:Targeted",
+        "METHOD:Senescence",
+        "https://doi.org/10.1371/journal.pcbi.1003728"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        142
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 143,
+      "members": [
+        "https://doi.org/10.1093/bioinformatics/bti799",
+        "METHOD:PathVisio",
+        "https://doi.org/10.1371/journal.pcbi.1004085",
+        "METHOD:Toolbox",
+        "METHOD:MATLAB",
+        "METHOD:Extendable"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        143
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 144,
+      "members": [
+        "METHOD:Recent",
+        "METHOD:Bacteriophage",
+        "METHOD:Biosensors",
+        "https://doi.org/10.1038/s41524-019-0221-0",
+        "METHOD:Food-Borne",
+        "https://doi.org/10.3390/s130201763"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        144
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 145,
+      "members": [
+        "METHOD:Graph",
+        "https://doi.org/10.1016/j.media.2016.10.004",
+        "https://doi.org/10.1145/3326362",
+        "METHOD:CRF",
+        "METHOD:CNN",
+        "METHOD:Clouds"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        145
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 147,
+      "members": [
+        "https://doi.org/10.1007/s11042-022-13644-y",
+        "METHOD:YOLO",
+        "https://doi.org/10.1109/access.2024.3378568",
+        "METHOD:YOLOv1",
+        "METHOD:Variant",
+        "METHOD:Unveiling"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        147
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 150,
+      "members": [
+        "METHOD:classification",
+        "METHOD:FunCat",
+        "https://doi.org/10.1093/bib/bbad507",
+        "METHOD:scRNA-seq",
+        "https://doi.org/10.1093/nar/gkh894"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        150
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 152,
+      "members": [
+        "METHOD:Reproducible",
+        "https://doi.org/10.3389/fnins.2014.00423",
+        "ORGANISM:neuronal",
+        "https://doi.org/10.1371/journal.pcbi.1000456",
+        "METHOD:Descriptions"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        152
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 153,
+      "members": [
+        "METHOD:Recombination",
+        "https://doi.org/10.1186/1471-2105-6-308",
+        "METHOD:Evolutionary",
+        "METHOD:Homologous",
+        "https://doi.org/10.1371/journal.pgen.0010015"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        153
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 154,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1000078",
+        "METHOD:Journal",
+        "METHOD:Neuroscience",
+        "https://doi.org/10.1007/10827.1573-6873",
+        "METHOD:Separate"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        154
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 155,
+      "members": [
+        "https://doi.org/10.1109/access.2022.3161511",
+        "METHOD:Algorithms",
+        "METHOD:Load",
+        "https://doi.org/10.1186/1471-2148-3-2",
+        "METHOD:Balancing"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        155
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 157,
+      "members": [
+        "https://doi.org/10.1104/pp.109.141267",
+        "https://doi.org/10.1074/jbc.274.25.17410",
+        "METHOD:Haemophilus",
+        "METHOD:Properties",
+        "METHOD:Genotype"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        157
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 158,
+      "members": [
+        "METHOD:RNA-dependent",
+        "METHOD:DNA-dependent",
+        "https://doi.org/10.1186/1472-6807-3-1",
+        "ORGANISM:eukaryotic",
+        "https://doi.org/10.2741/3175"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        158
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 159,
+      "members": [
+        "https://doi.org/10.1371/journal.pbio.0060184",
+        "https://doi.org/10.1093/nar/gkv1024",
+        "METHOD:WikiPathways",
+        "METHOD:Editing",
+        "METHOD:People"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        159
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 160,
+      "members": [
+        "METHOD:Computation",
+        "METHOD:Approximate",
+        "https://doi.org/10.1371/journal.pcbi.1002803",
+        "METHOD:Bayesian",
+        "https://doi.org/10.1093/bioinformatics/btm607"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        160
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 162,
+      "members": [
+        "METHOD:Next",
+        "METHOD:Scientific",
+        "https://doi.org/10.1007/s10915-022-01939-z",
+        "https://doi.org/10.1002/psp4.12669",
+        "METHOD:Physics"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        162
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 163,
+      "members": [
+        "https://doi.org/10.1109/access.2019.2939201",
+        "METHOD:Object",
+        "https://doi.org/10.1007/s11263-019-01247-4",
+        "METHOD:Learning-Based",
+        "METHOD:Generic"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        163
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 166,
+      "members": [
+        "https://doi.org/10.1186/s13059-025-03574-x",
+        "METHOD:Assessing",
+        "https://doi.org/10.1101/2023.10.16.561085",
+        "METHOD:zero-shot"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        166
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 170,
+      "members": [
+        "https://doi.org/10.1007/s00203-020-01931-x",
+        "ORGANISM:microbiome",
+        "https://doi.org/10.1371/journal.pcbi.1002808",
+        "METHOD:Chapter"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        170
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 171,
+      "members": [
+        "https://doi.org/10.1093/nar/gkq973",
+        "CONCEPT:protein-protein interaction",
+        "DATASET:STRING",
+        "https://doi.org/10.1093/nar/gks1094"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        171
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 172,
+      "members": [
+        "https://doi.org/10.1093/nar/gkl923",
+        "METHOD:Metabolome",
+        "https://doi.org/10.1093/nar/gkx1089",
+        "METHOD:HMDB"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        172
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 173,
+      "members": [
+        "https://doi.org/10.1093/nar/gks1118",
+        "https://doi.org/10.1002/pro.4218",
+        "METHOD:Making",
+        "METHOD:PANTHER"
+      ],
+      "paper_count": 2,
+      "merged_from": [
+        173
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 126,
+      "members": [
+        "METHOD:Cytochrome",
+        "METHOD:Wort",
+        "METHOD:John",
+        "METHOD:Grapefruit",
+        "https://doi.org/10.1111/j.1440-1797.2008.00940.x",
+        "METHOD:P450",
+        "METHOD:Article"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        126
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 134,
+      "members": [
+        "METHOD:ensemble",
+        "METHOD:Version",
+        "https://doi.org/10.1029/2017jd028200",
+        "METHOD:Precipitation",
+        "METHOD:OBS",
+        "METHOD:Sets",
+        "METHOD:Temperature"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        134
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 137,
+      "members": [
+        "https://doi.org/10.6028/nist.tn.1235r2",
+        "METHOD:NASANBS",
+        "METHOD:NASREM",
+        "METHOD:NBS",
+        "METHOD:Technical",
+        "METHOD:July",
+        "METHOD:Note"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        137
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 146,
+      "members": [
+        "METHOD:Aerosols",
+        "METHOD:MEGAN2",
+        "METHOD:Emissions",
+        "https://doi.org/10.5194/gmd-5-1471-2012",
+        "METHOD:Gases",
+        "METHOD:Nature"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        146
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 149,
+      "members": [
+        "https://doi.org/10.1016/s0006-3495(00)76281-3",
+        "METHOD:Differentiated",
+        "METHOD:Waves",
+        "METHOD:Calcium",
+        "METHOD:Neuroblastoma",
+        "METHOD:Image-Based"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        149
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 156,
+      "members": [
+        "METHOD:Concept",
+        "METHOD:Many",
+        "https://doi.org/10.1146/annurev.genom.1.1.99",
+        "METHOD:Make",
+        "METHOD:Minimal-Gene-Set"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        156
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 164,
+      "members": [
+        "METHOD:Contrasting",
+        "METHOD:Countries",
+        "https://doi.org/10.1038/s41598-019-52748-8",
+        "METHOD:Mate",
+        "METHOD:Preference"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        164
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 165,
+      "members": [
+        "METHOD:Inequality",
+        "METHOD:Income",
+        "METHOD:Mirrored",
+        "METHOD:Consumption",
+        "https://doi.org/10.1257/aer.20120599"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        165
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 167,
+      "members": [
+        "METHOD:LLM-assisted",
+        "https://doi.org/10.1093/bioinformatics/btae756",
+        "METHOD:FuncFetch",
+        "METHOD:LLM"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        167
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 168,
+      "members": [
+        "https://doi.org/10.1186/s12967-024-04915-3",
+        "DATASET:Pathogenomics",
+        "CONCEPT:diagnosis",
+        "CONCEPT:prognosis"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        168
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 169,
+      "members": [
+        "https://doi.org/10.1101/cshperspect.a023861",
+        "METHOD:Imagined",
+        "METHOD:Real",
+        "METHOD:Minimal"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        169
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 174,
+      "members": [
+        "METHOD:Interoperable",
+        "METHOD:MOOSE",
+        "METHOD:PyMOOSE",
+        "https://doi.org/10.3389/neuro.11.006.2008"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        174
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 175,
+      "members": [
+        "METHOD:Anomalies",
+        "METHOD:Ultimatum",
+        "METHOD:Game",
+        "https://doi.org/10.1257/jep.2.4.195"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        175
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 176,
+      "members": [
+        "METHOD:DNA-relay",
+        "METHOD:ParABS-mediated",
+        "METHOD:Evidence",
+        "https://doi.org/10.7554/elife.02758"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        176
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 177,
+      "members": [
+        "METHOD:SWISS-PROT",
+        "METHOD:TrEMBL",
+        "https://doi.org/10.1093/nar/27.1.49"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        177
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 178,
+      "members": [
+        "METHOD:Axis",
+        "https://doi.org/10.1152/physrev.00018.2018",
+        "METHOD:Microbiota-Gut-Brain"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        178
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 179,
+      "members": [
+        "METHOD:BioSystems",
+        "METHOD:NCBI",
+        "https://doi.org/10.1093/nar/gkp858"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        179
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 180,
+      "members": [
+        "METHOD:Minimum",
+        "https://doi.org/10.1038/nbt1156",
+        "METHOD:MIRIAM"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        180
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 181,
+      "members": [
+        "METHOD:Viral",
+        "https://doi.org/10.1371/journal.pcbi.1002947",
+        "METHOD:Phylodynamics"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        181
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 182,
+      "members": [
+        "METHOD:Sprawl",
+        "METHOD:Urban",
+        "https://doi.org/10.1257/0895330042632681"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        182
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 183,
+      "members": [
+        "https://doi.org/10.1038/s41588-021-00790-6",
+        "CONCEPT:chromatin accessibility",
+        "METHOD:ArchR"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        183
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 184,
+      "members": [
+        "https://doi.org/10.1101/2023.10.30.563174",
+        "METHOD:Discover"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        184
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 185,
+      "members": [
+        "https://doi.org/10.1038/s44387-025-00019-5",
+        "METHOD:Exploring"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        185
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 186,
+      "members": [
+        "https://doi.org/10.1093/bioinformatics/btad750",
+        "METHOD:Rarity"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        186
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 187,
+      "members": [
+        "METHOD:Deep-learning",
+        "https://doi.org/10.20892/j.issn.2095-3941.2023.0436"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        187
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 188,
+      "members": [
+        "METHOD:BioLLM",
+        "https://doi.org/10.1016/j.patter.2025.101326"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        188
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 189,
+      "members": [
+        "https://doi.org/10.1186/s13059-025-03781-6",
+        "METHOD:Biology-driven"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        189
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 190,
+      "members": [
+        "METHOD:CLIP",
+        "https://doi.org/10.1038/s43586-021-00018-1"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        190
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 191,
+      "members": [
+        "METHOD:Capturing",
+        "https://doi.org/10.1038/ncomms1481"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        191
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 192,
+      "members": [
+        "https://doi.org/10.1016/j.tibtech.2022.03.007",
+        "METHOD:Innovation"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        192
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 193,
+      "members": [
+        "METHOD:Model-assisted",
+        "https://doi.org/10.1016/b978-0-12-417104-6.00014-5"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        193
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 194,
+      "members": [
+        "METHOD:Backmapping",
+        "https://doi.org/10.1038/s41467-020-16094-y"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        194
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 195,
+      "members": [
+        "https://doi.org/10.1093/nar/gkz935",
+        "METHOD:CARD"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        195
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 196,
+      "members": [
+        "https://doi.org/10.1038/nature724",
+        "METHOD:Schizosaccharomyces"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        196
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 197,
+      "members": [
+        "METHOD:GeneMark",
+        "https://doi.org/10.1093/nar/26.4.1107"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        197
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 198,
+      "members": [
+        "METHOD:Chlamydia",
+        "https://doi.org/10.3310/hta20220"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        198
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 199,
+      "members": [
+        "METHOD:CRITICA",
+        "https://doi.org/10.1093/oxfordjournals.molbev.a026133"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        199
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 200,
+      "members": [
+        "https://doi.org/10.1093/nar/27.19.3911",
+        "METHOD:Heuristic"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        200
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 201,
+      "members": [
+        "DATASET:Ultrasequencing",
+        "https://doi.org/10.1111/j.1365-294x.2009.04473.x"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        201
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 202,
+      "members": [
+        "METHOD:Shifts",
+        "https://doi.org/10.1038/msb.2009.82"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        202
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 203,
+      "members": [
+        "METHOD:Common",
+        "https://doi.org/10.1038/s41579-019-0255-9"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        203
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 204,
+      "members": [
+        "METHOD:Getting",
+        "https://doi.org/10.1101/gad.1528707"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        204
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 205,
+      "members": [
+        "METHOD:Compositional",
+        "https://doi.org/10.1038/s41598-020-71939-2"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        205
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 206,
+      "members": [
+        "https://doi.org/10.1186/1755-8794-2-2",
+        "METHOD:Iron"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        206
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 207,
+      "members": [
+        "https://doi.org/10.1186/1471-2105-7-109",
+        "METHOD:VANTED"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        207
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 208,
+      "members": [
+        "https://doi.org/10.1186/gb-2010-11-1-r3",
+        "METHOD:NetPath"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        208
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 209,
+      "members": [
+        "METHOD:PhysiCell",
+        "https://doi.org/10.1371/journal.pcbi.1005991"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        209
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 210,
+      "members": [
+        "METHOD:AMPK",
+        "https://doi.org/10.1038/ncomms13254"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        210
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 211,
+      "members": [
+        "https://doi.org/10.1007/s10827-018-0702-z",
+        "METHOD:Replicability"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        211
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 212,
+      "members": [
+        "METHOD:Copper",
+        "https://doi.org/10.1038/s41598-018-32899-w"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        212
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 213,
+      "members": [
+        "https://doi.org/10.1002/wsbm.1482",
+        "METHOD:Calibration"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        213
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 214,
+      "members": [
+        "https://doi.org/10.1093/bib/bby087",
+        "METHOD:Harmonizing"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        214
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 215,
+      "members": [
+        "METHOD:Comparing",
+        "https://doi.org/10.1371/journal.pcbi.1005387"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        215
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 216,
+      "members": [
+        "METHOD:Rods",
+        "https://doi.org/10.1038/s41467-017-01816-6"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        216
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 217,
+      "members": [
+        "METHOD:Biodegradation",
+        "https://doi.org/10.1038/s41467-022-33064-8"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        217
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 218,
+      "members": [
+        "https://doi.org/10.1186/1471-2105-11-233",
+        "METHOD:Odefy"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        218
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 219,
+      "members": [
+        "METHOD:GROMACS",
+        "https://doi.org/10.1016/j.softx.2015.06.001"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        219
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 220,
+      "members": [
+        "METHOD:HiGlass",
+        "https://doi.org/10.1186/s13059-018-1486-1"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        220
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 221,
+      "members": [
+        "https://doi.org/10.5194/soil-7-217-2021",
+        "METHOD:SoilGrids"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        221
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 222,
+      "members": [
+        "METHOD:SEI",
+        "https://doi.org/10.1038/s41524-018-0064-0"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        222
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 223,
+      "members": [
+        "https://doi.org/10.1002/2014rg000475",
+        "METHOD:Demonstrations"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        223
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 224,
+      "members": [
+        "METHOD:Suite2p",
+        "https://doi.org/10.1101/061507"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        224
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 225,
+      "members": [
+        "https://doi.org/10.1101/2022.04.08.487609",
+        "METHOD:DeepTMHMM"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        225
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 226,
+      "members": [
+        "METHOD:IllustrisTNG",
+        "https://doi.org/10.1186/s40668-019-0028-x"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        226
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 227,
+      "members": [
+        "METHOD:Sketch-based",
+        "https://doi.org/10.1007/s11042-016-4020-z"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        227
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 228,
+      "members": [
+        "https://doi.org/10.1111/1365-2656.12418",
+        "METHOD:Constructing"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        228
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 229,
+      "members": [
+        "https://doi.org/10.5751/es-10558-230446",
+        "METHOD:Social-ecological"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        229
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 230,
+      "members": [
+        "METHOD:Herding",
+        "https://doi.org/10.1016/j.tics.2009.08.002"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        230
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 231,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1007028",
+        "METHOD:LASSI"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        231
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 232,
+      "members": [
+        "https://doi.org/10.1186/1751-0473-3-16",
+        "METHOD:Boolean"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        232
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 233,
+      "members": [
+        "METHOD:MMR",
+        "https://doi.org/10.1145/300523.300554"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        233
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 234,
+      "members": [
+        "METHOD:Alkaline-based",
+        "https://doi.org/10.1038/s41467-024-44855-6"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        234
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 235,
+      "members": [
+        "https://doi.org/10.1140/epjb/e2019-90599-6",
+        "METHOD:Micromagnetics"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        235
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 236,
+      "members": [
+        "https://doi.org/10.1088/1361-648x/abeacd",
+        "METHOD:Hard"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        236
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 237,
+      "members": [
+        "https://doi.org/10.1371/journal.pcbi.1006691",
+        "METHOD:OpenCASA"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        237
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 238,
+      "members": [
+        "https://doi.org/10.1186/1471-2180-5-39",
+        "METHOD:Lactococcus"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        238
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 239,
+      "members": [
+        "METHOD:Hematopoietic",
+        "https://doi.org/10.1038/s41591-021-01371-0"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        239
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 240,
+      "members": [
+        "METHOD:WhichTF",
+        "https://doi.org/10.1371/journal.pcbi.1010378"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        240
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 241,
+      "members": [
+        "METHOD:Spearheading",
+        "https://doi.org/10.1038/s41467-021-24152-2"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        241
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 242,
+      "members": [
+        "METHOD:Multi-material",
+        "https://doi.org/10.1016/j.matdes.2023.111661"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        242
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 243,
+      "members": [
+        "https://doi.org/10.1101/2023.07.28.551039"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        243
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 244,
+      "members": [
+        "https://doi.org/10.1101/2024.10.23.619972"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        244
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 245,
+      "members": [
+        "https://doi.org/10.1002/qub2.65"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        245
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 246,
+      "members": [
+        "https://doi.org/10.3389/fpls.2025.1583344"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        246
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 247,
+      "members": [
+        "https://doi.org/10.1101/2024.09.24.614685"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        247
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 248,
+      "members": [
+        "https://doi.org/10.1101/2024.08.16.608311"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        248
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 249,
+      "members": [
+        "https://doi.org/10.1038/s41467-020-19092-2"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        249
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 250,
+      "members": [
+        "https://doi.org/10.1186/s12918-015-0219-2"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        250
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 251,
+      "members": [
+        "https://doi.org/10.1073/pnas.1617508114"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        251
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 252,
+      "members": [
+        "https://doi.org/10.1038/npjcompumats.2016.19"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        252
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 253,
+      "members": [
+        "https://doi.org/10.1101/gr.258640.119"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        253
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 254,
+      "members": [
+        "https://doi.org/10.1186/1756-0381-4-10"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        254
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 255,
+      "members": [
+        "https://doi.org/10.1113/expphysiol.2003.026740"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        255
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 256,
+      "members": [
+        "https://doi.org/10.1093/bib/bbp049"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        256
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 257,
+      "members": [
+        "https://doi.org/10.1111/j.1476-5381.2012.02200.x"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        257
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 258,
+      "members": [
+        "https://doi.org/10.1186/1471-2202-7-s1-s11"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        258
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 259,
+      "members": [
+        "https://doi.org/10.1038/ncomms15526"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        259
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 260,
+      "members": [
+        "https://doi.org/10.1042/bsr20160177"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        260
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 261,
+      "members": [
+        "https://doi.org/10.1093/bioinformatics/btn330"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        261
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 262,
+      "members": [
+        "https://doi.org/10.1016/s0042-6989(99)00163-7"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        262
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 263,
+      "members": [
+        "https://doi.org/10.1038/s41467-017-02142-7"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        263
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 264,
+      "members": [
+        "https://doi.org/10.1002/2014rg000464"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        264
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 265,
+      "members": [
+        "https://doi.org/10.1002/rog.20004"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        265
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 266,
+      "members": [
+        "https://doi.org/10.1007/s10682-016-9821-z"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        266
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 267,
+      "members": [
+        "https://doi.org/10.1214/07-ps094"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        267
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 268,
+      "members": [
+        "https://doi.org/10.15252/emmm.201303698"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        268
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 269,
+      "members": [
+        "https://doi.org/10.1016/j.physrep.2017.10.001"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        269
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 270,
+      "members": [
+        "https://doi.org/10.1016/s0006-3495(97)78146-3"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        270
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 271,
+      "members": [
+        "https://doi.org/10.1038/ncomms5905"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        271
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 272,
+      "members": [
+        "https://doi.org/10.1088/2515-7655/abdb9a"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        272
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 273,
+      "members": [
+        "https://doi.org/10.14573/altex.2012.2.119"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        273
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 274,
+      "members": [
+        "https://doi.org/10.1186/1752-0509-2-68"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        274
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 275,
+      "members": [
+        "https://doi.org/10.1083/jcb.201602083"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        275
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 276,
+      "members": [
+        "https://doi.org/10.15252/msb.20156663"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        276
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 277,
+      "members": [
+        "https://doi.org/10.1083/jcb.200807129"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        277
+      ],
+      "merge_count": 1
+    },
+    {
+      "community_id": 278,
+      "members": [
+        "https://doi.org/10.1038/s41591-022-02160-z"
+      ],
+      "paper_count": 1,
+      "merged_from": [
+        278
+      ],
+      "merge_count": 1
+    }
+  ],
+  "categories": {
+    "major": [
+      0,
+      1,
+      9,
+      2,
+      3
+    ],
+    "emerging": [
+      4,
+      20,
+      21,
+      26,
+      34,
+      41,
+      13,
+      33,
+      37,
+      44,
+      51,
+      54,
+      10,
+      15,
+      30,
+      43,
+      56,
+      65,
+      6,
+      7,
+      17,
+      18,
+      23,
+      50,
+      59,
+      60,
+      75,
+      77,
+      101,
+      105
+    ],
+    "niche": [
+      12,
+      22,
+      24,
+      25,
+      32,
+      52,
+      64,
+      83,
+      93,
+      96,
+      98,
+      99,
+      100,
+      114,
+      123,
+      5,
+      8,
+      11,
+      16,
+      19,
+      27,
+      28,
+      29,
+      35,
+      38,
+      39,
+      42,
+      47,
+      48,
+      55,
+      58,
+      61,
+      63,
+      67,
+      70,
+      72,
+      73,
+      78,
+      79,
+      80,
+      82,
+      84,
+      85,
+      89,
+      91,
+      103,
+      104,
+      108,
+      109,
+      117,
+      118,
+      120,
+      128,
+      131,
+      135,
+      138,
+      139,
+      148,
+      151,
+      161
+    ],
+    "noise": [
+      14,
+      31,
+      36,
+      40,
+      45,
+      46,
+      49,
+      53,
+      57,
+      62,
+      66,
+      68,
+      69,
+      71,
+      74,
+      76,
+      81,
+      86,
+      87,
+      88,
+      90,
+      92,
+      94,
+      95,
+      97,
+      102,
+      106,
+      107,
+      110,
+      111,
+      112,
+      113,
+      115,
+      116,
+      119,
+      121,
+      122,
+      124,
+      125,
+      127,
+      129,
+      130,
+      132,
+      133,
+      136,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      147,
+      150,
+      152,
+      153,
+      154,
+      155,
+      157,
+      158,
+      159,
+      160,
+      162,
+      163,
+      166,
+      170,
+      171,
+      172,
+      173,
+      126,
+      134,
+      137,
+      146,
+      149,
+      156,
+      164,
+      165,
+      167,
+      168,
+      169,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278
+    ]
+  }
+}

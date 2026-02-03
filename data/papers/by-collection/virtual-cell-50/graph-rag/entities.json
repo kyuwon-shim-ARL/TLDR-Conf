@@ -1,0 +1,3607 @@
+{
+  "10.1101/2023.04.30.538439": {
+    "entities": [
+      {
+        "name": "scGPT",
+        "type": "METHOD",
+        "context": "foundation model for single-cell multi-omics using generative AI"
+      },
+      {
+        "name": "single-cell multi-omics",
+        "type": "CONCEPT",
+        "context": "data type integrating multiple molecular measurements"
+      },
+      {
+        "name": "transformer",
+        "type": "METHOD",
+        "context": "neural network architecture"
+      },
+      {
+        "name": "gene expression",
+        "type": "CONCEPT",
+        "context": "transcriptomics measurement"
+      },
+      {
+        "name": "cell type annotation",
+        "type": "CONCEPT",
+        "context": "downstream task"
+      },
+      {
+        "name": "perturbation response",
+        "type": "CONCEPT",
+        "context": "prediction task"
+      },
+      {
+        "name": "generative AI",
+        "type": "METHOD",
+        "context": "AI approach for foundation models"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "scGPT",
+        "target": "single-cell multi-omics",
+        "type": "STUDIES"
+      },
+      {
+        "source": "scGPT",
+        "target": "transformer",
+        "type": "USES"
+      },
+      {
+        "source": "scGPT",
+        "target": "cell type annotation",
+        "type": "USES"
+      },
+      {
+        "source": "scGPT",
+        "target": "perturbation response",
+        "type": "STUDIES"
+      },
+      {
+        "source": "scGPT",
+        "target": "generative AI",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1101/2023.10.30.563174": {
+    "entities": [
+      {
+        "name": "CZ CELLxGENE",
+        "type": "DATASET",
+        "context": "single-cell data platform"
+      },
+      {
+        "name": "single-cell RNA-seq",
+        "type": "METHOD",
+        "context": "sequencing technology"
+      },
+      {
+        "name": "human cells",
+        "type": "ORGANISM",
+        "context": "cell types across human body"
+      },
+      {
+        "name": "data aggregation",
+        "type": "CONCEPT",
+        "context": "scalable platform approach"
+      },
+      {
+        "name": "cell atlas",
+        "type": "DATASET",
+        "context": "comprehensive cell reference"
+      },
+      {
+        "name": "Chan Zuckerberg Initiative",
+        "type": "CONCEPT",
+        "context": "funding organization"
+      },
+      {
+        "name": "exploratory analysis",
+        "type": "METHOD",
+        "context": "platform capability"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "CZ CELLxGENE",
+        "target": "single-cell RNA-seq",
+        "type": "USES"
+      },
+      {
+        "source": "CZ CELLxGENE",
+        "target": "human cells",
+        "type": "STUDIES"
+      },
+      {
+        "source": "CZ CELLxGENE",
+        "target": "cell atlas",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "CZ CELLxGENE",
+        "target": "data aggregation",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1101/2023.11.28.568918": {
+    "entities": [
+      {
+        "name": "Universal Cell Embeddings",
+        "type": "METHOD",
+        "context": "foundation model for cell biology"
+      },
+      {
+        "name": "cell embeddings",
+        "type": "CONCEPT",
+        "context": "learned representations of cells"
+      },
+      {
+        "name": "Tabula Sapiens",
+        "type": "DATASET",
+        "context": "human cell atlas dataset"
+      },
+      {
+        "name": "multi-task learning",
+        "type": "METHOD",
+        "context": "training approach"
+      },
+      {
+        "name": "zero-shot transfer",
+        "type": "CONCEPT",
+        "context": "model capability"
+      },
+      {
+        "name": "cell states",
+        "type": "CONCEPT",
+        "context": "biological representation"
+      },
+      {
+        "name": "human tissues",
+        "type": "ORGANISM",
+        "context": "biological samples"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Universal Cell Embeddings",
+        "target": "cell embeddings",
+        "type": "USES"
+      },
+      {
+        "source": "Universal Cell Embeddings",
+        "target": "Tabula Sapiens",
+        "type": "USES"
+      },
+      {
+        "source": "Universal Cell Embeddings",
+        "target": "multi-task learning",
+        "type": "USES"
+      },
+      {
+        "source": "Universal Cell Embeddings",
+        "target": "zero-shot transfer",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "Tabula Sapiens",
+        "target": "human tissues",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1101/2023.05.29.542705": {
+    "entities": [
+      {
+        "name": "scFoundation",
+        "type": "METHOD",
+        "context": "large scale foundation model on single-cell transcriptomics"
+      },
+      {
+        "name": "pre-training",
+        "type": "METHOD",
+        "context": "foundation model training strategy"
+      },
+      {
+        "name": "single-cell transcriptomics",
+        "type": "CONCEPT",
+        "context": "RNA expression profiling"
+      },
+      {
+        "name": "fine-tuning",
+        "type": "METHOD",
+        "context": "task-specific adaptation"
+      },
+      {
+        "name": "cell clustering",
+        "type": "CONCEPT",
+        "context": "downstream task"
+      },
+      {
+        "name": "batch correction",
+        "type": "CONCEPT",
+        "context": "data normalization task"
+      },
+      {
+        "name": "gene regulatory networks",
+        "type": "CONCEPT",
+        "context": "biological networks"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "scFoundation",
+        "target": "single-cell transcriptomics",
+        "type": "STUDIES"
+      },
+      {
+        "source": "scFoundation",
+        "target": "pre-training",
+        "type": "USES"
+      },
+      {
+        "source": "scFoundation",
+        "target": "fine-tuning",
+        "type": "USES"
+      },
+      {
+        "source": "scFoundation",
+        "target": "cell clustering",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "scFoundation",
+        "target": "batch correction",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1101/2023.10.16.562533": {
+    "entities": [
+      {
+        "name": "GenePT",
+        "type": "METHOD",
+        "context": "foundation model for genes and cells built from ChatGPT"
+      },
+      {
+        "name": "ChatGPT",
+        "type": "METHOD",
+        "context": "large language model"
+      },
+      {
+        "name": "gene embeddings",
+        "type": "CONCEPT",
+        "context": "learned gene representations"
+      },
+      {
+        "name": "transfer learning",
+        "type": "METHOD",
+        "context": "knowledge transfer approach"
+      },
+      {
+        "name": "gene function prediction",
+        "type": "CONCEPT",
+        "context": "downstream task"
+      },
+      {
+        "name": "language models",
+        "type": "METHOD",
+        "context": "AI architecture"
+      },
+      {
+        "name": "gene ontology",
+        "type": "DATASET",
+        "context": "gene annotation resource"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "GenePT",
+        "target": "ChatGPT",
+        "type": "USES"
+      },
+      {
+        "source": "GenePT",
+        "target": "gene embeddings",
+        "type": "USES"
+      },
+      {
+        "source": "GenePT",
+        "target": "transfer learning",
+        "type": "USES"
+      },
+      {
+        "source": "GenePT",
+        "target": "language models",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "GenePT",
+        "target": "gene function prediction",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1038/s41586-024-08391-z": {
+    "entities": [
+      {
+        "name": "Enformer",
+        "type": "METHOD",
+        "context": "foundation model of transcription across human cell types"
+      },
+      {
+        "name": "regulatory elements",
+        "type": "CONCEPT",
+        "context": "DNA sequences controlling gene expression"
+      },
+      {
+        "name": "chromatin accessibility",
+        "type": "CONCEPT",
+        "context": "epigenetic measurement"
+      },
+      {
+        "name": "transcription factors",
+        "type": "CONCEPT",
+        "context": "gene regulation proteins"
+      },
+      {
+        "name": "human cell types",
+        "type": "ORGANISM",
+        "context": "diverse cellular contexts"
+      },
+      {
+        "name": "deep learning",
+        "type": "METHOD",
+        "context": "neural network approach"
+      },
+      {
+        "name": "sequence-to-function",
+        "type": "CONCEPT",
+        "context": "predictive modeling task"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Enformer",
+        "target": "regulatory elements",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Enformer",
+        "target": "chromatin accessibility",
+        "type": "USES"
+      },
+      {
+        "source": "Enformer",
+        "target": "human cell types",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Enformer",
+        "target": "deep learning",
+        "type": "USES"
+      },
+      {
+        "source": "regulatory elements",
+        "target": "transcription factors",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1186/s13073-024-01282-y": {
+    "entities": [
+      {
+        "name": "spatial multi-omics",
+        "type": "METHOD",
+        "context": "multi-modal spatial profiling"
+      },
+      {
+        "name": "cardiovascular disease",
+        "type": "DISEASE",
+        "context": "heart disease conditions"
+      },
+      {
+        "name": "spatial transcriptomics",
+        "type": "METHOD",
+        "context": "location-aware RNA profiling"
+      },
+      {
+        "name": "tissue architecture",
+        "type": "CONCEPT",
+        "context": "spatial organization of cells"
+      },
+      {
+        "name": "cardiac tissue",
+        "type": "ORGANISM",
+        "context": "heart tissue samples"
+      },
+      {
+        "name": "disease mechanisms",
+        "type": "CONCEPT",
+        "context": "pathological processes"
+      },
+      {
+        "name": "imaging",
+        "type": "METHOD",
+        "context": "spatial measurement technology"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "spatial multi-omics",
+        "target": "cardiovascular disease",
+        "type": "STUDIES"
+      },
+      {
+        "source": "spatial multi-omics",
+        "target": "spatial transcriptomics",
+        "type": "USES"
+      },
+      {
+        "source": "spatial multi-omics",
+        "target": "cardiac tissue",
+        "type": "STUDIES"
+      },
+      {
+        "source": "spatial transcriptomics",
+        "target": "tissue architecture",
+        "type": "USES"
+      },
+      {
+        "source": "cardiovascular disease",
+        "target": "cardiac tissue",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.3390/biom14030339": {
+    "entities": [
+      {
+        "name": "AlphaFold",
+        "type": "METHOD",
+        "context": "AI-based protein structure prediction"
+      },
+      {
+        "name": "protein structure prediction",
+        "type": "CONCEPT",
+        "context": "computational structural biology"
+      },
+      {
+        "name": "protein folding",
+        "type": "CONCEPT",
+        "context": "molecular conformational process"
+      },
+      {
+        "name": "neural networks",
+        "type": "METHOD",
+        "context": "deep learning architectures"
+      },
+      {
+        "name": "structural biology",
+        "type": "CONCEPT",
+        "context": "study of biomolecular structures"
+      },
+      {
+        "name": "amino acid sequences",
+        "type": "CONCEPT",
+        "context": "protein primary structure"
+      },
+      {
+        "name": "3D structure",
+        "type": "CONCEPT",
+        "context": "protein tertiary structure"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "AlphaFold",
+        "target": "protein structure prediction",
+        "type": "USES"
+      },
+      {
+        "source": "AlphaFold",
+        "target": "neural networks",
+        "type": "USES"
+      },
+      {
+        "source": "protein structure prediction",
+        "target": "protein folding",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "protein folding",
+        "target": "amino acid sequences",
+        "type": "USES"
+      },
+      {
+        "source": "protein structure prediction",
+        "target": "3D structure",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1101/2023.10.16.561085": {
+    "entities": [
+      {
+        "name": "zero-shot learning",
+        "type": "METHOD",
+        "context": "evaluation without task-specific training"
+      },
+      {
+        "name": "foundation models",
+        "type": "METHOD",
+        "context": "pre-trained large models"
+      },
+      {
+        "name": "single-cell biology",
+        "type": "CONCEPT",
+        "context": "cellular-level analysis"
+      },
+      {
+        "name": "model evaluation",
+        "type": "CONCEPT",
+        "context": "benchmarking approach"
+      },
+      {
+        "name": "generalization",
+        "type": "CONCEPT",
+        "context": "model capability across tasks"
+      },
+      {
+        "name": "benchmarking",
+        "type": "METHOD",
+        "context": "performance assessment"
+      },
+      {
+        "name": "task transfer",
+        "type": "CONCEPT",
+        "context": "cross-task performance"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "foundation models",
+        "target": "zero-shot learning",
+        "type": "USES"
+      },
+      {
+        "source": "foundation models",
+        "target": "single-cell biology",
+        "type": "STUDIES"
+      },
+      {
+        "source": "zero-shot learning",
+        "target": "generalization",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "model evaluation",
+        "target": "benchmarking",
+        "type": "USES"
+      },
+      {
+        "source": "foundation models",
+        "target": "task transfer",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1101/2023.09.08.555192": {
+    "entities": [
+      {
+        "name": "scBERT",
+        "type": "METHOD",
+        "context": "BERT-based model for single-cell data"
+      },
+      {
+        "name": "Geneformer",
+        "type": "METHOD",
+        "context": "transformer foundation model for single-cell"
+      },
+      {
+        "name": "model comparison",
+        "type": "CONCEPT",
+        "context": "benchmarking evaluation"
+      },
+      {
+        "name": "single-cell analysis",
+        "type": "CONCEPT",
+        "context": "computational cell biology"
+      },
+      {
+        "name": "performance metrics",
+        "type": "CONCEPT",
+        "context": "evaluation criteria"
+      },
+      {
+        "name": "foundation model utilities",
+        "type": "CONCEPT",
+        "context": "practical applications"
+      },
+      {
+        "name": "cell representation learning",
+        "type": "CONCEPT",
+        "context": "learned cell features"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "scBERT",
+        "target": "single-cell analysis",
+        "type": "USES"
+      },
+      {
+        "source": "Geneformer",
+        "target": "single-cell analysis",
+        "type": "USES"
+      },
+      {
+        "source": "model comparison",
+        "target": "performance metrics",
+        "type": "USES"
+      },
+      {
+        "source": "scBERT",
+        "target": "cell representation learning",
+        "type": "USES"
+      },
+      {
+        "source": "Geneformer",
+        "target": "cell representation learning",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1101/2023.10.03.560734": {
+    "entities": [
+      {
+        "name": "CellPLM",
+        "type": "METHOD",
+        "context": "pre-training of cell language model beyond single cells"
+      },
+      {
+        "name": "cell language model",
+        "type": "METHOD",
+        "context": "language model for cellular data"
+      },
+      {
+        "name": "multi-cell context",
+        "type": "CONCEPT",
+        "context": "beyond individual cell analysis"
+      },
+      {
+        "name": "cellular interactions",
+        "type": "CONCEPT",
+        "context": "cell-cell communication"
+      },
+      {
+        "name": "tissue-level modeling",
+        "type": "CONCEPT",
+        "context": "higher-order biological organization"
+      },
+      {
+        "name": "self-supervised learning",
+        "type": "METHOD",
+        "context": "pre-training strategy"
+      },
+      {
+        "name": "spatial context",
+        "type": "CONCEPT",
+        "context": "location information"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "CellPLM",
+        "target": "cell language model",
+        "type": "USES"
+      },
+      {
+        "source": "CellPLM",
+        "target": "multi-cell context",
+        "type": "STUDIES"
+      },
+      {
+        "source": "CellPLM",
+        "target": "self-supervised learning",
+        "type": "USES"
+      },
+      {
+        "source": "multi-cell context",
+        "target": "cellular interactions",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "multi-cell context",
+        "target": "tissue-level modeling",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/nsr/nwaf028": {
+    "entities": [
+      {
+        "name": "foundation models in bioinformatics",
+        "type": "CONCEPT",
+        "context": "AI models for biological data"
+      },
+      {
+        "name": "biological sequence analysis",
+        "type": "CONCEPT",
+        "context": "DNA, RNA, protein analysis"
+      },
+      {
+        "name": "omics data",
+        "type": "CONCEPT",
+        "context": "high-throughput molecular data"
+      },
+      {
+        "name": "pre-trained models",
+        "type": "METHOD",
+        "context": "transfer learning approach"
+      },
+      {
+        "name": "computational biology",
+        "type": "CONCEPT",
+        "context": "computational analysis of biology"
+      },
+      {
+        "name": "large-scale datasets",
+        "type": "DATASET",
+        "context": "big biological data"
+      },
+      {
+        "name": "model architectures",
+        "type": "METHOD",
+        "context": "neural network designs"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "foundation models in bioinformatics",
+        "target": "biological sequence analysis",
+        "type": "USES"
+      },
+      {
+        "source": "foundation models in bioinformatics",
+        "target": "omics data",
+        "type": "STUDIES"
+      },
+      {
+        "source": "foundation models in bioinformatics",
+        "target": "pre-trained models",
+        "type": "USES"
+      },
+      {
+        "source": "pre-trained models",
+        "target": "large-scale datasets",
+        "type": "USES"
+      },
+      {
+        "source": "foundation models in bioinformatics",
+        "target": "computational biology",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1101/2023.10.19.563100": {
+    "entities": [
+      {
+        "name": "single-cell RNA sequencing",
+        "type": "METHOD",
+        "context": "scRNA-seq technology"
+      },
+      {
+        "name": "foundation model review",
+        "type": "CONCEPT",
+        "context": "comprehensive analysis of models"
+      },
+      {
+        "name": "model architectures",
+        "type": "METHOD",
+        "context": "transformer, VAE, GAN variants"
+      },
+      {
+        "name": "training strategies",
+        "type": "CONCEPT",
+        "context": "pre-training approaches"
+      },
+      {
+        "name": "evaluation frameworks",
+        "type": "CONCEPT",
+        "context": "benchmarking methods"
+      },
+      {
+        "name": "data preprocessing",
+        "type": "METHOD",
+        "context": "normalization and filtering"
+      },
+      {
+        "name": "downstream applications",
+        "type": "CONCEPT",
+        "context": "task-specific uses"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "foundation model review",
+        "target": "single-cell RNA sequencing",
+        "type": "STUDIES"
+      },
+      {
+        "source": "foundation model review",
+        "target": "model architectures",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "foundation model review",
+        "target": "training strategies",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "foundation model review",
+        "target": "evaluation frameworks",
+        "type": "USES"
+      },
+      {
+        "source": "single-cell RNA sequencing",
+        "target": "data preprocessing",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1093/bib/bbad518": {
+    "entities": [
+      {
+        "name": "network pharmacology",
+        "type": "CONCEPT",
+        "context": "systems-level drug discovery"
+      },
+      {
+        "name": "AI-based precision medicine",
+        "type": "CONCEPT",
+        "context": "personalized treatment using AI"
+      },
+      {
+        "name": "drug-target networks",
+        "type": "CONCEPT",
+        "context": "molecular interaction networks"
+      },
+      {
+        "name": "systems pharmacology",
+        "type": "CONCEPT",
+        "context": "holistic drug action modeling"
+      },
+      {
+        "name": "machine learning",
+        "type": "METHOD",
+        "context": "predictive algorithms"
+      },
+      {
+        "name": "biomarker discovery",
+        "type": "CONCEPT",
+        "context": "disease marker identification"
+      },
+      {
+        "name": "drug repurposing",
+        "type": "CONCEPT",
+        "context": "new uses for existing drugs"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "network pharmacology",
+        "target": "AI-based precision medicine",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "network pharmacology",
+        "target": "drug-target networks",
+        "type": "USES"
+      },
+      {
+        "source": "network pharmacology",
+        "target": "systems pharmacology",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "AI-based precision medicine",
+        "target": "machine learning",
+        "type": "USES"
+      },
+      {
+        "source": "network pharmacology",
+        "target": "drug repurposing",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1186/s13059-025-03574-x": {
+    "entities": [
+      {
+        "name": "zero-shot evaluation",
+        "type": "METHOD",
+        "context": "testing without fine-tuning"
+      },
+      {
+        "name": "model limitations",
+        "type": "CONCEPT",
+        "context": "performance constraints"
+      },
+      {
+        "name": "single-cell foundation models",
+        "type": "METHOD",
+        "context": "pre-trained models for scRNA-seq"
+      },
+      {
+        "name": "out-of-distribution",
+        "type": "CONCEPT",
+        "context": "novel data scenarios"
+      },
+      {
+        "name": "robustness",
+        "type": "CONCEPT",
+        "context": "model reliability"
+      },
+      {
+        "name": "failure modes",
+        "type": "CONCEPT",
+        "context": "error patterns"
+      },
+      {
+        "name": "model validation",
+        "type": "CONCEPT",
+        "context": "testing methodology"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "zero-shot evaluation",
+        "target": "single-cell foundation models",
+        "type": "USES"
+      },
+      {
+        "source": "zero-shot evaluation",
+        "target": "model limitations",
+        "type": "STUDIES"
+      },
+      {
+        "source": "model limitations",
+        "target": "out-of-distribution",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "model limitations",
+        "target": "failure modes",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "zero-shot evaluation",
+        "target": "robustness",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1101/2023.09.11.557287": {
+    "entities": [
+      {
+        "name": "Cell2Sentence",
+        "type": "METHOD",
+        "context": "teaching large language models the language of biology"
+      },
+      {
+        "name": "large language models",
+        "type": "METHOD",
+        "context": "LLMs like GPT"
+      },
+      {
+        "name": "biological language",
+        "type": "CONCEPT",
+        "context": "cell state representations as language"
+      },
+      {
+        "name": "cell-to-text",
+        "type": "CONCEPT",
+        "context": "mapping cells to natural language"
+      },
+      {
+        "name": "interpretability",
+        "type": "CONCEPT",
+        "context": "model explainability"
+      },
+      {
+        "name": "cross-modal learning",
+        "type": "METHOD",
+        "context": "multi-modality training"
+      },
+      {
+        "name": "semantic embeddings",
+        "type": "CONCEPT",
+        "context": "meaningful representations"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Cell2Sentence",
+        "target": "large language models",
+        "type": "USES"
+      },
+      {
+        "source": "Cell2Sentence",
+        "target": "biological language",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Cell2Sentence",
+        "target": "cell-to-text",
+        "type": "USES"
+      },
+      {
+        "source": "Cell2Sentence",
+        "target": "cross-modal learning",
+        "type": "USES"
+      },
+      {
+        "source": "biological language",
+        "target": "semantic embeddings",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1101/2024.04.15.589472": {
+    "entities": [
+      {
+        "name": "Nicheformer",
+        "type": "METHOD",
+        "context": "foundation model for single-cell and spatial transcriptomics"
+      },
+      {
+        "name": "cellular niche",
+        "type": "CONCEPT",
+        "context": "local cellular microenvironment"
+      },
+      {
+        "name": "spatial relationships",
+        "type": "CONCEPT",
+        "context": "cell location and neighbors"
+      },
+      {
+        "name": "niche modeling",
+        "type": "CONCEPT",
+        "context": "microenvironment representation"
+      },
+      {
+        "name": "graph neural networks",
+        "type": "METHOD",
+        "context": "spatial graph architecture"
+      },
+      {
+        "name": "cell-cell communication",
+        "type": "CONCEPT",
+        "context": "intercellular signaling"
+      },
+      {
+        "name": "tissue context",
+        "type": "CONCEPT",
+        "context": "spatial organization"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Nicheformer",
+        "target": "cellular niche",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Nicheformer",
+        "target": "spatial relationships",
+        "type": "USES"
+      },
+      {
+        "source": "Nicheformer",
+        "target": "graph neural networks",
+        "type": "USES"
+      },
+      {
+        "source": "cellular niche",
+        "target": "cell-cell communication",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "spatial relationships",
+        "target": "tissue context",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1101/2023.09.26.559542": {
+    "entities": [
+      {
+        "name": "GeneCompass",
+        "type": "METHOD",
+        "context": "deciphering universal gene regulatory mechanisms"
+      },
+      {
+        "name": "gene regulatory mechanisms",
+        "type": "CONCEPT",
+        "context": "transcriptional control processes"
+      },
+      {
+        "name": "regulatory grammar",
+        "type": "CONCEPT",
+        "context": "rules of gene regulation"
+      },
+      {
+        "name": "cis-regulatory elements",
+        "type": "CONCEPT",
+        "context": "DNA regulatory sequences"
+      },
+      {
+        "name": "transcriptional programs",
+        "type": "CONCEPT",
+        "context": "coordinated gene expression"
+      },
+      {
+        "name": "cross-species",
+        "type": "CONCEPT",
+        "context": "evolutionary conservation"
+      },
+      {
+        "name": "motif discovery",
+        "type": "METHOD",
+        "context": "regulatory sequence patterns"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "GeneCompass",
+        "target": "gene regulatory mechanisms",
+        "type": "STUDIES"
+      },
+      {
+        "source": "GeneCompass",
+        "target": "regulatory grammar",
+        "type": "USES"
+      },
+      {
+        "source": "gene regulatory mechanisms",
+        "target": "cis-regulatory elements",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "gene regulatory mechanisms",
+        "target": "transcriptional programs",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "GeneCompass",
+        "target": "motif discovery",
+        "type": "USES"
+      }
+    ]
+  },
+  "papers": {
+    "10.1186/1752-0509-7-74": {
+      "title": "COBRApy: COnstraints-Based Reconstruction and Analysis for Python",
+      "entities": [
+        {
+          "name": "COBRApy",
+          "type": "METHOD",
+          "description": "Python package for constraint-based reconstruction and analysis of metabolic networks"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based modeling approach to predict metabolic fluxes"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Comprehensive computational representation of cellular metabolism"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language for model representation"
+        },
+        {
+          "name": "metabolic network",
+          "type": "CONCEPT",
+          "description": "Network of biochemical reactions in cellular metabolism"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model bacterial organism for metabolic studies"
+        },
+        {
+          "name": "constraint-based modeling",
+          "type": "CONCEPT",
+          "description": "Computational approach using physicochemical constraints"
+        }
+      ]
+    },
+    "10.3389/fpls.2017.01617": {
+      "title": "The Role of Soil Microorganisms in Plant Mineral Nutrition",
+      "entities": [
+        {
+          "name": "plant-microbe interaction",
+          "type": "CONCEPT",
+          "description": "Biological interactions between plants and microorganisms"
+        },
+        {
+          "name": "rhizosphere",
+          "type": "CONCEPT",
+          "description": "Soil region influenced by plant roots and microbial communities"
+        },
+        {
+          "name": "nutrient cycling",
+          "type": "CONCEPT",
+          "description": "Movement and transformation of nutrients in ecosystems"
+        },
+        {
+          "name": "soil microbiome",
+          "type": "CONCEPT",
+          "description": "Community of microorganisms in soil"
+        },
+        {
+          "name": "plant cells",
+          "type": "ORGANISM",
+          "description": "Plant cellular systems"
+        },
+        {
+          "name": "metabolic modeling",
+          "type": "CONCEPT",
+          "description": "Computational representation of metabolic processes"
+        }
+      ]
+    },
+    "10.1371/journal.pcbi.0030189": {
+      "title": "Universally Sloppy Parameter Sensitivities in Systems Biology Models",
+      "entities": [
+        {
+          "name": "parameter sensitivity",
+          "type": "CONCEPT",
+          "description": "Analysis of how model parameters affect predictions"
+        },
+        {
+          "name": "systems biology model",
+          "type": "CONCEPT",
+          "description": "Mathematical models of biological systems"
+        },
+        {
+          "name": "model identifiability",
+          "type": "CONCEPT",
+          "description": "Ability to uniquely determine model parameters from data"
+        },
+        {
+          "name": "parameter estimation",
+          "type": "CONCEPT",
+          "description": "Computational methods to infer parameter values from data"
+        },
+        {
+          "name": "signal transduction",
+          "type": "CONCEPT",
+          "description": "Cellular communication through biochemical pathways"
+        },
+        {
+          "name": "mammalian cells",
+          "type": "ORGANISM",
+          "description": "Mammalian cellular systems"
+        },
+        {
+          "name": "computational modeling",
+          "type": "CONCEPT",
+          "description": "Mathematical representation of biological processes"
+        }
+      ]
+    },
+    "10.1038/nbt.2488": {
+      "title": "A community-driven global reconstruction of human metabolism",
+      "entities": [
+        {
+          "name": "Recon 2",
+          "type": "DATASET",
+          "description": "Community-driven reconstruction of human metabolism"
+        },
+        {
+          "name": "human metabolic network",
+          "type": "CONCEPT",
+          "description": "Comprehensive map of human metabolic reactions"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based method for metabolic flux prediction"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Whole-cell metabolic reconstruction"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language standard"
+        },
+        {
+          "name": "human cells",
+          "type": "ORGANISM",
+          "description": "Human cellular metabolism"
+        },
+        {
+          "name": "BiGG",
+          "type": "DATASET",
+          "description": "Database of genome-scale metabolic models"
+        },
+        {
+          "name": "metabolic reconstruction",
+          "type": "CONCEPT",
+          "description": "Process of creating comprehensive metabolic models"
+        }
+      ]
+    },
+    "10.1186/s13059-019-1730-3": {
+      "title": "Current status and applications of genome-scale metabolic models",
+      "entities": [
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Computational representation of organism metabolism"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Mathematical optimization for metabolic flux prediction"
+        },
+        {
+          "name": "COBRApy",
+          "type": "METHOD",
+          "description": "Python toolbox for constraint-based modeling"
+        },
+        {
+          "name": "metabolic engineering",
+          "type": "CONCEPT",
+          "description": "Modification of metabolism for biotechnology applications"
+        },
+        {
+          "name": "constraint-based modeling",
+          "type": "CONCEPT",
+          "description": "Modeling approach using stoichiometric constraints"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model organism for metabolic studies"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Standard format for systems biology models"
+        },
+        {
+          "name": "metabolic pathway",
+          "type": "CONCEPT",
+          "description": "Series of connected biochemical reactions"
+        }
+      ]
+    },
+    "10.1186/gb-2007-8-3-r39": {
+      "title": "Reactome: a knowledge base of biologic pathways and processes",
+      "entities": [
+        {
+          "name": "Reactome",
+          "type": "DATASET",
+          "description": "Curated database of biological pathways and reactions"
+        },
+        {
+          "name": "pathway database",
+          "type": "DATASET",
+          "description": "Repository of biological pathway information"
+        },
+        {
+          "name": "biological pathway",
+          "type": "CONCEPT",
+          "description": "Series of molecular interactions in biological processes"
+        },
+        {
+          "name": "pathway curation",
+          "type": "CONCEPT",
+          "description": "Expert annotation of biological pathways"
+        },
+        {
+          "name": "pathway analysis",
+          "type": "CONCEPT",
+          "description": "Computational analysis of biological pathways"
+        },
+        {
+          "name": "gene set enrichment",
+          "type": "CONCEPT",
+          "description": "Statistical method to identify enriched pathways in gene sets"
+        },
+        {
+          "name": "human pathways",
+          "type": "CONCEPT",
+          "description": "Biological pathways in human cells"
+        },
+        {
+          "name": "KEGG",
+          "type": "DATASET",
+          "description": "Kyoto Encyclopedia of Genes and Genomes database"
+        }
+      ]
+    },
+    "10.1186/1471-2105-11-213": {
+      "title": "BiGG: a Biochemical Genetic and Genomic knowledgebase of large scale metabolic reconstructions",
+      "entities": [
+        {
+          "name": "BiGG",
+          "type": "DATASET",
+          "description": "Database of biochemically, genetically and genomically structured genome-scale metabolic network reconstructions"
+        },
+        {
+          "name": "metabolic reconstruction",
+          "type": "CONCEPT",
+          "description": "Process of creating genome-scale metabolic models"
+        },
+        {
+          "name": "genome-scale metabolic model",
+          "type": "CONCEPT",
+          "description": "Comprehensive metabolic network reconstruction"
+        },
+        {
+          "name": "SBML",
+          "type": "CONCEPT",
+          "description": "Systems Biology Markup Language for model exchange"
+        },
+        {
+          "name": "Escherichia coli",
+          "type": "ORGANISM",
+          "description": "Model organism for metabolic network studies"
+        },
+        {
+          "name": "flux balance analysis",
+          "type": "CONCEPT",
+          "description": "Constraint-based modeling method"
+        },
+        {
+          "name": "metabolic network",
+          "type": "CONCEPT",
+          "description": "Network of biochemical reactions"
+        },
+        {
+          "name": "model database",
+          "type": "DATASET",
+          "description": "Repository of metabolic models"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "batch": 3,
+    "paper_range": "37-44 (from original 37-53, reduced to available papers)",
+    "extraction_date": "2026-02-01",
+    "total_papers": 7,
+    "note": "Papers 45-53 not found in by-doi directory. Paper 42 (10.3390/biom10101429) found but is about glutathione/cancer, not systems biology methods - excluded from entity extraction."
+  },
+  "10.36227/techrxiv.23589741.v4": {
+    "entities": [
+      {
+        "name": "large language models",
+        "type": "METHOD",
+        "context": "foundation AI models for natural language"
+      },
+      {
+        "name": "transformer architecture",
+        "type": "METHOD",
+        "context": "neural network design"
+      },
+      {
+        "name": "natural language processing",
+        "type": "CONCEPT",
+        "context": "AI for language understanding"
+      },
+      {
+        "name": "AI applications",
+        "type": "CONCEPT",
+        "context": "practical uses of AI"
+      },
+      {
+        "name": "healthcare AI",
+        "type": "CONCEPT",
+        "context": "medical applications"
+      },
+      {
+        "name": "educational technology",
+        "type": "CONCEPT",
+        "context": "learning tools"
+      },
+      {
+        "name": "ethical challenges",
+        "type": "CONCEPT",
+        "context": "AI ethics and limitations"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "large language models",
+        "target": "transformer architecture",
+        "type": "USES"
+      },
+      {
+        "source": "large language models",
+        "target": "natural language processing",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "large language models",
+        "target": "healthcare AI",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "large language models",
+        "target": "educational technology",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.3390/su151813595": {
+    "entities": [
+      {
+        "name": "AI literacy",
+        "type": "CONCEPT",
+        "context": "understanding of AI concepts"
+      },
+      {
+        "name": "STEAM education",
+        "type": "CONCEPT",
+        "context": "science, technology, engineering, art, mathematics"
+      },
+      {
+        "name": "generative AI",
+        "type": "METHOD",
+        "context": "AI that creates new content"
+      },
+      {
+        "name": "educational curriculum",
+        "type": "CONCEPT",
+        "context": "learning program design"
+      },
+      {
+        "name": "elementary education",
+        "type": "CONCEPT",
+        "context": "primary school teaching"
+      },
+      {
+        "name": "online learning",
+        "type": "CONCEPT",
+        "context": "digital education platforms"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "AI literacy",
+        "target": "STEAM education",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "generative AI",
+        "target": "educational curriculum",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "AI literacy",
+        "target": "elementary education",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1109/5.726791": {
+    "entities": [
+      {
+        "name": "convolutional neural networks",
+        "type": "METHOD",
+        "context": "CNN architecture"
+      },
+      {
+        "name": "LeNet",
+        "type": "METHOD",
+        "context": "pioneering CNN architecture"
+      },
+      {
+        "name": "gradient-based learning",
+        "type": "METHOD",
+        "context": "backpropagation training"
+      },
+      {
+        "name": "document recognition",
+        "type": "CONCEPT",
+        "context": "text and character recognition"
+      },
+      {
+        "name": "handwritten digit recognition",
+        "type": "CONCEPT",
+        "context": "MNIST task"
+      },
+      {
+        "name": "image classification",
+        "type": "CONCEPT",
+        "context": "computer vision task"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "LeNet",
+        "target": "convolutional neural networks",
+        "type": "USES"
+      },
+      {
+        "source": "LeNet",
+        "target": "gradient-based learning",
+        "type": "USES"
+      },
+      {
+        "source": "LeNet",
+        "target": "document recognition",
+        "type": "USES"
+      },
+      {
+        "source": "document recognition",
+        "target": "handwritten digit recognition",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1186/s40537-021-00444-8": {
+    "entities": [
+      {
+        "name": "deep learning review",
+        "type": "CONCEPT",
+        "context": "comprehensive survey"
+      },
+      {
+        "name": "CNN architectures",
+        "type": "METHOD",
+        "context": "convolutional network designs"
+      },
+      {
+        "name": "transfer learning",
+        "type": "METHOD",
+        "context": "knowledge transfer between tasks"
+      },
+      {
+        "name": "COVID-19 diagnosis",
+        "type": "CONCEPT",
+        "context": "pandemic detection"
+      },
+      {
+        "name": "anomaly detection",
+        "type": "CONCEPT",
+        "context": "outlier identification"
+      },
+      {
+        "name": "computer vision applications",
+        "type": "CONCEPT",
+        "context": "visual recognition tasks"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "deep learning review",
+        "target": "CNN architectures",
+        "type": "STUDIES"
+      },
+      {
+        "source": "CNN architectures",
+        "target": "COVID-19 diagnosis",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "deep learning review",
+        "target": "transfer learning",
+        "type": "STUDIES"
+      },
+      {
+        "source": "CNN architectures",
+        "target": "anomaly detection",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1186/s40168-018-0470-z": {
+    "entities": [
+      {
+        "name": "QIIME 2",
+        "type": "METHOD",
+        "context": "microbiome analysis platform"
+      },
+      {
+        "name": "taxonomic classification",
+        "type": "CONCEPT",
+        "context": "organism identification"
+      },
+      {
+        "name": "marker-gene sequences",
+        "type": "CONCEPT",
+        "context": "16S rRNA sequences"
+      },
+      {
+        "name": "machine learning classifiers",
+        "type": "METHOD",
+        "context": "supervised learning for taxonomy"
+      },
+      {
+        "name": "microbiome analysis",
+        "type": "CONCEPT",
+        "context": "microbial community profiling"
+      },
+      {
+        "name": "amplicon sequencing",
+        "type": "METHOD",
+        "context": "targeted DNA sequencing"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "QIIME 2",
+        "target": "taxonomic classification",
+        "type": "USES"
+      },
+      {
+        "source": "QIIME 2",
+        "target": "machine learning classifiers",
+        "type": "USES"
+      },
+      {
+        "source": "taxonomic classification",
+        "target": "marker-gene sequences",
+        "type": "USES"
+      },
+      {
+        "source": "QIIME 2",
+        "target": "microbiome analysis",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1609/aaai.v35i12.17325": {
+    "entities": [
+      {
+        "name": "Informer",
+        "type": "METHOD",
+        "context": "efficient transformer for time series"
+      },
+      {
+        "name": "time series forecasting",
+        "type": "CONCEPT",
+        "context": "temporal prediction"
+      },
+      {
+        "name": "attention mechanism",
+        "type": "METHOD",
+        "context": "self-attention for sequences"
+      },
+      {
+        "name": "long sequence modeling",
+        "type": "CONCEPT",
+        "context": "extended temporal dependencies"
+      },
+      {
+        "name": "ProbSparse attention",
+        "type": "METHOD",
+        "context": "efficient attention mechanism"
+      },
+      {
+        "name": "energy load prediction",
+        "type": "CONCEPT",
+        "context": "power consumption forecasting"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Informer",
+        "target": "time series forecasting",
+        "type": "USES"
+      },
+      {
+        "source": "Informer",
+        "target": "ProbSparse attention",
+        "type": "USES"
+      },
+      {
+        "source": "Informer",
+        "target": "long sequence modeling",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "time series forecasting",
+        "target": "energy load prediction",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1016/j.respol.2004.01.015": {
+    "entities": [
+      {
+        "name": "socio-technical systems",
+        "type": "CONCEPT",
+        "context": "integrated social and technical systems"
+      },
+      {
+        "name": "sectoral innovation systems",
+        "type": "CONCEPT",
+        "context": "industry-specific innovation"
+      },
+      {
+        "name": "innovation transitions",
+        "type": "CONCEPT",
+        "context": "systemic change processes"
+      },
+      {
+        "name": "sustainability transitions",
+        "type": "CONCEPT",
+        "context": "shift to sustainable systems"
+      },
+      {
+        "name": "multi-level perspective",
+        "type": "METHOD",
+        "context": "analytical framework"
+      },
+      {
+        "name": "technological regimes",
+        "type": "CONCEPT",
+        "context": "dominant technology paradigms"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "socio-technical systems",
+        "target": "sectoral innovation systems",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "socio-technical systems",
+        "target": "sustainability transitions",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "multi-level perspective",
+        "target": "innovation transitions",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1093/nar/gkx1089": {
+    "entities": [
+      {
+        "name": "HMDB",
+        "type": "DATASET",
+        "context": "Human Metabolome Database"
+      },
+      {
+        "name": "metabolomics",
+        "type": "CONCEPT",
+        "context": "small molecule profiling"
+      },
+      {
+        "name": "mass spectrometry",
+        "type": "METHOD",
+        "context": "analytical chemistry technique"
+      },
+      {
+        "name": "metabolite annotation",
+        "type": "CONCEPT",
+        "context": "compound identification"
+      },
+      {
+        "name": "biomarker discovery",
+        "type": "CONCEPT",
+        "context": "disease marker identification"
+      },
+      {
+        "name": "human metabolism",
+        "type": "CONCEPT",
+        "context": "biochemical pathways in humans"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "HMDB",
+        "target": "metabolomics",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "HMDB",
+        "target": "metabolite annotation",
+        "type": "USES"
+      },
+      {
+        "source": "metabolomics",
+        "target": "mass spectrometry",
+        "type": "USES"
+      },
+      {
+        "source": "HMDB",
+        "target": "biomarker discovery",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1007/s11263-019-01247-4": {
+    "entities": [
+      {
+        "name": "object detection",
+        "type": "CONCEPT",
+        "context": "identifying objects in images"
+      },
+      {
+        "name": "R-CNN",
+        "type": "METHOD",
+        "context": "region-based CNN"
+      },
+      {
+        "name": "YOLO",
+        "type": "METHOD",
+        "context": "You Only Look Once detector"
+      },
+      {
+        "name": "few-shot learning",
+        "type": "METHOD",
+        "context": "learning from limited examples"
+      },
+      {
+        "name": "domain adaptation",
+        "type": "METHOD",
+        "context": "transfer across domains"
+      },
+      {
+        "name": "computer vision",
+        "type": "CONCEPT",
+        "context": "visual perception AI"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "R-CNN",
+        "target": "object detection",
+        "type": "USES"
+      },
+      {
+        "source": "YOLO",
+        "target": "object detection",
+        "type": "USES"
+      },
+      {
+        "source": "few-shot learning",
+        "target": "object detection",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "domain adaptation",
+        "target": "computer vision",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1145/359576.359579": {
+    "entities": [
+      {
+        "name": "functional programming",
+        "type": "CONCEPT",
+        "context": "declarative programming paradigm"
+      },
+      {
+        "name": "von Neumann architecture",
+        "type": "CONCEPT",
+        "context": "sequential computation model"
+      },
+      {
+        "name": "programming language design",
+        "type": "CONCEPT",
+        "context": "language theory"
+      },
+      {
+        "name": "lambda calculus",
+        "type": "METHOD",
+        "context": "formal computation system"
+      },
+      {
+        "name": "parallel computation",
+        "type": "CONCEPT",
+        "context": "concurrent processing"
+      },
+      {
+        "name": "program correctness",
+        "type": "CONCEPT",
+        "context": "formal verification"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "functional programming",
+        "target": "lambda calculus",
+        "type": "USES"
+      },
+      {
+        "source": "functional programming",
+        "target": "von Neumann architecture",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "functional programming",
+        "target": "parallel computation",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.3390/healthcare11060887": {
+    "entities": [
+      {
+        "name": "ChatGPT",
+        "type": "METHOD",
+        "context": "conversational AI model"
+      },
+      {
+        "name": "healthcare education",
+        "type": "CONCEPT",
+        "context": "medical training"
+      },
+      {
+        "name": "clinical research",
+        "type": "CONCEPT",
+        "context": "medical studies"
+      },
+      {
+        "name": "AI ethics",
+        "type": "CONCEPT",
+        "context": "ethical considerations"
+      },
+      {
+        "name": "medical practice",
+        "type": "CONCEPT",
+        "context": "clinical applications"
+      },
+      {
+        "name": "systematic review",
+        "type": "METHOD",
+        "context": "comprehensive literature analysis"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "ChatGPT",
+        "target": "healthcare education",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "ChatGPT",
+        "target": "clinical research",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "ChatGPT",
+        "target": "medical practice",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "ChatGPT",
+        "target": "AI ethics",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1038/s41586-023-06291-2": {
+    "entities": [
+      {
+        "name": "Med-PaLM",
+        "type": "METHOD",
+        "context": "medical language model"
+      },
+      {
+        "name": "clinical knowledge encoding",
+        "type": "CONCEPT",
+        "context": "medical expertise in AI"
+      },
+      {
+        "name": "medical question answering",
+        "type": "CONCEPT",
+        "context": "clinical QA systems"
+      },
+      {
+        "name": "medical licensing exams",
+        "type": "CONCEPT",
+        "context": "USMLE-style questions"
+      },
+      {
+        "name": "clinical reasoning",
+        "type": "CONCEPT",
+        "context": "diagnostic thinking"
+      },
+      {
+        "name": "biomedical NLP",
+        "type": "CONCEPT",
+        "context": "medical text processing"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Med-PaLM",
+        "target": "clinical knowledge encoding",
+        "type": "USES"
+      },
+      {
+        "source": "Med-PaLM",
+        "target": "medical question answering",
+        "type": "USES"
+      },
+      {
+        "source": "Med-PaLM",
+        "target": "clinical reasoning",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "clinical knowledge encoding",
+        "target": "biomedical NLP",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/nar/25.17.3389": {
+    "entities": [
+      {
+        "name": "BLAST",
+        "type": "METHOD",
+        "context": "sequence similarity search"
+      },
+      {
+        "name": "PSI-BLAST",
+        "type": "METHOD",
+        "context": "position-specific iterative BLAST"
+      },
+      {
+        "name": "sequence alignment",
+        "type": "CONCEPT",
+        "context": "comparing biological sequences"
+      },
+      {
+        "name": "protein database search",
+        "type": "CONCEPT",
+        "context": "finding homologs"
+      },
+      {
+        "name": "sequence homology",
+        "type": "CONCEPT",
+        "context": "evolutionary similarity"
+      },
+      {
+        "name": "bioinformatics tools",
+        "type": "CONCEPT",
+        "context": "computational biology software"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "BLAST",
+        "target": "sequence alignment",
+        "type": "USES"
+      },
+      {
+        "source": "PSI-BLAST",
+        "target": "BLAST",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "BLAST",
+        "target": "protein database search",
+        "type": "USES"
+      },
+      {
+        "source": "sequence alignment",
+        "target": "sequence homology",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1088/0953-8984/21/39/395502": {
+    "entities": [
+      {
+        "name": "Quantum ESPRESSO",
+        "type": "METHOD",
+        "context": "quantum simulation software"
+      },
+      {
+        "name": "density functional theory",
+        "type": "METHOD",
+        "context": "DFT calculations"
+      },
+      {
+        "name": "electronic structure",
+        "type": "CONCEPT",
+        "context": "quantum properties of materials"
+      },
+      {
+        "name": "materials simulation",
+        "type": "CONCEPT",
+        "context": "computational materials science"
+      },
+      {
+        "name": "plane-wave basis",
+        "type": "METHOD",
+        "context": "quantum calculation method"
+      },
+      {
+        "name": "ab initio calculations",
+        "type": "METHOD",
+        "context": "first-principles simulations"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Quantum ESPRESSO",
+        "target": "density functional theory",
+        "type": "USES"
+      },
+      {
+        "source": "Quantum ESPRESSO",
+        "target": "materials simulation",
+        "type": "USES"
+      },
+      {
+        "source": "density functional theory",
+        "target": "electronic structure",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Quantum ESPRESSO",
+        "target": "plane-wave basis",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1186/1471-2105-9-559": {
+    "entities": [
+      {
+        "name": "WGCNA",
+        "type": "METHOD",
+        "context": "weighted gene co-expression network analysis"
+      },
+      {
+        "name": "gene co-expression networks",
+        "type": "CONCEPT",
+        "context": "correlated gene expression patterns"
+      },
+      {
+        "name": "module detection",
+        "type": "CONCEPT",
+        "context": "identifying gene clusters"
+      },
+      {
+        "name": "systems genetics",
+        "type": "CONCEPT",
+        "context": "network-based genetic analysis"
+      },
+      {
+        "name": "hub genes",
+        "type": "CONCEPT",
+        "context": "central network nodes"
+      },
+      {
+        "name": "trait association",
+        "type": "CONCEPT",
+        "context": "phenotype correlation"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "WGCNA",
+        "target": "gene co-expression networks",
+        "type": "USES"
+      },
+      {
+        "source": "WGCNA",
+        "target": "module detection",
+        "type": "USES"
+      },
+      {
+        "source": "gene co-expression networks",
+        "target": "hub genes",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "WGCNA",
+        "target": "systems genetics",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1016/j.softx.2015.06.001": {
+    "entities": [
+      {
+        "name": "GROMACS",
+        "type": "METHOD",
+        "context": "molecular dynamics simulation software"
+      },
+      {
+        "name": "molecular dynamics",
+        "type": "METHOD",
+        "context": "atomistic simulations"
+      },
+      {
+        "name": "protein dynamics",
+        "type": "CONCEPT",
+        "context": "protein motion and structure"
+      },
+      {
+        "name": "biomolecular simulation",
+        "type": "CONCEPT",
+        "context": "computational biology"
+      },
+      {
+        "name": "parallel computing",
+        "type": "METHOD",
+        "context": "high-performance computation"
+      },
+      {
+        "name": "force fields",
+        "type": "METHOD",
+        "context": "molecular interaction models"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "GROMACS",
+        "target": "molecular dynamics",
+        "type": "USES"
+      },
+      {
+        "source": "GROMACS",
+        "target": "protein dynamics",
+        "type": "STUDIES"
+      },
+      {
+        "source": "molecular dynamics",
+        "target": "biomolecular simulation",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "GROMACS",
+        "target": "parallel computing",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1186/1471-2105-12-323": {
+    "entities": [
+      {
+        "name": "RSEM",
+        "type": "METHOD",
+        "context": "RNA-Seq by Expectation Maximization"
+      },
+      {
+        "name": "transcript quantification",
+        "type": "CONCEPT",
+        "context": "measuring RNA abundance"
+      },
+      {
+        "name": "RNA-Seq",
+        "type": "METHOD",
+        "context": "RNA sequencing"
+      },
+      {
+        "name": "isoform expression",
+        "type": "CONCEPT",
+        "context": "alternative transcript levels"
+      },
+      {
+        "name": "expectation-maximization",
+        "type": "METHOD",
+        "context": "statistical inference algorithm"
+      },
+      {
+        "name": "transcriptome analysis",
+        "type": "CONCEPT",
+        "context": "RNA expression profiling"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "RSEM",
+        "target": "transcript quantification",
+        "type": "USES"
+      },
+      {
+        "source": "RSEM",
+        "target": "RNA-Seq",
+        "type": "USES"
+      },
+      {
+        "source": "RSEM",
+        "target": "expectation-maximization",
+        "type": "USES"
+      },
+      {
+        "source": "transcript quantification",
+        "target": "isoform expression",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1016/s0140-6736(20)30925-9": {
+    "entities": [
+      {
+        "name": "Global Burden of Disease",
+        "type": "DATASET",
+        "context": "GBD study"
+      },
+      {
+        "name": "disease burden metrics",
+        "type": "CONCEPT",
+        "context": "DALYs, YLLs, YLDs"
+      },
+      {
+        "name": "epidemiological modeling",
+        "type": "METHOD",
+        "context": "disease estimation"
+      },
+      {
+        "name": "global health",
+        "type": "CONCEPT",
+        "context": "worldwide health patterns"
+      },
+      {
+        "name": "comparative risk assessment",
+        "type": "METHOD",
+        "context": "risk factor analysis"
+      },
+      {
+        "name": "health policy",
+        "type": "CONCEPT",
+        "context": "public health planning"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Global Burden of Disease",
+        "target": "disease burden metrics",
+        "type": "USES"
+      },
+      {
+        "source": "Global Burden of Disease",
+        "target": "epidemiological modeling",
+        "type": "USES"
+      },
+      {
+        "source": "Global Burden of Disease",
+        "target": "global health",
+        "type": "STUDIES"
+      },
+      {
+        "source": "comparative risk assessment",
+        "target": "health policy",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1038/srep42717": {
+    "entities": [
+      {
+        "name": "SwissADME",
+        "type": "METHOD",
+        "context": "ADME prediction web tool"
+      },
+      {
+        "name": "pharmacokinetics",
+        "type": "CONCEPT",
+        "context": "drug absorption, distribution, metabolism, excretion"
+      },
+      {
+        "name": "drug-likeness",
+        "type": "CONCEPT",
+        "context": "Lipinski's rule compliance"
+      },
+      {
+        "name": "medicinal chemistry",
+        "type": "CONCEPT",
+        "context": "drug design principles"
+      },
+      {
+        "name": "ADME prediction",
+        "type": "CONCEPT",
+        "context": "computational drug properties"
+      },
+      {
+        "name": "small molecules",
+        "type": "CONCEPT",
+        "context": "drug compounds"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "SwissADME",
+        "target": "pharmacokinetics",
+        "type": "USES"
+      },
+      {
+        "source": "SwissADME",
+        "target": "drug-likeness",
+        "type": "USES"
+      },
+      {
+        "source": "SwissADME",
+        "target": "ADME prediction",
+        "type": "USES"
+      },
+      {
+        "source": "drug-likeness",
+        "target": "medicinal chemistry",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/genetics/131.2.479": {
+    "entities": [
+      {
+        "name": "AMOVA",
+        "type": "METHOD",
+        "context": "analysis of molecular variance"
+      },
+      {
+        "name": "genetic diversity",
+        "type": "CONCEPT",
+        "context": "population genetic variation"
+      },
+      {
+        "name": "population structure",
+        "type": "CONCEPT",
+        "context": "genetic differentiation"
+      },
+      {
+        "name": "mitochondrial DNA",
+        "type": "CONCEPT",
+        "context": "mtDNA analysis"
+      },
+      {
+        "name": "haplotype analysis",
+        "type": "METHOD",
+        "context": "genetic variant patterns"
+      },
+      {
+        "name": "molecular evolution",
+        "type": "CONCEPT",
+        "context": "DNA sequence evolution"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "AMOVA",
+        "target": "genetic diversity",
+        "type": "STUDIES"
+      },
+      {
+        "source": "AMOVA",
+        "target": "population structure",
+        "type": "STUDIES"
+      },
+      {
+        "source": "AMOVA",
+        "target": "haplotype analysis",
+        "type": "USES"
+      },
+      {
+        "source": "genetic diversity",
+        "target": "mitochondrial DNA",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1186/gb-2013-14-4-r36": {
+    "entities": [
+      {
+        "name": "TopHat2",
+        "type": "METHOD",
+        "context": "RNA-Seq alignment tool"
+      },
+      {
+        "name": "transcriptome alignment",
+        "type": "CONCEPT",
+        "context": "mapping RNA reads to genome"
+      },
+      {
+        "name": "splice junction detection",
+        "type": "CONCEPT",
+        "context": "identifying exon boundaries"
+      },
+      {
+        "name": "gene fusion detection",
+        "type": "CONCEPT",
+        "context": "chimeric transcript identification"
+      },
+      {
+        "name": "RNA-Seq analysis",
+        "type": "CONCEPT",
+        "context": "transcriptome sequencing"
+      },
+      {
+        "name": "Bowtie",
+        "type": "METHOD",
+        "context": "short read aligner"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "TopHat2",
+        "target": "transcriptome alignment",
+        "type": "USES"
+      },
+      {
+        "source": "TopHat2",
+        "target": "splice junction detection",
+        "type": "USES"
+      },
+      {
+        "source": "TopHat2",
+        "target": "gene fusion detection",
+        "type": "USES"
+      },
+      {
+        "source": "TopHat2",
+        "target": "Bowtie",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1093/nar/gkq973": {
+    "entities": [
+      {
+        "name": "STRING",
+        "type": "DATASET",
+        "context": "protein-protein interaction database"
+      },
+      {
+        "name": "protein interaction networks",
+        "type": "CONCEPT",
+        "context": "functional protein associations"
+      },
+      {
+        "name": "functional enrichment",
+        "type": "CONCEPT",
+        "context": "pathway and GO analysis"
+      },
+      {
+        "name": "network analysis",
+        "type": "METHOD",
+        "context": "graph-based biology"
+      },
+      {
+        "name": "interactome",
+        "type": "CONCEPT",
+        "context": "complete interaction network"
+      },
+      {
+        "name": "protein function prediction",
+        "type": "CONCEPT",
+        "context": "inferring protein roles"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "STRING",
+        "target": "protein interaction networks",
+        "type": "USES"
+      },
+      {
+        "source": "STRING",
+        "target": "functional enrichment",
+        "type": "USES"
+      },
+      {
+        "source": "protein interaction networks",
+        "target": "network analysis",
+        "type": "USES"
+      },
+      {
+        "source": "STRING",
+        "target": "protein function prediction",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/nar/gkl923": {
+    "entities": [
+      {
+        "name": "HMDB",
+        "type": "DATASET",
+        "context": "Human Metabolome Database v1"
+      },
+      {
+        "name": "metabolite database",
+        "type": "DATASET",
+        "context": "small molecule repository"
+      },
+      {
+        "name": "metabolomics",
+        "type": "CONCEPT",
+        "context": "metabolite profiling"
+      },
+      {
+        "name": "biochemical pathways",
+        "type": "CONCEPT",
+        "context": "metabolic networks"
+      },
+      {
+        "name": "small molecule identification",
+        "type": "CONCEPT",
+        "context": "compound annotation"
+      },
+      {
+        "name": "human metabolism",
+        "type": "CONCEPT",
+        "context": "endogenous metabolites"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "HMDB",
+        "target": "metabolite database",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "HMDB",
+        "target": "metabolomics",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "HMDB",
+        "target": "small molecule identification",
+        "type": "USES"
+      },
+      {
+        "source": "metabolomics",
+        "target": "biochemical pathways",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/bioinformatics/btg015": {
+    "entities": [
+      {
+        "name": "SBML",
+        "type": "CONCEPT",
+        "context": "Systems Biology Markup Language"
+      },
+      {
+        "name": "model representation",
+        "type": "CONCEPT",
+        "context": "computational model encoding"
+      },
+      {
+        "name": "biochemical networks",
+        "type": "CONCEPT",
+        "context": "metabolic and signaling networks"
+      },
+      {
+        "name": "model exchange",
+        "type": "CONCEPT",
+        "context": "interoperability standard"
+      },
+      {
+        "name": "XML format",
+        "type": "METHOD",
+        "context": "structured data format"
+      },
+      {
+        "name": "systems biology",
+        "type": "CONCEPT",
+        "context": "computational biology field"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "SBML",
+        "target": "model representation",
+        "type": "USES"
+      },
+      {
+        "source": "SBML",
+        "target": "biochemical networks",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "SBML",
+        "target": "XML format",
+        "type": "USES"
+      },
+      {
+        "source": "SBML",
+        "target": "systems biology",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/bioinformatics/btl485": {
+    "entities": [
+      {
+        "name": "COPASI",
+        "type": "METHOD",
+        "context": "Complex Pathway Simulator"
+      },
+      {
+        "name": "biochemical pathway simulation",
+        "type": "CONCEPT",
+        "context": "metabolic network modeling"
+      },
+      {
+        "name": "parameter estimation",
+        "type": "METHOD",
+        "context": "fitting model parameters"
+      },
+      {
+        "name": "sensitivity analysis",
+        "type": "METHOD",
+        "context": "parameter importance"
+      },
+      {
+        "name": "stochastic simulation",
+        "type": "METHOD",
+        "context": "probabilistic modeling"
+      },
+      {
+        "name": "metabolic control analysis",
+        "type": "METHOD",
+        "context": "flux control coefficients"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "COPASI",
+        "target": "biochemical pathway simulation",
+        "type": "USES"
+      },
+      {
+        "source": "COPASI",
+        "target": "parameter estimation",
+        "type": "USES"
+      },
+      {
+        "source": "COPASI",
+        "target": "sensitivity analysis",
+        "type": "USES"
+      },
+      {
+        "source": "COPASI",
+        "target": "stochastic simulation",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1038/nprot.2007.324": {
+    "entities": [
+      {
+        "name": "Cytoscape",
+        "type": "METHOD",
+        "context": "network visualization platform"
+      },
+      {
+        "name": "biological network visualization",
+        "type": "CONCEPT",
+        "context": "graph-based data display"
+      },
+      {
+        "name": "gene expression integration",
+        "type": "CONCEPT",
+        "context": "combining expression and networks"
+      },
+      {
+        "name": "network analysis",
+        "type": "METHOD",
+        "context": "graph algorithms"
+      },
+      {
+        "name": "molecular interaction networks",
+        "type": "CONCEPT",
+        "context": "protein and gene interactions"
+      },
+      {
+        "name": "network plugins",
+        "type": "CONCEPT",
+        "context": "extensible analysis tools"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Cytoscape",
+        "target": "biological network visualization",
+        "type": "USES"
+      },
+      {
+        "source": "Cytoscape",
+        "target": "gene expression integration",
+        "type": "USES"
+      },
+      {
+        "source": "Cytoscape",
+        "target": "network analysis",
+        "type": "USES"
+      },
+      {
+        "source": "Cytoscape",
+        "target": "molecular interaction networks",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1002/pro.4218": {
+    "entities": [
+      {
+        "name": "PANTHER",
+        "type": "DATASET",
+        "context": "Protein ANalysis THrough Evolutionary Relationships"
+      },
+      {
+        "name": "phylogenetic analysis",
+        "type": "METHOD",
+        "context": "evolutionary tree construction"
+      },
+      {
+        "name": "gene family classification",
+        "type": "CONCEPT",
+        "context": "protein family organization"
+      },
+      {
+        "name": "functional annotation",
+        "type": "CONCEPT",
+        "context": "gene ontology assignment"
+      },
+      {
+        "name": "protein evolution",
+        "type": "CONCEPT",
+        "context": "evolutionary protein analysis"
+      },
+      {
+        "name": "gene ontology",
+        "type": "DATASET",
+        "context": "GO terms and pathways"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "PANTHER",
+        "target": "phylogenetic analysis",
+        "type": "USES"
+      },
+      {
+        "source": "PANTHER",
+        "target": "gene family classification",
+        "type": "USES"
+      },
+      {
+        "source": "PANTHER",
+        "target": "functional annotation",
+        "type": "USES"
+      },
+      {
+        "source": "phylogenetic analysis",
+        "target": "protein evolution",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1093/nar/gks1118": {
+    "entities": [
+      {
+        "name": "PANTHER database",
+        "type": "DATASET",
+        "context": "protein family and evolution database"
+      },
+      {
+        "name": "gene function evolution",
+        "type": "CONCEPT",
+        "context": "functional changes over time"
+      },
+      {
+        "name": "phylogenetic trees",
+        "type": "CONCEPT",
+        "context": "evolutionary relationships"
+      },
+      {
+        "name": "subfamilies",
+        "type": "CONCEPT",
+        "context": "protein family subdivisions"
+      },
+      {
+        "name": "HMM models",
+        "type": "METHOD",
+        "context": "hidden Markov models"
+      },
+      {
+        "name": "ortholog identification",
+        "type": "CONCEPT",
+        "context": "finding equivalent genes"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "PANTHER database",
+        "target": "gene function evolution",
+        "type": "STUDIES"
+      },
+      {
+        "source": "PANTHER database",
+        "target": "phylogenetic trees",
+        "type": "USES"
+      },
+      {
+        "source": "PANTHER database",
+        "target": "HMM models",
+        "type": "USES"
+      },
+      {
+        "source": "phylogenetic trees",
+        "target": "ortholog identification",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/nar/gkw1017": {
+    "entities": [
+      {
+        "name": "PATRIC",
+        "type": "DATASET",
+        "context": "Pathosystems Resource Integration Center"
+      },
+      {
+        "name": "bacterial genomics",
+        "type": "CONCEPT",
+        "context": "prokaryotic genome analysis"
+      },
+      {
+        "name": "comparative genomics",
+        "type": "METHOD",
+        "context": "genome comparison"
+      },
+      {
+        "name": "antibiotic resistance",
+        "type": "CONCEPT",
+        "context": "AMR genes and phenotypes"
+      },
+      {
+        "name": "genome annotation",
+        "type": "CONCEPT",
+        "context": "gene prediction and function"
+      },
+      {
+        "name": "bacterial pathogens",
+        "type": "ORGANISM",
+        "context": "disease-causing bacteria"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "PATRIC",
+        "target": "bacterial genomics",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "PATRIC",
+        "target": "comparative genomics",
+        "type": "USES"
+      },
+      {
+        "source": "PATRIC",
+        "target": "antibiotic resistance",
+        "type": "STUDIES"
+      },
+      {
+        "source": "PATRIC",
+        "target": "bacterial pathogens",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1371/journal.pcbi.1002375": {
+    "entities": [
+      {
+        "name": "pathway analysis",
+        "type": "METHOD",
+        "context": "gene set enrichment methods"
+      },
+      {
+        "name": "gene set enrichment",
+        "type": "CONCEPT",
+        "context": "statistical pathway testing"
+      },
+      {
+        "name": "biological pathways",
+        "type": "CONCEPT",
+        "context": "KEGG, Reactome pathways"
+      },
+      {
+        "name": "functional genomics",
+        "type": "CONCEPT",
+        "context": "high-throughput gene analysis"
+      },
+      {
+        "name": "GSEA",
+        "type": "METHOD",
+        "context": "Gene Set Enrichment Analysis"
+      },
+      {
+        "name": "over-representation analysis",
+        "type": "METHOD",
+        "context": "hypergeometric testing"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pathway analysis",
+        "target": "gene set enrichment",
+        "type": "USES"
+      },
+      {
+        "source": "pathway analysis",
+        "target": "biological pathways",
+        "type": "STUDIES"
+      },
+      {
+        "source": "GSEA",
+        "target": "gene set enrichment",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "pathway analysis",
+        "target": "functional genomics",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1371/journal.pcbi.1002970": {
+    "entities": [
+      {
+        "name": "Chaste",
+        "type": "METHOD",
+        "context": "Cancer, Heart and Soft Tissue Environment"
+      },
+      {
+        "name": "computational physiology",
+        "type": "CONCEPT",
+        "context": "computational modeling of physiology"
+      },
+      {
+        "name": "cardiac electrophysiology",
+        "type": "CONCEPT",
+        "context": "heart electrical activity"
+      },
+      {
+        "name": "tissue modeling",
+        "type": "CONCEPT",
+        "context": "multi-scale tissue simulation"
+      },
+      {
+        "name": "C++ library",
+        "type": "METHOD",
+        "context": "software framework"
+      },
+      {
+        "name": "multiscale modeling",
+        "type": "CONCEPT",
+        "context": "bridging spatial scales"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Chaste",
+        "target": "computational physiology",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "Chaste",
+        "target": "cardiac electrophysiology",
+        "type": "STUDIES"
+      },
+      {
+        "source": "Chaste",
+        "target": "tissue modeling",
+        "type": "USES"
+      },
+      {
+        "source": "Chaste",
+        "target": "multiscale modeling",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1113/expphysiol.2003.026740": {
+    "entities": [
+      {
+        "name": "Physiome Project",
+        "type": "CONCEPT",
+        "context": "integrated physiological modeling"
+      },
+      {
+        "name": "computational physiology",
+        "type": "CONCEPT",
+        "context": "mathematical organ modeling"
+      },
+      {
+        "name": "multi-scale modeling",
+        "type": "CONCEPT",
+        "context": "molecular to organ scales"
+      },
+      {
+        "name": "CellML",
+        "type": "METHOD",
+        "context": "cell model markup language"
+      },
+      {
+        "name": "organ models",
+        "type": "CONCEPT",
+        "context": "heart, lung, kidney models"
+      },
+      {
+        "name": "systems physiology",
+        "type": "CONCEPT",
+        "context": "integrative physiology"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Physiome Project",
+        "target": "computational physiology",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "Physiome Project",
+        "target": "multi-scale modeling",
+        "type": "USES"
+      },
+      {
+        "source": "Physiome Project",
+        "target": "CellML",
+        "type": "USES"
+      },
+      {
+        "source": "computational physiology",
+        "target": "organ models",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1186/s12938-018-0455-y": {
+    "entities": [
+      {
+        "name": "virtual patient models",
+        "type": "CONCEPT",
+        "context": "in silico patient simulation"
+      },
+      {
+        "name": "critical care medicine",
+        "type": "CONCEPT",
+        "context": "intensive care unit treatment"
+      },
+      {
+        "name": "personalized medicine",
+        "type": "CONCEPT",
+        "context": "patient-specific treatment"
+      },
+      {
+        "name": "model validation",
+        "type": "METHOD",
+        "context": "clinical validation methods"
+      },
+      {
+        "name": "clinical decision support",
+        "type": "CONCEPT",
+        "context": "AI-assisted treatment"
+      },
+      {
+        "name": "physiological models",
+        "type": "CONCEPT",
+        "context": "computational patient models"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "virtual patient models",
+        "target": "critical care medicine",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "virtual patient models",
+        "target": "personalized medicine",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "virtual patient models",
+        "target": "model validation",
+        "type": "USES"
+      },
+      {
+        "source": "virtual patient models",
+        "target": "clinical decision support",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1371/journal.pcbi.1000456": {
+    "entities": [
+      {
+        "name": "neuronal network models",
+        "type": "CONCEPT",
+        "context": "computational neuroscience models"
+      },
+      {
+        "name": "model reproducibility",
+        "type": "CONCEPT",
+        "context": "standardized model descriptions"
+      },
+      {
+        "name": "NeuroML",
+        "type": "METHOD",
+        "context": "neural model markup language"
+      },
+      {
+        "name": "simulator-independent",
+        "type": "CONCEPT",
+        "context": "portable model specifications"
+      },
+      {
+        "name": "computational neuroscience",
+        "type": "CONCEPT",
+        "context": "neural simulation"
+      },
+      {
+        "name": "neural dynamics",
+        "type": "CONCEPT",
+        "context": "neuron and network activity"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "neuronal network models",
+        "target": "NeuroML",
+        "type": "USES"
+      },
+      {
+        "source": "NeuroML",
+        "target": "model reproducibility",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "neuronal network models",
+        "target": "computational neuroscience",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "neuronal network models",
+        "target": "neural dynamics",
+        "type": "STUDIES"
+      }
+    ]
+  },
+  "10.1016/j.yjmcc.2015.11.018": {
+    "entities": [
+      {
+        "name": "cardiac action potential",
+        "type": "CONCEPT",
+        "context": "heart cell electrical activity"
+      },
+      {
+        "name": "model uncertainty",
+        "type": "CONCEPT",
+        "context": "parameter and structural uncertainty"
+      },
+      {
+        "name": "variability analysis",
+        "type": "METHOD",
+        "context": "quantifying model variations"
+      },
+      {
+        "name": "cardiac electrophysiology models",
+        "type": "CONCEPT",
+        "context": "computational heart models"
+      },
+      {
+        "name": "model trustworthiness",
+        "type": "CONCEPT",
+        "context": "model reliability and validity"
+      },
+      {
+        "name": "sensitivity analysis",
+        "type": "METHOD",
+        "context": "parameter impact assessment"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "cardiac action potential",
+        "target": "cardiac electrophysiology models",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "model uncertainty",
+        "target": "variability analysis",
+        "type": "USES"
+      },
+      {
+        "source": "cardiac electrophysiology models",
+        "target": "model trustworthiness",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "model uncertainty",
+        "target": "sensitivity analysis",
+        "type": "USES"
+      }
+    ]
+  },
+  "10.1098/rsta.2008.0094": {
+    "entities": [
+      {
+        "name": "CellML",
+        "type": "METHOD",
+        "context": "cell model markup language"
+      },
+      {
+        "name": "model encoding",
+        "type": "CONCEPT",
+        "context": "mathematical model representation"
+      },
+      {
+        "name": "biological models",
+        "type": "CONCEPT",
+        "context": "cellular and physiological models"
+      },
+      {
+        "name": "model repository",
+        "type": "DATASET",
+        "context": "CellML model database"
+      },
+      {
+        "name": "model reuse",
+        "type": "CONCEPT",
+        "context": "sharing and extending models"
+      },
+      {
+        "name": "XML-based format",
+        "type": "METHOD",
+        "context": "structured model specification"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "CellML",
+        "target": "model encoding",
+        "type": "USES"
+      },
+      {
+        "source": "CellML",
+        "target": "biological models",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "CellML",
+        "target": "XML-based format",
+        "type": "USES"
+      },
+      {
+        "source": "CellML",
+        "target": "model repository",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1093/bib/bbp049": {
+    "entities": [
+      {
+        "name": "patient-specific modeling",
+        "type": "CONCEPT",
+        "context": "personalized computational models"
+      },
+      {
+        "name": "medical imaging",
+        "type": "METHOD",
+        "context": "CT, MRI for model construction"
+      },
+      {
+        "name": "computational medicine",
+        "type": "CONCEPT",
+        "context": "clinical computational modeling"
+      },
+      {
+        "name": "image-based modeling",
+        "type": "METHOD",
+        "context": "creating models from images"
+      },
+      {
+        "name": "clinical applications",
+        "type": "CONCEPT",
+        "context": "practical medical use"
+      },
+      {
+        "name": "cardiac modeling",
+        "type": "CONCEPT",
+        "context": "heart-specific models"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient-specific modeling",
+        "target": "medical imaging",
+        "type": "USES"
+      },
+      {
+        "source": "patient-specific modeling",
+        "target": "image-based modeling",
+        "type": "USES"
+      },
+      {
+        "source": "patient-specific modeling",
+        "target": "computational medicine",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "patient-specific modeling",
+        "target": "clinical applications",
+        "type": "RELATED_TO"
+      }
+    ]
+  },
+  "10.1371/journal.pcbi.1000272": {
+    "entities": [
+      {
+        "name": "astrocyte mechanisms",
+        "type": "CONCEPT",
+        "context": "glial cell functions"
+      },
+      {
+        "name": "extraneuronal space",
+        "type": "CONCEPT",
+        "context": "brain tissue space"
+      },
+      {
+        "name": "neural activity",
+        "type": "CONCEPT",
+        "context": "neuron firing patterns"
+      },
+      {
+        "name": "volume regulation",
+        "type": "CONCEPT",
+        "context": "cell and tissue volume changes"
+      },
+      {
+        "name": "ion transport",
+        "type": "CONCEPT",
+        "context": "ion channel dynamics"
+      },
+      {
+        "name": "computational neuroscience",
+        "type": "CONCEPT",
+        "context": "brain modeling"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "astrocyte mechanisms",
+        "target": "extraneuronal space",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "neural activity",
+        "target": "extraneuronal space",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "astrocyte mechanisms",
+        "target": "volume regulation",
+        "type": "RELATED_TO"
+      },
+      {
+        "source": "astrocyte mechanisms",
+        "target": "ion transport",
+        "type": "RELATED_TO"
+      }
+    ]
+  }
+}

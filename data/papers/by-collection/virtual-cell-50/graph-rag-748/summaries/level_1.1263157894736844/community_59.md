@@ -1,0 +1,19 @@
+# Community 59 (Level 1.1263157894736844)
+
+**Size**: 1 papers, 1 unique entities
+**Resolution**: 1.1263157894736844
+**Dominant Category**: foundation_models
+**Years**: 2025 - 2025
+
+---
+
+**Research Focus**: This community focuses on foundation_models research, primarily utilizing methods such as Exploring.
+
+**Entity Type Distribution**:
+- METHOD: 1 unique entities
+
+**Most Frequent Entities**:
+- Exploring (METHOD): 2 mentions
+
+**Sample Papers** (showing up to 10):
+- (2025) Exploring the role of large language models in the scientific method: from hypothesis to discovery

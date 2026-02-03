@@ -1,0 +1,283 @@
+{
+  "total_papers": 748,
+  "category_distribution": {
+    "foundation_models": 106,
+    "whole_cell_models": 191,
+    "systems_biology_tools": 209,
+    "multi_scale_modeling": 96,
+    "virtual_cell_specific": 146
+  },
+  "graph_stats": {
+    "paper_nodes": 748,
+    "entity_nodes": 1385,
+    "edges": 2597,
+    "entity_type_counts": {
+      "METHOD": 1305,
+      "CONCEPT": 41,
+      "DATASET": 17,
+      "ORGANISM": 22
+    }
+  },
+  "entity_extraction": {
+    "total_entities_extracted": 2597,
+    "unique_entities": 1396,
+    "entity_type_counts": {
+      "METHOD": 2064,
+      "CONCEPT": 357,
+      "DATASET": 32,
+      "ORGANISM": 144
+    },
+    "top_entities": [
+      {
+        "name": "metabolic",
+        "count": 73
+      },
+      {
+        "name": "metabolism",
+        "count": 29
+      },
+      {
+        "name": "systems biology",
+        "count": 28
+      },
+      {
+        "name": "human",
+        "count": 27
+      },
+      {
+        "name": "cancer",
+        "count": 26
+      },
+      {
+        "name": "microbial",
+        "count": 22
+      },
+      {
+        "name": "pathway",
+        "count": 21
+      },
+      {
+        "name": "in silico",
+        "count": 20
+      },
+      {
+        "name": "dynamics",
+        "count": 19
+      },
+      {
+        "name": "foundation model",
+        "count": 18
+      },
+      {
+        "name": "deep learning",
+        "count": 18
+      },
+      {
+        "name": "Escherichia coli",
+        "count": 18
+      },
+      {
+        "name": "Escherichia",
+        "count": 18
+      },
+      {
+        "name": "simulation",
+        "count": 17
+      },
+      {
+        "name": "Language",
+        "count": 16
+      },
+      {
+        "name": "yeast",
+        "count": 16
+      },
+      {
+        "name": "bacterial",
+        "count": 16
+      },
+      {
+        "name": "evolution",
+        "count": 16
+      },
+      {
+        "name": "Foundation",
+        "count": 15
+      },
+      {
+        "name": "Single-Cell",
+        "count": 14
+      },
+      {
+        "name": "signaling",
+        "count": 14
+      },
+      {
+        "name": "AI",
+        "count": 13
+      },
+      {
+        "name": "machine learning",
+        "count": 13
+      },
+      {
+        "name": "disease",
+        "count": 13
+      },
+      {
+        "name": "optimization",
+        "count": 12
+      },
+      {
+        "name": "Machine",
+        "count": 11
+      },
+      {
+        "name": "Genome-Scale",
+        "count": 10
+      },
+      {
+        "name": "Reconstruction",
+        "count": 10
+      },
+      {
+        "name": "regulation",
+        "count": 10
+      },
+      {
+        "name": "DNA",
+        "count": 9
+      },
+      {
+        "name": "Artificial",
+        "count": 8
+      },
+      {
+        "name": "tissue",
+        "count": 8
+      },
+      {
+        "name": "Research",
+        "count": 8
+      },
+      {
+        "name": "Synthetic",
+        "count": 8
+      },
+      {
+        "name": "Genome-scale",
+        "count": 8
+      },
+      {
+        "name": "whole-cell",
+        "count": 8
+      },
+      {
+        "name": "Single-cell",
+        "count": 7
+      },
+      {
+        "name": "Spatial",
+        "count": 7
+      },
+      {
+        "name": "development",
+        "count": 7
+      },
+      {
+        "name": "language model",
+        "count": 7
+      },
+      {
+        "name": "bioinformatics",
+        "count": 7
+      },
+      {
+        "name": "genomics",
+        "count": 7
+      },
+      {
+        "name": "adaptation",
+        "count": 7
+      },
+      {
+        "name": "Database",
+        "count": 7
+      },
+      {
+        "name": "bacteria",
+        "count": 7
+      },
+      {
+        "name": "Complex",
+        "count": 7
+      },
+      {
+        "name": "multi-omics",
+        "count": 6
+      },
+      {
+        "name": "Advances",
+        "count": 6
+      },
+      {
+        "name": "Structure",
+        "count": 6
+      },
+      {
+        "name": "RNA",
+        "count": 6
+      }
+    ]
+  },
+  "communities": {
+    "level_0.5": {
+      "num_communities": 171,
+      "avg_size": 12.473684210526315,
+      "min_size": 1,
+      "max_size": 295,
+      "size_distribution": {
+        "small (<10)": 122,
+        "medium (10-50)": 44,
+        "large (50-100)": 2,
+        "very_large (>=100)": 3
+      }
+    },
+    "level_1.0": {
+      "num_communities": 155,
+      "avg_size": 13.761290322580646,
+      "min_size": 1,
+      "max_size": 155,
+      "size_distribution": {
+        "small (<10)": 121,
+        "medium (10-50)": 19,
+        "large (50-100)": 10,
+        "very_large (>=100)": 5
+      }
+    },
+    "level_2.0": {
+      "num_communities": 175,
+      "avg_size": 12.188571428571429,
+      "min_size": 1,
+      "max_size": 68,
+      "size_distribution": {
+        "small (<10)": 121,
+        "medium (10-50)": 47,
+        "large (50-100)": 7,
+        "very_large (>=100)": 0
+      }
+    },
+    "level_4.0": {
+      "num_communities": 198,
+      "avg_size": 10.772727272727273,
+      "min_size": 1,
+      "max_size": 55,
+      "size_distribution": {
+        "small (<10)": 120,
+        "medium (10-50)": 77,
+        "large (50-100)": 1,
+        "very_large (>=100)": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "level": 2,
+  "resolution": 2.0,
+  "community_count": 9,
+  "communities": {
+    "5": {
+      "community_id": 5,
+      "paper_count": 2,
+      "entity_count": 12,
+      "parent_id": 5,
+      "child_ids": [
+        3
+      ],
+      "members": [
+        "10.1101/2023.04.30.538439",
+        "10.3390/su151813595",
+        "entity:scgpt",
+        "entity:single-cell multi-omics",
+        "entity:transformer",
+        "entity:gene expression",
+        "entity:cell type annotation",
+        "entity:perturbation response",
+        "entity:generative ai",
+        "entity:ai literacy",
+        "entity:steam education",
+        "entity:educational curriculum",
+        "entity:elementary education",
+        "entity:online learning"
+      ]
+    },
+    "3": {
+      "community_id": 3,
+      "paper_count": 2,
+      "entity_count": 13,
+      "parent_id": 3,
+      "child_ids": [
+        1
+      ],
+      "members": [
+        "10.36227/techrxiv.23589741.v4",
+        "10.1101/2023.09.11.557287",
+        "entity:cell2sentence",
+        "entity:large language models",
+        "entity:biological language",
+        "entity:cell-to-text",
+        "entity:interpretability",
+        "entity:cross-modal learning",
+        "entity:semantic embeddings",
+        "entity:transformer architecture",
+        "entity:natural language processing",
+        "entity:ai applications",
+        "entity:healthcare ai",
+        "entity:educational technology",
+        "entity:ethical challenges"
+      ]
+    },
+    "0": {
+      "community_id": 0,
+      "paper_count": 4,
+      "entity_count": 22,
+      "parent_id": 0,
+      "child_ids": [
+        8
+      ],
+      "members": [
+        "10.1101/2023.10.16.562533",
+        "10.1186/s40537-021-00444-8",
+        "10.3390/healthcare11060887",
+        "10.1002/pro.4218",
+        "entity:genept",
+        "entity:chatgpt",
+        "entity:gene embeddings",
+        "entity:transfer learning",
+        "entity:gene function prediction",
+        "entity:language models",
+        "entity:gene ontology",
+        "entity:deep learning review",
+        "entity:cnn architectures",
+        "entity:covid-19 diagnosis",
+        "entity:anomaly detection",
+        "entity:computer vision applications",
+        "entity:healthcare education",
+        "entity:clinical research",
+        "entity:ai ethics",
+        "entity:medical practice",
+        "entity:systematic review",
+        "entity:panther",
+        "entity:phylogenetic analysis",
+        "entity:gene family classification",
+        "entity:functional annotation",
+        "entity:protein evolution"
+      ]
+    },
+    "2": {
+      "community_id": 2,
+      "paper_count": 3,
+      "entity_count": 15,
+      "parent_id": 2,
+      "child_ids": [
+        9
+      ],
+      "members": [
+        "10.1093/bib/bbad518",
+        "10.1093/nar/gkx1089",
+        "10.1093/nar/gkl923",
+        "entity:network pharmacology",
+        "entity:ai-based precision medicine",
+        "entity:drug-target networks",
+        "entity:systems pharmacology",
+        "entity:machine learning",
+        "entity:biomarker discovery",
+        "entity:drug repurposing",
+        "entity:hmdb",
+        "entity:metabolomics",
+        "entity:mass spectrometry",
+        "entity:metabolite annotation",
+        "entity:human metabolism",
+        "entity:metabolite database",
+        "entity:biochemical pathways",
+        "entity:small molecule identification"
+      ]
+    },
+    "6": {
+      "community_id": 6,
+      "paper_count": 2,
+      "entity_count": 12,
+      "parent_id": 6,
+      "child_ids": [
+        4
+      ],
+      "members": [
+        "10.1186/s13059-025-03574-x",
+        "10.1186/s12938-018-0455-y",
+        "entity:zero-shot evaluation",
+        "entity:model limitations",
+        "entity:single-cell foundation models",
+        "entity:out-of-distribution",
+        "entity:robustness",
+        "entity:failure modes",
+        "entity:model validation",
+        "entity:virtual patient models",
+        "entity:critical care medicine",
+        "entity:personalized medicine",
+        "entity:clinical decision support",
+        "entity:physiological models"
+      ]
+    },
+    "7": {
+      "community_id": 7,
+      "paper_count": 2,
+      "entity_count": 11,
+      "parent_id": 7,
+      "child_ids": [
+        5
+      ],
+      "members": [
+        "10.1093/nar/gkq973",
+        "10.1038/nprot.2007.324",
+        "entity:string",
+        "entity:protein interaction networks",
+        "entity:functional enrichment",
+        "entity:network analysis",
+        "entity:interactome",
+        "entity:protein function prediction",
+        "entity:cytoscape",
+        "entity:biological network visualization",
+        "entity:gene expression integration",
+        "entity:molecular interaction networks",
+        "entity:network plugins"
+      ]
+    },
+    "9": {
+      "community_id": 9,
+      "paper_count": 2,
+      "entity_count": 11,
+      "parent_id": 9,
+      "child_ids": [
+        7
+      ],
+      "members": [
+        "10.1093/bioinformatics/btl485",
+        "10.1016/j.yjmcc.2015.11.018",
+        "entity:copasi",
+        "entity:biochemical pathway simulation",
+        "entity:parameter estimation",
+        "entity:sensitivity analysis",
+        "entity:stochastic simulation",
+        "entity:metabolic control analysis",
+        "entity:cardiac action potential",
+        "entity:model uncertainty",
+        "entity:variability analysis",
+        "entity:cardiac electrophysiology models",
+        "entity:model trustworthiness"
+      ]
+    },
+    "1": {
+      "community_id": 1,
+      "paper_count": 3,
+      "entity_count": 16,
+      "parent_id": 1,
+      "child_ids": [
+        0
+      ],
+      "members": [
+        "10.1371/journal.pcbi.1002970",
+        "10.1113/expphysiol.2003.026740",
+        "10.1098/rsta.2008.0094",
+        "entity:chaste",
+        "entity:computational physiology",
+        "entity:cardiac electrophysiology",
+        "entity:tissue modeling",
+        "entity:c++ library",
+        "entity:multiscale modeling",
+        "entity:physiome project",
+        "entity:multi-scale modeling",
+        "entity:cellml",
+        "entity:organ models",
+        "entity:systems physiology",
+        "entity:model encoding",
+        "entity:biological models",
+        "entity:model repository",
+        "entity:model reuse",
+        "entity:xml-based format"
+      ]
+    },
+    "8": {
+      "community_id": 8,
+      "paper_count": 2,
+      "entity_count": 11,
+      "parent_id": 8,
+      "child_ids": [
+        6
+      ],
+      "members": [
+        "10.1371/journal.pcbi.1000456",
+        "10.1371/journal.pcbi.1000272",
+        "entity:neuronal network models",
+        "entity:model reproducibility",
+        "entity:neuroml",
+        "entity:simulator-independent",
+        "entity:computational neuroscience",
+        "entity:neural dynamics",
+        "entity:astrocyte mechanisms",
+        "entity:extraneuronal space",
+        "entity:neural activity",
+        "entity:volume regulation",
+        "entity:ion transport"
+      ]
+    }
+  }
+}

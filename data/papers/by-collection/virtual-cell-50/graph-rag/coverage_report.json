@@ -1,0 +1,14 @@
+{
+  "collection": "virtual-cell-50",
+  "total_papers": 53,
+  "papers_with_entities": 53,
+  "entity_coverage_pct": 100.0,
+  "entity_nodes": 339,
+  "edges": 1285,
+  "communities": {
+    "0": 9,
+    "1": 9,
+    "2": 9,
+    "3": 9
+  }
+}

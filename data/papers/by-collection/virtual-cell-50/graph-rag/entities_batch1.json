@@ -1,0 +1,325 @@
+{
+  "10.1101/2023.04.30.538439": {
+    "entities": [
+      {"name": "scGPT", "type": "METHOD", "context": "foundation model for single-cell multi-omics using generative AI"},
+      {"name": "single-cell multi-omics", "type": "CONCEPT", "context": "data type integrating multiple molecular measurements"},
+      {"name": "transformer", "type": "METHOD", "context": "neural network architecture"},
+      {"name": "gene expression", "type": "CONCEPT", "context": "transcriptomics measurement"},
+      {"name": "cell type annotation", "type": "CONCEPT", "context": "downstream task"},
+      {"name": "perturbation response", "type": "CONCEPT", "context": "prediction task"},
+      {"name": "generative AI", "type": "METHOD", "context": "AI approach for foundation models"}
+    ],
+    "relationships": [
+      {"source": "scGPT", "target": "single-cell multi-omics", "type": "STUDIES"},
+      {"source": "scGPT", "target": "transformer", "type": "USES"},
+      {"source": "scGPT", "target": "cell type annotation", "type": "USES"},
+      {"source": "scGPT", "target": "perturbation response", "type": "STUDIES"},
+      {"source": "scGPT", "target": "generative AI", "type": "USES"}
+    ]
+  },
+  "10.1101/2023.10.30.563174": {
+    "entities": [
+      {"name": "CZ CELLxGENE", "type": "DATASET", "context": "single-cell data platform"},
+      {"name": "single-cell RNA-seq", "type": "METHOD", "context": "sequencing technology"},
+      {"name": "human cells", "type": "ORGANISM", "context": "cell types across human body"},
+      {"name": "data aggregation", "type": "CONCEPT", "context": "scalable platform approach"},
+      {"name": "cell atlas", "type": "DATASET", "context": "comprehensive cell reference"},
+      {"name": "Chan Zuckerberg Initiative", "type": "CONCEPT", "context": "funding organization"},
+      {"name": "exploratory analysis", "type": "METHOD", "context": "platform capability"}
+    ],
+    "relationships": [
+      {"source": "CZ CELLxGENE", "target": "single-cell RNA-seq", "type": "USES"},
+      {"source": "CZ CELLxGENE", "target": "human cells", "type": "STUDIES"},
+      {"source": "CZ CELLxGENE", "target": "cell atlas", "type": "RELATED_TO"},
+      {"source": "CZ CELLxGENE", "target": "data aggregation", "type": "USES"}
+    ]
+  },
+  "10.1101/2023.11.28.568918": {
+    "entities": [
+      {"name": "Universal Cell Embeddings", "type": "METHOD", "context": "foundation model for cell biology"},
+      {"name": "cell embeddings", "type": "CONCEPT", "context": "learned representations of cells"},
+      {"name": "Tabula Sapiens", "type": "DATASET", "context": "human cell atlas dataset"},
+      {"name": "multi-task learning", "type": "METHOD", "context": "training approach"},
+      {"name": "zero-shot transfer", "type": "CONCEPT", "context": "model capability"},
+      {"name": "cell states", "type": "CONCEPT", "context": "biological representation"},
+      {"name": "human tissues", "type": "ORGANISM", "context": "biological samples"}
+    ],
+    "relationships": [
+      {"source": "Universal Cell Embeddings", "target": "cell embeddings", "type": "USES"},
+      {"source": "Universal Cell Embeddings", "target": "Tabula Sapiens", "type": "USES"},
+      {"source": "Universal Cell Embeddings", "target": "multi-task learning", "type": "USES"},
+      {"source": "Universal Cell Embeddings", "target": "zero-shot transfer", "type": "RELATED_TO"},
+      {"source": "Tabula Sapiens", "target": "human tissues", "type": "STUDIES"}
+    ]
+  },
+  "10.1101/2023.05.29.542705": {
+    "entities": [
+      {"name": "scFoundation", "type": "METHOD", "context": "large scale foundation model on single-cell transcriptomics"},
+      {"name": "pre-training", "type": "METHOD", "context": "foundation model training strategy"},
+      {"name": "single-cell transcriptomics", "type": "CONCEPT", "context": "RNA expression profiling"},
+      {"name": "fine-tuning", "type": "METHOD", "context": "task-specific adaptation"},
+      {"name": "cell clustering", "type": "CONCEPT", "context": "downstream task"},
+      {"name": "batch correction", "type": "CONCEPT", "context": "data normalization task"},
+      {"name": "gene regulatory networks", "type": "CONCEPT", "context": "biological networks"}
+    ],
+    "relationships": [
+      {"source": "scFoundation", "target": "single-cell transcriptomics", "type": "STUDIES"},
+      {"source": "scFoundation", "target": "pre-training", "type": "USES"},
+      {"source": "scFoundation", "target": "fine-tuning", "type": "USES"},
+      {"source": "scFoundation", "target": "cell clustering", "type": "RELATED_TO"},
+      {"source": "scFoundation", "target": "batch correction", "type": "USES"}
+    ]
+  },
+  "10.1101/2023.10.16.562533": {
+    "entities": [
+      {"name": "GenePT", "type": "METHOD", "context": "foundation model for genes and cells built from ChatGPT"},
+      {"name": "ChatGPT", "type": "METHOD", "context": "large language model"},
+      {"name": "gene embeddings", "type": "CONCEPT", "context": "learned gene representations"},
+      {"name": "transfer learning", "type": "METHOD", "context": "knowledge transfer approach"},
+      {"name": "gene function prediction", "type": "CONCEPT", "context": "downstream task"},
+      {"name": "language models", "type": "METHOD", "context": "AI architecture"},
+      {"name": "gene ontology", "type": "DATASET", "context": "gene annotation resource"}
+    ],
+    "relationships": [
+      {"source": "GenePT", "target": "ChatGPT", "type": "USES"},
+      {"source": "GenePT", "target": "gene embeddings", "type": "USES"},
+      {"source": "GenePT", "target": "transfer learning", "type": "USES"},
+      {"source": "GenePT", "target": "language models", "type": "RELATED_TO"},
+      {"source": "GenePT", "target": "gene function prediction", "type": "USES"}
+    ]
+  },
+  "10.1038/s41586-024-08391-z": {
+    "entities": [
+      {"name": "Enformer", "type": "METHOD", "context": "foundation model of transcription across human cell types"},
+      {"name": "regulatory elements", "type": "CONCEPT", "context": "DNA sequences controlling gene expression"},
+      {"name": "chromatin accessibility", "type": "CONCEPT", "context": "epigenetic measurement"},
+      {"name": "transcription factors", "type": "CONCEPT", "context": "gene regulation proteins"},
+      {"name": "human cell types", "type": "ORGANISM", "context": "diverse cellular contexts"},
+      {"name": "deep learning", "type": "METHOD", "context": "neural network approach"},
+      {"name": "sequence-to-function", "type": "CONCEPT", "context": "predictive modeling task"}
+    ],
+    "relationships": [
+      {"source": "Enformer", "target": "regulatory elements", "type": "STUDIES"},
+      {"source": "Enformer", "target": "chromatin accessibility", "type": "USES"},
+      {"source": "Enformer", "target": "human cell types", "type": "STUDIES"},
+      {"source": "Enformer", "target": "deep learning", "type": "USES"},
+      {"source": "regulatory elements", "target": "transcription factors", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1186/s13073-024-01282-y": {
+    "entities": [
+      {"name": "spatial multi-omics", "type": "METHOD", "context": "multi-modal spatial profiling"},
+      {"name": "cardiovascular disease", "type": "DISEASE", "context": "heart disease conditions"},
+      {"name": "spatial transcriptomics", "type": "METHOD", "context": "location-aware RNA profiling"},
+      {"name": "tissue architecture", "type": "CONCEPT", "context": "spatial organization of cells"},
+      {"name": "cardiac tissue", "type": "ORGANISM", "context": "heart tissue samples"},
+      {"name": "disease mechanisms", "type": "CONCEPT", "context": "pathological processes"},
+      {"name": "imaging", "type": "METHOD", "context": "spatial measurement technology"}
+    ],
+    "relationships": [
+      {"source": "spatial multi-omics", "target": "cardiovascular disease", "type": "STUDIES"},
+      {"source": "spatial multi-omics", "target": "spatial transcriptomics", "type": "USES"},
+      {"source": "spatial multi-omics", "target": "cardiac tissue", "type": "STUDIES"},
+      {"source": "spatial transcriptomics", "target": "tissue architecture", "type": "USES"},
+      {"source": "cardiovascular disease", "target": "cardiac tissue", "type": "RELATED_TO"}
+    ]
+  },
+  "10.3390/biom14030339": {
+    "entities": [
+      {"name": "AlphaFold", "type": "METHOD", "context": "AI-based protein structure prediction"},
+      {"name": "protein structure prediction", "type": "CONCEPT", "context": "computational structural biology"},
+      {"name": "protein folding", "type": "CONCEPT", "context": "molecular conformational process"},
+      {"name": "neural networks", "type": "METHOD", "context": "deep learning architectures"},
+      {"name": "structural biology", "type": "CONCEPT", "context": "study of biomolecular structures"},
+      {"name": "amino acid sequences", "type": "CONCEPT", "context": "protein primary structure"},
+      {"name": "3D structure", "type": "CONCEPT", "context": "protein tertiary structure"}
+    ],
+    "relationships": [
+      {"source": "AlphaFold", "target": "protein structure prediction", "type": "USES"},
+      {"source": "AlphaFold", "target": "neural networks", "type": "USES"},
+      {"source": "protein structure prediction", "target": "protein folding", "type": "RELATED_TO"},
+      {"source": "protein folding", "target": "amino acid sequences", "type": "USES"},
+      {"source": "protein structure prediction", "target": "3D structure", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1101/2023.10.16.561085": {
+    "entities": [
+      {"name": "zero-shot learning", "type": "METHOD", "context": "evaluation without task-specific training"},
+      {"name": "foundation models", "type": "METHOD", "context": "pre-trained large models"},
+      {"name": "single-cell biology", "type": "CONCEPT", "context": "cellular-level analysis"},
+      {"name": "model evaluation", "type": "CONCEPT", "context": "benchmarking approach"},
+      {"name": "generalization", "type": "CONCEPT", "context": "model capability across tasks"},
+      {"name": "benchmarking", "type": "METHOD", "context": "performance assessment"},
+      {"name": "task transfer", "type": "CONCEPT", "context": "cross-task performance"}
+    ],
+    "relationships": [
+      {"source": "foundation models", "target": "zero-shot learning", "type": "USES"},
+      {"source": "foundation models", "target": "single-cell biology", "type": "STUDIES"},
+      {"source": "zero-shot learning", "target": "generalization", "type": "RELATED_TO"},
+      {"source": "model evaluation", "target": "benchmarking", "type": "USES"},
+      {"source": "foundation models", "target": "task transfer", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1101/2023.09.08.555192": {
+    "entities": [
+      {"name": "scBERT", "type": "METHOD", "context": "BERT-based model for single-cell data"},
+      {"name": "Geneformer", "type": "METHOD", "context": "transformer foundation model for single-cell"},
+      {"name": "model comparison", "type": "CONCEPT", "context": "benchmarking evaluation"},
+      {"name": "single-cell analysis", "type": "CONCEPT", "context": "computational cell biology"},
+      {"name": "performance metrics", "type": "CONCEPT", "context": "evaluation criteria"},
+      {"name": "foundation model utilities", "type": "CONCEPT", "context": "practical applications"},
+      {"name": "cell representation learning", "type": "CONCEPT", "context": "learned cell features"}
+    ],
+    "relationships": [
+      {"source": "scBERT", "target": "single-cell analysis", "type": "USES"},
+      {"source": "Geneformer", "target": "single-cell analysis", "type": "USES"},
+      {"source": "model comparison", "target": "performance metrics", "type": "USES"},
+      {"source": "scBERT", "target": "cell representation learning", "type": "USES"},
+      {"source": "Geneformer", "target": "cell representation learning", "type": "USES"}
+    ]
+  },
+  "10.1101/2023.10.03.560734": {
+    "entities": [
+      {"name": "CellPLM", "type": "METHOD", "context": "pre-training of cell language model beyond single cells"},
+      {"name": "cell language model", "type": "METHOD", "context": "language model for cellular data"},
+      {"name": "multi-cell context", "type": "CONCEPT", "context": "beyond individual cell analysis"},
+      {"name": "cellular interactions", "type": "CONCEPT", "context": "cell-cell communication"},
+      {"name": "tissue-level modeling", "type": "CONCEPT", "context": "higher-order biological organization"},
+      {"name": "self-supervised learning", "type": "METHOD", "context": "pre-training strategy"},
+      {"name": "spatial context", "type": "CONCEPT", "context": "location information"}
+    ],
+    "relationships": [
+      {"source": "CellPLM", "target": "cell language model", "type": "USES"},
+      {"source": "CellPLM", "target": "multi-cell context", "type": "STUDIES"},
+      {"source": "CellPLM", "target": "self-supervised learning", "type": "USES"},
+      {"source": "multi-cell context", "target": "cellular interactions", "type": "RELATED_TO"},
+      {"source": "multi-cell context", "target": "tissue-level modeling", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1093/nsr/nwaf028": {
+    "entities": [
+      {"name": "foundation models in bioinformatics", "type": "CONCEPT", "context": "AI models for biological data"},
+      {"name": "biological sequence analysis", "type": "CONCEPT", "context": "DNA, RNA, protein analysis"},
+      {"name": "omics data", "type": "CONCEPT", "context": "high-throughput molecular data"},
+      {"name": "pre-trained models", "type": "METHOD", "context": "transfer learning approach"},
+      {"name": "computational biology", "type": "CONCEPT", "context": "computational analysis of biology"},
+      {"name": "large-scale datasets", "type": "DATASET", "context": "big biological data"},
+      {"name": "model architectures", "type": "METHOD", "context": "neural network designs"}
+    ],
+    "relationships": [
+      {"source": "foundation models in bioinformatics", "target": "biological sequence analysis", "type": "USES"},
+      {"source": "foundation models in bioinformatics", "target": "omics data", "type": "STUDIES"},
+      {"source": "foundation models in bioinformatics", "target": "pre-trained models", "type": "USES"},
+      {"source": "pre-trained models", "target": "large-scale datasets", "type": "USES"},
+      {"source": "foundation models in bioinformatics", "target": "computational biology", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1101/2023.10.19.563100": {
+    "entities": [
+      {"name": "single-cell RNA sequencing", "type": "METHOD", "context": "scRNA-seq technology"},
+      {"name": "foundation model review", "type": "CONCEPT", "context": "comprehensive analysis of models"},
+      {"name": "model architectures", "type": "METHOD", "context": "transformer, VAE, GAN variants"},
+      {"name": "training strategies", "type": "CONCEPT", "context": "pre-training approaches"},
+      {"name": "evaluation frameworks", "type": "CONCEPT", "context": "benchmarking methods"},
+      {"name": "data preprocessing", "type": "METHOD", "context": "normalization and filtering"},
+      {"name": "downstream applications", "type": "CONCEPT", "context": "task-specific uses"}
+    ],
+    "relationships": [
+      {"source": "foundation model review", "target": "single-cell RNA sequencing", "type": "STUDIES"},
+      {"source": "foundation model review", "target": "model architectures", "type": "RELATED_TO"},
+      {"source": "foundation model review", "target": "training strategies", "type": "RELATED_TO"},
+      {"source": "foundation model review", "target": "evaluation frameworks", "type": "USES"},
+      {"source": "single-cell RNA sequencing", "target": "data preprocessing", "type": "USES"}
+    ]
+  },
+  "10.1093/bib/bbad518": {
+    "entities": [
+      {"name": "network pharmacology", "type": "CONCEPT", "context": "systems-level drug discovery"},
+      {"name": "AI-based precision medicine", "type": "CONCEPT", "context": "personalized treatment using AI"},
+      {"name": "drug-target networks", "type": "CONCEPT", "context": "molecular interaction networks"},
+      {"name": "systems pharmacology", "type": "CONCEPT", "context": "holistic drug action modeling"},
+      {"name": "machine learning", "type": "METHOD", "context": "predictive algorithms"},
+      {"name": "biomarker discovery", "type": "CONCEPT", "context": "disease marker identification"},
+      {"name": "drug repurposing", "type": "CONCEPT", "context": "new uses for existing drugs"}
+    ],
+    "relationships": [
+      {"source": "network pharmacology", "target": "AI-based precision medicine", "type": "RELATED_TO"},
+      {"source": "network pharmacology", "target": "drug-target networks", "type": "USES"},
+      {"source": "network pharmacology", "target": "systems pharmacology", "type": "RELATED_TO"},
+      {"source": "AI-based precision medicine", "target": "machine learning", "type": "USES"},
+      {"source": "network pharmacology", "target": "drug repurposing", "type": "USES"}
+    ]
+  },
+  "10.1186/s13059-025-03574-x": {
+    "entities": [
+      {"name": "zero-shot evaluation", "type": "METHOD", "context": "testing without fine-tuning"},
+      {"name": "model limitations", "type": "CONCEPT", "context": "performance constraints"},
+      {"name": "single-cell foundation models", "type": "METHOD", "context": "pre-trained models for scRNA-seq"},
+      {"name": "out-of-distribution", "type": "CONCEPT", "context": "novel data scenarios"},
+      {"name": "robustness", "type": "CONCEPT", "context": "model reliability"},
+      {"name": "failure modes", "type": "CONCEPT", "context": "error patterns"},
+      {"name": "model validation", "type": "CONCEPT", "context": "testing methodology"}
+    ],
+    "relationships": [
+      {"source": "zero-shot evaluation", "target": "single-cell foundation models", "type": "USES"},
+      {"source": "zero-shot evaluation", "target": "model limitations", "type": "STUDIES"},
+      {"source": "model limitations", "target": "out-of-distribution", "type": "RELATED_TO"},
+      {"source": "model limitations", "target": "failure modes", "type": "RELATED_TO"},
+      {"source": "zero-shot evaluation", "target": "robustness", "type": "USES"}
+    ]
+  },
+  "10.1101/2023.09.11.557287": {
+    "entities": [
+      {"name": "Cell2Sentence", "type": "METHOD", "context": "teaching large language models the language of biology"},
+      {"name": "large language models", "type": "METHOD", "context": "LLMs like GPT"},
+      {"name": "biological language", "type": "CONCEPT", "context": "cell state representations as language"},
+      {"name": "cell-to-text", "type": "CONCEPT", "context": "mapping cells to natural language"},
+      {"name": "interpretability", "type": "CONCEPT", "context": "model explainability"},
+      {"name": "cross-modal learning", "type": "METHOD", "context": "multi-modality training"},
+      {"name": "semantic embeddings", "type": "CONCEPT", "context": "meaningful representations"}
+    ],
+    "relationships": [
+      {"source": "Cell2Sentence", "target": "large language models", "type": "USES"},
+      {"source": "Cell2Sentence", "target": "biological language", "type": "STUDIES"},
+      {"source": "Cell2Sentence", "target": "cell-to-text", "type": "USES"},
+      {"source": "Cell2Sentence", "target": "cross-modal learning", "type": "USES"},
+      {"source": "biological language", "target": "semantic embeddings", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1101/2024.04.15.589472": {
+    "entities": [
+      {"name": "Nicheformer", "type": "METHOD", "context": "foundation model for single-cell and spatial transcriptomics"},
+      {"name": "cellular niche", "type": "CONCEPT", "context": "local cellular microenvironment"},
+      {"name": "spatial relationships", "type": "CONCEPT", "context": "cell location and neighbors"},
+      {"name": "niche modeling", "type": "CONCEPT", "context": "microenvironment representation"},
+      {"name": "graph neural networks", "type": "METHOD", "context": "spatial graph architecture"},
+      {"name": "cell-cell communication", "type": "CONCEPT", "context": "intercellular signaling"},
+      {"name": "tissue context", "type": "CONCEPT", "context": "spatial organization"}
+    ],
+    "relationships": [
+      {"source": "Nicheformer", "target": "cellular niche", "type": "STUDIES"},
+      {"source": "Nicheformer", "target": "spatial relationships", "type": "USES"},
+      {"source": "Nicheformer", "target": "graph neural networks", "type": "USES"},
+      {"source": "cellular niche", "target": "cell-cell communication", "type": "RELATED_TO"},
+      {"source": "spatial relationships", "target": "tissue context", "type": "RELATED_TO"}
+    ]
+  },
+  "10.1101/2023.09.26.559542": {
+    "entities": [
+      {"name": "GeneCompass", "type": "METHOD", "context": "deciphering universal gene regulatory mechanisms"},
+      {"name": "gene regulatory mechanisms", "type": "CONCEPT", "context": "transcriptional control processes"},
+      {"name": "regulatory grammar", "type": "CONCEPT", "context": "rules of gene regulation"},
+      {"name": "cis-regulatory elements", "type": "CONCEPT", "context": "DNA regulatory sequences"},
+      {"name": "transcriptional programs", "type": "CONCEPT", "context": "coordinated gene expression"},
+      {"name": "cross-species", "type": "CONCEPT", "context": "evolutionary conservation"},
+      {"name": "motif discovery", "type": "METHOD", "context": "regulatory sequence patterns"}
+    ],
+    "relationships": [
+      {"source": "GeneCompass", "target": "gene regulatory mechanisms", "type": "STUDIES"},
+      {"source": "GeneCompass", "target": "regulatory grammar", "type": "USES"},
+      {"source": "gene regulatory mechanisms", "target": "cis-regulatory elements", "type": "RELATED_TO"},
+      {"source": "gene regulatory mechanisms", "target": "transcriptional programs", "type": "RELATED_TO"},
+      {"source": "GeneCompass", "target": "motif discovery", "type": "USES"}
+    ]
+  }
+}
