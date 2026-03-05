@@ -1,0 +1,3070 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연구자 프로필 보고서: 류충민 & 서휘원 박사 | KRIBB 감염병연구센터</title>
+<style>
+/* ===== CSS VARIABLES ===== */
+:root {
+  --primary: #1a365d;
+  --primary-light: #2a4a7f;
+  --primary-dark: #0f2140;
+  --accent: #e53e3e;
+  --accent2: #dd6b20;
+  --accent3: #38a169;
+  --gold: #d69e2e;
+  --teal: #2c7a7b;
+  --bg: #f7f9fc;
+  --bg2: #eef2f7;
+  --card: #ffffff;
+  --text: #1a202c;
+  --text-muted: #718096;
+  --text-light: #a0aec0;
+  --border: #e2e8f0;
+  --shadow: 0 4px 24px rgba(26,54,93,0.10);
+  --shadow-lg: 0 8px 40px rgba(26,54,93,0.16);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(.4,0,.2,1);
+  --font-heading: 'Noto Serif KR', 'Georgia', serif;
+  --font-body: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+[data-theme="dark"] {
+  --bg: #0d1b2e;
+  --bg2: #162033;
+  --card: #1a2a42;
+  --text: #e8edf5;
+  --text-muted: #8fa4c0;
+  --text-light: #5a7a9a;
+  --border: #2a3f5f;
+  --shadow: 0 4px 24px rgba(0,0,0,0.40);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.50);
+  --primary-light: #3a5a9f;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background var(--transition), color var(--transition);
+  -webkit-font-smoothing: antialiased;
+}
+@import url('data:text/css,');
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height: 1.3; color: var(--text); }
+h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
+h4 { font-size: 1.1rem; }
+p { color: var(--text-muted); margin-bottom: 0.75rem; }
+a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--accent); }
+strong { color: var(--text); font-weight: 700; }
+code { font-family: var(--font-mono); font-size: 0.85em; background: var(--bg2); padding: 2px 6px; border-radius: 4px; color: var(--accent2); }
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+@media (max-width: 768px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ===== TOP NAV ===== */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--primary-dark);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+}
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.topnav-brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.topnav-brand span { color: #90cdf4; }
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 20px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.theme-toggle {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: all var(--transition);
+  white-space: nowrap;
+  font-family: inherit;
+}
+.theme-toggle:hover { background: rgba(255,255,255,0.22); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #2d5a9e 100%);
+  padding: 4rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #90cdf4;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+.hero-title {
+  color: #fff;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-family: var(--font-heading);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero-subtitle {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.hero-meta-label { font-size: 0.72rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+.hero-meta-value { font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600; }
+.hero-deco {
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(144,205,244,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3.5rem 0; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.section-num {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+  margin: 3rem 0;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+/* ===== RESEARCHER PROFILE CARDS ===== */
+.profile-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.profile-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.profile-card-header {
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.profile-card-header.ryu {
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+}
+.profile-card-header.seo {
+  background: linear-gradient(135deg, #1a4731 0%, #276749 100%);
+}
+.profile-card-header::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.profile-name { font-size: 1.4rem; color: #fff; font-family: var(--font-heading); margin-bottom: 0.2rem; }
+.profile-name-en { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-bottom: 0.5rem; }
+.profile-title { font-size: 0.8rem; color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.12); padding: 0.2rem 0.65rem; border-radius: 12px; display: inline-block; }
+.profile-tier {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.tier-elite { background: linear-gradient(135deg, #d69e2e, #f6ad55); color: #1a1a00; }
+.tier-midcareer { background: linear-gradient(135deg, #38a169, #68d391); color: #0a2a15; }
+.profile-body { padding: 1.5rem; }
+
+/* ===== METRIC TILES ===== */
+.metrics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+.metric-tile {
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  cursor: help;
+}
+[data-theme="dark"] .metric-value { color: #90cdf4; }
+.metric-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.metric-note { font-size: 0.65rem; color: var(--text-light); margin-top: 0.1rem; }
+
+/* ===== TOOLTIP ===== */
+[data-tooltip] { position: relative; }
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 50;
+  max-width: 220px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+[data-tooltip]:hover::after { opacity: 1; }
+
+/* ===== TABS ===== */
+.tab-group { margin-bottom: 2rem; }
+.tab-list {
+  display: flex;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+  gap: 0;
+  overflow-x: auto;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+[data-theme="dark"] .tab-btn.active { color: #90cdf4; border-bottom-color: #90cdf4; }
+.tab-btn:hover:not(.active) { color: var(--text); background: var(--bg2); }
+.tab-panel { display: none; animation: fadeIn 0.3s ease; }
+.tab-panel.active { display: block; }
+
+/* ===== COMPARISON CHART ===== */
+.comparison-section { background: var(--card); border-radius: var(--radius); border: 1px solid var(--border); padding: 2rem; box-shadow: var(--shadow); }
+.comparison-row { margin-bottom: 1.25rem; }
+.comparison-label { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.4rem; display: flex; justify-content: space-between; }
+.comparison-bars { display: flex; flex-direction: column; gap: 0.4rem; }
+.bar-container { display: flex; align-items: center; gap: 0.75rem; }
+.bar-name { font-size: 0.78rem; font-weight: 600; width: 60px; text-align: right; flex-shrink: 0; }
+.bar-track { flex: 1; height: 10px; background: var(--bg2); border-radius: 5px; overflow: hidden; }
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+  width: 0;
+}
+.bar-fill.ryu { background: linear-gradient(90deg, #1a365d, #4299e1); }
+.bar-fill.seo { background: linear-gradient(90deg, #1a4731, #68d391); }
+.bar-val { font-size: 0.78rem; font-weight: 700; width: 70px; flex-shrink: 0; color: var(--text); }
+
+/* ===== RADAR CHART (SVG) ===== */
+.radar-wrap { display: flex; justify-content: center; align-items: center; padding: 1rem 0; }
+.radar-svg { overflow: visible; }
+.radar-area { fill-opacity: 0.18; stroke-width: 2; }
+.radar-area.ryu { fill: #4299e1; stroke: #4299e1; }
+.radar-area.seo { fill: #68d391; stroke: #38a169; }
+.radar-grid { fill: none; stroke: var(--border); stroke-width: 1; }
+.radar-label { font-size: 11px; font-family: var(--font-body); fill: var(--text-muted); text-anchor: middle; }
+
+/* ===== TIMELINE ===== */
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--primary-light), transparent);
+}
+.timeline-item { position: relative; margin-bottom: 1.5rem; }
+.timeline-dot {
+  position: absolute;
+  left: -1.6rem;
+  top: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 3px rgba(26,54,93,0.2);
+  transition: transform var(--transition);
+}
+.timeline-item:hover .timeline-dot { transform: scale(1.3); }
+.timeline-year {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+[data-theme="dark"] .timeline-year { color: #90cdf4; }
+.timeline-text { font-size: 0.88rem; color: var(--text); line-height: 1.5; }
+.timeline-item.highlight .timeline-dot { background: var(--gold); }
+.timeline-item.highlight .timeline-year { color: var(--gold); }
+
+/* ===== PAPERS TABLE ===== */
+.papers-table-wrap { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+.papers-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.papers-table th {
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--transition);
+}
+.papers-table th:hover { background: var(--primary-light); }
+.papers-table th .sort-arrow { margin-left: 0.3rem; opacity: 0.5; }
+.papers-table th.sorted .sort-arrow { opacity: 1; }
+.papers-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.papers-table tr:last-child td { border-bottom: none; }
+.papers-table tr:hover td { background: var(--bg2); }
+.papers-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+[data-theme="dark"] .papers-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+.cite-bar-wrap { display: flex; align-items: center; gap: 0.5rem; min-width: 120px; }
+.cite-bar { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #1a365d, #4299e1); flex-shrink: 0; }
+.cite-num { font-weight: 700; font-size: 0.85rem; color: var(--text); white-space: nowrap; }
+.doi-copy {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  font-family: var(--font-mono);
+}
+.doi-copy:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.doi-copy.copied { background: var(--accent3); color: #fff; border-color: var(--accent3); }
+.journal-badge {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  background: var(--bg2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.journal-badge.top { background: rgba(214,158,46,0.1); color: var(--gold); border-color: rgba(214,158,46,0.3); }
+
+/* ===== ACTIVITY CHART ===== */
+.activity-chart { display: flex; align-items: flex-end; gap: 0.4rem; height: 80px; padding: 0 0.5rem; }
+.activity-bar-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; flex: 1; }
+.activity-bar {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to top, #276749, #68d391);
+  transition: height 1s cubic-bezier(.4,0,.2,1);
+  min-height: 2px;
+}
+.activity-year { font-size: 0.65rem; color: var(--text-light); }
+.activity-val { font-size: 0.7rem; font-weight: 600; color: var(--text-muted); }
+
+/* ===== TOPIC DONUT ===== */
+.donut-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.donut-center { position: absolute; text-align: center; pointer-events: none; }
+.donut-center-num { font-size: 1.4rem; font-weight: 800; color: var(--text); font-family: var(--font-heading); }
+.donut-center-lbl { font-size: 0.65rem; color: var(--text-light); }
+.topic-legend { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+.topic-legend-item { display: flex; align-items: center; gap: 0.5rem; }
+.topic-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.topic-legend-name { font-size: 0.78rem; color: var(--text-muted); flex: 1; }
+.topic-legend-val { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+
+/* ===== NETWORK ===== */
+.network-svg { width: 100%; max-width: 560px; margin: 0 auto; display: block; }
+.network-node-main { fill: #1a365d; }
+[data-theme="dark"] .network-node-main { fill: #4299e1; }
+.network-node { fill: var(--bg2); stroke: var(--border); stroke-width: 1.5; transition: all var(--transition); }
+.network-node:hover { stroke: var(--primary); fill: var(--primary); }
+.network-edge { stroke: var(--border); stroke-width: 1; opacity: 0.6; }
+.network-edge.strong { stroke: var(--primary); stroke-width: 2; opacity: 0.8; }
+.network-label { font-size: 9px; fill: var(--text-muted); text-anchor: middle; pointer-events: none; }
+.network-label-main { font-size: 11px; fill: #fff; text-anchor: middle; font-weight: 700; pointer-events: none; }
+[data-theme="dark"] .network-label-main { fill: #fff; }
+.network-tooltip {
+  font-size: 10px;
+  fill: var(--text);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* ===== DDM HIGHLIGHT ===== */
+.ddm-card {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #1a4731 100%);
+  border-radius: var(--radius);
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.ddm-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(104,211,145,0.12) 0%, transparent 70%);
+}
+.ddm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(104,211,145,0.15);
+  border: 1px solid rgba(104,211,145,0.3);
+  color: #9ae6b4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ddm-title { font-size: clamp(1rem, 2.5vw, 1.3rem); font-family: var(--font-heading); margin-bottom: 1rem; line-height: 1.4; }
+.ddm-title em { color: #90cdf4; font-style: normal; }
+.ddm-meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+.ddm-meta-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.5rem 0.9rem; }
+.ddm-meta-label { font-size: 0.65rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+.ddm-meta-value { font-size: 0.88rem; color: rgba(255,255,255,0.9); font-weight: 600; }
+.ddm-summary { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem; }
+.ddm-summary strong { color: #9ae6b4; }
+.media-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.media-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+.media-link:hover { background: rgba(255,255,255,0.18); color: #fff; transform: translateY(-1px); }
+
+/* ===== RED FLAGS ===== */
+.redflag-clear {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(56,161,105,0.08);
+  border: 1px solid rgba(56,161,105,0.25);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.5rem;
+}
+.redflag-icon { font-size: 1.8rem; }
+.redflag-text h4 { color: var(--accent3); margin-bottom: 0.1rem; }
+.redflag-text p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+/* ===== PROFILE LINKS ===== */
+.profile-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.profile-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+.profile-link-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-1px); }
+.profile-link-btn .lnk-icon { font-size: 0.9rem; }
+
+/* ===== COLLAB SECTION ===== */
+.synergy-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+.synergy-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 0.5rem;
+}
+.synergy-researcher {
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+.synergy-researcher h4 { font-size: 1rem; margin-bottom: 0.4rem; }
+.synergy-tag { display: inline-block; background: var(--primary); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px; margin: 0.1rem; font-weight: 600; }
+
+/* ===== ACCORDION ===== */
+.accordion-item { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 0.5rem; overflow: hidden; }
+.accordion-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--card);
+  transition: background var(--transition);
+  text-align: left;
+}
+.accordion-btn:hover { background: var(--bg2); }
+.accordion-chevron { font-size: 0.8rem; transition: transform var(--transition); color: var(--text-muted); }
+.accordion-item.open .accordion-chevron { transform: rotate(180deg); }
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1);
+  background: var(--card);
+}
+.accordion-item.open .accordion-body { max-height: 2000px; }
+.accordion-content { padding: 0.5rem 1.2rem 1.2rem; border-top: 1px solid var(--border); }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--primary-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  font-size: 0.82rem;
+}
+.footer-inner { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+.footer-sources { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.footer-badge {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes countUp { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+.animate-fadein { animation: fadeIn 0.6s ease both; }
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in-section.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== PRINT ===== */
+@media print {
+  .topnav, .theme-toggle { display: none !important; }
+  .hero { background: #1a365d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .card, .profile-card { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  body { font-size: 12px; }
+  .section { padding: 1.5rem 0; }
+  .ddm-card { background: #1a365d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ===== MISC ===== */
+.tag { display: inline-block; background: var(--bg2); border: 1px solid var(--border); color: var(--text-muted); font-size: 0.72rem; padding: 0.15rem 0.55rem; border-radius: 10px; margin: 0.1rem; }
+.divider { height: 1px; background: var(--border); margin: 1rem 0; }
+.text-sm { font-size: 0.85rem; }
+.text-muted { color: var(--text-muted); }
+.blockquote {
+  border-left: 3px solid var(--primary);
+  padding: 0.75rem 1rem;
+  background: var(--bg2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 1rem 0;
+}
+[data-theme="dark"] .blockquote { border-left-color: #90cdf4; }
+.info-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.info-table tr { border-bottom: 1px solid var(--border); }
+.info-table tr:last-child { border-bottom: none; }
+.info-table th { padding: 0.5rem 0.75rem; font-weight: 600; color: var(--text-muted); font-size: 0.78rem; text-align: left; width: 38%; vertical-align: top; }
+.info-table td { padding: 0.5rem 0.75rem; color: var(--text); vertical-align: top; }
+.section-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+/* ===== BACKGROUND SECTION — STORY TIMELINE ===== */
+.story-section {
+  background: var(--bg);
+  padding: 3.5rem 0;
+}
+.story-intro {
+  background: linear-gradient(135deg, #fffbf0 0%, #fff8e8 100%);
+  border: 1px solid rgba(214,158,46,0.25);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+[data-theme="dark"] .story-intro {
+  background: rgba(214,158,46,0.07);
+  border-color: rgba(214,158,46,0.3);
+  border-left-color: var(--gold);
+}
+
+/* Chapter timeline */
+.chapter-timeline { display: flex; flex-direction: column; gap: 0; }
+.chapter-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0;
+  position: relative;
+}
+.chapter-card + .chapter-card { margin-top: 0; }
+.chapter-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 0.25rem;
+}
+.chapter-spine::after {
+  content: '';
+  position: absolute;
+  top: 44px;
+  bottom: -1px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border), transparent);
+}
+.chapter-card:last-child .chapter-spine::after { display: none; }
+.chapter-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.3);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-heading);
+}
+.chapter-dot.ch1 { background: linear-gradient(135deg, #2b6cb0, #4299e1); }
+.chapter-dot.ch2 { background: linear-gradient(135deg, #276749, #38a169); }
+.chapter-dot.ch3 { background: linear-gradient(135deg, #744210, #d69e2e); }
+.chapter-dot.ch4 { background: linear-gradient(135deg, #742a2a, #e53e3e); }
+.chapter-dot.ch5 { background: linear-gradient(135deg, #44337a, #805ad5); }
+
+.chapter-body {
+  padding: 0.25rem 0 2rem 1.25rem;
+  cursor: pointer;
+}
+.chapter-year-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.ch1 ~ .chapter-body .chapter-year-badge,
+.chapter-card:nth-child(1) .chapter-year-badge { background: rgba(66,153,225,0.12); color: #2b6cb0; }
+[data-theme="dark"] .chapter-card:nth-child(1) .chapter-year-badge { color: #90cdf4; }
+.chapter-card:nth-child(2) .chapter-year-badge { background: rgba(56,161,105,0.12); color: #276749; }
+[data-theme="dark"] .chapter-card:nth-child(2) .chapter-year-badge { color: #9ae6b4; }
+.chapter-card:nth-child(3) .chapter-year-badge { background: rgba(214,158,46,0.12); color: #744210; }
+[data-theme="dark"] .chapter-card:nth-child(3) .chapter-year-badge { color: #f6ad55; }
+.chapter-card:nth-child(4) .chapter-year-badge { background: rgba(229,62,62,0.12); color: #742a2a; }
+[data-theme="dark"] .chapter-card:nth-child(4) .chapter-year-badge { color: #fc8181; }
+.chapter-card:nth-child(5) .chapter-year-badge { background: rgba(128,90,213,0.12); color: #44337a; }
+[data-theme="dark"] .chapter-card:nth-child(5) .chapter-year-badge { color: #d6bcfa; }
+
+.chapter-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.chapter-expand-icon {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition), background var(--transition);
+  flex-shrink: 0;
+  user-select: none;
+}
+.chapter-body.open .chapter-expand-icon { transform: rotate(180deg); background: var(--primary); color: #fff; border-color: var(--primary); }
+.chapter-lead { font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; }
+.chapter-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
+  opacity: 0;
+}
+.chapter-body.open .chapter-detail { max-height: 600px; opacity: 1; }
+.chapter-detail-inner {
+  margin-top: 0.9rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.chapter-detail-inner strong { color: var(--text); }
+.analogy-box {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--gold);
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+[data-theme="dark"] .analogy-box { border-left-color: #f6ad55; }
+.analogy-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+/* Stage timeline for Seo */
+.stage-track { display: flex; flex-direction: column; gap: 1.5rem; }
+.stage-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.stage-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.stage-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+}
+.stage-num.s1 { background: linear-gradient(135deg, #2b6cb0, #63b3ed); }
+.stage-num.s2 { background: linear-gradient(135deg, #276749, #68d391); }
+.stage-num.s3 { background: linear-gradient(135deg, #44337a, #9f7aea); }
+.stage-meta { flex: 1; }
+.stage-period {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  margin-bottom: 0.1rem;
+}
+.stage-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.stage-org { font-size: 0.8rem; color: var(--text-muted); }
+.stage-body { padding: 0 1.5rem 1.25rem; font-size: 0.86rem; color: var(--text-muted); line-height: 1.7; }
+.stage-lesson {
+  margin-top: 0.85rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--teal);
+  background: rgba(44,122,123,0.06);
+  font-size: 0.82rem;
+}
+[data-theme="dark"] .stage-lesson { background: rgba(44,122,123,0.12); }
+.stage-lesson-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+}
+.stage-lesson p { color: var(--text-muted); margin: 0; }
+
+/* DDM comparison cards */
+.ddm-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+@media (max-width: 700px) { .ddm-compare-grid { grid-template-columns: 1fr; } }
+.ddm-compare-card {
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.ddm-compare-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.ddm-compare-card.antibiotic { background: linear-gradient(160deg, #fff5f5, #fed7d7); border-color: rgba(229,62,62,0.2); }
+.ddm-compare-card.vaccine   { background: linear-gradient(160deg, #ebf8ff, #bee3f8); border-color: rgba(66,153,225,0.2); }
+.ddm-compare-card.ddm-new   { background: linear-gradient(160deg, #f0fff4, #c6f6d5); border-color: rgba(56,161,105,0.25); }
+[data-theme="dark"] .ddm-compare-card.antibiotic { background: rgba(229,62,62,0.08); }
+[data-theme="dark"] .ddm-compare-card.vaccine   { background: rgba(66,153,225,0.08); }
+[data-theme="dark"] .ddm-compare-card.ddm-new   { background: rgba(56,161,105,0.08); }
+.ddm-compare-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.ddm-compare-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+.ddm-compare-card.antibiotic .ddm-compare-name { color: #c53030; }
+.ddm-compare-card.vaccine   .ddm-compare-name { color: #2b6cb0; }
+.ddm-compare-card.ddm-new   .ddm-compare-name { color: #276749; }
+.ddm-compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-align: left;
+}
+.ddm-compare-row:last-child { border-bottom: none; }
+.ddm-compare-attr { color: var(--text-light); font-weight: 600; flex-shrink: 0; width: 52px; font-size: 0.72rem; }
+.ddm-compare-val { color: var(--text-muted); line-height: 1.4; }
+.ddm-compare-card.ddm-new .ddm-compare-val { color: var(--text); font-weight: 500; }
+.ddm-new-badge {
+  position: absolute;
+  top: 10px;
+  right: -22px;
+  background: var(--accent3);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.2rem 1.6rem;
+  transform: rotate(35deg);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Guard analogy step diagram */
+.guard-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 1.25rem 0;
+  flex-wrap: wrap;
+}
+.guard-step {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 0 0.5rem;
+  position: relative;
+}
+.guard-step + .guard-step::before {
+  content: '→';
+  position: absolute;
+  left: -6px;
+  top: 24px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+@media (max-width: 600px) {
+  .guard-steps { flex-direction: column; gap: 0.5rem; }
+  .guard-step + .guard-step::before { content: '↓'; left: 50%; top: -14px; transform: translateX(-50%); }
+}
+.guard-step-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.guard-step:nth-child(1) .guard-step-icon { background: rgba(214,158,46,0.15); border: 2px solid rgba(214,158,46,0.35); }
+.guard-step:nth-child(3) .guard-step-icon { background: rgba(66,153,225,0.12); border: 2px solid rgba(66,153,225,0.3); }
+.guard-step:nth-child(5) .guard-step-icon { background: rgba(56,161,105,0.12); border: 2px solid rgba(56,161,105,0.3); }
+.guard-step:nth-child(7) .guard-step-icon { background: rgba(229,62,62,0.10); border: 2px solid rgba(229,62,62,0.25); }
+.guard-step-label { font-size: 0.78rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+.guard-step-desc { font-size: 0.72rem; color: var(--text-muted); line-height: 1.4; }
+
+/* Survival bar dramatic */
+.survival-bars { display: flex; flex-direction: column; gap: 1rem; margin: 1.25rem 0; }
+.survival-row { }
+.survival-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  font-size: 0.82rem;
+}
+.survival-pathogen { font-weight: 600; color: var(--text); }
+.survival-vals { display: flex; gap: 1rem; font-size: 0.78rem; font-weight: 700; }
+.survival-val-ddm { color: var(--accent3); }
+.survival-val-ctrl { color: var(--accent); }
+.survival-track { position: relative; height: 22px; background: rgba(229,62,62,0.12); border-radius: 11px; overflow: visible; border: 1px solid rgba(229,62,62,0.2); }
+.survival-fill-ddm {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  border-radius: 11px;
+  background: linear-gradient(90deg, #276749, #68d391);
+  width: 0;
+  transition: width 1.4s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+.survival-fill-ddm span {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Pipeline tracker */
+.pipeline-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.pipeline-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 90px;
+  flex: 1;
+  position: relative;
+}
+.pipeline-stage + .pipeline-stage::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 20px;
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  z-index: 0;
+}
+.pipeline-stage.done + .pipeline-stage::before { background: var(--accent3); }
+.pipeline-dot-outer {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.pipeline-stage.done .pipeline-dot-outer { background: var(--accent3); }
+.pipeline-stage.current .pipeline-dot-outer { background: var(--gold); box-shadow: 0 0 0 5px rgba(214,158,46,0.25); }
+.pipeline-stage.future .pipeline-dot-outer { background: var(--bg2); border: 2px solid var(--border); }
+.pipeline-icon { font-size: 1.1rem; }
+.pipeline-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.3;
+}
+.pipeline-stage.done .pipeline-label { color: var(--accent3); }
+.pipeline-stage.current .pipeline-label { color: var(--gold); font-weight: 700; }
+
+/* Glossary grid */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+.gloss-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.gloss-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+.gloss-front {
+  padding: 1rem 1.1rem;
+}
+.gloss-term {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+.gloss-category {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+}
+.gloss-back {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+}
+.gloss-card.open .gloss-back { max-height: 200px; }
+.gloss-back-inner {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.gloss-card.open .gloss-front { border-bottom: none; }
+.gloss-card.open .gloss-term { color: var(--primary); }
+[data-theme="dark"] .gloss-card.open .gloss-term { color: #90cdf4; }
+
+/* Conference prediction cards */
+.conf-cards { display: flex; flex-direction: column; gap: 1rem; }
+.conf-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: start;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.conf-card:hover { transform: translateX(4px); box-shadow: var(--shadow-lg); }
+.conf-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.conf-card:nth-child(1) .conf-num { background: linear-gradient(135deg, var(--primary), #4299e1); }
+.conf-card:nth-child(2) .conf-num { background: linear-gradient(135deg, #742a2a, #e53e3e); }
+.conf-card:nth-child(3) .conf-num { background: linear-gradient(135deg, #276749, #38a169); }
+.conf-card:nth-child(4) .conf-num { background: linear-gradient(135deg, #44337a, #9f7aea); }
+.conf-card:nth-child(5) .conf-num { background: linear-gradient(135deg, #744210, #d69e2e); }
+.conf-body { min-width: 0; }
+.conf-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+.conf-message {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.conf-prereq {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.65rem;
+  line-height: 1.5;
+}
+.conf-prereq strong { color: var(--text-muted); }
+.conf-likelihood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+.conf-likelihood-dots {
+  display: flex;
+  gap: 3px;
+}
+.conf-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.conf-dot.filled { background: var(--gold); }
+.conf-likelihood-label {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Warm narrative sub-section headers */
+.bg-subsection-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.bg-subsection-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.05em;
+}
+.bg-subsection-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.bg-subsection-title em { color: var(--teal); font-style: normal; }
+
+@media print {
+  .chapter-detail { max-height: none !important; opacity: 1 !important; }
+  .gloss-back { max-height: none !important; }
+  .chapter-body.open .chapter-expand-icon,
+  .chapter-expand-icon { display: none; }
+  .story-section, .section { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav" id="topnav">
+  <div class="container">
+    <div class="topnav-inner">
+      <div class="topnav-brand">KRIBB <span>감염병연구센터</span> | 연구자 프로필</div>
+      <ul class="nav-links">
+        <li><a href="#section-overview">개요</a></li>
+        <li><a href="#section-profiles">연구자 카드</a></li>
+        <li><a href="#section-comparison">비교 분석</a></li>
+        <li><a href="#section-timeline">경력 타임라인</a></li>
+        <li><a href="#section-papers">대표 논문</a></li>
+        <li><a href="#section-network">협업 네트워크</a></li>
+        <li><a href="#section-ddm">DDM 연구</a></li>
+        <li><a href="#section-links">외부 링크</a></li>
+        <li><a href="#section-background">연구 배경지식</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙 다크모드</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="section-overview">
+  <div class="hero-deco"></div>
+  <div class="container">
+    <div class="animate-fadein">
+      <div class="hero-badge">&#128202; Research Intelligence Report</div>
+      <h1 class="hero-title">연구자 프로필 보고서</h1>
+      <p class="hero-subtitle">류충민 &amp; 서휘원 박사 — 한국생명공학연구원(KRIBB) 감염병연구센터</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">조사일</span>
+          <span class="hero-meta-value">2026-03-04</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">조사 방법</span>
+          <span class="hero-meta-value">OpenAlex API + WebSearch 교차검증</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">소속</span>
+          <span class="hero-meta-value">KRIBB 감염병연구센터</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Red Flags</span>
+          <span class="hero-meta-value" style="color:#68d391;">✓ 두 연구자 모두 없음</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE CARDS -->
+<section class="section" id="section-profiles">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">1</div>
+      <div>
+        <div class="section-tag">Researcher Profiles</div>
+        <h2>연구자 프로필 카드</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- RYU -->
+      <div class="profile-card">
+        <div class="profile-card-header ryu">
+          <div class="profile-tier tier-elite">&#11088; Elite Top 1%</div>
+          <div class="profile-avatar">류</div>
+          <div class="profile-name">류충민</div>
+          <div class="profile-name-en">Choong-Min Ryu, Ph.D.</div>
+          <div class="profile-title">KRIBB 감염병연구센터장 (2025.03~)</div>
+        </div>
+        <div class="profile-body">
+          <div class="metrics-grid">
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="h-index: 본인 논문 중 h편 이상이 각각 h회 이상 인용된 최대 h값. 71은 세계 최상위권 수준입니다." data-target="71">0</div>
+              <div class="metric-label">h-index</div>
+              <div class="metric-note">OpenAlex 기준</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="총 피인용수: 출판된 모든 논문이 받은 인용 횟수 합계" data-target="22165" data-prefix="">0</div>
+              <div class="metric-label">총 피인용수</div>
+              <div class="metric-note">~27,218 (Scholar)</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="총 논문수: OpenAlex에 등록된 게재 논문 수" data-target="277">0</div>
+              <div class="metric-label">총 논문수</div>
+              <div class="metric-note">307 (ResearchGate)</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="논문당 평균 피인용수 = 총 피인용수 ÷ 총 논문수" data-target="80">0</div>
+              <div class="metric-label">평균 피인용</div>
+              <div class="metric-note">논문당</div>
+            </div>
+          </div>
+          <div class="blockquote">미생물학/식물병리학 분야 h-index 71은 해당 분야 세계 최상위권 연구자에 해당합니다.</div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">핵심 연구 분야</div>
+          <div>
+            <span class="tag">식물-미생물 상호작용</span>
+            <span class="tag">세균 휘발성 화합물</span>
+            <span class="tag">유도저항성(ISR)</span>
+            <span class="tag">항생제 내성</span>
+            <span class="tag">코로나19 모델</span>
+          </div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">수상 이력</div>
+          <div style="font-size:0.82rem; color:var(--text);">
+            <div style="margin-bottom:0.3rem;">&#127942; 과학기술훈장 진보장 (2022)</div>
+            <div>&#127942; 대전시 이달의 과학기술인상 (2016)</div>
+          </div>
+
+          <!-- Topic Donut for Ryu -->
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">연구 토픽 분포 (추정)</div>
+          <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+            <div class="donut-wrap">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <!-- Plant-Microbe 38% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#4299e1" stroke-width="14"
+                  stroke-dasharray="95.5 156.3"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Bacteria VOC 28% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#63b3ed" stroke-width="14"
+                  stroke-dasharray="70.4 181.4"
+                  stroke-dashoffset="-95.5"
+                  transform="rotate(-90 50 50)"/>
+                <!-- ISR 18% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#2b6cb0" stroke-width="14"
+                  stroke-dasharray="45.2 206.6"
+                  stroke-dashoffset="-165.9"
+                  transform="rotate(-90 50 50)"/>
+                <!-- AMR 10% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#90cdf4" stroke-width="14"
+                  stroke-dasharray="25.1 226.7"
+                  stroke-dashoffset="-211.1"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Other 6% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#bee3f8" stroke-width="14"
+                  stroke-dasharray="15.1 236.7"
+                  stroke-dashoffset="-236.2"
+                  transform="rotate(-90 50 50)"/>
+                <circle r="32" cx="50" cy="50" fill="var(--card)"/>
+              </svg>
+              <div class="donut-center">
+                <div class="donut-center-num" style="font-size:0.9rem;color:var(--primary);">5개<br><span style="font-size:0.55rem;font-weight:400;color:var(--text-muted);">주요 토픽</span></div>
+              </div>
+            </div>
+            <div class="topic-legend" style="flex:1; min-width:120px;">
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#4299e1;"></div><span class="topic-legend-name">식물-미생물 상호작용</span><span class="topic-legend-val">38%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#63b3ed;"></div><span class="topic-legend-name">세균 VOC 연구</span><span class="topic-legend-val">28%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#2b6cb0;"></div><span class="topic-legend-name">유도저항성(ISR)</span><span class="topic-legend-val">18%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#90cdf4;"></div><span class="topic-legend-name">항생제 내성</span><span class="topic-legend-val">10%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#bee3f8;"></div><span class="topic-legend-name">기타</span><span class="topic-legend-val">6%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO -->
+      <div class="profile-card">
+        <div class="profile-card-header seo">
+          <div class="profile-tier tier-midcareer">&#128200; Mid-Career</div>
+          <div class="profile-avatar">서</div>
+          <div class="profile-name">서휘원</div>
+          <div class="profile-name-en">Hwi Won Seo, Ph.D.</div>
+          <div class="profile-title">KRIBB 감염병연구센터 책임연구원</div>
+        </div>
+        <div class="profile-body">
+          <div class="metrics-grid">
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="h-index: 수의바이러스학에서 감염병 연구로 전환한 경력을 고려하면, h-index 23은 견실한 연구 역량을 보여줍니다." data-target="23">0</div>
+              <div class="metric-label">h-index</div>
+              <div class="metric-note">OpenAlex 기준</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="총 피인용수: 출판된 모든 논문이 받은 인용 횟수 합계" data-target="1592">0</div>
+              <div class="metric-label">총 피인용수</div>
+              <div class="metric-note">OpenAlex 기준</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="총 논문수: OpenAlex에 등록된 게재 논문 수" data-target="83">0</div>
+              <div class="metric-label">총 논문수</div>
+              <div class="metric-note">OpenAlex 기준</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="i10-index: 10회 이상 인용된 논문 수" data-target="41">0</div>
+              <div class="metric-label">i10-index</div>
+              <div class="metric-note">Google Scholar</div>
+            </div>
+          </div>
+          <div class="blockquote">수의바이러스학에서 감염병 연구로 전환한 경력을 고려하면, h-index 23은 해당 분야에서 견실한 연구 역량을 보여줍니다.</div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">핵심 연구 분야</div>
+          <div>
+            <span class="tag">동물 바이러스 감염</span>
+            <span class="tag">바이러스 유전자 치료</span>
+            <span class="tag">바이러스성 위장염</span>
+            <span class="tag">선천면역</span>
+            <span class="tag">감염 예방 전략</span>
+          </div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">연도별 연구 활동 (2020–2025)</div>
+          <div class="activity-chart" id="activityChart">
+            <div class="activity-bar-wrap">
+              <div class="activity-val">3</div>
+              <div class="activity-bar" style="height:0" data-height="48%"></div>
+              <div class="activity-year">2020</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">1</div>
+              <div class="activity-bar" style="height:0" data-height="16%"></div>
+              <div class="activity-year">2021</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">4</div>
+              <div class="activity-bar" style="height:0" data-height="64%"></div>
+              <div class="activity-year">2022</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">7</div>
+              <div class="activity-bar" style="height:0" data-height="100%" style="background:linear-gradient(to top, #1a4731, #9ae6b4);"></div>
+              <div class="activity-year">2023</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">2</div>
+              <div class="activity-bar" style="height:0" data-height="32%"></div>
+              <div class="activity-year">2024</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">5</div>
+              <div class="activity-bar" style="height:0" data-height="80%" style="background:linear-gradient(to top, #276749, #9ae6b4);"></div>
+              <div class="activity-year">2025</div>
+            </div>
+          </div>
+
+          <!-- Topic Donut for Seo -->
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">연구 토픽 분포</div>
+          <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+            <div class="donut-wrap">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <!-- Animal Virus 34% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#38a169" stroke-width="14"
+                  stroke-dasharray="85.5 166.3"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Gene Therapy 25% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#68d391" stroke-width="14"
+                  stroke-dasharray="62.8 189"
+                  stroke-dashoffset="-85.5"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Gastroenteritis 24% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#276749" stroke-width="14"
+                  stroke-dasharray="60.3 191.5"
+                  stroke-dashoffset="-148.3"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Microbial 11% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#9ae6b4" stroke-width="14"
+                  stroke-dasharray="27.6 224.2"
+                  stroke-dashoffset="-208.6"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Ginseng 5% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#c6f6d5" stroke-width="14"
+                  stroke-dasharray="12.6 239.2"
+                  stroke-dashoffset="-236.2"
+                  transform="rotate(-90 50 50)"/>
+                <circle r="32" cx="50" cy="50" fill="var(--card)"/>
+              </svg>
+              <div class="donut-center">
+                <div class="donut-center-num" style="font-size:0.9rem;color:#38a169;">83편<br><span style="font-size:0.55rem;font-weight:400;color:var(--text-muted);">총 논문</span></div>
+              </div>
+            </div>
+            <div class="topic-legend" style="flex:1; min-width:120px;">
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#38a169;"></div><span class="topic-legend-name">동물 바이러스 감염</span><span class="topic-legend-val">40편</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#68d391;"></div><span class="topic-legend-name">바이러스 유전자 치료</span><span class="topic-legend-val">30편</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#276749;"></div><span class="topic-legend-name">바이러스성 위장염</span><span class="topic-legend-val">29편</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#9ae6b4;"></div><span class="topic-legend-name">미생물 감염 및 질병</span><span class="topic-legend-val">13편</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#c6f6d5;"></div><span class="topic-legend-name">인삼 생물학적 효과</span><span class="topic-legend-val">6편</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section" id="section-comparison" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">2</div>
+      <div>
+        <div class="section-tag">Comparative Analysis</div>
+        <h2>두 연구자 비교 분석</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- Bar comparison -->
+      <div class="comparison-section">
+        <h3 style="margin-bottom:1.5rem; font-size:1rem;">핵심 지표 비교</h3>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>h-index</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">류충민</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">71</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">서휘원</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="32.4%"></div></div>
+              <div class="bar-val">23</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>총 피인용수</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">류충민</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">22,165</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">서휘원</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="7.2%"></div></div>
+              <div class="bar-val">1,592</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>총 논문수</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">류충민</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">277편</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">서휘원</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="30%"></div></div>
+              <div class="bar-val">83편</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>공동 논문</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">류충민</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">8편</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">서휘원</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="100%"></div></div>
+              <div class="bar-val">8편</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; padding:1rem; background:var(--bg2); border-radius:var(--radius-sm); border:1px solid var(--border);">
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em;">경력 단계 분류</div>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <div style="flex:1; min-width:120px;">
+              <div style="font-size:0.78rem; color:var(--text-muted);">류충민</div>
+              <div style="display:inline-block; background:linear-gradient(135deg,#d69e2e,#f6ad55); color:#1a1a00; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:10px; margin-top:0.2rem;">&#11088; Senior / Elite</div>
+            </div>
+            <div style="flex:1; min-width:120px;">
+              <div style="font-size:0.78rem; color:var(--text-muted);">서휘원</div>
+              <div style="display:inline-block; background:linear-gradient(135deg,#38a169,#68d391); color:#0a2a15; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:10px; margin-top:0.2rem;">&#128200; Mid-Career</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Radar chart -->
+      <div class="comparison-section">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">다차원 역량 레이더</h3>
+        <div class="radar-wrap">
+          <svg class="radar-svg" id="radarChart" viewBox="-10 -10 280 280" width="260" height="260">
+            <!-- Grid -->
+            <polygon class="radar-grid" points="130,30 204,77.5 204,172.5 130,220 56,172.5 56,77.5" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,55 188,91 188,159 130,195 72,159 72,91" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,80 172,104.5 172,145.5 130,170 88,145.5 88,104.5" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,105 156,118 156,132 130,145 104,132 104,118" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <!-- Axes -->
+            <line x1="130" y1="125" x2="130" y2="30" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="204" y2="77.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="204" y2="172.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="130" y2="220" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="56" y2="172.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="56" y2="77.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <!-- Ryu: h71(100%), citations(100%), papers(100%), collab(60%), intl(80%), impact(95%) -->
+            <!-- Scale: max val per axis used as 95% of radius (95px from center) -->
+            <!-- h-index: top axis, ryu=100%->95px up from 125=30, seo=32%->~61px up=64 -->
+            <!-- Rendered by JS below for accurate placement -->
+            <polygon id="radarRyu" class="radar-area ryu" points="130,30 204,77.5 193,163 130,178 64,155 68,85"/>
+            <polygon id="radarSeo" class="radar-area seo" points="130,94 167,101 165,158 130,194 95,157 93,101"/>
+            <!-- Labels -->
+            <text class="radar-label" x="130" y="20">h-index</text>
+            <text class="radar-label" x="215" y="74">피인용수</text>
+            <text class="radar-label" x="215" y="178">논문수</text>
+            <text class="radar-label" x="130" y="236">i10-index</text>
+            <text class="radar-label" x="44" y="178">공동연구</text>
+            <text class="radar-label" x="44" y="74">국제협력</text>
+          </svg>
+        </div>
+        <div style="display:flex; gap:1.5rem; justify-content:center; margin-top:0.5rem;">
+          <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.8rem; color:var(--text-muted);">
+            <div style="width:14px;height:3px;background:#4299e1;border-radius:2px;"></div> 류충민
+          </div>
+          <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.8rem; color:var(--text-muted);">
+            <div style="width:14px;height:3px;background:#38a169;border-radius:2px;"></div> 서휘원
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <strong>협업 시너지:</strong> 류충민 박사의 <em>미생물학·면역학 기반</em>과 서휘원 박사의 <em>수의바이러스학·동물 감염모델 전문성</em>이 결합되어 DDM 면역 프라이밍과 같은 감염병 예방 분야의 새로운 접근법을 도출하고 있습니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" id="section-timeline">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">3</div>
+      <div>
+        <div class="section-tag">Career Timeline</div>
+        <h2>류충민 박사 경력 타임라인</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2003</div>
+            <div class="timeline-text">세균 휘발성 화합물의 식물 성장 촉진 메커니즘 세계 최초 규명 (PNAS)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2004</div>
+            <div class="timeline-text">KRIBB 입소 — 슈퍼박테리아연구센터 등 핵심 연구 활동 시작</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2004</div>
+            <div class="timeline-text">Bacillus spp.의 유도저항성(ISR) 및 식물 성장 촉진 연구 발표 (Phytopathology, 1,628 인용)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2007–2008</div>
+            <div class="timeline-text">근권 세균 및 리조박테리아 역할 정립 — Trends in Plant Science 1,813 인용 논문 발표</div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2016</div>
+            <div class="timeline-text">&#127942; 대전시 이달의 과학기술인상 수상</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2020</div>
+            <div class="timeline-text">코로나19 비인간 영장류 모델 개발 — 세계 4번째, <strong>국내 최초</strong></div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2022</div>
+            <div class="timeline-text">&#127942; 과학기술훈장 진보장 수상 (제55회 과학의 날)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2025.03</div>
+            <div class="timeline-text">KRIBB 감염병연구센터장 취임 (2025.03.14~)</div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2026.01</div>
+            <div class="timeline-text">DDM 면역 프라이밍 논문 발표 — eBioMedicine (IF 10.8, Lancet 자매지)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seo career timeline -->
+      <div class="card">
+        <h3 style="margin-bottom:1.25rem; font-size:1rem;">서휘원 박사 경력 이력</h3>
+        <table class="info-table">
+          <tr>
+            <th>2011–2025</th>
+            <td>서울대학교 (수의과대학 관련) — 겸직/출신</td>
+          </tr>
+          <tr>
+            <th>2012</th>
+            <td>University of Nebraska-Lincoln — 연수/방문 연구</td>
+          </tr>
+          <tr>
+            <th>2017–2020</th>
+            <td>한국인삼공사(KGC) 식물성의약품연구소 — 산업계 경험</td>
+          </tr>
+          <tr>
+            <th>2020~현재</th>
+            <td><strong>KRIBB 감염병연구센터</strong> — 책임연구원 (현직)</td>
+          </tr>
+          <tr>
+            <th>2026.01</th>
+            <td>DDM 면역 프라이밍 eBioMedicine 논문 교신저자 — <strong>독립 연구 역량 확인</strong></td>
+          </tr>
+        </table>
+
+        <div class="divider"></div>
+        <h4 style="margin-bottom:0.75rem; font-size:0.9rem;">주요 연구 성과 요약</h4>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            코로나19 대응 (류충민)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              치료제·백신 개발에 필수적인 비인간 영장류 모델을 세계 4번째, 국내 최초로 개발. 국내 기업의 코로나19 치료제·백신 개발에 핵심 기여.
+              <br><a href="https://biz.heraldcorp.com/article/10460077" target="_blank" style="font-size:0.78rem;">헤럴드경제 보도 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            슈퍼박테리아 제어 (류충민)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              금나노입자·지질나노입자 기반 신규 항생제 개발 (바이오나노메카닉스 기술). 약물내성 세균 대응 새로운 전략 제시.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            메탄 감축 연구 (류충민)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              저메탄 벼 품종 '감탄'의 유전자 변이가 토양 미생물 균형을 변화시켜 메탄 배출량 24% 감축.
+              <br><a href="https://biz.heraldcorp.com/article/10681930" target="_blank" style="font-size:0.78rem;">헤럴드경제 보도 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            DDM 면역 프라이밍 공동연구 (2026)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              n-dodecyl-β-D-maltoside(DDM)를 활용한 선천면역 선제 활성화 전략 개발. 두 연구자가 공동 교신저자. eBioMedicine 발표.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAPERS TABLE -->
+<section class="section" id="section-papers" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">4</div>
+      <div>
+        <div class="section-tag">Publication Analysis</div>
+        <h2>대표 논문 분석 (류충민 Top 5)</h2>
+      </div>
+    </div>
+
+    <div class="fade-in-section">
+      <div style="margin-bottom:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
+        <span style="font-size:0.82rem; color:var(--text-muted);">정렬:</span>
+        <button onclick="sortTable('cite')" style="background:var(--primary);color:#fff;border:none;padding:0.25rem 0.75rem;border-radius:12px;font-size:0.76rem;cursor:pointer;font-family:inherit;">피인용수 ↓</button>
+        <button onclick="sortTable('year')" style="background:var(--card);color:var(--text-muted);border:1px solid var(--border);padding:0.25rem 0.75rem;border-radius:12px;font-size:0.76rem;cursor:pointer;font-family:inherit;">연도 ↓</button>
+      </div>
+      <div class="papers-table-wrap">
+        <table class="papers-table" id="papersTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>논문 제목</th>
+              <th>저널</th>
+              <th>연도</th>
+              <th>피인용수</th>
+              <th>DOI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-cite="1813" data-year="2008">
+              <td><strong>1</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Rhizosphere bacteria help plants tolerate abiotic stress</span></td>
+              <td><span class="journal-badge top">Trends Plant Sci.</span></td>
+              <td>2008</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="100%"></div>
+                  <span class="cite-num">1,813</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1016/j.tplants.2008.10.004')">복사</button></td>
+            </tr>
+            <tr data-cite="1628" data-year="2004">
+              <td><strong>2</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Induced Systemic Resistance and Promotion of Plant Growth by <em>Bacillus</em> spp.</span></td>
+              <td><span class="journal-badge top">Phytopathology</span></td>
+              <td>2004</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="89.8%"></div>
+                  <span class="cite-num">1,628</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1094/phyto.2004.94.11.1259')">복사</button></td>
+            </tr>
+            <tr data-cite="1605" data-year="2003">
+              <td><strong>3</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Bacterial volatiles promote growth in <em>Arabidopsis</em> <span style="color:var(--accent2);font-weight:700;">[최초 규명]</span></span></td>
+              <td><span class="journal-badge top">PNAS</span></td>
+              <td>2003</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="88.5%"></div>
+                  <span class="cite-num">1,605</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1073/pnas.0730845100')">복사</button></td>
+            </tr>
+            <tr data-cite="1272" data-year="2004">
+              <td><strong>4</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Bacterial Volatiles Induce Systemic Resistance in Arabidopsis</span></td>
+              <td><span class="journal-badge">Plant Physiology</span></td>
+              <td>2004</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="70.2%"></div>
+                  <span class="cite-num">1,272</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1104/pp.103.026583')">복사</button></td>
+            </tr>
+            <tr data-cite="506" data-year="2007">
+              <td><strong>5</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Rhizobacterial volatile emissions regulate auxin homeostasis</span></td>
+              <td><span class="journal-badge">Planta</span></td>
+              <td>2007</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="27.9%"></div>
+                  <span class="cite-num">506</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1007/s00425-007-0530-2')">복사</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.75rem; color:var(--text-light); margin-top:0.5rem;">* 피인용수 기준: OpenAlex (2026-03-04 조회). DOI 복사 버튼 클릭 시 클립보드에 복사됩니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORK -->
+<section class="section" id="section-network">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">5</div>
+      <div>
+        <div class="section-tag">Collaboration Network</div>
+        <h2>주요 공동연구자 네트워크</h2>
+      </div>
+    </div>
+
+    <div class="fade-in-section" style="background:var(--card); border-radius:var(--radius); border:1px solid var(--border); padding:1.5rem; box-shadow:var(--shadow);">
+      <svg class="network-svg" viewBox="0 0 560 340" style="max-height:340px;">
+        <!-- Edges from Ryu -->
+        <line class="network-edge strong" x1="280" y1="170" x2="140" y2="80"/>
+        <line class="network-edge strong" x1="280" y1="170" x2="420" y2="80"/>
+        <line class="network-edge" x1="280" y1="170" x2="80" y2="160"/>
+        <line class="network-edge" x1="280" y1="170" x2="480" y2="160"/>
+        <line class="network-edge" x1="280" y1="170" x2="160" y2="270"/>
+        <line class="network-edge" x1="280" y1="170" x2="400" y2="270"/>
+        <line class="network-edge" x1="280" y1="170" x2="280" y2="290"/>
+        <line class="network-edge strong" x1="280" y1="170" x2="490" y2="240"/>
+        <!-- Seo edge -->
+        <line class="network-edge strong" x1="280" y1="170" x2="370" y2="200" stroke="#38a169"/>
+        <!-- Seo node -->
+        <circle cx="370" cy="200" r="24" fill="none" stroke="#38a169" stroke-width="2.5" stroke-dasharray="4 2" style="fill:rgba(56,161,105,0.12);"/>
+        <text class="network-label" x="370" y="203" style="fill:#38a169; font-size:9px; font-weight:700;">서휘원</text>
+        <text class="network-label" x="370" y="215" style="fill:#38a169; font-size:7.5px;">(8편)</text>
+        <!-- Center: Ryu -->
+        <circle cx="280" cy="170" r="36" class="network-node-main"/>
+        <circle cx="280" cy="170" r="36" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+        <text class="network-label-main" x="280" y="166">류충민</text>
+        <text class="network-label" x="280" y="180" style="fill:rgba(255,255,255,0.7); font-size:8px;">h-index 71</text>
+        <!-- Collaborators -->
+        <!-- Soohyun Lee (26) -->
+        <circle cx="140" cy="80" r="20" class="network-node"/>
+        <text class="network-label" x="140" y="77">이수현</text>
+        <text class="network-label" x="140" y="89" style="font-size:8px; fill:var(--primary);">26편</text>
+        <!-- Geun Cheol Song (24) -->
+        <circle cx="420" cy="80" r="19" class="network-node"/>
+        <text class="network-label" x="420" y="77">송근철</text>
+        <text class="network-label" x="420" y="89" style="font-size:8px; fill:var(--primary);">24편</text>
+        <!-- Haeyoung Jeong (15) -->
+        <circle cx="80" cy="160" r="16" class="network-node"/>
+        <text class="network-label" x="80" y="157">정해영</text>
+        <text class="network-label" x="80" y="169" style="font-size:8px;">15편</text>
+        <!-- Sharifi (15) -->
+        <circle cx="480" cy="160" r="16" class="network-node"/>
+        <text class="network-label" x="480" y="157">Sharifi</text>
+        <text class="network-label" x="480" y="169" style="font-size:8px;">15편</text>
+        <!-- Kong (14) -->
+        <circle cx="160" cy="270" r="15" class="network-node"/>
+        <text class="network-label" x="160" y="267">공현기</text>
+        <text class="network-label" x="160" y="279" style="font-size:8px;">14편</text>
+        <!-- Yong (13) -->
+        <circle cx="400" cy="270" r="15" class="network-node"/>
+        <text class="network-label" x="400" y="267">Yong</text>
+        <text class="network-label" x="400" y="279" style="font-size:8px;">13편</text>
+        <!-- Kim (13) -->
+        <circle cx="280" cy="290" r="15" class="network-node"/>
+        <text class="network-label" x="280" y="287">김준섭</text>
+        <text class="network-label" x="280" y="299" style="font-size:8px;">13편</text>
+        <!-- Kloepper (13) -->
+        <circle cx="490" cy="240" r="16" class="network-node"/>
+        <text class="network-label" x="490" y="237">Kloepper</text>
+        <text class="network-label" x="490" y="249" style="font-size:8px;">13편</text>
+        <!-- Legend -->
+        <rect x="10" y="10" width="150" height="56" rx="6" fill="var(--card)" stroke="var(--border)" stroke-width="1" opacity="0.9"/>
+        <circle cx="28" cy="28" r="8" fill="var(--primary)"/>
+        <text x="42" y="32" style="font-size:9px; fill:var(--text-muted);">류충민 (주요 연구자)</text>
+        <circle cx="28" cy="50" r="8" fill="none" stroke="#38a169" stroke-width="2" stroke-dasharray="3 2"/>
+        <text x="42" y="54" style="font-size:9px; fill:#38a169;">서휘원 (공동교신저자)</text>
+      </svg>
+      <p style="font-size:0.78rem; color:var(--text-light); text-align:center; margin-top:0.5rem;">공동 논문수 기준 OpenAlex (2026-03-04 조회). 원 크기는 공동 논문수에 비례.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DDM HIGHLIGHT -->
+<section class="section" id="section-ddm" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">6</div>
+      <div>
+        <div class="section-tag">Research Highlight</div>
+        <h2>DDM 면역 프라이밍 연구 하이라이트</h2>
+      </div>
+    </div>
+
+    <div class="ddm-card fade-in-section">
+      <div class="ddm-badge">&#127381; World First · eBioMedicine 2026</div>
+      <h3 class="ddm-title">"Innate immune priming by <em>n-dodecyl-β-D-maltoside</em> in murine models of bacterial and viral infection"</h3>
+      <div class="ddm-meta-row">
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">저널</div>
+          <div class="ddm-meta-value">eBioMedicine (IF 10.8)</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">발표일</div>
+          <div class="ddm-meta-value">2026년 1월 29일</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">교신저자</div>
+          <div class="ddm-meta-value">류충민 + 서휘원 (공동)</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">제1저자</div>
+          <div class="ddm-meta-value">Jisun Park (박지선)</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">Lancet 자매지</div>
+          <div class="ddm-meta-value" style="color:#9ae6b4;">✓ 고임팩트 저널</div>
+        </div>
+      </div>
+      <p class="ddm-summary">의약품 첨가제로 사용되던 <strong>DDM(n-dodecyl-β-D-maltoside)</strong>이 선천면역의 핵심 세포인 <strong>호중구(neutrophil)</strong>를 빠르게 동원·활성화하여, <strong>약물내성 세균과 인플루엔자 모두를 차단하는 광범위 감염 예방 전략</strong>을 세계 최초로 제시. 병원체 없이는 과도한 염증이 유발되지 않아 안전성도 확인.</p>
+      <div style="margin-bottom:1rem; font-size:0.8rem; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em;">관련 미디어 보도</div>
+      <div class="media-links">
+        <a href="https://bioengineer.org/new-broad-spectrum-infection-prevention-method-successfully-blocks-drug-resistant-bacteria-and-influenza/" target="_blank" class="media-link">Bioengineer.org</a>
+        <a href="https://zdnet.co.kr/view/?no=20260211095854" target="_blank" class="media-link">ZDNet Korea</a>
+        <a href="https://www.news-medical.net/news/20260216/Innate-immune-priming-may-evolve-into-a-broadly-applicable-infection-prevention-strategy.aspx" target="_blank" class="media-link">News-Medical</a>
+        <a href="https://medicalxpress.com/news/2026-02-blocking-drug-resistant-bacteria-influenza.html" target="_blank" class="media-link">MedicalXpress</a>
+        <a href="https://www.miragenews.com/new-strategy-blocks-drug-resistant-bacteria-1620347/" target="_blank" class="media-link">Mirage News</a>
+      </div>
+    </div>
+
+    <!-- Red Flags -->
+    <div class="grid-2 fade-in-section" style="margin-top:2rem;">
+      <div class="card">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">&#128681; Red Flag 검증 — 류충민</h3>
+        <div class="redflag-clear">
+          <div class="redflag-icon">&#9989;</div>
+          <div class="redflag-text">
+            <h4>이상 없음 (All Clear)</h4>
+            <p>Retraction Watch 검색 결과 없음. 논문 철회, 연구 부정행위, 표절 관련 기록 미발견.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">&#128681; Red Flag 검증 — 서휘원</h3>
+        <div class="redflag-clear">
+          <div class="redflag-icon">&#9989;</div>
+          <div class="redflag-text">
+            <h4>이상 없음 (All Clear)</h4>
+            <p>Retraction Watch 검색 결과 없음. 논문 철회, 연구 부정행위, 표절 관련 기록 미발견.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXTERNAL LINKS -->
+<section class="section" id="section-links">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">7</div>
+      <div>
+        <div class="section-tag">External Profiles</div>
+        <h2>외부 링크 탐색</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- Ryu links -->
+      <div class="card">
+        <h3 style="margin-bottom:0.3rem; font-size:1rem;">류충민 프로필</h3>
+        <p style="font-size:0.8rem; margin-bottom:1rem;">Choong-Min Ryu — 외부 데이터베이스 링크</p>
+        <div class="profile-links">
+          <a href="https://orcid.org/0000-0002-7276-1189" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128279;</span> ORCID
+          </a>
+          <a href="https://scholar.google.com/citations?user=hK3GxlIAAAAJ&hl=en" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#127891;</span> Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Choong-Min-Ryu" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128202;</span> ResearchGate
+          </a>
+          <a href="https://openalex.org/A5051257404" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128218;</span> OpenAlex
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">언론 보도 링크</div>
+        <div class="profile-links">
+          <a href="https://www.news1.kr/local/daejeon-chungnam/4657261" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> 과학기술훈장 (뉴스1)
+          </a>
+          <a href="https://www.newsis.com/view/NISX20160803_0014263941" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> 과학기술인상 (뉴시스)
+          </a>
+          <a href="https://biz.heraldcopy.com/article/10460077" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> 코로나19 모델 (헤럴드)
+          </a>
+          <a href="https://biz.heraldcopy.com/article/10681930" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> 메탄 감축 (헤럴드)
+          </a>
+        </div>
+      </div>
+
+      <!-- Seo links -->
+      <div class="card">
+        <h3 style="margin-bottom:0.3rem; font-size:1rem;">서휘원 프로필</h3>
+        <p style="font-size:0.8rem; margin-bottom:1rem;">Hwi Won Seo — 외부 데이터베이스 링크</p>
+        <div class="profile-links">
+          <a href="https://orcid.org/0000-0002-6552-8039" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128279;</span> ORCID
+          </a>
+          <a href="https://www.researchgate.net/scientific-contributions/Hwi-Won-Seo-2222930665" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128202;</span> ResearchGate
+          </a>
+          <a href="https://openalex.org/A5046215474" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128218;</span> OpenAlex
+          </a>
+          <a href="https://oak.kribb.re.kr/researcher-profile?ep=226&type=article" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#127970;</span> KRIBB OAK
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">DDM 연구 미디어 링크</div>
+        <div class="profile-links">
+          <a href="https://bioengineer.org/new-broad-spectrum-infection-prevention-method-successfully-blocks-drug-resistant-bacteria-and-influenza/" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128203;</span> Bioengineer.org
+          </a>
+          <a href="https://zdnet.co.kr/view/?no=20260211095854" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> ZDNet Korea
+          </a>
+          <a href="https://www.news-medical.net/news/20260216/Innate-immune-priming-may-evolve-into-a-broadly-applicable-infection-prevention-strategy.aspx" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#9877;</span> News-Medical
+          </a>
+          <a href="https://medicalxpress.com/news/2026-02-blocking-drug-resistant-bacteria-influenza.html" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#9877;</span> MedicalXpress
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Summary -->
+    <div class="card fade-in-section" style="margin-top:2rem; border-left:4px solid var(--primary);">
+      <h3 style="margin-bottom:1rem;">총평</h3>
+      <div class="grid-2" style="gap:1.5rem;">
+        <div>
+          <div style="font-size:0.8rem; font-weight:700; color:var(--primary); margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.06em;">류충민 박사</div>
+          <p style="font-size:0.88rem;">세계 최상위권(Top 1%) 미생물학자로, 식물-미생물 상호작용 분야의 선구자에서 감염병 대응(코로나19 영장류 모델, 슈퍼박테리아 항생제)으로 연구 영역을 확장. 과학기술훈장 수상 경력의 검증된 연구 리더.</p>
+        </div>
+        <div>
+          <div style="font-size:0.8rem; font-weight:700; color:#38a169; margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.06em;">서휘원 박사</div>
+          <p style="font-size:0.88rem;">수의바이러스학에서 감염병 면역 전략으로 전환한 성장형 연구자. eBioMedicine 교신저자로서 독립적 연구 역량을 보여주며, KRIBB 감염병연구센터의 핵심 연구인력.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKGROUND KNOWLEDGE SECTION -->
+<section class="story-section" id="section-background">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="section-header fade-in-section">
+      <div class="section-num">8</div>
+      <div>
+        <div class="section-tag">Research Background</div>
+        <h2>연구 배경지식</h2>
+      </div>
+    </div>
+    <div class="story-intro fade-in-section">
+      아래는 전문용어 없이, 두 연구자의 연구를 처음 접하는 사람도 이해할 수 있도록 정리한 내용입니다. 데이터 대시보드가 아닌, 한 편의 잘 쓰인 이야기처럼 읽히도록 구성했습니다.
+    </div>
+
+    <!-- 4-1: Ryu Journey -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-1</span>
+        <h3 class="bg-subsection-title">류충민 박사: <em>"흙 속 세균의 냄새에서 감염병 예방까지"</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.75rem; line-height:1.7;">20년에 걸친 연구 여정을 다섯 개의 장(章)으로 펼쳐봅니다. 각 장을 클릭하면 더 자세한 이야기를 확인할 수 있습니다.</p>
+
+      <div class="chapter-timeline">
+
+        <!-- Chapter 1 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch1">1</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2003</span>
+            <div class="chapter-title">
+              세균의 냄새가 식물을 키운다
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">류충민 박사는 흙 속 세균에게 질문을 던졌습니다: "너희는 식물과 어떻게 대화하니?" 답은 <strong>냄새</strong>였습니다. 바실러스라는 세균이 내뿜는 보이지 않는 화학 물질(2,3-부탄디올)이 식물 성장을 최대 5배 촉진한다는 것을 세계 최초로 발견. <em>PNAS</em> 발표, 1,605회 인용.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                세균이 방출하는 휘발성 유기화합물(VOC)이 공기 중을 떠다니다 식물 잎의 기공을 통해 흡수됩니다. 이 "화학 편지"가 식물 세포의 성장 호르몬 경로를 활성화해 뿌리를 더 크게, 잎을 더 많이 만들게 합니다.
+                <div class="analogy-box">
+                  <div class="analogy-label">쉬운 비유</div>
+                  옆집 빵집 냄새만 맡아도 식욕이 당기듯, 세균의 "냄새 편지"만으로 식물이 더 활발하게 자랍니다. 직접 접촉 없이 공기를 통한 화학 신호만으로 성장이 촉진됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch2">2</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2004</span>
+            <div class="chapter-title">
+              같은 냄새가 식물의 면역도 깨운다
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">놀랍게도 같은 냄새 물질이 식물의 <strong>면역 시스템도 미리 깨워두는</strong> 효과가 있었습니다. 이를 "유도저항성(ISR)"이라 부릅니다. 병원균이 오기 전에 이미 경비원이 배치되어 있는 상태. <em>Phytopathology</em>, 1,628회 인용.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                유도저항성(ISR)은 식물이 "위협 신호"를 미리 받아 면역 관련 유전자들을 준비 상태(primed state)로 전환하는 것입니다. 실제 병원균이 침입하면 일반 식물보다 2~3배 빠르게, 강력하게 대응합니다.
+                <div class="analogy-box">
+                  <div class="analogy-label">쉬운 비유 — 소방 훈련</div>
+                  소방 훈련 = 유익한 세균이 "대비하세요" 신호를 보냄 &nbsp;→&nbsp; 대기 상태 = 식물이 비상 대피 경로를 미리 파악 &nbsp;→&nbsp; 실제 화재 = 나중에 병원균이 오면 훨씬 빠르게 대응. 핵심은 병원균을 직접 죽이는 것이 아니라, <strong>"싸울 준비를 미리 해두는 것"</strong>입니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch3">3</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2008</span>
+            <div class="chapter-title">
+              가뭄과 소금에도 작동하는 "건강 관리 팀"
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">이 원리는 병균 방어를 넘어, 가뭄·염분 같은 환경 스트레스에도 작동했습니다. 세균이 식물의 "건강 관리 팀" 역할을 한다는 것을 증명. <em>Trends in Plant Science</em>, 1,813회 인용 — 최다 피인용 논문.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                근권 세균은 식물에게 세 가지 서비스를 제공합니다:
+                <ul style="margin:0.5rem 0 0.5rem 1rem; line-height:1.8;">
+                  <li><strong>스트레스 상담사</strong>: 스트레스 호르몬(에틸렌)을 줄여 식물을 진정</li>
+                  <li><strong>영양사</strong>: 흙 속 인산·철분을 식물이 흡수할 수 있는 형태로 변환</li>
+                  <li><strong>체력 트레이너</strong>: 뿌리를 더 넓게 발달시켜 수분·영양 흡수 향상</li>
+                </ul>
+                이때 류충민 박사가 도달한 핵심 통찰: <strong>"미생물의 화학 신호가 숙주의 방어 시스템 전체를 깨울 수 있는 마스터 키"</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch4">4</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2020~</span>
+            <div class="chapter-title">
+              코로나19와 슈퍼박테리아 — 식물에서 인간으로
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">팬데믹 속에서 식물 면역의 원리를 인간 감염병에 적용하는 대전환. 코로나19 영장류 감염 모델을 <strong>국내 최초</strong>로 개발하고, 금나노입자 "트로이의 목마"로 슈퍼박테리아를 선택적으로 제거.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                <strong>코로나19 대응</strong>: 마카크 원숭이(macaque)를 이용한 코로나19 감염 모델 구축. 세계 4번째, 국내 최초. 이 모델 덕분에 국내 기업들이 치료제·백신의 효능을 검증할 수 있었습니다.<br><br>
+                <strong>슈퍼박테리아 제어</strong>: 금나노입자 표면에 항생제를 붙여, 슈퍼박테리아 세포막만 선택적으로 파괴하는 "트로이의 목마" 전략 개발 (ACS Nano, 2025). 정상 세포는 건드리지 않습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 5 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch5">5</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2026</span>
+            <div class="chapter-title">
+              DDM 면역 프라이밍 — 20년 연구의 정점
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">식물에서 발견한 "면역을 미리 깨워두는" 원리가, 포유류에서도 작동한다는 것을 증명합니다. DDM 하나로 슈퍼박테리아 3종과 독감 바이러스를 동시 차단. <strong>한 줌의 흙에서 시작된 호기심이, 인류의 가장 긴급한 위협에 대한 해법으로 이어졌습니다.</strong></p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                2003년 "세균 냄새 → 식물 성장 촉진"이라는 단순한 발견이 있었습니다. 그 발견 속에 숨어 있던 원리 — <strong>화학 신호 하나가 숙주의 방어 시스템 전체를 깨운다</strong> — 가 20년의 세월을 거쳐 DDM 면역 프라이밍으로 결실을 맺었습니다. 연구자의 호기심이 얼마나 먼 곳까지 여행할 수 있는지 보여주는 사례입니다.
+                <div class="analogy-box">
+                  <div class="analogy-label">여정 요약</div>
+                  흙 속 세균 VOC (2003) → 식물 면역 프라이밍 ISR (2004) → 환경 스트레스 내성 (2008) → 코로나19 모델 / 나노항생제 (2020~) → <strong>DDM 광범위 감염 예방 (2026)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end chapter-timeline -->
+    </div><!-- end 4-1 -->
+
+    <!-- 4-2: Seo Journey -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-2</span>
+        <h3 class="bg-subsection-title">서휘원 박사: <em>"백신 실패를 목격한 사람이 면역 자체를 강화하는 길을 찾다"</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.75rem; line-height:1.7;">세 개의 커리어 단계가 하나의 연구 목표로 수렴하는 이야기. 각 단계에서 얻은 교훈이 다음 단계의 씨앗이 됩니다.</p>
+
+      <div class="stage-track">
+
+        <!-- Stage 1 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s1">1</div>
+            <div class="stage-meta">
+              <div class="stage-period">2011 — 2020 · 서울대학교 수의과대학</div>
+              <div class="stage-title">돼지 바이러스 전문가</div>
+              <div class="stage-org">수의바이러스학 박사 과정 + University of Nebraska-Lincoln 연수 (2012)</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            돼지를 감염시키는 바이러스(PCV2 써코바이러스, PRRSV 생식기·호흡기증후군 바이러스)를 연구했습니다. 전 세계 양돈 산업에 막대한 피해를 주는 질병이었습니다. 시판 백신 4종의 효과를 비교하고, <strong>기존 백신이 듣지 않는 변이 바이러스를 한국에서 최초로 발견</strong>했습니다(2014). 또한 동물에게 직접 바이러스를 감염시키고 면역 반응을 정밀 측정하는 <strong>"동물 감염 모델"의 전문가</strong>로 성장했습니다.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">이 단계의 핵심 교훈</div>
+              <p>"특정 병원체를 겨냥한 백신에는 한계가 있다" — 바이러스가 변이하면 백신이 무력화됩니다. 코로나 변이주 때문에 추가접종이 필요한 것과 같은 원리입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s2">2</div>
+            <div class="stage-meta">
+              <div class="stage-period">2017 — 2020 · 한국인삼공사(KGC)</div>
+              <div class="stage-title">인삼과 면역의 만남</div>
+              <div class="stage-org">KGC 식물성의약품연구소 선임연구원</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            홍삼 제품의 안전성을 과학적으로 검증하는 연구를 수행했습니다. 홍삼 12개월 장기 섭취 안전성 연구에서 면역 기능 향상과 바이러스 감염 감소를 확인했습니다. 학계와 산업계를 잇는 경험을 쌓으며, 규제 요건과 실용성에 대한 감각을 키웠습니다.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">이 단계의 핵심 교훈</div>
+              <p>"안전한 천연물질이 면역을 강화하면 감염이 줄어든다" — 이 관찰이 훗날 DDM 연구의 씨앗이 됩니다. 이미 안전성이 검증된 물질을 면역 강화에 활용한다는 발상의 기원입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s3">3</div>
+            <div class="stage-meta">
+              <div class="stage-period">2020 — 현재 · KRIBB 감염병연구센터</div>
+              <div class="stage-title">감염병 예방의 새 패러다임</div>
+              <div class="stage-org">책임연구원 — DDM 면역 프라이밍 교신저자</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            모든 경험이 하나로 합쳐집니다. 서울대에서 쌓은 <strong>동물 감염 모델 설계 능력</strong>, KGC에서 얻은 <strong>"안전한 물질로 면역 강화" 통찰</strong>, 백신 실패 경험에서 온 <strong>"병원체가 아닌 면역 자체를 강화해야 한다"는 확신</strong>이 결합됩니다.
+            결과: DDM 면역 프라이밍 연구의 <strong>교신저자(총책임자)</strong>로서, 치명적 슈퍼박테리아 3종에 대해 100% 생존율을 달성하는 전략을 개발했습니다.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">세 단계의 통합</div>
+              <p>동물 모델 전문성 (서울대) + 안전한 물질로 면역 강화 (KGC) + 백신의 한계 극복 의지 = <strong>DDM 광범위 감염 예방 전략</strong></p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end stage-track -->
+    </div><!-- end 4-2 -->
+
+    <!-- 4-3: DDM Explained -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem; background:var(--bg2); border-radius:var(--radius); padding:2.5rem; border:1px solid var(--border);">
+      <div class="bg-subsection-header" style="border-color:rgba(44,122,123,0.2);">
+        <span class="bg-subsection-num">4-3</span>
+        <h3 class="bg-subsection-title">DDM 면역 프라이밍: <em>두 사람의 연구가 만나는 지점</em></h3>
+      </div>
+
+      <!-- DDM description -->
+      <div style="margin-bottom:1.75rem;">
+        <h4 style="font-size:0.95rem; margin-bottom:0.6rem; color:var(--text);">DDM이 뭔가요?</h4>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.75; margin:0;">DDM(n-도데실-베타-D-말토사이드)은 설탕 분자에 기름기 있는 사슬이 붙은 <strong>비누 같은 분자</strong>입니다. 수십 년간 약의 첨가제(안정제)로 쓰이던 FDA 승인 물질로, 인체 안전성이 이미 검증되어 있습니다.</p>
+      </div>
+
+      <!-- 3-column comparison cards -->
+      <h4 style="font-size:0.95rem; margin-bottom:0.9rem; color:var(--text);">기존 방법과 뭐가 다른가요?</h4>
+      <div class="ddm-compare-grid">
+        <div class="ddm-compare-card antibiotic">
+          <span class="ddm-compare-icon">&#128138;</span>
+          <div class="ddm-compare-name">항생제</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">원리</span><span class="ddm-compare-val">세균을 직접 죽임</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">내성</span><span class="ddm-compare-val">슈퍼박테리아 발생</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">범위</span><span class="ddm-compare-val">특정 세균만</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">바이러스</span><span class="ddm-compare-val">효과 없음</span></div>
+        </div>
+        <div class="ddm-compare-card vaccine">
+          <span class="ddm-compare-icon">&#128137;</span>
+          <div class="ddm-compare-name">백신</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">원리</span><span class="ddm-compare-val">특정 병원체 겨냥 항체 생성</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">내성</span><span class="ddm-compare-val">변이 바이러스 탈출</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">범위</span><span class="ddm-compare-val">특정 병원체만</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">개발기간</span><span class="ddm-compare-val">병원체별로 수년 소요</span></div>
+        </div>
+        <div class="ddm-compare-card ddm-new">
+          <div class="ddm-new-badge">NEW</div>
+          <span class="ddm-compare-icon">&#128737;</span>
+          <div class="ddm-compare-name">DDM 면역 프라이밍</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">원리</span><span class="ddm-compare-val">우리 몸 면역력 자체를 높임</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">내성</span><span class="ddm-compare-val">해당 없음 — 면역세포는 내성 없음</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">범위</span><span class="ddm-compare-val">세균 + 바이러스 동시 대응</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">안전성</span><span class="ddm-compare-val">FDA 승인 물질, 과염증 없음</span></div>
+        </div>
+      </div>
+
+      <!-- How it works — guard analogy -->
+      <h4 style="font-size:0.95rem; margin:1.75rem 0 0.9rem; color:var(--text);">어떻게 작동하나요? — "경비원" 비유</h4>
+      <div class="guard-steps">
+        <div class="guard-step">
+          <div class="guard-step-icon">&#128115;</div>
+          <div class="guard-step-label">DDM 투여 전</div>
+          <div class="guard-step-desc">경비원(호중구)이 휴게실에서 쉬는 중</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon" style="background:rgba(214,158,46,0.15);border:2px solid rgba(214,158,46,0.35);">&#128137;</div>
+          <div class="guard-step-label">DDM 투여</div>
+          <div class="guard-step-desc">경비원이 방탄조끼 입고 순찰 대기</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon">&#128121;</div>
+          <div class="guard-step-label">병원체 침입</div>
+          <div class="guard-step-desc">도둑(세균/바이러스) 출현</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon">&#9889;</div>
+          <div class="guard-step-label">즉각 제압</div>
+          <div class="guard-step-desc">이미 준비된 경비원이 즉시 출동·제압</div>
+        </div>
+      </div>
+      <p style="font-size:0.8rem; color:var(--text-light); margin:0.5rem 0 1.5rem; font-style:italic;">도둑이 오지 않으면? → 주민(정상 세포)에게 피해 없음. 과잉 대응(만성 염증) 없음.</p>
+
+      <!-- Survival bars -->
+      <h4 style="font-size:0.95rem; margin-bottom:0.9rem; color:var(--text);">실험 결과가 얼마나 놀라운가요?</h4>
+      <div class="survival-bars" id="survivalBars">
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">치명적 MRSA (메티실린내성 황색포도상구균)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM군 100%</span> <span class="survival-val-ctrl">대조군 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% 생존</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">치명적 CRPA (카바페넴내성 녹농균)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM군 100%</span> <span class="survival-val-ctrl">대조군 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% 생존</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">치명적 CREC (카바페넴내성 대장균)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM군 100%</span> <span class="survival-val-ctrl">대조군 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% 생존</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">인플루엔자 바이러스</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM군 바이러스 감소</span> <span class="survival-val-ctrl">대조군 고사망률</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="78%"><span>유의미한 개선</span></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:var(--text-light); margin-top:0.3rem;">* 마우스 모델 실험 결과. DDM 투여군 vs 비투여 대조군.</p>
+
+      <!-- Pipeline -->
+      <h4 style="font-size:0.95rem; margin:1.75rem 0 0.9rem; color:var(--text);">실제 사용까지 얼마나 남았나요? — 임상 파이프라인</h4>
+      <div class="pipeline-track" id="pipelineTrack">
+        <div class="pipeline-stage done">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#9989;</span></div>
+          <div class="pipeline-label">기초 연구<br>완료</div>
+        </div>
+        <div class="pipeline-stage done">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#9989;</span></div>
+          <div class="pipeline-label">안전성<br>확인 (FDA)</div>
+        </div>
+        <div class="pipeline-stage current">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#128007;</span></div>
+          <div class="pipeline-label">마우스<br>동물모델 ★</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#128018;</span></div>
+          <div class="pipeline-label">영장류<br>동물모델</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#129514;</span></div>
+          <div class="pipeline-label">임상 1상<br>(안전성)</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#129514;</span></div>
+          <div class="pipeline-label">임상 2/3상<br>(효능)</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#127970;</span></div>
+          <div class="pipeline-label">시판<br>승인</div>
+        </div>
+      </div>
+      <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.3rem;">DDM이 이미 FDA 승인 물질이므로 일부 안전성 단계가 단축될 가능성이 있습니다. 현재 기준 예상 기간: <strong>5~10년</strong>.</p>
+
+    </div><!-- end 4-3 -->
+
+    <!-- 4-4: Glossary -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-4</span>
+        <h3 class="bg-subsection-title">핵심 용어 사전 — <em>전문용어를 쉬운 말로</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.7;">각 카드를 클릭하면 설명이 펼쳐집니다.</p>
+
+      <div class="glossary-grid">
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">유도저항성 (ISR)</div>
+            <div class="gloss-category">면역학 · 식물병리학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">식물에게 미리 "백신"을 맞히는 것과 비슷한 원리. 유익한 세균이 식물 면역을 미리 훈련시켜, 나중에 실제 병원균이 왔을 때 더 빠르고 강하게 대응하게 합니다. ISR = Induced Systemic Resistance.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">세균 휘발성 화합물 (VOC)</div>
+            <div class="gloss-category">미생물학 · 화학생태학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">세균이 내뿜는 "냄새 물질". 공기를 통해 식물에게 화학 신호를 보냅니다. 2,3-부탄디올 등이 대표적이며, 직접 접촉 없이도 식물 성장과 면역에 영향을 줍니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">선천면역</div>
+            <div class="gloss-category">면역학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">태어날 때부터 갖고 있는 면역. 어떤 침입자든 즉각 감지하는 "경비원 시스템". 병원체의 종류를 가리지 않고 빠르게 대응합니다. DDM이 강화하는 면역이 바로 이것입니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">적응면역</div>
+            <div class="gloss-category">면역학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">특정 병원체를 기억하고 맞춤 대응하는 면역. 백신이 이용하는 원리입니다. 처음 대응은 느리지만 두 번째부터는 빠르고 강합니다. 단점: 변이 바이러스에는 효과가 떨어질 수 있습니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">면역 프라이밍</div>
+            <div class="gloss-category">면역학 · 신개념</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">면역세포를 미리 "전투 준비" 상태로 만드는 것. 병원체가 오기 전에 이미 방어 태세를 갖추게 합니다. 백신처럼 특정 병원체를 기억하는 것이 아니라, 면역 반응 자체를 빠르게 켜는 방식입니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">호중구 (Neutrophil)</div>
+            <div class="gloss-category">면역학 · 세포생물학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">백혈구의 60~70%를 차지하는 면역세포. 세균 침입 시 가장 먼저 달려가는 "특공대". DDM이 이 세포를 미리 활성화해 전투 준비 상태로 만듭니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">항생제 내성 (AMR)</div>
+            <div class="gloss-category">감염병 · 공중보건</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">세균이 항생제에 적응하여 더 이상 약이 듣지 않는 현상. "슈퍼박테리아" 문제의 원인입니다. WHO는 AMR을 인류가 직면한 가장 심각한 건강 위협 중 하나로 꼽습니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">MRSA / CRPA / CREC</div>
+            <div class="gloss-category">슈퍼박테리아</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">대표적 슈퍼박테리아들. MRSA = 메티실린내성 황색포도상구균, CRPA = 카바페넴내성 녹농균, CREC = 카바페넴내성 대장균. 기존 항생제가 거의 듣지 않아 병원 내 감염에서 높은 사망률을 보입니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">h-index</div>
+            <div class="gloss-category">연구자 영향력 지표</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">연구자의 영향력 지표. "h편의 논문이 각각 h번 이상 인용됨"을 의미합니다. 높을수록 꾸준히 영향력 있는 연구를 한 것입니다. 류충민 박사 h=71은 세계 최상위권(Top 1%) 수준입니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">교신저자</div>
+            <div class="gloss-category">논문 저자 역할</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">논문의 "총책임자". 연구를 기획하고 최종 검토하는 핵심 리더입니다. 서휘원 박사가 DDM 논문의 교신저자라는 것은 이 연구의 핵심 설계와 책임이 그에게 있음을 의미합니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">써코바이러스 (PCV2)</div>
+            <div class="gloss-category">수의바이러스학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">돼지의 면역력을 파괴하는 작은 원형 바이러스. 양돈 산업의 최대 위협 중 하나로, 전 세계적으로 막대한 경제적 피해를 줍니다. 서휘원 박사의 초기 연구 대상이었습니다.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">백신 실패</div>
+            <div class="gloss-category">감염병 · 면역학</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">백신을 맞았는데도 병에 걸리는 현상. 바이러스 변이가 주된 원인입니다. 이 경험이 서휘원 박사로 하여금 "특정 병원체가 아닌 면역 자체를 강화해야 한다"는 방향으로 연구를 이끌었습니다.</div></div>
+        </div>
+
+      </div><!-- end glossary-grid -->
+    </div><!-- end 4-4 -->
+
+    <!-- 4-5: Conference Predictions -->
+    <div class="fade-in-section" style="margin-bottom:2rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-5</span>
+        <h3 class="bg-subsection-title">학회 발표 추론 — <em>이 분들이 발표한다면?</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.7;">미생물학·감염병 관련 학회에서 이 두 연구자가 발표한다면 유력한 주제 5가지입니다. 별(★) 개수는 발표 가능성을 나타냅니다.</p>
+
+      <div class="conf-cards">
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">1</div>
+          <div class="conf-body">
+            <div class="conf-title">"광범위 감염 예방을 위한 선천면역 프라이밍 전략"</div>
+            <div class="conf-message">DDM 한 번 투여로 슈퍼박테리아(MRSA, CRPA, CREC) + 인플루엔자를 동시에 막는 전략. eBioMedicine 2026 논문의 핵심 내용을 대중·전문가 청중 모두에게 발표하는 가장 유력한 형식입니다.</div>
+            <div class="conf-prereq"><strong>미리 알면 좋은 것:</strong> 선천면역 vs 적응면역의 차이, 호중구의 역할, AMR 위기의 현황</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★★<br>매우 유력</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">2</div>
+          <div class="conf-body">
+            <div class="conf-title">"슈퍼박테리아 시대의 새 패러다임 — 항균제 없이 감염을 막는다"</div>
+            <div class="conf-message">항생제 내성 위기의 대안으로서 면역 강화 접근법을 제시합니다. WHO AMR 로드맵과 연결하여 공중보건적 의의를 강조하는 방식으로 발표할 가능성이 높습니다.</div>
+            <div class="conf-prereq"><strong>미리 알면 좋은 것:</strong> 항생제 내성이 왜 위기인지, 신약 개발이 왜 어려운지, AMR로 인한 연간 사망자 수</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★<br>유력</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">3</div>
+          <div class="conf-body">
+            <div class="conf-title">"식물 면역에서 인간 면역까지 — 분야를 넘나드는 혁신"</div>
+            <div class="conf-message">식물 연구에서 발견한 ISR 원리가 20년 후 인간 감염병 예방으로 이어진 연구 스토리. 기초과학의 장기적 가치를 강조하는 기조연설(keynote) 형식에 적합합니다.</div>
+            <div class="conf-prereq"><strong>미리 알면 좋은 것:</strong> 식물도 면역이 있다는 사실, ISR의 기본 개념, 기초연구와 응용연구의 관계</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★<br>유력</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">4</div>
+          <div class="conf-body">
+            <div class="conf-title">"호중구 프라이밍의 분자 메커니즘" <span style="font-size:0.78rem; color:var(--text-light); font-weight:400;">(전문가 대상)</span></div>
+            <div class="conf-message">DDM이 호중구를 정확히 어떻게 활성화하는지 분자 수준에서 설명합니다. 면역학 전문 학회(예: ASM Microbe, ISHEID)에서 구두 발표 또는 심포지엄 형식으로 발표될 가능성이 있습니다.</div>
+            <div class="conf-prereq"><strong>미리 알면 좋은 것:</strong> GPCR 신호전달, 호중구의 살균 무기(활성산소, NETs), TLR 수용체</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★<br>가능성 있음</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">5</div>
+          <div class="conf-body">
+            <div class="conf-title">"COVID-19 이후 시대의 범용 감염 예방 전략"</div>
+            <div class="conf-message">팬데믹 대비 관점에서 병원체를 가리지 않는 예방 전략의 가치를 강조합니다. 코로나19 영장류 모델 개발 경험과 DDM 연구를 연결하는 맥락에서 발표할 수 있습니다.</div>
+            <div class="conf-prereq"><strong>미리 알면 좋은 것:</strong> WHO AMR 로드맵, 팬데믹 대비 전략(One Health 개념), 미래 감염병 위협 시나리오</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★<br>가능성 있음</div>
+          </div>
+        </div>
+
+      </div><!-- end conf-cards -->
+    </div><!-- end 4-5 -->
+
+  </div><!-- end container -->
+</section><!-- end section-background -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div style="color:rgba(255,255,255,0.85); font-weight:600; margin-bottom:0.4rem;">KRIBB 감염병연구센터 연구자 프로필 보고서</div>
+        <div>조사일: 2026-03-04 &nbsp;|&nbsp; 조사 방법: OpenAlex API + WebSearch 교차검증</div>
+      </div>
+      <div>
+        <div style="margin-bottom:0.4rem; color:rgba(255,255,255,0.5); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;">데이터 소스</div>
+        <div class="footer-sources">
+          <span class="footer-badge">OpenAlex API</span>
+          <span class="footer-badge">Google Scholar</span>
+          <span class="footer-badge">ResearchGate</span>
+          <span class="footer-badge">KRIBB OAK</span>
+          <span class="footer-badge">Retraction Watch</span>
+          <span class="footer-badge">WebSearch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== THEME TOGGLE =====
+function toggleTheme() {
+  const root = document.documentElement;
+  const btn = document.querySelector('.theme-toggle');
+  if (root.getAttribute('data-theme') === 'dark') {
+    root.removeAttribute('data-theme');
+    btn.textContent = '🌙 다크모드';
+  } else {
+    root.setAttribute('data-theme', 'dark');
+    btn.textContent = '☀️ 라이트모드';
+  }
+}
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el) {
+  const target = parseInt(el.getAttribute('data-target'));
+  if (isNaN(target)) return;
+  const duration = 1400;
+  const start = performance.now();
+  function update(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const val = Math.round(ease * target);
+    el.textContent = val >= 1000 ? val.toLocaleString('ko-KR') : val;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+// ===== ACTIVITY BAR ANIMATION =====
+function animateActivityBars() {
+  document.querySelectorAll('.activity-bar').forEach(bar => {
+    const h = bar.getAttribute('data-height');
+    if (h) setTimeout(() => { bar.style.height = h; }, 100);
+  });
+}
+
+// ===== BAR CHART ANIMATION =====
+function animateBars() {
+  document.querySelectorAll('.bar-fill').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; }, 200);
+  });
+  document.querySelectorAll('.cite-bar').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; bar.style.maxWidth = '80px'; }, 300);
+  });
+}
+
+// ===== INTERSECTION OBSERVER =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // Trigger counters
+      entry.target.querySelectorAll('.metric-value[data-target]').forEach(animateCounter);
+      // Trigger activity bars
+      if (entry.target.querySelector('.activity-bar')) animateActivityBars();
+      // Trigger comparison bars
+      if (entry.target.querySelector('.bar-fill')) animateBars();
+      // Trigger cite bars
+      if (entry.target.querySelector('.cite-bar')) animateBars();
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+// ===== COPY DOI =====
+function copyDoi(btn, doi) {
+  navigator.clipboard.writeText(doi).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '복사됨 ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.classList.remove('copied');
+    }, 2000);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = doi;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = '복사됨 ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '복사'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// ===== SORT TABLE =====
+function sortTable(by) {
+  const tbody = document.querySelector('#papersTable tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  rows.sort((a, b) => {
+    const va = parseInt(a.getAttribute('data-' + by));
+    const vb = parseInt(b.getAttribute('data-' + by));
+    return vb - va;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+  // Re-number
+  rows.forEach((r, i) => { r.querySelector('td:first-child strong').textContent = i + 1; });
+}
+
+// ===== ACCORDION =====
+function toggleAccordion(btn) {
+  const item = btn.closest('.accordion-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.accordion-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ===== TAB SWITCHING =====
+function switchTab(groupId, tabId) {
+  const group = document.getElementById(groupId);
+  group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  group.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  group.querySelector('[data-tab="' + tabId + '"]').classList.add('active');
+  group.querySelector('#panel-' + tabId).classList.add('active');
+}
+
+// ===== NAV ACTIVE =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 80;
+  sections.forEach(sec => {
+    if (scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector('.nav-links a[href="#' + sec.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { passive: true });
+
+// ===== CHAPTER TOGGLE =====
+function toggleChapter(body) {
+  const isOpen = body.classList.contains('open');
+  // Close all chapters first
+  document.querySelectorAll('.chapter-body.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) body.classList.add('open');
+}
+
+// ===== GLOSSARY TOGGLE =====
+function toggleGloss(card) {
+  const isOpen = card.classList.contains('open');
+  card.classList.toggle('open', !isOpen);
+}
+
+// ===== SURVIVAL BAR ANIMATION =====
+function animateSurvivalBars() {
+  document.querySelectorAll('.survival-fill-ddm').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; }, 200);
+  });
+}
+
+// Extend IntersectionObserver to also handle new section elements
+const bgObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (entry.target.querySelector('.survival-fill-ddm')) animateSurvivalBars();
+      bgObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('#section-background .fade-in-section').forEach(el => bgObserver.observe(el));
+
+// ===== INIT =====
+window.addEventListener('load', () => {
+  // Trigger hero counters immediately (they're visible)
+  document.querySelectorAll('.hero').forEach(el => {
+    el.querySelectorAll('.metric-value[data-target]').forEach(animateCounter);
+  });
+});
+</script>
+</body>
+</html>

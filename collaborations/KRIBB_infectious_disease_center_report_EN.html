@@ -1,0 +1,3070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Researcher Profile Report: Dr. Choong-Min Ryu & Dr. Hwi Won Seo | KRIBB Infectious Disease Research Center</title>
+<style>
+/* ===== CSS VARIABLES ===== */
+:root {
+  --primary: #1a365d;
+  --primary-light: #2a4a7f;
+  --primary-dark: #0f2140;
+  --accent: #e53e3e;
+  --accent2: #dd6b20;
+  --accent3: #38a169;
+  --gold: #d69e2e;
+  --teal: #2c7a7b;
+  --bg: #f7f9fc;
+  --bg2: #eef2f7;
+  --card: #ffffff;
+  --text: #1a202c;
+  --text-muted: #718096;
+  --text-light: #a0aec0;
+  --border: #e2e8f0;
+  --shadow: 0 4px 24px rgba(26,54,93,0.10);
+  --shadow-lg: 0 8px 40px rgba(26,54,93,0.16);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(.4,0,.2,1);
+  --font-heading: 'Noto Serif KR', 'Georgia', serif;
+  --font-body: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+[data-theme="dark"] {
+  --bg: #0d1b2e;
+  --bg2: #162033;
+  --card: #1a2a42;
+  --text: #e8edf5;
+  --text-muted: #8fa4c0;
+  --text-light: #5a7a9a;
+  --border: #2a3f5f;
+  --shadow: 0 4px 24px rgba(0,0,0,0.40);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.50);
+  --primary-light: #3a5a9f;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background var(--transition), color var(--transition);
+  -webkit-font-smoothing: antialiased;
+}
+@import url('data:text/css,');
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height: 1.3; color: var(--text); }
+h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
+h4 { font-size: 1.1rem; }
+p { color: var(--text-muted); margin-bottom: 0.75rem; }
+a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--accent); }
+strong { color: var(--text); font-weight: 700; }
+code { font-family: var(--font-mono); font-size: 0.85em; background: var(--bg2); padding: 2px 6px; border-radius: 4px; color: var(--accent2); }
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+@media (max-width: 768px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ===== TOP NAV ===== */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--primary-dark);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+}
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.topnav-brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.topnav-brand span { color: #90cdf4; }
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 20px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.theme-toggle {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: all var(--transition);
+  white-space: nowrap;
+  font-family: inherit;
+}
+.theme-toggle:hover { background: rgba(255,255,255,0.22); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #2d5a9e 100%);
+  padding: 4rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #90cdf4;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+.hero-title {
+  color: #fff;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-family: var(--font-heading);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.hero-subtitle {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.hero-meta-label { font-size: 0.72rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+.hero-meta-value { font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600; }
+.hero-deco {
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(144,205,244,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3.5rem 0; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.section-num {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+  margin: 3rem 0;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+/* ===== RESEARCHER PROFILE CARDS ===== */
+.profile-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.profile-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.profile-card-header {
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.profile-card-header.ryu {
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+}
+.profile-card-header.seo {
+  background: linear-gradient(135deg, #1a4731 0%, #276749 100%);
+}
+.profile-card-header::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.profile-name { font-size: 1.4rem; color: #fff; font-family: var(--font-heading); margin-bottom: 0.2rem; }
+.profile-name-en { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-bottom: 0.5rem; }
+.profile-title { font-size: 0.8rem; color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.12); padding: 0.2rem 0.65rem; border-radius: 12px; display: inline-block; }
+.profile-tier {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.tier-elite { background: linear-gradient(135deg, #d69e2e, #f6ad55); color: #1a1a00; }
+.tier-midcareer { background: linear-gradient(135deg, #38a169, #68d391); color: #0a2a15; }
+.profile-body { padding: 1.5rem; }
+
+/* ===== METRIC TILES ===== */
+.metrics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+.metric-tile {
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  cursor: help;
+}
+[data-theme="dark"] .metric-value { color: #90cdf4; }
+.metric-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.metric-note { font-size: 0.65rem; color: var(--text-light); margin-top: 0.1rem; }
+
+/* ===== TOOLTIP ===== */
+[data-tooltip] { position: relative; }
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 50;
+  max-width: 220px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+[data-tooltip]:hover::after { opacity: 1; }
+
+/* ===== TABS ===== */
+.tab-group { margin-bottom: 2rem; }
+.tab-list {
+  display: flex;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+  gap: 0;
+  overflow-x: auto;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+[data-theme="dark"] .tab-btn.active { color: #90cdf4; border-bottom-color: #90cdf4; }
+.tab-btn:hover:not(.active) { color: var(--text); background: var(--bg2); }
+.tab-panel { display: none; animation: fadeIn 0.3s ease; }
+.tab-panel.active { display: block; }
+
+/* ===== COMPARISON CHART ===== */
+.comparison-section { background: var(--card); border-radius: var(--radius); border: 1px solid var(--border); padding: 2rem; box-shadow: var(--shadow); }
+.comparison-row { margin-bottom: 1.25rem; }
+.comparison-label { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.4rem; display: flex; justify-content: space-between; }
+.comparison-bars { display: flex; flex-direction: column; gap: 0.4rem; }
+.bar-container { display: flex; align-items: center; gap: 0.75rem; }
+.bar-name { font-size: 0.78rem; font-weight: 600; width: 60px; text-align: right; flex-shrink: 0; }
+.bar-track { flex: 1; height: 10px; background: var(--bg2); border-radius: 5px; overflow: hidden; }
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+  width: 0;
+}
+.bar-fill.ryu { background: linear-gradient(90deg, #1a365d, #4299e1); }
+.bar-fill.seo { background: linear-gradient(90deg, #1a4731, #68d391); }
+.bar-val { font-size: 0.78rem; font-weight: 700; width: 70px; flex-shrink: 0; color: var(--text); }
+
+/* ===== RADAR CHART (SVG) ===== */
+.radar-wrap { display: flex; justify-content: center; align-items: center; padding: 1rem 0; }
+.radar-svg { overflow: visible; }
+.radar-area { fill-opacity: 0.18; stroke-width: 2; }
+.radar-area.ryu { fill: #4299e1; stroke: #4299e1; }
+.radar-area.seo { fill: #68d391; stroke: #38a169; }
+.radar-grid { fill: none; stroke: var(--border); stroke-width: 1; }
+.radar-label { font-size: 11px; font-family: var(--font-body); fill: var(--text-muted); text-anchor: middle; }
+
+/* ===== TIMELINE ===== */
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--primary-light), transparent);
+}
+.timeline-item { position: relative; margin-bottom: 1.5rem; }
+.timeline-dot {
+  position: absolute;
+  left: -1.6rem;
+  top: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 3px rgba(26,54,93,0.2);
+  transition: transform var(--transition);
+}
+.timeline-item:hover .timeline-dot { transform: scale(1.3); }
+.timeline-year {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+[data-theme="dark"] .timeline-year { color: #90cdf4; }
+.timeline-text { font-size: 0.88rem; color: var(--text); line-height: 1.5; }
+.timeline-item.highlight .timeline-dot { background: var(--gold); }
+.timeline-item.highlight .timeline-year { color: var(--gold); }
+
+/* ===== PAPERS TABLE ===== */
+.papers-table-wrap { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+.papers-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.papers-table th {
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--transition);
+}
+.papers-table th:hover { background: var(--primary-light); }
+.papers-table th .sort-arrow { margin-left: 0.3rem; opacity: 0.5; }
+.papers-table th.sorted .sort-arrow { opacity: 1; }
+.papers-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.papers-table tr:last-child td { border-bottom: none; }
+.papers-table tr:hover td { background: var(--bg2); }
+.papers-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+[data-theme="dark"] .papers-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+.cite-bar-wrap { display: flex; align-items: center; gap: 0.5rem; min-width: 120px; }
+.cite-bar { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #1a365d, #4299e1); flex-shrink: 0; }
+.cite-num { font-weight: 700; font-size: 0.85rem; color: var(--text); white-space: nowrap; }
+.doi-copy {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  font-family: var(--font-mono);
+}
+.doi-copy:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.doi-copy.copied { background: var(--accent3); color: #fff; border-color: var(--accent3); }
+.journal-badge {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  background: var(--bg2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.journal-badge.top { background: rgba(214,158,46,0.1); color: var(--gold); border-color: rgba(214,158,46,0.3); }
+
+/* ===== ACTIVITY CHART ===== */
+.activity-chart { display: flex; align-items: flex-end; gap: 0.4rem; height: 80px; padding: 0 0.5rem; }
+.activity-bar-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; flex: 1; }
+.activity-bar {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to top, #276749, #68d391);
+  transition: height 1s cubic-bezier(.4,0,.2,1);
+  min-height: 2px;
+}
+.activity-year { font-size: 0.65rem; color: var(--text-light); }
+.activity-val { font-size: 0.7rem; font-weight: 600; color: var(--text-muted); }
+
+/* ===== TOPIC DONUT ===== */
+.donut-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.donut-center { position: absolute; text-align: center; pointer-events: none; }
+.donut-center-num { font-size: 1.4rem; font-weight: 800; color: var(--text); font-family: var(--font-heading); }
+.donut-center-lbl { font-size: 0.65rem; color: var(--text-light); }
+.topic-legend { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+.topic-legend-item { display: flex; align-items: center; gap: 0.5rem; }
+.topic-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.topic-legend-name { font-size: 0.78rem; color: var(--text-muted); flex: 1; }
+.topic-legend-val { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+
+/* ===== NETWORK ===== */
+.network-svg { width: 100%; max-width: 560px; margin: 0 auto; display: block; }
+.network-node-main { fill: #1a365d; }
+[data-theme="dark"] .network-node-main { fill: #4299e1; }
+.network-node { fill: var(--bg2); stroke: var(--border); stroke-width: 1.5; transition: all var(--transition); }
+.network-node:hover { stroke: var(--primary); fill: var(--primary); }
+.network-edge { stroke: var(--border); stroke-width: 1; opacity: 0.6; }
+.network-edge.strong { stroke: var(--primary); stroke-width: 2; opacity: 0.8; }
+.network-label { font-size: 9px; fill: var(--text-muted); text-anchor: middle; pointer-events: none; }
+.network-label-main { font-size: 11px; fill: #fff; text-anchor: middle; font-weight: 700; pointer-events: none; }
+[data-theme="dark"] .network-label-main { fill: #fff; }
+.network-tooltip {
+  font-size: 10px;
+  fill: var(--text);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* ===== DDM HIGHLIGHT ===== */
+.ddm-card {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #1a4731 100%);
+  border-radius: var(--radius);
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.ddm-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(104,211,145,0.12) 0%, transparent 70%);
+}
+.ddm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(104,211,145,0.15);
+  border: 1px solid rgba(104,211,145,0.3);
+  color: #9ae6b4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ddm-title { font-size: clamp(1rem, 2.5vw, 1.3rem); font-family: var(--font-heading); margin-bottom: 1rem; line-height: 1.4; }
+.ddm-title em { color: #90cdf4; font-style: normal; }
+.ddm-meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+.ddm-meta-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.5rem 0.9rem; }
+.ddm-meta-label { font-size: 0.65rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+.ddm-meta-value { font-size: 0.88rem; color: rgba(255,255,255,0.9); font-weight: 600; }
+.ddm-summary { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem; }
+.ddm-summary strong { color: #9ae6b4; }
+.media-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.media-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+.media-link:hover { background: rgba(255,255,255,0.18); color: #fff; transform: translateY(-1px); }
+
+/* ===== RED FLAGS ===== */
+.redflag-clear {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(56,161,105,0.08);
+  border: 1px solid rgba(56,161,105,0.25);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.5rem;
+}
+.redflag-icon { font-size: 1.8rem; }
+.redflag-text h4 { color: var(--accent3); margin-bottom: 0.1rem; }
+.redflag-text p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+/* ===== PROFILE LINKS ===== */
+.profile-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.profile-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+.profile-link-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-1px); }
+.profile-link-btn .lnk-icon { font-size: 0.9rem; }
+
+/* ===== COLLAB SECTION ===== */
+.synergy-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+.synergy-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  padding: 0.5rem;
+}
+.synergy-researcher {
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+.synergy-researcher h4 { font-size: 1rem; margin-bottom: 0.4rem; }
+.synergy-tag { display: inline-block; background: var(--primary); color: #fff; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px; margin: 0.1rem; font-weight: 600; }
+
+/* ===== ACCORDION ===== */
+.accordion-item { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 0.5rem; overflow: hidden; }
+.accordion-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--card);
+  transition: background var(--transition);
+  text-align: left;
+}
+.accordion-btn:hover { background: var(--bg2); }
+.accordion-chevron { font-size: 0.8rem; transition: transform var(--transition); color: var(--text-muted); }
+.accordion-item.open .accordion-chevron { transform: rotate(180deg); }
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1);
+  background: var(--card);
+}
+.accordion-item.open .accordion-body { max-height: 2000px; }
+.accordion-content { padding: 0.5rem 1.2rem 1.2rem; border-top: 1px solid var(--border); }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--primary-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  font-size: 0.82rem;
+}
+.footer-inner { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+.footer-sources { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.footer-badge {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes countUp { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+.animate-fadein { animation: fadeIn 0.6s ease both; }
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in-section.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== PRINT ===== */
+@media print {
+  .topnav, .theme-toggle { display: none !important; }
+  .hero { background: #1a365d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .card, .profile-card { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  body { font-size: 12px; }
+  .section { padding: 1.5rem 0; }
+  .ddm-card { background: #1a365d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ===== MISC ===== */
+.tag { display: inline-block; background: var(--bg2); border: 1px solid var(--border); color: var(--text-muted); font-size: 0.72rem; padding: 0.15rem 0.55rem; border-radius: 10px; margin: 0.1rem; }
+.divider { height: 1px; background: var(--border); margin: 1rem 0; }
+.text-sm { font-size: 0.85rem; }
+.text-muted { color: var(--text-muted); }
+.blockquote {
+  border-left: 3px solid var(--primary);
+  padding: 0.75rem 1rem;
+  background: var(--bg2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 1rem 0;
+}
+[data-theme="dark"] .blockquote { border-left-color: #90cdf4; }
+.info-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.info-table tr { border-bottom: 1px solid var(--border); }
+.info-table tr:last-child { border-bottom: none; }
+.info-table th { padding: 0.5rem 0.75rem; font-weight: 600; color: var(--text-muted); font-size: 0.78rem; text-align: left; width: 38%; vertical-align: top; }
+.info-table td { padding: 0.5rem 0.75rem; color: var(--text); vertical-align: top; }
+.section-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+/* ===== BACKGROUND SECTION — STORY TIMELINE ===== */
+.story-section {
+  background: var(--bg);
+  padding: 3.5rem 0;
+}
+.story-intro {
+  background: linear-gradient(135deg, #fffbf0 0%, #fff8e8 100%);
+  border: 1px solid rgba(214,158,46,0.25);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+[data-theme="dark"] .story-intro {
+  background: rgba(214,158,46,0.07);
+  border-color: rgba(214,158,46,0.3);
+  border-left-color: var(--gold);
+}
+
+/* Chapter timeline */
+.chapter-timeline { display: flex; flex-direction: column; gap: 0; }
+.chapter-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0;
+  position: relative;
+}
+.chapter-card + .chapter-card { margin-top: 0; }
+.chapter-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 0.25rem;
+}
+.chapter-spine::after {
+  content: '';
+  position: absolute;
+  top: 44px;
+  bottom: -1px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border), transparent);
+}
+.chapter-card:last-child .chapter-spine::after { display: none; }
+.chapter-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.3);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-heading);
+}
+.chapter-dot.ch1 { background: linear-gradient(135deg, #2b6cb0, #4299e1); }
+.chapter-dot.ch2 { background: linear-gradient(135deg, #276749, #38a169); }
+.chapter-dot.ch3 { background: linear-gradient(135deg, #744210, #d69e2e); }
+.chapter-dot.ch4 { background: linear-gradient(135deg, #742a2a, #e53e3e); }
+.chapter-dot.ch5 { background: linear-gradient(135deg, #44337a, #805ad5); }
+
+.chapter-body {
+  padding: 0.25rem 0 2rem 1.25rem;
+  cursor: pointer;
+}
+.chapter-year-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.ch1 ~ .chapter-body .chapter-year-badge,
+.chapter-card:nth-child(1) .chapter-year-badge { background: rgba(66,153,225,0.12); color: #2b6cb0; }
+[data-theme="dark"] .chapter-card:nth-child(1) .chapter-year-badge { color: #90cdf4; }
+.chapter-card:nth-child(2) .chapter-year-badge { background: rgba(56,161,105,0.12); color: #276749; }
+[data-theme="dark"] .chapter-card:nth-child(2) .chapter-year-badge { color: #9ae6b4; }
+.chapter-card:nth-child(3) .chapter-year-badge { background: rgba(214,158,46,0.12); color: #744210; }
+[data-theme="dark"] .chapter-card:nth-child(3) .chapter-year-badge { color: #f6ad55; }
+.chapter-card:nth-child(4) .chapter-year-badge { background: rgba(229,62,62,0.12); color: #742a2a; }
+[data-theme="dark"] .chapter-card:nth-child(4) .chapter-year-badge { color: #fc8181; }
+.chapter-card:nth-child(5) .chapter-year-badge { background: rgba(128,90,213,0.12); color: #44337a; }
+[data-theme="dark"] .chapter-card:nth-child(5) .chapter-year-badge { color: #d6bcfa; }
+
+.chapter-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.chapter-expand-icon {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition), background var(--transition);
+  flex-shrink: 0;
+  user-select: none;
+}
+.chapter-body.open .chapter-expand-icon { transform: rotate(180deg); background: var(--primary); color: #fff; border-color: var(--primary); }
+.chapter-lead { font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; }
+.chapter-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
+  opacity: 0;
+}
+.chapter-body.open .chapter-detail { max-height: 600px; opacity: 1; }
+.chapter-detail-inner {
+  margin-top: 0.9rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.chapter-detail-inner strong { color: var(--text); }
+.analogy-box {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--gold);
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+[data-theme="dark"] .analogy-box { border-left-color: #f6ad55; }
+.analogy-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+/* Stage timeline for Seo */
+.stage-track { display: flex; flex-direction: column; gap: 1.5rem; }
+.stage-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.stage-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.stage-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+}
+.stage-num.s1 { background: linear-gradient(135deg, #2b6cb0, #63b3ed); }
+.stage-num.s2 { background: linear-gradient(135deg, #276749, #68d391); }
+.stage-num.s3 { background: linear-gradient(135deg, #44337a, #9f7aea); }
+.stage-meta { flex: 1; }
+.stage-period {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  margin-bottom: 0.1rem;
+}
+.stage-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.stage-org { font-size: 0.8rem; color: var(--text-muted); }
+.stage-body { padding: 0 1.5rem 1.25rem; font-size: 0.86rem; color: var(--text-muted); line-height: 1.7; }
+.stage-lesson {
+  margin-top: 0.85rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--teal);
+  background: rgba(44,122,123,0.06);
+  font-size: 0.82rem;
+}
+[data-theme="dark"] .stage-lesson { background: rgba(44,122,123,0.12); }
+.stage-lesson-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+}
+.stage-lesson p { color: var(--text-muted); margin: 0; }
+
+/* DDM comparison cards */
+.ddm-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+@media (max-width: 700px) { .ddm-compare-grid { grid-template-columns: 1fr; } }
+.ddm-compare-card {
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.ddm-compare-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.ddm-compare-card.antibiotic { background: linear-gradient(160deg, #fff5f5, #fed7d7); border-color: rgba(229,62,62,0.2); }
+.ddm-compare-card.vaccine   { background: linear-gradient(160deg, #ebf8ff, #bee3f8); border-color: rgba(66,153,225,0.2); }
+.ddm-compare-card.ddm-new   { background: linear-gradient(160deg, #f0fff4, #c6f6d5); border-color: rgba(56,161,105,0.25); }
+[data-theme="dark"] .ddm-compare-card.antibiotic { background: rgba(229,62,62,0.08); }
+[data-theme="dark"] .ddm-compare-card.vaccine   { background: rgba(66,153,225,0.08); }
+[data-theme="dark"] .ddm-compare-card.ddm-new   { background: rgba(56,161,105,0.08); }
+.ddm-compare-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.ddm-compare-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+.ddm-compare-card.antibiotic .ddm-compare-name { color: #c53030; }
+.ddm-compare-card.vaccine   .ddm-compare-name { color: #2b6cb0; }
+.ddm-compare-card.ddm-new   .ddm-compare-name { color: #276749; }
+.ddm-compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-align: left;
+}
+.ddm-compare-row:last-child { border-bottom: none; }
+.ddm-compare-attr { color: var(--text-light); font-weight: 600; flex-shrink: 0; width: 52px; font-size: 0.72rem; }
+.ddm-compare-val { color: var(--text-muted); line-height: 1.4; }
+.ddm-compare-card.ddm-new .ddm-compare-val { color: var(--text); font-weight: 500; }
+.ddm-new-badge {
+  position: absolute;
+  top: 10px;
+  right: -22px;
+  background: var(--accent3);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.2rem 1.6rem;
+  transform: rotate(35deg);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Guard analogy step diagram */
+.guard-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 1.25rem 0;
+  flex-wrap: wrap;
+}
+.guard-step {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 0 0.5rem;
+  position: relative;
+}
+.guard-step + .guard-step::before {
+  content: '→';
+  position: absolute;
+  left: -6px;
+  top: 24px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+@media (max-width: 600px) {
+  .guard-steps { flex-direction: column; gap: 0.5rem; }
+  .guard-step + .guard-step::before { content: '↓'; left: 50%; top: -14px; transform: translateX(-50%); }
+}
+.guard-step-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.guard-step:nth-child(1) .guard-step-icon { background: rgba(214,158,46,0.15); border: 2px solid rgba(214,158,46,0.35); }
+.guard-step:nth-child(3) .guard-step-icon { background: rgba(66,153,225,0.12); border: 2px solid rgba(66,153,225,0.3); }
+.guard-step:nth-child(5) .guard-step-icon { background: rgba(56,161,105,0.12); border: 2px solid rgba(56,161,105,0.3); }
+.guard-step:nth-child(7) .guard-step-icon { background: rgba(229,62,62,0.10); border: 2px solid rgba(229,62,62,0.25); }
+.guard-step-label { font-size: 0.78rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+.guard-step-desc { font-size: 0.72rem; color: var(--text-muted); line-height: 1.4; }
+
+/* Survival bar dramatic */
+.survival-bars { display: flex; flex-direction: column; gap: 1rem; margin: 1.25rem 0; }
+.survival-row { }
+.survival-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  font-size: 0.82rem;
+}
+.survival-pathogen { font-weight: 600; color: var(--text); }
+.survival-vals { display: flex; gap: 1rem; font-size: 0.78rem; font-weight: 700; }
+.survival-val-ddm { color: var(--accent3); }
+.survival-val-ctrl { color: var(--accent); }
+.survival-track { position: relative; height: 22px; background: rgba(229,62,62,0.12); border-radius: 11px; overflow: visible; border: 1px solid rgba(229,62,62,0.2); }
+.survival-fill-ddm {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  border-radius: 11px;
+  background: linear-gradient(90deg, #276749, #68d391);
+  width: 0;
+  transition: width 1.4s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+.survival-fill-ddm span {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Pipeline tracker */
+.pipeline-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.pipeline-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 90px;
+  flex: 1;
+  position: relative;
+}
+.pipeline-stage + .pipeline-stage::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 20px;
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  z-index: 0;
+}
+.pipeline-stage.done + .pipeline-stage::before { background: var(--accent3); }
+.pipeline-dot-outer {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.pipeline-stage.done .pipeline-dot-outer { background: var(--accent3); }
+.pipeline-stage.current .pipeline-dot-outer { background: var(--gold); box-shadow: 0 0 0 5px rgba(214,158,46,0.25); }
+.pipeline-stage.future .pipeline-dot-outer { background: var(--bg2); border: 2px solid var(--border); }
+.pipeline-icon { font-size: 1.1rem; }
+.pipeline-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.3;
+}
+.pipeline-stage.done .pipeline-label { color: var(--accent3); }
+.pipeline-stage.current .pipeline-label { color: var(--gold); font-weight: 700; }
+
+/* Glossary grid */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+.gloss-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.gloss-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+.gloss-front {
+  padding: 1rem 1.1rem;
+}
+.gloss-term {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+.gloss-category {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+}
+.gloss-back {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+}
+.gloss-card.open .gloss-back { max-height: 200px; }
+.gloss-back-inner {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.gloss-card.open .gloss-front { border-bottom: none; }
+.gloss-card.open .gloss-term { color: var(--primary); }
+[data-theme="dark"] .gloss-card.open .gloss-term { color: #90cdf4; }
+
+/* Conference prediction cards */
+.conf-cards { display: flex; flex-direction: column; gap: 1rem; }
+.conf-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: start;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.conf-card:hover { transform: translateX(4px); box-shadow: var(--shadow-lg); }
+.conf-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.conf-card:nth-child(1) .conf-num { background: linear-gradient(135deg, var(--primary), #4299e1); }
+.conf-card:nth-child(2) .conf-num { background: linear-gradient(135deg, #742a2a, #e53e3e); }
+.conf-card:nth-child(3) .conf-num { background: linear-gradient(135deg, #276749, #38a169); }
+.conf-card:nth-child(4) .conf-num { background: linear-gradient(135deg, #44337a, #9f7aea); }
+.conf-card:nth-child(5) .conf-num { background: linear-gradient(135deg, #744210, #d69e2e); }
+.conf-body { min-width: 0; }
+.conf-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+.conf-message {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.conf-prereq {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.65rem;
+  line-height: 1.5;
+}
+.conf-prereq strong { color: var(--text-muted); }
+.conf-likelihood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+.conf-likelihood-dots {
+  display: flex;
+  gap: 3px;
+}
+.conf-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.conf-dot.filled { background: var(--gold); }
+.conf-likelihood-label {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Warm narrative sub-section headers */
+.bg-subsection-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.bg-subsection-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.05em;
+}
+.bg-subsection-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.bg-subsection-title em { color: var(--teal); font-style: normal; }
+
+@media print {
+  .chapter-detail { max-height: none !important; opacity: 1 !important; }
+  .gloss-back { max-height: none !important; }
+  .chapter-body.open .chapter-expand-icon,
+  .chapter-expand-icon { display: none; }
+  .story-section, .section { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav" id="topnav">
+  <div class="container">
+    <div class="topnav-inner">
+      <div class="topnav-brand">KRIBB <span>Infectious Disease Center</span> | Researcher Profiles</div>
+      <ul class="nav-links">
+        <li><a href="#section-overview">Overview</a></li>
+        <li><a href="#section-profiles">Profiles</a></li>
+        <li><a href="#section-comparison">Comparison</a></li>
+        <li><a href="#section-timeline">Timeline</a></li>
+        <li><a href="#section-papers">Key Papers</a></li>
+        <li><a href="#section-network">Collaboration</a></li>
+        <li><a href="#section-ddm">DDM Research</a></li>
+        <li><a href="#section-links">External Links</a></li>
+        <li><a href="#section-background">Research Background</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="section-overview">
+  <div class="hero-deco"></div>
+  <div class="container">
+    <div class="animate-fadein">
+      <div class="hero-badge">&#128202; Research Intelligence Report</div>
+      <h1 class="hero-title">Researcher Profile Report</h1>
+      <p class="hero-subtitle">Dr. Choong-Min Ryu &amp; Dr. Hwi Won Seo — KRIBB Infectious Disease Research Center</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Date</span>
+          <span class="hero-meta-value">2026-03-04</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Methods</span>
+          <span class="hero-meta-value">OpenAlex API + WebSearch cross-validation</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Affiliation</span>
+          <span class="hero-meta-value">KRIBB Infectious Disease Research Center</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Red Flags</span>
+          <span class="hero-meta-value" style="color:#68d391;">✓ None for both researchers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE CARDS -->
+<section class="section" id="section-profiles">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">1</div>
+      <div>
+        <div class="section-tag">Researcher Profiles</div>
+        <h2>Researcher Profile Cards</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- RYU -->
+      <div class="profile-card">
+        <div class="profile-card-header ryu">
+          <div class="profile-tier tier-elite">&#11088; Elite Top 1%</div>
+          <div class="profile-avatar">R</div>
+          <div class="profile-name">Ryu Choong-Min</div>
+          <div class="profile-name-en">Choong-Min Ryu, Ph.D.</div>
+          <div class="profile-title">Director, KRIBB Infectious Disease Research Center (2025.03~)</div>
+        </div>
+        <div class="profile-body">
+          <div class="metrics-grid">
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="h-index: the largest h such that h papers each have at least h citations. 71 places Dr. Ryu in the global top 1%." data-target="71">0</div>
+              <div class="metric-label">h-index</div>
+              <div class="metric-note">OpenAlex</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="Total citations: sum of all citations received by published papers" data-target="22165" data-prefix="">0</div>
+              <div class="metric-label">Total Citations</div>
+              <div class="metric-note">~27,218 (Scholar)</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="Total papers: peer-reviewed publications indexed in OpenAlex" data-target="277">0</div>
+              <div class="metric-label">Total Papers</div>
+              <div class="metric-note">307 (ResearchGate)</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="Average citations per paper = total citations ÷ total papers" data-target="80">0</div>
+              <div class="metric-label">Avg. Citations</div>
+              <div class="metric-note">per paper</div>
+            </div>
+          </div>
+          <div class="blockquote">An h-index of 71 in microbiology/plant pathology places Dr. Ryu among the global top 1% in his field.</div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">Core Research Areas</div>
+          <div>
+            <span class="tag">Plant-Microbe Interactions</span>
+            <span class="tag">Bacterial Volatile Compounds</span>
+            <span class="tag">Induced Systemic Resistance (ISR)</span>
+            <span class="tag">Antibiotic Resistance</span>
+            <span class="tag">COVID-19 Model</span>
+          </div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">Awards</div>
+          <div style="font-size:0.82rem; color:var(--text);">
+            <div style="margin-bottom:0.3rem;">&#127942; Order of Science &amp; Technology Merit (2022)</div>
+            <div>&#127942; Daejeon Scientist of the Month Award (2016)</div>
+          </div>
+
+          <!-- Topic Donut for Ryu -->
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">Research Topic Distribution (estimated)</div>
+          <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+            <div class="donut-wrap">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <!-- Plant-Microbe 38% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#4299e1" stroke-width="14"
+                  stroke-dasharray="95.5 156.3"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Bacteria VOC 28% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#63b3ed" stroke-width="14"
+                  stroke-dasharray="70.4 181.4"
+                  stroke-dashoffset="-95.5"
+                  transform="rotate(-90 50 50)"/>
+                <!-- ISR 18% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#2b6cb0" stroke-width="14"
+                  stroke-dasharray="45.2 206.6"
+                  stroke-dashoffset="-165.9"
+                  transform="rotate(-90 50 50)"/>
+                <!-- AMR 10% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#90cdf4" stroke-width="14"
+                  stroke-dasharray="25.1 226.7"
+                  stroke-dashoffset="-211.1"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Other 6% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#bee3f8" stroke-width="14"
+                  stroke-dasharray="15.1 236.7"
+                  stroke-dashoffset="-236.2"
+                  transform="rotate(-90 50 50)"/>
+                <circle r="32" cx="50" cy="50" fill="var(--card)"/>
+              </svg>
+              <div class="donut-center">
+                <div class="donut-center-num" style="font-size:0.9rem;color:var(--primary);">5<br><span style="font-size:0.55rem;font-weight:400;color:var(--text-muted);">topics</span></div>
+              </div>
+            </div>
+            <div class="topic-legend" style="flex:1; min-width:120px;">
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#4299e1;"></div><span class="topic-legend-name">Plant-Microbe Interactions</span><span class="topic-legend-val">38%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#63b3ed;"></div><span class="topic-legend-name">Bacterial VOC Research</span><span class="topic-legend-val">28%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#2b6cb0;"></div><span class="topic-legend-name">Induced Resistance (ISR)</span><span class="topic-legend-val">18%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#90cdf4;"></div><span class="topic-legend-name">Antibiotic Resistance</span><span class="topic-legend-val">10%</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#bee3f8;"></div><span class="topic-legend-name">Other</span><span class="topic-legend-val">6%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO -->
+      <div class="profile-card">
+        <div class="profile-card-header seo">
+          <div class="profile-tier tier-midcareer">&#128200; Mid-Career</div>
+          <div class="profile-avatar">S</div>
+          <div class="profile-name">Seo Hwi Won</div>
+          <div class="profile-name-en">Hwi Won Seo, Ph.D.</div>
+          <div class="profile-title">Principal Researcher, KRIBB Infectious Disease Research Center</div>
+        </div>
+        <div class="profile-body">
+          <div class="metrics-grid">
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="h-index: given the career transition from veterinary virology to infectious disease, h-index 23 demonstrates solid research capability." data-target="23">0</div>
+              <div class="metric-label">h-index</div>
+              <div class="metric-note">OpenAlex</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="Total citations: sum of all citations received by published papers" data-target="1592">0</div>
+              <div class="metric-label">Total Citations</div>
+              <div class="metric-note">OpenAlex</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="Total papers: peer-reviewed publications indexed in OpenAlex" data-target="83">0</div>
+              <div class="metric-label">Total Papers</div>
+              <div class="metric-note">OpenAlex</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-value" data-tooltip="i10-index: number of papers with at least 10 citations" data-target="41">0</div>
+              <div class="metric-label">i10-index</div>
+              <div class="metric-note">Google Scholar</div>
+            </div>
+          </div>
+          <div class="blockquote">Given the career transition from veterinary virology to infectious disease research, an h-index of 23 demonstrates solid and growing research capability.</div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">Core Research Areas</div>
+          <div>
+            <span class="tag">Animal Virus Infections</span>
+            <span class="tag">Viral Gene Therapy</span>
+            <span class="tag">Viral Gastroenteritis</span>
+            <span class="tag">Innate Immunity</span>
+            <span class="tag">Infection Prevention Strategies</span>
+          </div>
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">Annual Research Activity (2020–2025)</div>
+          <div class="activity-chart" id="activityChart">
+            <div class="activity-bar-wrap">
+              <div class="activity-val">3</div>
+              <div class="activity-bar" style="height:0" data-height="48%"></div>
+              <div class="activity-year">2020</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">1</div>
+              <div class="activity-bar" style="height:0" data-height="16%"></div>
+              <div class="activity-year">2021</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">4</div>
+              <div class="activity-bar" style="height:0" data-height="64%"></div>
+              <div class="activity-year">2022</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">7</div>
+              <div class="activity-bar" style="height:0" data-height="100%" style="background:linear-gradient(to top, #1a4731, #9ae6b4);"></div>
+              <div class="activity-year">2023</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">2</div>
+              <div class="activity-bar" style="height:0" data-height="32%"></div>
+              <div class="activity-year">2024</div>
+            </div>
+            <div class="activity-bar-wrap">
+              <div class="activity-val">5</div>
+              <div class="activity-bar" style="height:0" data-height="80%" style="background:linear-gradient(to top, #276749, #9ae6b4);"></div>
+              <div class="activity-year">2025</div>
+            </div>
+          </div>
+
+          <!-- Topic Donut for Seo -->
+          <div class="divider"></div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; font-weight:600;">Research Topic Distribution</div>
+          <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+            <div class="donut-wrap">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <!-- Animal Virus 34% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#38a169" stroke-width="14"
+                  stroke-dasharray="85.5 166.3"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Gene Therapy 25% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#68d391" stroke-width="14"
+                  stroke-dasharray="62.8 189"
+                  stroke-dashoffset="-85.5"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Gastroenteritis 24% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#276749" stroke-width="14"
+                  stroke-dasharray="60.3 191.5"
+                  stroke-dashoffset="-148.3"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Microbial 11% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#9ae6b4" stroke-width="14"
+                  stroke-dasharray="27.6 224.2"
+                  stroke-dashoffset="-208.6"
+                  transform="rotate(-90 50 50)"/>
+                <!-- Ginseng 5% -->
+                <circle r="40" cx="50" cy="50" fill="none" stroke="#c6f6d5" stroke-width="14"
+                  stroke-dasharray="12.6 239.2"
+                  stroke-dashoffset="-236.2"
+                  transform="rotate(-90 50 50)"/>
+                <circle r="32" cx="50" cy="50" fill="var(--card)"/>
+              </svg>
+              <div class="donut-center">
+                <div class="donut-center-num" style="font-size:0.9rem;color:#38a169;">83<br><span style="font-size:0.55rem;font-weight:400;color:var(--text-muted);">papers</span></div>
+              </div>
+            </div>
+            <div class="topic-legend" style="flex:1; min-width:120px;">
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#38a169;"></div><span class="topic-legend-name">Animal Virus Infections</span><span class="topic-legend-val">40</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#68d391;"></div><span class="topic-legend-name">Viral Gene Therapy</span><span class="topic-legend-val">30</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#276749;"></div><span class="topic-legend-name">Viral Gastroenteritis</span><span class="topic-legend-val">29</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#9ae6b4;"></div><span class="topic-legend-name">Microbial Infections &amp; Disease</span><span class="topic-legend-val">13</span></div>
+              <div class="topic-legend-item"><div class="topic-legend-dot" style="background:#c6f6d5;"></div><span class="topic-legend-name">Ginseng Biological Effects</span><span class="topic-legend-val">6</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section" id="section-comparison" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">2</div>
+      <div>
+        <div class="section-tag">Comparative Analysis</div>
+        <h2>Researcher Comparison</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- Bar comparison -->
+      <div class="comparison-section">
+        <h3 style="margin-bottom:1.5rem; font-size:1rem;">Key Metrics Comparison</h3>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>h-index</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">Ryu</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">71</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">Seo</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="32.4%"></div></div>
+              <div class="bar-val">23</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>Total Citations</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">Ryu</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">22,165</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">Seo</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="7.2%"></div></div>
+              <div class="bar-val">1,592</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>Total Papers</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">Ryu</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">277</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">Seo</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="30%"></div></div>
+              <div class="bar-val">83</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comparison-label"><span>Joint Papers</span></div>
+          <div class="comparison-bars">
+            <div class="bar-container">
+              <div class="bar-name" style="color:#4299e1;">Ryu</div>
+              <div class="bar-track"><div class="bar-fill ryu" data-width="100%"></div></div>
+              <div class="bar-val">8</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar-name" style="color:#38a169;">Seo</div>
+              <div class="bar-track"><div class="bar-fill seo" data-width="100%"></div></div>
+              <div class="bar-val">8</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; padding:1rem; background:var(--bg2); border-radius:var(--radius-sm); border:1px solid var(--border);">
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em;">Career Stage Classification</div>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <div style="flex:1; min-width:120px;">
+              <div style="font-size:0.78rem; color:var(--text-muted);">Ryu Choong-Min</div>
+              <div style="display:inline-block; background:linear-gradient(135deg,#d69e2e,#f6ad55); color:#1a1a00; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:10px; margin-top:0.2rem;">&#11088; Senior / Elite</div>
+            </div>
+            <div style="flex:1; min-width:120px;">
+              <div style="font-size:0.78rem; color:var(--text-muted);">Seo Hwi Won</div>
+              <div style="display:inline-block; background:linear-gradient(135deg,#38a169,#68d391); color:#0a2a15; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:10px; margin-top:0.2rem;">&#128200; Mid-Career</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Radar chart -->
+      <div class="comparison-section">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">Multi-Dimensional Capability Radar</h3>
+        <div class="radar-wrap">
+          <svg class="radar-svg" id="radarChart" viewBox="-10 -10 280 280" width="260" height="260">
+            <!-- Grid -->
+            <polygon class="radar-grid" points="130,30 204,77.5 204,172.5 130,220 56,172.5 56,77.5" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,55 188,91 188,159 130,195 72,159 72,91" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,80 172,104.5 172,145.5 130,170 88,145.5 88,104.5" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <polygon class="radar-grid" points="130,105 156,118 156,132 130,145 104,132 104,118" fill="none" stroke-width="0.5" opacity="0.3"/>
+            <!-- Axes -->
+            <line x1="130" y1="125" x2="130" y2="30" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="204" y2="77.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="204" y2="172.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="130" y2="220" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="56" y2="172.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <line x1="130" y1="125" x2="56" y2="77.5" stroke="var(--border)" stroke-width="0.5" opacity="0.4"/>
+            <!-- Ryu: h71(100%), citations(100%), papers(100%), collab(60%), intl(80%), impact(95%) -->
+            <!-- Scale: max val per axis used as 95% of radius (95px from center) -->
+            <!-- h-index: top axis, ryu=100%->95px up from 125=30, seo=32%->~61px up=64 -->
+            <!-- Rendered by JS below for accurate placement -->
+            <polygon id="radarRyu" class="radar-area ryu" points="130,30 204,77.5 193,163 130,178 64,155 68,85"/>
+            <polygon id="radarSeo" class="radar-area seo" points="130,94 167,101 165,158 130,194 95,157 93,101"/>
+            <!-- Labels -->
+            <text class="radar-label" x="130" y="20">h-index</text>
+            <text class="radar-label" x="215" y="74">Citations</text>
+            <text class="radar-label" x="215" y="178">Papers</text>
+            <text class="radar-label" x="130" y="236">i10-index</text>
+            <text class="radar-label" x="44" y="178">Collab.</text>
+            <text class="radar-label" x="44" y="74">Intl. Collab.</text>
+          </svg>
+        </div>
+        <div style="display:flex; gap:1.5rem; justify-content:center; margin-top:0.5rem;">
+          <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.8rem; color:var(--text-muted);">
+            <div style="width:14px;height:3px;background:#4299e1;border-radius:2px;"></div> Ryu
+          </div>
+          <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.8rem; color:var(--text-muted);">
+            <div style="width:14px;height:3px;background:#38a169;border-radius:2px;"></div> Seo
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <strong>Collaboration Synergy:</strong> Dr. Ryu's foundation in <em>microbiology and immunology</em> combined with Dr. Seo's expertise in <em>veterinary virology and animal infection models</em> is producing novel approaches in infection prevention, exemplified by the DDM immune priming strategy.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" id="section-timeline">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">3</div>
+      <div>
+        <div class="section-tag">Career Timeline</div>
+        <h2>Dr. Ryu's Career Timeline</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2003</div>
+            <div class="timeline-text">World-first discovery of bacterial volatile compounds promoting plant growth (PNAS)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2004</div>
+            <div class="timeline-text">Joined KRIBB — began core research including Superbacteria Research Center</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2004</div>
+            <div class="timeline-text">Published ISR and plant growth promotion by Bacillus spp. (Phytopathology, 1,628 citations)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2007–2008</div>
+            <div class="timeline-text">Established role of rhizosphere bacteria — Trends in Plant Science paper with 1,813 citations</div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2016</div>
+            <div class="timeline-text">&#127942; Daejeon Scientist of the Month Award</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2020</div>
+            <div class="timeline-text">Developed COVID-19 non-human primate model — 4th worldwide, <strong>first in Korea</strong></div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2022</div>
+            <div class="timeline-text">&#127942; Order of Science &amp; Technology Merit Award (55th Science Day)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2025.03</div>
+            <div class="timeline-text">Appointed Director, KRIBB Infectious Disease Research Center (2025.03.14~)</div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2026.01</div>
+            <div class="timeline-text">DDM immune priming paper published — eBioMedicine (IF 10.8, Lancet family)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seo career timeline -->
+      <div class="card">
+        <h3 style="margin-bottom:1.25rem; font-size:1rem;">Dr. Seo's Career History</h3>
+        <table class="info-table">
+          <tr>
+            <th>2011–2025</th>
+            <td>Seoul National University (College of Veterinary Medicine) — affiliation/graduate</td>
+          </tr>
+          <tr>
+            <th>2012</th>
+            <td>University of Nebraska-Lincoln — visiting research</td>
+          </tr>
+          <tr>
+            <th>2017–2020</th>
+            <td>Korea Ginseng Corporation (KGC) Phytomedicine Lab — industry experience</td>
+          </tr>
+          <tr>
+            <th>2020~Present</th>
+            <td><strong>KRIBB Infectious Disease Research Center</strong> — Principal Researcher (current)</td>
+          </tr>
+          <tr>
+            <th>2026.01</th>
+            <td>Co-corresponding author, DDM immune priming paper in eBioMedicine — <strong>demonstrated independent research leadership</strong></td>
+          </tr>
+        </table>
+
+        <div class="divider"></div>
+        <h4 style="margin-bottom:0.75rem; font-size:0.9rem;">Major Research Achievements</h4>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            COVID-19 Response (Ryu)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              Developed the world's 4th and Korea's first non-human primate model for COVID-19, essential for therapeutic and vaccine development by Korean companies.
+              <br><a href="https://biz.heraldcorp.com/article/10460077" target="_blank" style="font-size:0.78rem;">Herald Economy coverage →</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            Superbacteria Control (Ryu)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              Developed novel antibiotics based on gold nanoparticles and lipid nanoparticles (bionanomechanics technology). Proposed new strategies against drug-resistant bacteria.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            Methane Reduction Research (Ryu)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              Genetic variation in low-methane rice variety 'Gamtan' alters soil microbial balance, reducing methane emissions by 24%.
+              <br><a href="https://biz.heraldcorp.com/article/10681930" target="_blank" style="font-size:0.78rem;">Herald Economy coverage →</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleAccordion(this)">
+            DDM Immune Priming Joint Research (2026)
+            <span class="accordion-chevron">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content text-sm text-muted">
+              Development of a preemptive innate immune activation strategy using n-dodecyl-β-D-maltoside (DDM). Both researchers served as co-corresponding authors. Published in eBioMedicine.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAPERS TABLE -->
+<section class="section" id="section-papers" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">4</div>
+      <div>
+        <div class="section-tag">Publication Analysis</div>
+        <h2>Key Publications Analysis (Ryu Top 5)</h2>
+      </div>
+    </div>
+
+    <div class="fade-in-section">
+      <div style="margin-bottom:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
+        <span style="font-size:0.82rem; color:var(--text-muted);">Sort:</span>
+        <button onclick="sortTable('cite')" style="background:var(--primary);color:#fff;border:none;padding:0.25rem 0.75rem;border-radius:12px;font-size:0.76rem;cursor:pointer;font-family:inherit;">Citations ↓</button>
+        <button onclick="sortTable('year')" style="background:var(--card);color:var(--text-muted);border:1px solid var(--border);padding:0.25rem 0.75rem;border-radius:12px;font-size:0.76rem;cursor:pointer;font-family:inherit;">Year ↓</button>
+      </div>
+      <div class="papers-table-wrap">
+        <table class="papers-table" id="papersTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Journal</th>
+              <th>Year</th>
+              <th>Citations</th>
+              <th>DOI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-cite="1813" data-year="2008">
+              <td><strong>1</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Rhizosphere bacteria help plants tolerate abiotic stress</span></td>
+              <td><span class="journal-badge top">Trends Plant Sci.</span></td>
+              <td>2008</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="100%"></div>
+                  <span class="cite-num">1,813</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1016/j.tplants.2008.10.004')">Copy</button></td>
+            </tr>
+            <tr data-cite="1628" data-year="2004">
+              <td><strong>2</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Induced Systemic Resistance and Promotion of Plant Growth by <em>Bacillus</em> spp.</span></td>
+              <td><span class="journal-badge top">Phytopathology</span></td>
+              <td>2004</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="89.8%"></div>
+                  <span class="cite-num">1,628</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1094/phyto.2004.94.11.1259')">Copy</button></td>
+            </tr>
+            <tr data-cite="1605" data-year="2003">
+              <td><strong>3</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Bacterial volatiles promote growth in <em>Arabidopsis</em> <span style="color:var(--accent2);font-weight:700;">[World First]</span></span></td>
+              <td><span class="journal-badge top">PNAS</span></td>
+              <td>2003</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="88.5%"></div>
+                  <span class="cite-num">1,605</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1073/pnas.0730845100')">Copy</button></td>
+            </tr>
+            <tr data-cite="1272" data-year="2004">
+              <td><strong>4</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Bacterial Volatiles Induce Systemic Resistance in Arabidopsis</span></td>
+              <td><span class="journal-badge">Plant Physiology</span></td>
+              <td>2004</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="70.2%"></div>
+                  <span class="cite-num">1,272</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1104/pp.103.026583')">Copy</button></td>
+            </tr>
+            <tr data-cite="506" data-year="2007">
+              <td><strong>5</strong></td>
+              <td><span style="font-size:0.82rem; line-height:1.4;">Rhizobacterial volatile emissions regulate auxin homeostasis</span></td>
+              <td><span class="journal-badge">Planta</span></td>
+              <td>2007</td>
+              <td>
+                <div class="cite-bar-wrap">
+                  <div class="cite-bar" style="width:0" data-width="27.9%"></div>
+                  <span class="cite-num">506</span>
+                </div>
+              </td>
+              <td><button class="doi-copy" onclick="copyDoi(this, '10.1007/s00425-007-0530-2')">Copy</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.75rem; color:var(--text-light); margin-top:0.5rem;">* Citation counts: OpenAlex (retrieved 2026-03-04). Click Copy button to copy DOI to clipboard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORK -->
+<section class="section" id="section-network">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">5</div>
+      <div>
+        <div class="section-tag">Collaboration Network</div>
+        <h2>Key Collaborator Network</h2>
+      </div>
+    </div>
+
+    <div class="fade-in-section" style="background:var(--card); border-radius:var(--radius); border:1px solid var(--border); padding:1.5rem; box-shadow:var(--shadow);">
+      <svg class="network-svg" viewBox="0 0 560 340" style="max-height:340px;">
+        <!-- Edges from Ryu -->
+        <line class="network-edge strong" x1="280" y1="170" x2="140" y2="80"/>
+        <line class="network-edge strong" x1="280" y1="170" x2="420" y2="80"/>
+        <line class="network-edge" x1="280" y1="170" x2="80" y2="160"/>
+        <line class="network-edge" x1="280" y1="170" x2="480" y2="160"/>
+        <line class="network-edge" x1="280" y1="170" x2="160" y2="270"/>
+        <line class="network-edge" x1="280" y1="170" x2="400" y2="270"/>
+        <line class="network-edge" x1="280" y1="170" x2="280" y2="290"/>
+        <line class="network-edge strong" x1="280" y1="170" x2="490" y2="240"/>
+        <!-- Seo edge -->
+        <line class="network-edge strong" x1="280" y1="170" x2="370" y2="200" stroke="#38a169"/>
+        <!-- Seo node -->
+        <circle cx="370" cy="200" r="24" fill="none" stroke="#38a169" stroke-width="2.5" stroke-dasharray="4 2" style="fill:rgba(56,161,105,0.12);"/>
+        <text class="network-label" x="370" y="203" style="fill:#38a169; font-size:9px; font-weight:700;">Seo</text>
+        <text class="network-label" x="370" y="215" style="fill:#38a169; font-size:7.5px;">(8p)</text>
+        <!-- Center: Ryu -->
+        <circle cx="280" cy="170" r="36" class="network-node-main"/>
+        <circle cx="280" cy="170" r="36" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+        <text class="network-label-main" x="280" y="166">Ryu</text>
+        <text class="network-label" x="280" y="180" style="fill:rgba(255,255,255,0.7); font-size:8px;">h-index 71</text>
+        <!-- Collaborators -->
+        <!-- Soohyun Lee (26) -->
+        <circle cx="140" cy="80" r="20" class="network-node"/>
+        <text class="network-label" x="140" y="77">Lee Soohyun</text>
+        <text class="network-label" x="140" y="89" style="font-size:8px; fill:var(--primary);">26p</text>
+        <!-- Geun Cheol Song (24) -->
+        <circle cx="420" cy="80" r="19" class="network-node"/>
+        <text class="network-label" x="420" y="77">Song Geuncheol</text>
+        <text class="network-label" x="420" y="89" style="font-size:8px; fill:var(--primary);">24p</text>
+        <!-- Haeyoung Jeong (15) -->
+        <circle cx="80" cy="160" r="16" class="network-node"/>
+        <text class="network-label" x="80" y="157">Jeong Haeyoung</text>
+        <text class="network-label" x="80" y="169" style="font-size:8px;">15p</text>
+        <!-- Sharifi (15) -->
+        <circle cx="480" cy="160" r="16" class="network-node"/>
+        <text class="network-label" x="480" y="157">Sharifi</text>
+        <text class="network-label" x="480" y="169" style="font-size:8px;">15p</text>
+        <!-- Kong (14) -->
+        <circle cx="160" cy="270" r="15" class="network-node"/>
+        <text class="network-label" x="160" y="267">Kong Hyunki</text>
+        <text class="network-label" x="160" y="279" style="font-size:8px;">14p</text>
+        <!-- Yong (13) -->
+        <circle cx="400" cy="270" r="15" class="network-node"/>
+        <text class="network-label" x="400" y="267">Yong</text>
+        <text class="network-label" x="400" y="279" style="font-size:8px;">13p</text>
+        <!-- Kim (13) -->
+        <circle cx="280" cy="290" r="15" class="network-node"/>
+        <text class="network-label" x="280" y="287">Kim Junseob</text>
+        <text class="network-label" x="280" y="299" style="font-size:8px;">13p</text>
+        <!-- Kloepper (13) -->
+        <circle cx="490" cy="240" r="16" class="network-node"/>
+        <text class="network-label" x="490" y="237">Kloepper</text>
+        <text class="network-label" x="490" y="249" style="font-size:8px;">13p</text>
+        <!-- Legend -->
+        <rect x="10" y="10" width="150" height="56" rx="6" fill="var(--card)" stroke="var(--border)" stroke-width="1" opacity="0.9"/>
+        <circle cx="28" cy="28" r="8" fill="var(--primary)"/>
+        <text x="42" y="32" style="font-size:9px; fill:var(--text-muted);">Ryu (Lead Researcher)</text>
+        <circle cx="28" cy="50" r="8" fill="none" stroke="#38a169" stroke-width="2" stroke-dasharray="3 2"/>
+        <text x="42" y="54" style="font-size:9px; fill:#38a169;">Seo (Co-Corresponding Author)</text>
+      </svg>
+      <p style="font-size:0.78rem; color:var(--text-light); text-align:center; margin-top:0.5rem;">Based on co-authored paper count from OpenAlex (retrieved 2026-03-04). Node size proportional to shared papers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DDM HIGHLIGHT -->
+<section class="section" id="section-ddm" style="background:var(--bg2); padding:3.5rem 0;">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">6</div>
+      <div>
+        <div class="section-tag">Research Highlight</div>
+        <h2>DDM Immune Priming Research Highlight</h2>
+      </div>
+    </div>
+
+    <div class="ddm-card fade-in-section">
+      <div class="ddm-badge">&#127381; World First · eBioMedicine 2026</div>
+      <h3 class="ddm-title">"Innate immune priming by <em>n-dodecyl-β-D-maltoside</em> in murine models of bacterial and viral infection"</h3>
+      <div class="ddm-meta-row">
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">Journal</div>
+          <div class="ddm-meta-value">eBioMedicine (IF 10.8)</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">Published</div>
+          <div class="ddm-meta-value">January 29, 2026</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">Corresponding Authors</div>
+          <div class="ddm-meta-value">Ryu + Seo (co-corresponding)</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">First Author</div>
+          <div class="ddm-meta-value">Jisun Park</div>
+        </div>
+        <div class="ddm-meta-item">
+          <div class="ddm-meta-label">Lancet Family</div>
+          <div class="ddm-meta-value" style="color:#9ae6b4;">✓ High-impact journal</div>
+        </div>
+      </div>
+      <p class="ddm-summary">The pharmaceutical excipient <strong>DDM (n-dodecyl-β-D-maltoside)</strong> rapidly mobilizes and activates <strong>neutrophils</strong>, the key cells of innate immunity, providing the world-first demonstration of a <strong>broad-spectrum infection prevention strategy against both drug-resistant bacteria and influenza</strong>. Safety was confirmed — no excessive inflammation is triggered in the absence of pathogens.</p>
+      <div style="margin-bottom:1rem; font-size:0.8rem; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em;">Media Coverage</div>
+      <div class="media-links">
+        <a href="https://bioengineer.org/new-broad-spectrum-infection-prevention-method-successfully-blocks-drug-resistant-bacteria-and-influenza/" target="_blank" class="media-link">Bioengineer.org</a>
+        <a href="https://zdnet.co.kr/view/?no=20260211095854" target="_blank" class="media-link">ZDNet Korea</a>
+        <a href="https://www.news-medical.net/news/20260216/Innate-immune-priming-may-evolve-into-a-broadly-applicable-infection-prevention-strategy.aspx" target="_blank" class="media-link">News-Medical</a>
+        <a href="https://medicalxpress.com/news/2026-02-blocking-drug-resistant-bacteria-influenza.html" target="_blank" class="media-link">MedicalXpress</a>
+        <a href="https://www.miragenews.com/new-strategy-blocks-drug-resistant-bacteria-1620347/" target="_blank" class="media-link">Mirage News</a>
+      </div>
+    </div>
+
+    <!-- Red Flags -->
+    <div class="grid-2 fade-in-section" style="margin-top:2rem;">
+      <div class="card">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">&#128681; Red Flag Check — Ryu</h3>
+        <div class="redflag-clear">
+          <div class="redflag-icon">&#9989;</div>
+          <div class="redflag-text">
+            <h4>All Clear</h4>
+            <p>No records found on Retraction Watch. No paper retractions, research misconduct, or plagiarism issues detected.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:1rem; font-size:1rem;">&#128681; Red Flag Check — Seo</h3>
+        <div class="redflag-clear">
+          <div class="redflag-icon">&#9989;</div>
+          <div class="redflag-text">
+            <h4>All Clear</h4>
+            <p>No records found on Retraction Watch. No paper retractions, research misconduct, or plagiarism issues detected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXTERNAL LINKS -->
+<section class="section" id="section-links">
+  <div class="container">
+    <div class="section-header fade-in-section">
+      <div class="section-num">7</div>
+      <div>
+        <div class="section-tag">External Profiles</div>
+        <h2>External Profile Links</h2>
+      </div>
+    </div>
+
+    <div class="grid-2 fade-in-section">
+      <!-- Ryu links -->
+      <div class="card">
+        <h3 style="margin-bottom:0.3rem; font-size:1rem;">Ryu Choong-Min Profile</h3>
+        <p style="font-size:0.8rem; margin-bottom:1rem;">Choong-Min Ryu — External database links</p>
+        <div class="profile-links">
+          <a href="https://orcid.org/0000-0002-7276-1189" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128279;</span> ORCID
+          </a>
+          <a href="https://scholar.google.com/citations?user=hK3GxlIAAAAJ&hl=en" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#127891;</span> Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Choong-Min-Ryu" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128202;</span> ResearchGate
+          </a>
+          <a href="https://openalex.org/A5051257404" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128218;</span> OpenAlex
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">Media Coverage Links</div>
+        <div class="profile-links">
+          <a href="https://www.news1.kr/local/daejeon-chungnam/4657261" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> Science Medal (News1)
+          </a>
+          <a href="https://www.newsis.com/view/NISX20160803_0014263941" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> Science Award (Newsis)
+          </a>
+          <a href="https://biz.heraldcopy.com/article/10460077" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> COVID-19 Model (Herald)
+          </a>
+          <a href="https://biz.heraldcopy.com/article/10681930" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> Methane Reduction (Herald)
+          </a>
+        </div>
+      </div>
+
+      <!-- Seo links -->
+      <div class="card">
+        <h3 style="margin-bottom:0.3rem; font-size:1rem;">Seo Hwi Won Profile</h3>
+        <p style="font-size:0.8rem; margin-bottom:1rem;">Hwi Won Seo — External database links</p>
+        <div class="profile-links">
+          <a href="https://orcid.org/0000-0002-6552-8039" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128279;</span> ORCID
+          </a>
+          <a href="https://www.researchgate.net/scientific-contributions/Hwi-Won-Seo-2222930665" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128202;</span> ResearchGate
+          </a>
+          <a href="https://openalex.org/A5046215474" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128218;</span> OpenAlex
+          </a>
+          <a href="https://oak.kribb.re.kr/researcher-profile?ep=226&type=article" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#127970;</span> KRIBB OAK
+          </a>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem; font-weight:600;">DDM Research Media Links</div>
+        <div class="profile-links">
+          <a href="https://bioengineer.org/new-broad-spectrum-infection-prevention-method-successfully-blocks-drug-resistant-bacteria-and-influenza/" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128203;</span> Bioengineer.org
+          </a>
+          <a href="https://zdnet.co.kr/view/?no=20260211095854" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#128240;</span> ZDNet Korea
+          </a>
+          <a href="https://www.news-medical.net/news/20260216/Innate-immune-priming-may-evolve-into-a-broadly-applicable-infection-prevention-strategy.aspx" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#9877;</span> News-Medical
+          </a>
+          <a href="https://medicalxpress.com/news/2026-02-blocking-drug-resistant-bacteria-influenza.html" target="_blank" class="profile-link-btn">
+            <span class="lnk-icon">&#9877;</span> MedicalXpress
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Summary -->
+    <div class="card fade-in-section" style="margin-top:2rem; border-left:4px solid var(--primary);">
+      <h3 style="margin-bottom:1rem;">Overall Assessment</h3>
+      <div class="grid-2" style="gap:1.5rem;">
+        <div>
+          <div style="font-size:0.8rem; font-weight:700; color:var(--primary); margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.06em;">Dr. Ryu Choong-Min</div>
+          <p style="font-size:0.88rem;">A globally recognized top 1% microbiologist who pioneered the field of plant-microbe interactions and has since expanded into infectious disease response (COVID-19 primate model, superbacteria antibiotics). A decorated, proven research leader.</p>
+        </div>
+        <div>
+          <div style="font-size:0.8rem; font-weight:700; color:#38a169; margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.06em;">Dr. Seo Hwi Won</div>
+          <p style="font-size:0.88rem;">A rising researcher who transitioned from veterinary virology to infectious disease immunology. His role as corresponding author in eBioMedicine demonstrates independent research leadership and positions him as a key contributor at KRIBB's Infectious Disease Research Center.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKGROUND KNOWLEDGE SECTION -->
+<section class="story-section" id="section-background">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="section-header fade-in-section">
+      <div class="section-num">8</div>
+      <div>
+        <div class="section-tag">Research Background</div>
+        <h2>Research Background</h2>
+      </div>
+    </div>
+    <div class="story-intro fade-in-section">
+      The following is written without jargon, so that anyone encountering these researchers' work for the first time can understand it. It is designed to read like a well-crafted story, not a data dashboard.
+    </div>
+
+    <!-- 4-1: Ryu Journey -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-1</span>
+        <h3 class="bg-subsection-title">Dr. Ryu: <em>"From the Scent of Soil Bacteria to Infection Prevention"</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.75rem; line-height:1.7;">A 20-year research journey told in five chapters. Click each chapter to expand the full story.</p>
+
+      <div class="chapter-timeline">
+
+        <!-- Chapter 1 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch1">1</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2003</span>
+            <div class="chapter-title">
+              The Scent of Bacteria Grows Plants
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">Dr. Ryu asked a question of soil bacteria: "How do you communicate with plants?" The answer was <strong>scent</strong>. He was the first in the world to discover that an invisible chemical (2,3-butanediol) released by Bacillus bacteria can boost plant growth up to 5-fold. Published in <em>PNAS</em>, 1,605 citations.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                Volatile organic compounds (VOCs) released by bacteria float through the air and are absorbed through the stomata in plant leaves. This "chemical letter" activates the growth hormone pathways in plant cells, causing larger roots and more leaves.
+                <div class="analogy-box">
+                  <div class="analogy-label">Simple Analogy</div>
+                  Just as the smell of a neighboring bakery whets your appetite, bacteria's "scent letter" alone makes plants grow more vigorously — growth is promoted through airborne chemical signals, without any direct contact.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch2">2</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2004</span>
+            <div class="chapter-title">
+              The Same Scent Also Awakens Plant Immunity
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">Remarkably, the same scent molecules also <strong>pre-activate the plant's immune system</strong>. This is called "Induced Systemic Resistance (ISR)" — like having guards already stationed before the pathogen arrives. Published in <em>Phytopathology</em>, 1,628 citations.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                ISR involves plants receiving a "threat signal" in advance and switching immune-related genes into a primed state. When a real pathogen invades, they respond 2–3 times faster and more powerfully than unprepared plants.
+                <div class="analogy-box">
+                  <div class="analogy-label">Simple Analogy — Fire Drill</div>
+                  Fire drill = beneficial bacteria send "be prepared" signal &nbsp;→&nbsp; Standby state = plant knows escape routes in advance &nbsp;→&nbsp; Real fire = when pathogen arrives, responds much faster. The key is not killing the pathogen directly, but <strong>"preparing to fight in advance."</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch3">3</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2008</span>
+            <div class="chapter-title">
+              A "Health Management Team" That Works Against Drought and Salt Too
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">This principle extended beyond disease defense to also work against environmental stresses like drought and salinity. Proof that bacteria serve as a plant's "health management team." Published in <em>Trends in Plant Science</em>, 1,813 citations — his most-cited paper.</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                Rhizosphere bacteria provide plants with three services:
+                <ul style="margin:0.5rem 0 0.5rem 1rem; line-height:1.8;">
+                  <li><strong>Stress counselor</strong>: reduces stress hormones (ethylene) to calm the plant</li>
+                  <li><strong>Nutritionist</strong>: converts phosphate and iron in soil into forms the plant can absorb</li>
+                  <li><strong>Fitness trainer</strong>: promotes wider root development to improve water and nutrient uptake</li>
+                </ul>
+                Dr. Ryu's key insight at this point: <strong>"Microbial chemical signals are a master key capable of awakening the host's entire defense system."</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch4">4</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2020~</span>
+            <div class="chapter-title">
+              COVID-19 and Superbacteria — From Plants to Humans
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">A major pivot during the pandemic: applying the principles of plant immunity to human infectious disease. Developed Korea's <strong>first-ever</strong> COVID-19 primate infection model, and selectively eliminated superbacteria using gold nanoparticle "Trojan horses."</p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                <strong>COVID-19 Response</strong>: Built a COVID-19 infection model using macaques. 4th worldwide, first in Korea. This model allowed Korean companies to validate the efficacy of therapeutics and vaccines.<br><br>
+                <strong>Superbacteria Control</strong>: Developed a "Trojan horse" strategy by attaching antibiotics to gold nanoparticles to selectively destroy only the superbacteria's cell membrane (ACS Nano, 2025). Normal cells remain unaffected.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 5 -->
+        <div class="chapter-card fade-in-section">
+          <div class="chapter-spine">
+            <div class="chapter-dot ch5">5</div>
+          </div>
+          <div class="chapter-body" onclick="toggleChapter(this)">
+            <span class="chapter-year-badge">2026</span>
+            <div class="chapter-title">
+              DDM Immune Priming — The Pinnacle of 20 Years of Research
+              <span class="chapter-expand-icon">▼</span>
+            </div>
+            <p class="chapter-lead">Proving that the principle of "pre-awakening immunity" discovered in plants also works in mammals. A single dose of DDM simultaneously blocks three superbacteria and influenza virus. <strong>A curiosity that began with a handful of soil has led to a solution for humanity's most urgent threats.</strong></p>
+            <div class="chapter-detail">
+              <div class="chapter-detail-inner">
+                In 2003, there was a simple discovery: "bacterial scent → plant growth promotion." The principle hidden within that discovery — <strong>a single chemical signal can awaken the host's entire defense system</strong> — came to fruition as DDM immune priming after 20 years. A remarkable example of how far a researcher's curiosity can travel.
+                <div class="analogy-box">
+                  <div class="analogy-label">Journey Summary</div>
+                  Soil bacteria VOC (2003) → Plant immune priming ISR (2004) → Environmental stress tolerance (2008) → COVID-19 model / Nano-antibiotics (2020~) → <strong>DDM broad-spectrum infection prevention (2026)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end chapter-timeline -->
+    </div><!-- end 4-1 -->
+
+    <!-- 4-2: Seo Journey -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-2</span>
+        <h3 class="bg-subsection-title">Dr. Seo: <em>"Witnessing Vaccine Failure Led Him to Find a Way to Strengthen Immunity Itself"</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.75rem; line-height:1.7;">A story of three career stages converging toward a single research goal. The lesson from each stage becomes the seed for the next.</p>
+
+      <div class="stage-track">
+
+        <!-- Stage 1 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s1">1</div>
+            <div class="stage-meta">
+              <div class="stage-period">2011 — 2020 · Seoul National University, College of Veterinary Medicine</div>
+              <div class="stage-title">Swine Virus Specialist</div>
+              <div class="stage-org">PhD in Veterinary Virology + Visiting Research at University of Nebraska-Lincoln (2012)</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            Studied viruses infecting pigs (PCV2 circovirus, PRRSV reproductive and respiratory syndrome virus). These diseases cause enormous damage to the global swine industry. He compared the efficacy of four commercial vaccines and <strong>was the first in Korea to discover a mutant virus that existing vaccines could not counter</strong> (2014). He also developed expertise as an <strong>"animal infection model" specialist</strong>, directly infecting animals with viruses and precisely measuring immune responses.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">Key Lesson from This Stage</div>
+              <p>"Vaccines targeting specific pathogens have inherent limitations" — when a virus mutates, vaccines are neutralized. The same principle explains why booster shots are needed for COVID variants.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s2">2</div>
+            <div class="stage-meta">
+              <div class="stage-period">2017 — 2020 · Korea Ginseng Corporation (KGC)</div>
+              <div class="stage-title">Where Ginseng Meets Immunity</div>
+              <div class="stage-org">Senior Researcher, KGC Phytomedicine Laboratory</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            Conducted scientific validation of red ginseng product safety. A 12-month long-term safety study of red ginseng confirmed improved immune function and reduced viral infections. He bridged academia and industry, developing a keen sense for regulatory requirements and practical application.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">Key Lesson from This Stage</div>
+              <p>"When a safe natural substance strengthens immunity, infections decrease" — this observation became the seed of the later DDM research. The origin of the idea: use an already-validated safe substance to enhance immunity.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage-card fade-in-section">
+          <div class="stage-header">
+            <div class="stage-num s3">3</div>
+            <div class="stage-meta">
+              <div class="stage-period">2020 — Present · KRIBB Infectious Disease Research Center</div>
+              <div class="stage-title">A New Paradigm for Infection Prevention</div>
+              <div class="stage-org">Principal Researcher — Corresponding Author, DDM Immune Priming</div>
+            </div>
+          </div>
+          <div class="stage-body">
+            All experiences converge. <strong>Animal infection model design capability</strong> built at SNU, the insight of <strong>"boost immunity with a safe substance"</strong> gained at KGC, and the conviction from vaccine failure experience that <strong>"we must strengthen immunity itself, not target the pathogen"</strong> — all come together.
+            Result: As <strong>corresponding author (principal investigator)</strong> of the DDM immune priming research, he developed a strategy achieving 100% survival against three types of lethal superbacteria.
+            <div class="stage-lesson">
+              <div class="stage-lesson-label">Integration of Three Stages</div>
+              <p>Animal model expertise (SNU) + immune enhancement with safe substance (KGC) + resolve to overcome vaccine limitations = <strong>DDM broad-spectrum infection prevention strategy</strong></p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end stage-track -->
+    </div><!-- end 4-2 -->
+
+    <!-- 4-3: DDM Explained -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem; background:var(--bg2); border-radius:var(--radius); padding:2.5rem; border:1px solid var(--border);">
+      <div class="bg-subsection-header" style="border-color:rgba(44,122,123,0.2);">
+        <span class="bg-subsection-num">4-3</span>
+        <h3 class="bg-subsection-title">DDM Immune Priming: <em>Where Their Research Converges</em></h3>
+      </div>
+
+      <!-- DDM description -->
+      <div style="margin-bottom:1.75rem;">
+        <h4 style="font-size:0.95rem; margin-bottom:0.6rem; color:var(--text);">What is DDM?</h4>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.75; margin:0;">DDM (n-dodecyl-beta-D-maltoside) is a <strong>soap-like molecule</strong> consisting of a sugar unit attached to an oily chain. It is an FDA-approved substance that has been used for decades as a pharmaceutical excipient (stabilizer), with an already-confirmed human safety profile.</p>
+      </div>
+
+      <!-- 3-column comparison cards -->
+      <h4 style="font-size:0.95rem; margin-bottom:0.9rem; color:var(--text);">How is it different from existing approaches?</h4>
+      <div class="ddm-compare-grid">
+        <div class="ddm-compare-card antibiotic">
+          <span class="ddm-compare-icon">&#128138;</span>
+          <div class="ddm-compare-name">Antibiotics</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Mechanism</span><span class="ddm-compare-val">Directly kills bacteria</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Resistance</span><span class="ddm-compare-val">Superbacteria emerge</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Scope</span><span class="ddm-compare-val">Specific bacteria only</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Viruses</span><span class="ddm-compare-val">No effect</span></div>
+        </div>
+        <div class="ddm-compare-card vaccine">
+          <span class="ddm-compare-icon">&#128137;</span>
+          <div class="ddm-compare-name">Vaccines</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Mechanism</span><span class="ddm-compare-val">Generates antibodies targeting specific pathogens</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Resistance</span><span class="ddm-compare-val">Mutant virus escape</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Scope</span><span class="ddm-compare-val">Specific pathogen only</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Dev. time</span><span class="ddm-compare-val">Years per pathogen</span></div>
+        </div>
+        <div class="ddm-compare-card ddm-new">
+          <div class="ddm-new-badge">NEW</div>
+          <span class="ddm-compare-icon">&#128737;</span>
+          <div class="ddm-compare-name">DDM Immune Priming</div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Mechanism</span><span class="ddm-compare-val">Enhances the body's own immunity</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Resistance</span><span class="ddm-compare-val">N/A — immune cells do not develop resistance</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Scope</span><span class="ddm-compare-val">Bacteria + viruses simultaneously</span></div>
+          <div class="ddm-compare-row"><span class="ddm-compare-attr">Safety</span><span class="ddm-compare-val">FDA-approved substance, no hyperinflammation</span></div>
+        </div>
+      </div>
+
+      <!-- How it works — guard analogy -->
+      <h4 style="font-size:0.95rem; margin:1.75rem 0 0.9rem; color:var(--text);">How does it work? — The "Security Guard" Analogy</h4>
+      <div class="guard-steps">
+        <div class="guard-step">
+          <div class="guard-step-icon">&#128115;</div>
+          <div class="guard-step-label">Before DDM</div>
+          <div class="guard-step-desc">Guards (neutrophils) resting in the break room</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon" style="background:rgba(214,158,46,0.15);border:2px solid rgba(214,158,46,0.35);">&#128137;</div>
+          <div class="guard-step-label">DDM Administered</div>
+          <div class="guard-step-desc">Guards don body armor and stand ready to patrol</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon">&#128121;</div>
+          <div class="guard-step-label">Pathogen Invades</div>
+          <div class="guard-step-desc">Intruder (bacteria/virus) appears</div>
+        </div>
+        <div class="guard-step">
+          <div class="guard-step-icon">&#9889;</div>
+          <div class="guard-step-label">Immediate Response</div>
+          <div class="guard-step-desc">Already-prepared guards deploy and neutralize instantly</div>
+        </div>
+      </div>
+      <p style="font-size:0.8rem; color:var(--text-light); margin:0.5rem 0 1.5rem; font-style:italic;">What if no intruder comes? → No harm to residents (normal cells). No overreaction (chronic inflammation).</p>
+
+      <!-- Survival bars -->
+      <h4 style="font-size:0.95rem; margin-bottom:0.9rem; color:var(--text);">How remarkable are the experimental results?</h4>
+      <div class="survival-bars" id="survivalBars">
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">Lethal MRSA (Methicillin-resistant Staphylococcus aureus)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM: 100%</span> <span class="survival-val-ctrl">Control: 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% Survival</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">Lethal CRPA (Carbapenem-resistant Pseudomonas aeruginosa)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM: 100%</span> <span class="survival-val-ctrl">Control: 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% Survival</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">Lethal CREC (Carbapenem-resistant Escherichia coli)</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM: 100%</span> <span class="survival-val-ctrl">Control: 0%</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="100%"><span>100% Survival</span></div>
+          </div>
+        </div>
+        <div class="survival-row">
+          <div class="survival-label-row">
+            <span class="survival-pathogen">Influenza Virus</span>
+            <span class="survival-vals"><span class="survival-val-ddm">DDM: virus reduced</span> <span class="survival-val-ctrl">Control: high mortality</span></span>
+          </div>
+          <div class="survival-track">
+            <div class="survival-fill-ddm" data-width="78%"><span>Significant improvement</span></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:var(--text-light); margin-top:0.3rem;">* Mouse model experimental results. DDM-treated group vs untreated control group.</p>
+
+      <!-- Pipeline -->
+      <h4 style="font-size:0.95rem; margin:1.75rem 0 0.9rem; color:var(--text);">How far from clinical use? — Development Pipeline</h4>
+      <div class="pipeline-track" id="pipelineTrack">
+        <div class="pipeline-stage done">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#9989;</span></div>
+          <div class="pipeline-label">Basic Research<br>Complete</div>
+        </div>
+        <div class="pipeline-stage done">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#9989;</span></div>
+          <div class="pipeline-label">Safety<br>Confirmed (FDA)</div>
+        </div>
+        <div class="pipeline-stage current">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#128007;</span></div>
+          <div class="pipeline-label">Mouse<br>Animal Model ★</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#128018;</span></div>
+          <div class="pipeline-label">Primate<br>Animal Model</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#129514;</span></div>
+          <div class="pipeline-label">Phase I<br>(Safety)</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#129514;</span></div>
+          <div class="pipeline-label">Phase II/III<br>(Efficacy)</div>
+        </div>
+        <div class="pipeline-stage future">
+          <div class="pipeline-dot-outer"><span class="pipeline-icon">&#127970;</span></div>
+          <div class="pipeline-label">Market<br>Approval</div>
+        </div>
+      </div>
+      <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.3rem;">Since DDM is already an FDA-approved substance, some safety phases may be accelerated. Estimated timeline from current stage: <strong>5–10 years</strong>.</p>
+
+    </div><!-- end 4-3 -->
+
+    <!-- 4-4: Glossary -->
+    <div class="fade-in-section" style="margin-bottom:3.5rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-4</span>
+        <h3 class="bg-subsection-title">Key Terminology — <em>Jargon Made Simple</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.7;">Click each card to expand the explanation.</p>
+
+      <div class="glossary-grid">
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Induced Systemic Resistance (ISR)</div>
+            <div class="gloss-category">Immunology · Plant Pathology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Similar in principle to giving plants a pre-emptive "vaccine." Beneficial bacteria pre-train the plant's immune system so that when the actual pathogen arrives later, the plant responds faster and more powerfully. ISR = Induced Systemic Resistance.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Bacterial Volatile Compounds (VOC)</div>
+            <div class="gloss-category">Microbiology · Chemical Ecology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">"Scent substances" emitted by bacteria. They send chemical signals to plants through the air. 2,3-butanediol is a representative example; they influence plant growth and immunity without direct contact.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Innate Immunity</div>
+            <div class="gloss-category">Immunology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Immunity present from birth. A "security system" that immediately detects any intruder, regardless of pathogen type, and responds rapidly. This is precisely the immunity that DDM enhances.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Adaptive Immunity</div>
+            <div class="gloss-category">Immunology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Immunity that remembers specific pathogens and mounts a targeted response. This is the principle vaccines exploit. The first response is slow, but from the second exposure onward it is fast and strong. Limitation: effectiveness may wane against mutated viruses.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Immune Priming</div>
+            <div class="gloss-category">Immunology · Novel Concept</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Putting immune cells into a "combat-ready" state in advance. Establishes a defensive posture before any pathogen arrives. Unlike vaccines, it does not memorize a specific pathogen — instead it rapidly switches on the immune response itself.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Neutrophil</div>
+            <div class="gloss-category">Immunology · Cell Biology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Immune cells comprising 60–70% of white blood cells. The "special forces" that rush to the scene first when bacteria invade. DDM pre-activates these cells, putting them in a combat-ready state.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Antimicrobial Resistance (AMR)</div>
+            <div class="gloss-category">Infectious Disease · Public Health</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">The phenomenon in which bacteria adapt to antibiotics and are no longer killed by them. The root cause of the "superbacteria" problem. The WHO lists AMR as one of the most serious health threats humanity faces.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">MRSA / CRPA / CREC</div>
+            <div class="gloss-category">Superbacteria</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">Representative superbacteria. MRSA = Methicillin-resistant Staphylococcus aureus, CRPA = Carbapenem-resistant Pseudomonas aeruginosa, CREC = Carbapenem-resistant Escherichia coli. Existing antibiotics are largely ineffective, resulting in high mortality rates in hospital-acquired infections.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">h-index</div>
+            <div class="gloss-category">Researcher Impact Metric</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">A measure of researcher impact: "h papers have each been cited at least h times." The higher the value, the more consistently influential the researcher's work. Dr. Ryu's h=71 is at the global top 1% level.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Corresponding Author</div>
+            <div class="gloss-category">Author Role in Papers</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">The "principal investigator" of a paper. The key leader who planned the research and conducted the final review. Dr. Seo's role as corresponding author of the DDM paper means he holds core responsibility for the study's design and findings.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Circovirus (PCV2)</div>
+            <div class="gloss-category">Veterinary Virology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">A small circular virus that destroys pig immunity. One of the greatest threats to the global swine industry, causing enormous economic damage worldwide. This was Dr. Seo's early research subject.</div></div>
+        </div>
+
+        <div class="gloss-card" onclick="toggleGloss(this)">
+          <div class="gloss-front">
+            <div class="gloss-term">Vaccine Failure</div>
+            <div class="gloss-category">Infectious Disease · Immunology</div>
+          </div>
+          <div class="gloss-back"><div class="gloss-back-inner">The phenomenon of getting sick despite being vaccinated. Viral mutation is the primary cause. This experience guided Dr. Seo toward the research direction of "strengthening immunity itself, not targeting specific pathogens."</div></div>
+        </div>
+
+      </div><!-- end glossary-grid -->
+    </div><!-- end 4-4 -->
+
+    <!-- 4-5: Conference Predictions -->
+    <div class="fade-in-section" style="margin-bottom:2rem;">
+      <div class="bg-subsection-header">
+        <span class="bg-subsection-num">4-5</span>
+        <h3 class="bg-subsection-title">Predicted Conference Topics — <em>If They Were to Present...</em></h3>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.7;">Five likely topics these two researchers would present at microbiology/infectious disease conferences. Star count indicates likelihood of presentation.</p>
+
+      <div class="conf-cards">
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">1</div>
+          <div class="conf-body">
+            <div class="conf-title">"Innate Immune Priming Strategy for Broad-Spectrum Infection Prevention"</div>
+            <div class="conf-message">A strategy using a single dose of DDM to simultaneously prevent superbacteria (MRSA, CRPA, CREC) and influenza. The most likely format to present the core findings of the eBioMedicine 2026 paper to both public and specialist audiences.</div>
+            <div class="conf-prereq"><strong>Helpful background:</strong> difference between innate and adaptive immunity, the role of neutrophils, current state of the AMR crisis</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★★<br>Highly likely</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">2</div>
+          <div class="conf-body">
+            <div class="conf-title">"A New Paradigm in the Age of Superbacteria — Preventing Infection Without Antibiotics"</div>
+            <div class="conf-message">Presents immune enhancement as an alternative to the antibiotic resistance crisis. Likely to be presented in a way that connects to the WHO AMR roadmap and emphasizes public health significance.</div>
+            <div class="conf-prereq"><strong>Helpful background:</strong> why antibiotic resistance is a crisis, why new drug development is difficult, annual deaths attributable to AMR</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★<br>Likely</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">3</div>
+          <div class="conf-body">
+            <div class="conf-title">"From Plant Immunity to Human Immunity — Cross-Disciplinary Innovation"</div>
+            <div class="conf-message">The research story of how the ISR principle discovered in plant research led, 20 years later, to human infectious disease prevention. Well-suited for a keynote format that emphasizes the long-term value of basic science.</div>
+            <div class="conf-prereq"><strong>Helpful background:</strong> the fact that plants also have immunity, the basic concept of ISR, the relationship between basic and applied research</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★★<br>Likely</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">4</div>
+          <div class="conf-body">
+            <div class="conf-title">"Molecular Mechanisms of Neutrophil Priming" <span style="font-size:0.78rem; color:var(--text-light); font-weight:400;">(Specialist audience)</span></div>
+            <div class="conf-message">Explains at the molecular level exactly how DDM activates neutrophils. Likely to be presented as an oral or symposium talk at specialist immunology conferences (e.g., ASM Microbe, ISHEID).</div>
+            <div class="conf-prereq"><strong>Helpful background:</strong> GPCR signal transduction, neutrophil bactericidal weapons (reactive oxygen species, NETs), TLR receptors</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★<br>Possible</div>
+          </div>
+        </div>
+
+        <div class="conf-card fade-in-section">
+          <div class="conf-num">5</div>
+          <div class="conf-body">
+            <div class="conf-title">"Universal Infection Prevention Strategies in the Post-COVID-19 Era"</div>
+            <div class="conf-message">Emphasizes the value of pathogen-agnostic prevention strategies from a pandemic preparedness perspective. Can be presented in the context of linking COVID-19 primate model development experience with the DDM research.</div>
+            <div class="conf-prereq"><strong>Helpful background:</strong> WHO AMR roadmap, pandemic preparedness strategies (One Health concept), future infectious disease threat scenarios</div>
+          </div>
+          <div class="conf-likelihood">
+            <div class="conf-likelihood-dots">
+              <div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot filled"></div><div class="conf-dot"></div><div class="conf-dot"></div>
+            </div>
+            <div class="conf-likelihood-label">★★★<br>Possible</div>
+          </div>
+        </div>
+
+      </div><!-- end conf-cards -->
+    </div><!-- end 4-5 -->
+
+  </div><!-- end container -->
+</section><!-- end section-background -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div style="color:rgba(255,255,255,0.85); font-weight:600; margin-bottom:0.4rem;">KRIBB Infectious Disease Research Center — Researcher Profile Report</div>
+        <div>Date: 2026-03-04 &nbsp;|&nbsp; Methods: OpenAlex API + WebSearch cross-validation</div>
+      </div>
+      <div>
+        <div style="margin-bottom:0.4rem; color:rgba(255,255,255,0.5); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;">Data Sources</div>
+        <div class="footer-sources">
+          <span class="footer-badge">OpenAlex API</span>
+          <span class="footer-badge">Google Scholar</span>
+          <span class="footer-badge">ResearchGate</span>
+          <span class="footer-badge">KRIBB OAK</span>
+          <span class="footer-badge">Retraction Watch</span>
+          <span class="footer-badge">WebSearch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== THEME TOGGLE =====
+function toggleTheme() {
+  const root = document.documentElement;
+  const btn = document.querySelector('.theme-toggle');
+  if (root.getAttribute('data-theme') === 'dark') {
+    root.removeAttribute('data-theme');
+    btn.textContent = '🌙 Dark Mode';
+  } else {
+    root.setAttribute('data-theme', 'dark');
+    btn.textContent = '☀️ Light Mode';
+  }
+}
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el) {
+  const target = parseInt(el.getAttribute('data-target'));
+  if (isNaN(target)) return;
+  const duration = 1400;
+  const start = performance.now();
+  function update(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const val = Math.round(ease * target);
+    el.textContent = val >= 1000 ? val.toLocaleString('en-US') : val;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+// ===== ACTIVITY BAR ANIMATION =====
+function animateActivityBars() {
+  document.querySelectorAll('.activity-bar').forEach(bar => {
+    const h = bar.getAttribute('data-height');
+    if (h) setTimeout(() => { bar.style.height = h; }, 100);
+  });
+}
+
+// ===== BAR CHART ANIMATION =====
+function animateBars() {
+  document.querySelectorAll('.bar-fill').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; }, 200);
+  });
+  document.querySelectorAll('.cite-bar').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; bar.style.maxWidth = '80px'; }, 300);
+  });
+}
+
+// ===== INTERSECTION OBSERVER =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // Trigger counters
+      entry.target.querySelectorAll('.metric-value[data-target]').forEach(animateCounter);
+      // Trigger activity bars
+      if (entry.target.querySelector('.activity-bar')) animateActivityBars();
+      // Trigger comparison bars
+      if (entry.target.querySelector('.bar-fill')) animateBars();
+      // Trigger cite bars
+      if (entry.target.querySelector('.cite-bar')) animateBars();
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+// ===== COPY DOI =====
+function copyDoi(btn, doi) {
+  navigator.clipboard.writeText(doi).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.classList.remove('copied');
+    }, 2000);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = doi;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// ===== SORT TABLE =====
+function sortTable(by) {
+  const tbody = document.querySelector('#papersTable tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  rows.sort((a, b) => {
+    const va = parseInt(a.getAttribute('data-' + by));
+    const vb = parseInt(b.getAttribute('data-' + by));
+    return vb - va;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+  // Re-number
+  rows.forEach((r, i) => { r.querySelector('td:first-child strong').textContent = i + 1; });
+}
+
+// ===== ACCORDION =====
+function toggleAccordion(btn) {
+  const item = btn.closest('.accordion-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.accordion-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ===== TAB SWITCHING =====
+function switchTab(groupId, tabId) {
+  const group = document.getElementById(groupId);
+  group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  group.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  group.querySelector('[data-tab="' + tabId + '"]').classList.add('active');
+  group.querySelector('#panel-' + tabId).classList.add('active');
+}
+
+// ===== NAV ACTIVE =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 80;
+  sections.forEach(sec => {
+    if (scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector('.nav-links a[href="#' + sec.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { passive: true });
+
+// ===== CHAPTER TOGGLE =====
+function toggleChapter(body) {
+  const isOpen = body.classList.contains('open');
+  // Close all chapters first
+  document.querySelectorAll('.chapter-body.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) body.classList.add('open');
+}
+
+// ===== GLOSSARY TOGGLE =====
+function toggleGloss(card) {
+  const isOpen = card.classList.contains('open');
+  card.classList.toggle('open', !isOpen);
+}
+
+// ===== SURVIVAL BAR ANIMATION =====
+function animateSurvivalBars() {
+  document.querySelectorAll('.survival-fill-ddm').forEach(bar => {
+    const w = bar.getAttribute('data-width');
+    if (w) setTimeout(() => { bar.style.width = w; }, 200);
+  });
+}
+
+// Extend IntersectionObserver to also handle new section elements
+const bgObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (entry.target.querySelector('.survival-fill-ddm')) animateSurvivalBars();
+      bgObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('#section-background .fade-in-section').forEach(el => bgObserver.observe(el));
+
+// ===== INIT =====
+window.addEventListener('load', () => {
+  // Trigger hero counters immediately (they're visible)
+  document.querySelectorAll('.hero').forEach(el => {
+    el.querySelectorAll('.metric-value[data-target]').forEach(animateCounter);
+  });
+});
+</script>
+</body>
+</html>
